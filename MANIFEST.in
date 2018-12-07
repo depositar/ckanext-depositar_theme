@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE.txt
+include requirements.txt
+recursive-include ckanext/depositar_theme *.html *.json *.js *.less *.css *.mo
