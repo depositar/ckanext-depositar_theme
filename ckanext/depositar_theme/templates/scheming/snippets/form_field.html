@@ -1,0 +1,22 @@
+{#- master snippet for all scheming form fields -#}
+{#- render the field the user requested, or use a default field -#}
+{#- override the template file from the ckanext-scheming 1.2.0 -#}
+
+{%- set form_snippet = field.form_snippet -%}
+
+{%- if not form_snippet -%}
+  {%- set form_snippet = 'text.html' -%}
+{%- endif -%}
+
+{%- if '/' not in form_snippet -%}
+  {%- set form_snippet = 'scheming/form_snippets/' + form_snippet -%}
+{%- endif -%}
+
+{%- snippet form_snippet, field=field, data=data, errors=errors,
+  licenses=licenses, entity_type=entity_type, object_type=object_type -%}
+
+{% if field.icon %}
+  <div data-module="field-icon" data-name="{{ field.field_name }}" data-icon="{{ field.icon }}"{% if field.label_name %} data-label-name="{{ field.label_name }}"{% endif %}></div>
+{% endif %}
+
+{% resource 'depositar_theme/scripts/modules/field-icon.js' %}

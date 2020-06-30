@@ -11,3 +11,4 @@ class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
 
     def update_config(self, config_):
         toolkit.add_template_directory(config_, 'templates')
+        toolkit.add_resource('fanstatic', 'depositar_theme')
