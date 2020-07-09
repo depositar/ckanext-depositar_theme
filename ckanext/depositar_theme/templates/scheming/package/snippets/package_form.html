@@ -16,6 +16,10 @@
     might not be compatible with ckanext-scheming
     </p>
   {%- endif -%}
+  <div class="form-messages">
+    {{ form.required_message() }}
+    {% snippet "snippets/multivalue_message.html" %}
+  </div>
   {%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
   <legend><h2> {{ _('Basic Information') }} </h2></legend>
   {%- for field in schema.dataset_fields -%}
@@ -56,5 +60,17 @@
 {% block metadata_fields %}
 {% endblock %}
 
-{% block disclaimer %}
+{% block form_actions %}
+  <div class="form-actions">
+    {% block disclaimer %}
+    {% endblock %}
+    {% block delete_button %}
+      {{ super() }}
+    {% endblock %}
+    {% block save_button %}
+      {{ super() }}
+    {% endblock %}
+    {{ form.required_message() }}
+    {% snippet "snippets/multivalue_message.html" %}
+  </div>
 {% endblock %}
