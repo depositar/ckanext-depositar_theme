@@ -18,7 +18,7 @@ this.ckan.module('field-extra', function (jQuery) {
       }
 
       if (multiple) {
-        $('<span title="' + this._("This field accepts multiple values") + '" class="control-required">†</span>').appendTo(label);
+        $('<span title="' + this._("This field accepts multiple values") + '" class="control-required">§</span>').appendTo(label);
       }
     }
   }
