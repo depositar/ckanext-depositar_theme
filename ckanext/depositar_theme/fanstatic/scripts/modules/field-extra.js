@@ -18,7 +18,7 @@ this.ckan.module('field-extra', function (jQuery) {
       }
 
       if (required.length != 0) {
-        $("<span> </span>").appendTo(this.label);
+        $("<span> </span>").appendTo(label);
         required.appendTo(label);
       }
     }
