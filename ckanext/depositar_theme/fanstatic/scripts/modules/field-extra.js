@@ -14,12 +14,11 @@ this.ckan.module('field-extra', function (jQuery) {
       }
 
       if (required.length != 0) {
-        $("<span> </span>").appendTo(label);
         required.appendTo(label);
       }
 
       if (multiple) {
-        $('<span> </span><span title="' + this._("This field accepts multiple values") + '" class="control-required">†</span>').appendTo(label);
+        $('<span title="' + this._("This field accepts multiple values") + '" class="control-required">†</span>').appendTo(label);
       }
     }
   }
