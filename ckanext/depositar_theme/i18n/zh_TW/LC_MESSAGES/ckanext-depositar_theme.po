@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-depositar_theme 1.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-12-07 13:14+0800\n"
+"POT-Creation-Date: 2020-07-20 11:04+0800\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -19,6 +19,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+
+#: ckanext/depositar_theme/fanstatic/scripts/modules/field-extra.js:21
+msgid "This field accepts multiple values"
+msgstr "此欄位接受多值"
 
 #: ckanext/depositar_theme/templates/header.html:12
 msgid "Sysadmin settings"
@@ -602,15 +606,15 @@ msgstr "儲存專案"
 msgid "Create Dataset"
 msgstr "建立資料集"
 
-#: ckanext/depositar_theme/templates/package/group_list.html:14
+#: ckanext/depositar_theme/templates/package/group_list.html:15
 msgid "Associate this topic with this dataset"
 msgstr "將資料集加入此主題"
 
-#: ckanext/depositar_theme/templates/package/group_list.html:14
+#: ckanext/depositar_theme/templates/package/group_list.html:15
 msgid "Add to topic"
 msgstr "加入主題"
 
-#: ckanext/depositar_theme/templates/package/group_list.html:23
+#: ckanext/depositar_theme/templates/package/group_list.html:25
 msgid "There are no topics associated with this dataset"
 msgstr "沒有主題跟此資料集有關聯"
 
@@ -758,6 +762,71 @@ msgstr "變更"
 #: ckanext/depositar_theme/templates/revision/read.html:74
 msgid "Datasets' Tags"
 msgstr "資料集的標籤"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:21
+#, python-format
+msgid ""
+"Please refer to the <a href=\"%(doc_url)suser-guide.html#adding-a-new-"
+"dataset\" target=\"_blank\">guide</a> and the <a "
+"href=\"%(doc_url)sappendix/fields/index.html#dataset-level\" "
+"target=\"_blank\">metadata schema</a> while filling the form."
+msgstr ""
+"請參考<a href=\"%(doc_url)suser-guide.html#adding-a-new-"
+"dataset\" target=\"_blank\">使用手冊</a>與<a "
+"href=\"%(doc_url)sappendix/fields/index.html#dataset-level\" "
+"target=\"_blank\">後設資料說明</a>填寫"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:28
+msgid "Basic Information"
+msgstr "基本資訊"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:31
+msgid "Spatio-temporal Information"
+msgstr "時空資訊"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:32
+msgid "Temporal Information (Time Period of Dataset)"
+msgstr "時間資訊（資料內容時間）"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:36
+msgid "Use your account information to fill in contact person's name and email"
+msgstr "使用您的帳號資訊填入聯絡人與電子郵件"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:40
+msgid "Spatial Information"
+msgstr "空間資訊"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:44
+msgid "Use parcel corners to fill in spatial coverage"
+msgstr "使用上述四至範圍填寫空間範圍"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:48
+msgid "Management Information"
+msgstr "管理資訊"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/resource_form.html:6
+#, python-format
+msgid ""
+"Please refer to the <a href=\"%(doc_url)suser-guide.html#adding-a-new-"
+"dataset\" target=\"_blank\">guide</a>, the <a "
+"href=\"%(doc_url)sappendix/fields/index.html#resource-fields\" "
+"target=\"_blank\">metadata schema</a>, and the <a href=\"%(doc_url)suser-"
+"guide.html#limitation\" target=\"_blank\">limitation</a> while filling "
+"the form."
+msgstr ""
+"請參考<a href=\"%(doc_url)suser-guide.html#adding-a-new-"
+"dataset\" target=\"_blank\">使用手冊</a>、<a "
+"href=\"%(doc_url)sappendix/fields/index.html#resource-fields\" "
+"target=\"_blank\">後設資料說明</a>，與<a href=\"%(doc_url)suser-"
+"guide.html#limitation\" target=\"_blank\">平台限制</a>填寫"
+
+#: ckanext/depositar_theme/templates/scheming/package/snippets/resource_form.html:7
+msgid "Maximum size for each file uploaded to depositar: 1 GB."
+msgstr "上傳檔案大小限制：1 GB"
+
+#: ckanext/depositar_theme/templates/snippets/multivalue_message.html:2
+msgid "Accept multiple values"
+msgstr "接受多值"
 
 #: ckanext/depositar_theme/templates/snippets/organization.html:45
 msgid "read more"
