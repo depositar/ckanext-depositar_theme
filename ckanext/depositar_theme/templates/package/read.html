@@ -1,0 +1,51 @@
+{% ckan_extends %}
+
+{% block secondary_content %}
+  {{ super() }}
+
+  {% snippet "citation/package/snippets/citation.html" %}
+
+  {% set dataset_extent = c.pkg_dict.get('spatial', '') %}
+  {% if dataset_extent %}
+    {% snippet "spatial/snippets/dataset_map_sidebar.html", extent=dataset_extent %}
+  {% endif %}
+
+  {% block other_access %}
+    {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+    {% set doc_url = 'https://docs.depositar.io/{0}/{1}/'.format(h.lang(), h.get_pkg_version()) %}
+    <section class="module module-narrow module-shallow">
+      <h2 class="module-heading">
+        <i class="fa fa-copy"></i>
+        {{ _('Other Access') }}
+      </h2>
+      <div class="module-content">
+        <p>{{ _('The information on this page (the dataset metadata) is also available in these formats:') }}</p>
+        <p class="btn-group">
+          <a href="{{ h.url_for(controller='api', logic_function='package_show', action='action', id=c.pkg.name,ver=3) }}" class="btn btn-small">
+            <i class="fa fa-code"></i>JSON-API
+          </a>
+        </p>
+        <p>{% trans %}<a href="{{ doc_url }}user-guide.html#rdf-serializations" target="_blank">RDF serializations</a> based on DCAT 2:{% endtrans %}<span class="label label-inverse pull-right">Beta</span></p>
+        <p class="btn-group">
+          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.jsonld" class="btn btn-small">
+            <i class="fa fa-code"></i>JSON-LD
+          </a>
+          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.ttl" class="btn btn-small">
+            <i class="fa fa-code"></i>Turtle
+          </a>
+          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.xml" class="btn btn-small">
+            <i class="fa fa-code"></i>XML
+          </a>
+        </p>
+        <p><small>{{ _('via the ') }}<a href="{{ api_url }}" class="external" target="_blank">{{ 'CKAN API' }}</a></small></p>
+      </div>
+    </section>
+  {% endblock %}
+{% endblock %}
+
+{% block package_tags %}
+  {% if pkg.tags %}
+    <h3>{{ _('Tags') }}</h3>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
