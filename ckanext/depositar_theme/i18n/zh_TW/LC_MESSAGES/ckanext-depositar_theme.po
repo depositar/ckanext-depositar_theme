@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.0.0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.0.2b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-07-20 11:04+0800\n"
+"POT-Creation-Date: 2020-12-14 16:01+0800\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -618,6 +618,34 @@ msgstr "加入主題"
 msgid "There are no topics associated with this dataset"
 msgstr "沒有主題跟此資料集有關聯"
 
+#: ckanext/depositar_theme/templates/package/read.html:19
+msgid "Other Access"
+msgstr "其他存取方式"
+
+#: ckanext/depositar_theme/templates/package/read.html:22
+msgid ""
+"The information on this page (the dataset metadata) is also available in "
+"these formats:"
+msgstr "此頁面上的資訊 (資料集之後設資料) 也提供以下格式："
+
+#: ckanext/depositar_theme/templates/package/read.html:28
+#, python-format
+msgid ""
+"<a href=\"%(doc_url)suser-guide.html#rdf-serializations\" "
+"target=\"_blank\">RDF serializations</a> based on DCAT 2:"
+msgstr ""
+"<a href=\"%(doc_url)suser-guide.html#rdf-serializations\" "
+"target=\"_blank\">RDF 串列化輸出</a> (修改自 DCAT 2)："
+
+#: ckanext/depositar_theme/templates/package/read.html:40
+msgid "via the "
+msgstr "經由 "
+
+#: ckanext/depositar_theme/templates/package/read.html:48
+#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "Tags"
+msgstr "標籤"
+
 #: ckanext/depositar_theme/templates/package/read_base.html:19
 msgid "Dataset"
 msgstr "資料集"
@@ -661,10 +689,6 @@ msgstr "例如：我的資料集"
 #: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:19
 msgid "eg. Some useful notes about the data"
 msgstr "例如：此資料一些有用的紀錄"
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:24
-msgid "Tags"
-msgstr "標籤"
 
 #: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:24
 msgid "eg. economy, mental health, government"
@@ -771,8 +795,8 @@ msgid ""
 "href=\"%(doc_url)sappendix/fields/index.html#dataset-level\" "
 "target=\"_blank\">metadata schema</a> while filling the form."
 msgstr ""
-"請參考<a href=\"%(doc_url)suser-guide.html#adding-a-new-"
-"dataset\" target=\"_blank\">使用手冊</a>與<a "
+"請參考<a href=\"%(doc_url)suser-guide.html#adding-a-new-dataset\" "
+"target=\"_blank\">使用手冊</a>與<a "
 "href=\"%(doc_url)sappendix/fields/index.html#dataset-level\" "
 "target=\"_blank\">後設資料說明</a>填寫"
 
@@ -814,8 +838,8 @@ msgid ""
 "guide.html#limitation\" target=\"_blank\">limitation</a> while filling "
 "the form."
 msgstr ""
-"請參考<a href=\"%(doc_url)suser-guide.html#adding-a-new-"
-"dataset\" target=\"_blank\">使用手冊</a>、<a "
+"請參考<a href=\"%(doc_url)suser-guide.html#adding-a-new-dataset\" "
+"target=\"_blank\">使用手冊</a>、<a "
 "href=\"%(doc_url)sappendix/fields/index.html#resource-fields\" "
 "target=\"_blank\">後設資料說明</a>，與<a href=\"%(doc_url)suser-"
 "guide.html#limitation\" target=\"_blank\">平台限制</a>填寫"
