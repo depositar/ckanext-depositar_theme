@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ title }}{% endblock %}
+
+{% block breadcrumb_content %}
+  {% if version %}
+    <li>{% link_for title, named_route='terms_of_service' %}</li>
+    <li>{% link_for _('Archive'), named_route='tos_archive' %}</li>
+    <li class="active">{% link_for version, named_route='archived_tos', version=version %}</li>
+  {% else %}
+    <li class="active">{% link_for title, named_route='terms_of_service' %}</li>
+  {% endif %}
+{% endblock %}
+
+{% block primary %}
+  {% set version = version or h.get_latest_legal_version('tos') %}
+  {% set path = 'legal/tos/%s.html' % version %}
+  <h1 class="page-heading">{{ title }}</h1>
+  <p>{{ _('Effective ') }}{{ version | localized_date }} | {% link_for _('Archive'), named_route='tos_archive' %}</p>
+  <br>
+  {% include path %}
+{% endblock %}
+
+{% block secondary %}{% endblock %}

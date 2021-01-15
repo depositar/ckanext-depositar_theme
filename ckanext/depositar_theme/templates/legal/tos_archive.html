@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ title }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li>{% link_for _('Terms of Service'), named_route='terms_of_service' %}</li>
+  <li class="active">{% link_for _('Archive'), named_route='tos_archive' %}</li>
+{% endblock %}
+
+{% block primary %}
+  {% set versions = h.get_legal_versions('tos') %}
+  <h1 class="page-heading">{{ title }}</h1>
+  <ul>
+    {% for version in versions %}
+      <li>{% link_for version | localized_date, named_route='archived_tos', version=version %}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
