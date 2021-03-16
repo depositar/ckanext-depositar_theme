@@ -1,0 +1,17 @@
+{% trans %}Dear {{ user_name }},{% endtrans %}
+
+{% trans %}Welcome to {{ site_title }}!{% endtrans %}
+
+{% trans %}Please click the following link to validate your email address and set your password:{% endtrans %}
+
+   {{ reg_link }}
+
+{% trans %}You can also review our terms of service and privacy policy below:{% endtrans %}
+
+   {% trans %}Terms of Service: {{ site_url }}/terms_of_service/archive/{{ tos_version }}{% endtrans %}
+   {% trans %}Privacy Policy: {{ site_url }}/privacy/archive/{{ privacy_version }}{% endtrans %}
+
+{% trans %}Have a nice day.{% endtrans %}
+
+--
+{% trans %}Message sent by {{ site_title }} ({{ site_url }}){% endtrans %}
