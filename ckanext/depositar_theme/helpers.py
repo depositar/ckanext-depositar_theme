@@ -28,7 +28,7 @@ def get_reg_link_body(user):
         'site_title': config.get('ckan.site_title'),
         'site_url': config.get('ckan.site_url'),
         'user_name': user.name,
-        'tos_version': get_latest_legal_version('tos'),
+        'tou_version': get_latest_legal_version('tou'),
         'privacy_version': get_latest_legal_version('privacy')
         }
     return render_jinja2('emails/user_registration.txt', extra_vars)

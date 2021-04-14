@@ -31,14 +31,14 @@ class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
     def before_map(self, map):
         legal_controller = 'ckanext.depositar_theme.controllers.legal:LegalController'
 
-        map.connect('terms_of_service', '/terms_of_service',
-            controller=legal_controller, action='tos')
+        map.connect('terms_of_use', '/terms_of_use',
+            controller=legal_controller, action='tou')
 
-        map.connect('tos_archive', '/terms_of_service/archive',
-            controller=legal_controller, action='tos_archive')
+        map.connect('tou_archive', '/terms_of_use/archive',
+            controller=legal_controller, action='tou_archive')
 
-        map.connect('archived_tos', '/terms_of_service/archive/{version}',
-            controller=legal_controller, action='tos')
+        map.connect('archived_tou', '/terms_of_use/archive/{version}',
+            controller=legal_controller, action='tou')
 
         map.connect('privacy', '/privacy',
             controller=legal_controller, action='privacy')

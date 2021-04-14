@@ -7,18 +7,18 @@ from ckanext.depositar_theme.lib import jinja_extensions
 
 class LegalController(p.toolkit.BaseController):
 
-    def tos(self, version=None):
+    def tou(self, version=None):
         c.pylons.app_globals.jinja_env.filters['localized_date'] = \
                 jinja_extensions.localized_date
         try:
-            return p.toolkit.render('legal/tos.html', \
-                    {'title': _('Terms of Service'), 'version': version})
+            return p.toolkit.render('legal/tou.html', \
+                    {'title': _('Terms of Use'), 'version': version})
         except TemplateNotFound as e:
             base.abort(404)
 
-    def tos_archive(self):
-        return p.toolkit.render('legal/tos_archive.html', \
-                {'title': _('Terms of Service (Archive)')})
+    def tou_archive(self):
+        return p.toolkit.render('legal/tou_archive.html', \
+                {'title': _('Terms of Use (Archive)')})
 
     def privacy(self, version=None):
         c.pylons.app_globals.jinja_env.filters['localized_date'] = \
