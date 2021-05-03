@@ -3,24 +3,41 @@ import inspect
 
 from ckan.common import config
 from ckan.lib import mailer
+import ckan.lib.base as base
 from ckan.lib.base import render_jinja2
+import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
 
 from ckanext import depositar_theme
 
 
-def get_legal_versions(folder):
-    p = os.path.join(os.path.dirname( \
+def get_legal_path(_type):
+    return os.path.join(os.path.dirname( \
             inspect.getfile(depositar_theme)), \
-            'templates', 'legal', folder)
-    files_no_ext = [''.join(f.split('.')[:-1]) \
-            for f in sorted(os.listdir(p), reverse=True)]
+            'templates', 'legal', _type)
 
-    return files_no_ext
+def get_legal_versions(_type):
+    return sorted(os.listdir(get_legal_path(_type)), reverse=True)
 
-def get_latest_legal_version(folder):
+def get_latest_legal_version(_type):
+    return get_legal_versions(_type)[0]
 
-    return get_legal_versions(folder)[0]
+def get_legal(_type, version, lang=None):
+    if not lang: lang = h.lang()
+    path = os.path.join(get_legal_path(_type), version,
+                        '{lang}.md'.format(lang=lang))
+    try:
+        with open(path) as f:
+            formatted = h.render_markdown(f.read().decode('utf-8'),
+                                          allow_html=True)
+            f.close()
+            return formatted
+    except IOError as e:
+        if version in get_legal_versions(_type):
+            # Fallback to English
+            return get_legal(_type, version, 'en')
+        else:
+            base.abort(404)
 
 def get_reg_link_body(user):
     extra_vars = {

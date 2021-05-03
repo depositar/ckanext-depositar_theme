@@ -3,7 +3,7 @@
 {% block subtitle %}{{ title }}{% endblock %}
 
 {% block breadcrumb_content %}
-  {% if version %}
+  {% if version != h.get_latest_legal_version('tou') %}
     <li>{% link_for title, named_route='terms_of_use' %}</li>
     <li>{% link_for _('Archive'), named_route='tou_archive' %}</li>
     <li class="active">{% link_for version, named_route='archived_tou', version=version %}</li>
@@ -13,12 +13,10 @@
 {% endblock %}
 
 {% block primary %}
-  {% set version = version or h.get_latest_legal_version('tou') %}
-  {% set path = 'legal/tou/%s.html' % version %}
   <h1 class="page-heading">{{ title }}</h1>
   <p>{{ _('Effective ') }}{{ version | localized_date }} | {% link_for _('Archive'), named_route='tou_archive' %}</p>
   <br>
-  {% include path %}
+  {{ text }}
 {% endblock %}
 
 {% block secondary %}{% endblock %}
