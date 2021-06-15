@@ -43,7 +43,7 @@ def get_reg_link_body(user):
     extra_vars = {
         'reg_link': get_reset_link(user),
         'site_title': config.get('ckan.site_title'),
-        'site_url': config.get('ckan.site_url'),
+        'site_url': config.get('ckan.site_url') + '/' + h.lang(),
         'user_name': user.name,
         'tou_version': get_latest_legal_version('tou'),
         'privacy_version': get_latest_legal_version('privacy')
