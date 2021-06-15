@@ -6,7 +6,7 @@
 
    {{ reg_link }}
 
-{% trans %}You can also review our terms of service and privacy policy below:{% endtrans %}
+{% trans %}You can also review our terms of use and privacy policy below:{% endtrans %}
 
    {% trans %}Terms of Use: {{ site_url }}/terms_of_use/archive/{{ tou_version }}{% endtrans %}
    {% trans %}Privacy Policy: {{ site_url }}/privacy/archive/{{ privacy_version }}{% endtrans %}
