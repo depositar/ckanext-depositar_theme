@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.0.2b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.0.3b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-14 16:01+0800\n"
+"POT-Creation-Date: 2021-06-15 11:21+0800\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -19,6 +19,24 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+
+#: ckanext/depositar_theme/controllers/legal.py:15
+#: ckanext/depositar_theme/templates/legal/tou_archive.html:6
+msgid "Terms of Use"
+msgstr "使用條款"
+
+#: ckanext/depositar_theme/controllers/legal.py:20
+msgid "Terms of Use (Archive)"
+msgstr "使用條款 (封存版本)"
+
+#: ckanext/depositar_theme/controllers/legal.py:27
+#: ckanext/depositar_theme/templates/legal/privacy_archive.html:6
+msgid "Privacy Policy"
+msgstr "隱私政策"
+
+#: ckanext/depositar_theme/controllers/legal.py:32
+msgid "Privacy Policy (Archive)"
+msgstr "隱私政策 (封存版本)"
 
 #: ckanext/depositar_theme/fanstatic/scripts/modules/field-extra.js:21
 msgid "This field accepts multiple values"
@@ -127,6 +145,50 @@ msgstr "搜尋資料集"
 #: ckanext/depositar_theme/templates/header.html:115
 msgid "Search"
 msgstr "搜尋"
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:1
+#, python-format
+msgid "Dear %(user_name)s,"
+msgstr "%(user_name)s 您好，"
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:3
+#, python-format
+msgid "Welcome to %(site_title)s!"
+msgstr "歡迎您來到 %(site_title)s！"
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:5
+msgid ""
+"Please click the following link to validate your email address and set "
+"your password:"
+msgstr "請點選以下連結驗證您的電子郵件，並設定密碼："
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:9
+msgid "You can also review our terms of use and privacy policy below:"
+msgstr "您亦可於以下頁面瀏覽我們的使用條款與隱私政策："
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:11
+#, python-format
+msgid "Terms of Use: %(site_url)s/terms_of_use/archive/%(tou_version)s"
+msgstr "使用條款：%(site_url)s/terms_of_use/archive/%(tou_version)s"
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:12
+#, python-format
+msgid "Privacy Policy: %(site_url)s/privacy/archive/%(privacy_version)s"
+msgstr "隱私政策：%(site_url)s/privacy/archive/%(privacy_version)s"
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:14
+msgid "Have a nice day."
+msgstr "祝您有個美好的一天。"
+
+#: ckanext/depositar_theme/templates/emails/user_registration.txt:17
+#, python-format
+msgid "Message sent by %(site_title)s (%(site_url)s)"
+msgstr "此信件由 %(site_title)s (%(site_url)s) 寄發"
+
+#: ckanext/depositar_theme/templates/emails/user_registration_subject.txt:1
+#, python-format
+msgid "Welcome - %(site_title)s"
+msgstr "歡迎來到 %(site_title)s"
 
 #: ckanext/depositar_theme/templates/group/base_form_page.html:7
 msgid "Add a Topic"
@@ -438,6 +500,20 @@ msgstr "主題"
 #: ckanext/depositar_theme/templates/home/snippets/stats.html:23
 msgid "topics"
 msgstr "主題"
+
+#: ckanext/depositar_theme/templates/legal/privacy.html:8
+#: ckanext/depositar_theme/templates/legal/privacy.html:17
+#: ckanext/depositar_theme/templates/legal/privacy_archive.html:7
+#: ckanext/depositar_theme/templates/legal/tou.html:8
+#: ckanext/depositar_theme/templates/legal/tou.html:17
+#: ckanext/depositar_theme/templates/legal/tou_archive.html:7
+msgid "Archive"
+msgstr "封存版本"
+
+#: ckanext/depositar_theme/templates/legal/privacy.html:17
+#: ckanext/depositar_theme/templates/legal/tou.html:17
+msgid "Effective "
+msgstr "生效日期："
 
 #: ckanext/depositar_theme/templates/organization/base_form_page.html:5
 msgid "Project Form"
@@ -969,4 +1045,10 @@ msgstr "何不馬上註冊？"
 #: ckanext/depositar_theme/templates/user/new.html:28
 msgid "Create datasets, topics and other exciting things"
 msgstr "建立資料集、主題以及其他有趣的事物"
+
+#: ckanext/depositar_theme/templates/user/snippets/tou_notice.html:2
+msgid ""
+"By clicking the button to signup, you're agreeing to our <a "
+"href=\"/terms_of_use\">terms of use</a>."
+msgstr "當您按下建立帳號按鈕時，表示您已同意我們的<a href=\"/terms_of_use\">使用條款</a>。"
 
