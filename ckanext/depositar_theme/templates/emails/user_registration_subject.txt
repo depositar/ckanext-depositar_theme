@@ -1,0 +1,1 @@
+{% trans %}Welcome - {{ site_title }}{% endtrans %}

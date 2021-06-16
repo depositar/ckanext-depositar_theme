@@ -94,7 +94,9 @@ setup(
         'ckanext': [
             ('**.py', 'python', None),
             ('**.js', 'javascript', None),
+            ('**/templates/user/new_user_form.html', 'ignore', None),
             ('**/templates/**.html', 'ckan', None),
+            ('**/templates/**.txt', 'ckan', None)
         ],
     }
 )
