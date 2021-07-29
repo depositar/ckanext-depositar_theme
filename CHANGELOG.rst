@@ -2,6 +2,11 @@
 Changelog
 ---------
 
+v1.0.4 2021-07-30
+=================
+
+ * Add demo site notice to the header, the about page, the package form and the new user form.
+
 v1.0.3 2021-06-18
 =================
 
