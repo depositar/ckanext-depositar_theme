@@ -1,0 +1,7 @@
+{% if not h.is_demo() %}
+  <div class="alert alert-warning">
+    {%- trans -%}
+    For evaluation purposes, use the <a href="https://demo.depositar.io" target="_blank">demo site</a> which has the same features as the depositar.
+    {%- endtrans -%}
+  </div>
+{% endif %}
