@@ -7,9 +7,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.0.3b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.0.4b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-15 11:21+0800\n"
+"POT-Creation-Date: 2021-07-29 16:51+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,55 +40,63 @@ msgstr ""
 msgid "This field accepts multiple values"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:12
+#: ckanext/depositar_theme/templates/header.html:6
+msgid ""
+"This is the demo site for <a href=\"http://data.depositar.io/\" "
+"target=\"_blank\">depositar</a>. You can create a new account and try any "
+"functions provided by the depositar. Please note that all data in this site "
+"will be deleted occasionally."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/header.html:21
 msgid "Sysadmin settings"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:14
+#: ckanext/depositar_theme/templates/header.html:23
 msgid "Admin"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:19
+#: ckanext/depositar_theme/templates/header.html:28
 msgid "View profile"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:26
+#: ckanext/depositar_theme/templates/header.html:35
 #, python-format
 msgid "Dashboard (%(num)d new item)"
 msgid_plural "Dashboard (%(num)d new items)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ckanext/depositar_theme/templates/header.html:29
+#: ckanext/depositar_theme/templates/header.html:38
 #: ckanext/depositar_theme/templates/user/dashboard.html:6
 msgid "Dashboard"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:35
+#: ckanext/depositar_theme/templates/header.html:44
 #: ckanext/depositar_theme/templates/user/dashboard.html:16
 msgid "Edit settings"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:37
+#: ckanext/depositar_theme/templates/header.html:46
 msgid "Settings"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:43
-#: ckanext/depositar_theme/templates/header.html:45
+#: ckanext/depositar_theme/templates/header.html:52
+#: ckanext/depositar_theme/templates/header.html:54
 msgid "Log out"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:56
+#: ckanext/depositar_theme/templates/header.html:65
 msgid "Log in"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:58
+#: ckanext/depositar_theme/templates/header.html:67
 #: ckanext/depositar_theme/templates/user/new.html:3
 msgid "Register"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/group/read_base.html:17
-#: ckanext/depositar_theme/templates/header.html:101
+#: ckanext/depositar_theme/templates/header.html:110
 #: ckanext/depositar_theme/templates/organization/bulk_process.html:20
 #: ckanext/depositar_theme/templates/organization/edit_base.html:23
 #: ckanext/depositar_theme/templates/organization/read_base.html:17
@@ -101,7 +109,7 @@ msgstr ""
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:102
+#: ckanext/depositar_theme/templates/header.html:111
 #: ckanext/depositar_theme/templates/organization/edit_base.html:5
 #: ckanext/depositar_theme/templates/organization/edit_base.html:8
 #: ckanext/depositar_theme/templates/organization/index.html:3
@@ -123,7 +131,7 @@ msgstr ""
 #: ckanext/depositar_theme/templates/group/members.html:3
 #: ckanext/depositar_theme/templates/group/read_base.html:3
 #: ckanext/depositar_theme/templates/group/read_base.html:6
-#: ckanext/depositar_theme/templates/header.html:103
+#: ckanext/depositar_theme/templates/header.html:112
 #: ckanext/depositar_theme/templates/package/group_list.html:5
 #: ckanext/depositar_theme/templates/package/read_base.html:20
 #: ckanext/depositar_theme/templates/revision/diff.html:16
@@ -132,16 +140,16 @@ msgid "Topics"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/group/read_base.html:19
-#: ckanext/depositar_theme/templates/header.html:104
+#: ckanext/depositar_theme/templates/header.html:113
 #: ckanext/depositar_theme/templates/organization/read_base.html:19
 msgid "About"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:114
+#: ckanext/depositar_theme/templates/header.html:123
 msgid "Search Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:115
+#: ckanext/depositar_theme/templates/header.html:124
 msgid "Search"
 msgstr ""
 
@@ -860,31 +868,31 @@ msgid ""
 "target=\"_blank\">metadata schema</a> while filling the form."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:28
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:29
 msgid "Basic Information"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:31
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:32
 msgid "Spatio-temporal Information"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:32
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:33
 msgid "Temporal Information (Time Period of Dataset)"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:36
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:37
 msgid "Use your account information to fill in contact person's name and email"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:40
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:41
 msgid "Spatial Information"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:44
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:45
 msgid "Use parcel corners to fill in spatial coverage"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:48
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:49
 msgid "Management Information"
 msgstr ""
 
@@ -901,6 +909,12 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/scheming/package/snippets/resource_form.html:7
 msgid "Maximum size for each file uploaded to depositar: 1 GB."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/demo_notice.html:3
+msgid ""
+"For evaluation purposes, use the <a href=\"https://demo.depositar.io\" "
+"target=\"_blank\">demo site</a> which has the same features as the depositar."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/snippets/multivalue_message.html:2
