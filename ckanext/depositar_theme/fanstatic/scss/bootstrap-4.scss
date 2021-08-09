@@ -1,0 +1,41 @@
+// (Part of) Bootstrap 4 Grid
+// Only used by index (landing page) for now
+
+
+/*!
+ * Bootstrap Grid v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+@import "./vendor/bootstrap/functions";
+@import "./vendor/bootstrap/variables";
+
+@import "./vendor/bootstrap/mixins/deprecate";
+@import "./vendor/bootstrap/mixins/breakpoints";
+@import "./vendor/bootstrap/mixins/grid-framework";
+@import "./vendor/bootstrap/mixins/grid";
+// from mixins/grid
+.row-bs4 {
+  @include make-row();
+}
+@include make-grid-columns();
+@import "./vendor/bootstrap/utilities/display";
+@import "./vendor/bootstrap/utilities/flex";
+@import "./vendor/bootstrap/utilities/spacing";
+
+
+/*!
+ * Bootstrap v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import "./vendor/bootstrap/utilities/sizing";

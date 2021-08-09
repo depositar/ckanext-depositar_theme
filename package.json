@@ -1,0 +1,31 @@
+{
+  "name": "ckanext-depositar_theme",
+  "version": "1.0.0",
+  "description": "Theming extension for depositar",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "postinstall": "gulp updateVendorLibs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depositar/ckanext-depositar_theme.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/depositar/ckanext-depositar_theme/issues"
+  },
+  "homepage": "https://github.com/depositar/ckanext-depositar_theme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "less": "^4.1.1",
+    "sass": "^1.37.5"
+  }
+}
