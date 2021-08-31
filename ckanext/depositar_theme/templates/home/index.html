@@ -5,17 +5,11 @@
 {%- block content %}
   {% block maintag %}<div role="main">{% endblock %}
   {% block main_content %}
-    {% block flash %}
-      <div class="flash-messages">
-        {% block flash_inner %}
-          {% for message in h.flash.pop_messages() | list %}
-            <div class="alert fade in {{ message.category }}">
-              {{ h.literal(message) }}
-            </div>
-          {% endfor %}
-        {% endblock %}
-      </div>
-    {% endblock %}
+    <div id="content" class="container">
+      {% block flash %}
+        {{ super() }}
+      {% endblock %}
+    </div>
 
     {% snippet "home/index/idx_hero.html" %}
     {#% snippet "home/index/idx_features.html" %#}
