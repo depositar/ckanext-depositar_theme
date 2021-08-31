@@ -1,0 +1,38 @@
+{% extends "page.html" %}
+
+{% block title %}{{ _('depositar — Deposit, Discover, Reuse') }}{% endblock %}
+
+{%- block content %}
+  {% block maintag %}<div role="main">{% endblock %}
+  {% block main_content %}
+    {% block flash %}
+      <div class="flash-messages">
+        {% block flash_inner %}
+          {% for message in h.flash.pop_messages() | list %}
+            <div class="alert fade in {{ message.category }}">
+              {{ h.literal(message) }}
+            </div>
+          {% endfor %}
+        {% endblock %}
+      </div>
+    {% endblock %}
+
+    {% snippet "home/index/idx_hero.html" %}
+    {#% snippet "home/index/idx_features.html" %#}
+    {% snippet "home/index/idx_topics.html" %}
+    {% snippet "home/index/idx_datasets.html" %}
+    {% snippet "home/index/idx_partners.html" %}
+  {% endblock %}
+{% endblock %}
+
+{% block secondary %}{% endblock %}
+
+{%- block scripts %}
+  {{ super() }}
+  {% resource 'depositar_theme/index' %}
+{% endblock -%}
+
+{%- block styles %}
+  {{ super() }}
+  {% resource 'depositar_theme/index' %}
+{% endblock -%}
