@@ -56,10 +56,7 @@ setup(
     namespace_packages=['ckanext'],
 
     install_requires=[
-      # CKAN extensions should not list dependencies here, but in a separate
-      # ``requirements.txt`` file.
-      #
-      # http://docs.ckan.org/en/latest/extensions/best-practices.html#add-third-party-libraries-to-requirements-txt
+        'Markdown==3.1.1'
     ],
 
     # If there are data files included in your packages that need to be
@@ -93,6 +90,7 @@ setup(
     message_extractors={
         'ckanext': [
             ('**.py', 'python', None),
+            ('**/fanstatic/vendor/**.js', 'ignore', None),
             ('**.js', 'javascript', None),
             ('**/templates/user/new_user_form.html', 'ignore', None),
             ('**/templates/**.html', 'ckan', None),
