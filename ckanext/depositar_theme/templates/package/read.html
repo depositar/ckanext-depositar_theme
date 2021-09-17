@@ -28,13 +28,13 @@
         <p>{% trans %}<a href="{{ doc_url }}user-guide.html#rdf-serializations" target="_blank">RDF serializations</a> based on DCAT 2:{% endtrans %}<span class="label label-inverse pull-right">Beta</span></p>
         <p class="btn-group">
           <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.jsonld" class="btn btn-small">
-            <i class="fa fa-code"></i>JSON-LD
+            JSON-LD
           </a>
           <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.ttl" class="btn btn-small">
-            <i class="fa fa-code"></i>Turtle
+            Turtle
           </a>
           <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.xml" class="btn btn-small">
-            <i class="fa fa-code"></i>XML
+            XML
           </a>
         </p>
         <p><small>{{ _('via the ') }}<a href="{{ api_url }}" class="external" target="_blank">{{ 'CKAN API' }}</a></small></p>
