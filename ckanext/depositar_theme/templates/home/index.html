@@ -23,10 +23,10 @@
 
 {%- block scripts %}
   {{ super() }}
-  {% resource 'depositar_theme/index' %}
+  {% asset 'depositar_theme/index-js' %}
 {% endblock -%}
 
 {%- block styles %}
   {{ super() }}
-  {% resource 'depositar_theme/index' %}
+  {% asset 'depositar_theme/index-css' %}
 {% endblock -%}

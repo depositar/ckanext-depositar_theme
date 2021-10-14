@@ -1,0 +1,10 @@
+index-js:
+  output: depositar_theme/%(version)s_index.js
+  contents:
+    - vendor/processing.js/processing.js
+
+index-css:
+  output: depositar_theme/%(version)s_index.css
+  contents:
+    - styles/bootstrap-4.css
+    - styles/index.css
