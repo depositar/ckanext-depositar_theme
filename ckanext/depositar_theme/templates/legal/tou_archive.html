@@ -3,8 +3,8 @@
 {% block subtitle %}{{ title }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li>{% link_for _('Terms of Use'), named_route='terms_of_use' %}</li>
-  <li class="active">{% link_for _('Archive'), named_route='tou_archive' %}</li>
+  <li>{% link_for _('Terms of Use'), named_route='legal.tou' %}</li>
+  <li class="active">{% link_for _('Archive'), named_route='legal.tou_archive' %}</li>
 {% endblock %}
 
 {% block primary %}
@@ -12,7 +12,7 @@
   <h1 class="page-heading">{{ title }}</h1>
   <ul>
     {% for version in versions %}
-      <li>{% link_for version | localized_date, named_route='archived_tou', version=version %}</li>
+      <li>{% link_for version | localized_date, named_route='legal.tou', version=version %}</li>
     {% endfor %}
   </ul>
 {% endblock %}

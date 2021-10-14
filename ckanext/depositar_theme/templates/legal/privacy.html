@@ -4,17 +4,17 @@
 
 {% block breadcrumb_content %}
   {% if version != h.get_latest_legal_version('privacy')%}
-    <li>{% link_for title, named_route='privacy' %}</li>
-    <li>{% link_for _('Archive'), named_route='privacy_archive' %}</li>
-    <li class="active">{% link_for version, named_route='archived_privacy', version=version %}</li>
+    <li>{% link_for title, named_route='legal.privacy' %}</li>
+    <li>{% link_for _('Archive'), named_route='legal.privacy_archive' %}</li>
+    <li class="active">{% link_for version, named_route='legal.privacy', version=version %}</li>
   {% else %}
-    <li class="active">{% link_for title, named_route='privacy' %}</li>
+    <li class="active">{% link_for title, named_route='legal.privacy' %}</li>
   {% endif %}
 {% endblock %}
 
 {% block primary %}
   <h1 class="page-heading">{{ title }}</h1>
-  <p>{{ _('Effective ') }}{{ version | localized_date }} | {% link_for _('Archive'), named_route='privacy_archive' %}</p>
+  <p>{{ _('Effective ') }}{{ version | localized_date }} | {% link_for _('Archive'), named_route='legal.privacy_archive' %}</p>
   <br>
   {{ text }}
 {% endblock %}
