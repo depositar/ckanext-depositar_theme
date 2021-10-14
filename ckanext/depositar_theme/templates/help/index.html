@@ -1,0 +1,17 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Help') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Help'), 'help.index' %}</li>
+{% endblock %}
+
+{% block primary %}
+  {% set lang = 'zh_TW' if h.lang() == 'zh_Hant_TW' else h.lang() %}
+  {% set doc_url = 'https://docs.depositar.io/{0}/{1}/'.format(lang, h.get_pkg_version()) %}
+  <iframe src="{{ doc_url }}" frameborder="0" style="width: 100%; height: 895px;">
+    <p>{{ _('Your browser does not support iframes.') }}</p>
+  </iframe>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

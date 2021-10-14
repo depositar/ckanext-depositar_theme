@@ -2,14 +2,14 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from ckan.lib.plugins import DefaultTranslation
 
-from ckanext.depositar_theme import helpers
+from ckanext.depositar_theme import helpers, routes
 
 
 class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.ITranslation)
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
-    plugins.implements(plugins.IRoutes, inherit=True)
+    plugins.implements(plugins.IBlueprint, inherit=True)
 
     # IConfigurer
 
@@ -27,30 +27,10 @@ class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
         )
         return _get_module_functions(helpers, function_names)
 
-    # IRoutes
+    # IBlueprint
 
-    def before_map(self, map):
-        legal_controller = 'ckanext.depositar_theme.controllers.legal:LegalController'
-
-        map.connect('terms_of_use', '/terms_of_use',
-            controller=legal_controller, action='tou')
-
-        map.connect('tou_archive', '/terms_of_use/archive',
-            controller=legal_controller, action='tou_archive')
-
-        map.connect('archived_tou', '/terms_of_use/archive/{version}',
-            controller=legal_controller, action='tou')
-
-        map.connect('privacy', '/privacy',
-            controller=legal_controller, action='privacy')
-
-        map.connect('privacy_archive', '/privacy/archive',
-            controller=legal_controller, action='privacy_archive')
-
-        map.connect('archived_privacy', '/privacy/archive/{version}',
-            controller=legal_controller, action='privacy')
-
-        return map
+    def get_blueprint(self):
+        return routes.blueprints
 
 def _get_module_functions(module, function_names):
     functions = {}
