@@ -28,8 +28,7 @@ def get_legal(_type, version, lang=None):
                         '{lang}.md'.format(lang=lang))
     try:
         with open(path) as f:
-            formatted = h.render_markdown(f.read().decode('utf-8'),
-                                          allow_html=True)
+            formatted = h.render_markdown(f.read(), allow_html=True)
             f.close()
             return formatted
     except IOError as e:
