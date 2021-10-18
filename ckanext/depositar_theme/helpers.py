@@ -4,7 +4,7 @@ import inspect
 from ckan.common import config
 from ckan.lib import mailer
 import ckan.lib.base as base
-from ckan.lib.base import render_jinja2
+from ckan.lib.base import render
 import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
 
@@ -47,7 +47,7 @@ def get_reg_link_body(user):
         'tou_version': get_latest_legal_version('tou'),
         'privacy_version': get_latest_legal_version('privacy')
         }
-    return render_jinja2('emails/user_registration.txt', extra_vars)
+    return render('emails/user_registration.txt', extra_vars)
 
 def send_reg_link(user):
     create_reset_key(user)
@@ -55,7 +55,7 @@ def send_reg_link(user):
     extra_vars = {
         'site_title': config.get('ckan.site_title'),
     }
-    subject = render_jinja2('emails/user_registration_subject.txt', extra_vars)
+    subject = render('emails/user_registration_subject.txt', extra_vars)
 
     # Make sure we only use the first line
     subject = subject.split('\n')[0]
