@@ -8,3 +8,12 @@ index-css:
   contents:
     - styles/bootstrap-4.css
     - styles/index.css
+
+field-extra-js:
+  output: depositar_theme/%(version)s_field-extra.js
+  contents:
+   - scripts/modules/field-extra.js
+  extra:
+    preload:
+      - base/main
+      - vendor/jquery
