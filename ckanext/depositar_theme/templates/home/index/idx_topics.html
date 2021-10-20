@@ -8,7 +8,7 @@
         </h2>
 
         <div class="pull-right">
-          <form class="site-search" action="{% url_for controller='package', action='search' %}" method="get">
+          <form class="site-search" action="{% url_for 'dataset.search' %}" method="get">
             <input type="text" name="q" value="" autocomplete="off" placeholder="{{ _('Find datasets?') }}">
             <button class="btn-search" type="submit">
               <i class="fa fa-search"></i>
