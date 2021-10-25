@@ -16,4 +16,3 @@ field-extra-js:
   extra:
     preload:
       - base/main
-      - vendor/jquery
