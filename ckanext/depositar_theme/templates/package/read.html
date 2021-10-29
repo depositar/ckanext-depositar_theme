@@ -21,19 +21,19 @@
       <div class="module-content">
         <p>{{ _('The information on this page (the dataset metadata) is also available in these formats:') }}</p>
         <p class="btn-group">
-          <a href="{{ h.url_for(controller='api', logic_function='package_show', action='action', id=c.pkg.name,ver=3) }}" class="btn btn-small">
+          <a href="{{ h.url_for(controller='api', logic_function='package_show', action='action', id=c.pkg.name,ver=3) }}" class="btn btn-sm btn-primary">
             <i class="fa fa-code"></i>JSON-API
           </a>
         </p>
         <p>{% trans %}<a href="{{ doc_url }}user-guide.html#rdf-serializations" target="_blank">RDF serializations</a> based on DCAT 2:{% endtrans %}<span class="label label-inverse pull-right">Beta</span></p>
         <p class="btn-group">
-          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.jsonld" class="btn btn-small">
+          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.jsonld" class="btn btn-sm btn-primary">
             JSON-LD
           </a>
-          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.ttl" class="btn btn-small">
+          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.ttl" class="btn btn-sm btn-primary">
             Turtle
           </a>
-          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.xml" class="btn btn-small">
+          <a href="/{{ c.pkg_dict['type'] }}/{{ c.pkg_dict['name'] }}.xml" class="btn btn-sm btn-primary">
             XML
           </a>
         </p>
