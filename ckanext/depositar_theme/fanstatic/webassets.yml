@@ -1,7 +1,9 @@
 index-js:
   output: depositar_theme/%(version)s_index.js
-  contents:
-    - vendor/processing.js/processing.js
+  contents: scripts/hero-animation.js
+  extra:
+    preload:
+      - depositar_theme/p5-js
 
 index-css:
   output: depositar_theme/%(version)s_index.css
@@ -16,3 +18,7 @@ field-extra-js:
   extra:
     preload:
       - base/main
+
+p5-js:
+  output: depositar_theme/%(version)s_p5.js
+  contents: vendor/p5.js/p5.js
