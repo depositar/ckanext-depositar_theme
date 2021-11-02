@@ -9,12 +9,16 @@
 
 {% block primary %}
   {% set versions = h.get_legal_versions('tou') %}
-  <h1 class="page-heading">{{ title }}</h1>
-  <ul>
-    {% for version in versions %}
-      <li>{% link_for version | localized_date, named_route='legal.tou', version=version %}</li>
-    {% endfor %}
-  </ul>
+  <article class="module" role="main">
+    <div class="module-content">
+      <h1 class="page-heading">{{ title }}</h1>
+      <ul>
+        {% for version in versions %}
+          <li>{% link_for version | localized_date, named_route='legal.tou', version=version %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </article>
 {% endblock %}
 
 {% block secondary %}{% endblock %}

@@ -13,10 +13,14 @@
 {% endblock %}
 
 {% block primary %}
-  <h1 class="page-heading">{{ title }}</h1>
-  <p>{{ _('Effective ') }}{{ version | localized_date }} | {% link_for _('Archive'), named_route='legal.tou_archive' %}</p>
-  <br>
-  {{ text }}
+  <article class="module" role="main">
+    <div class="module-content">
+      <h1 class="page-heading">{{ title }}</h1>
+      <p>{{ _('Effective ') }}{{ version | localized_date }} | {% link_for _('Archive'), named_route='legal.tou_archive' %}</p>
+      <br>
+      {{ text }}
+    </div>
+  </article>
 {% endblock %}
 
 {% block secondary %}{% endblock %}
