@@ -3,8 +3,7 @@
 {% block title %}{{ _('depositar — Deposit, Discover, Reuse') }}{% endblock %}
 
 {%- block content %}
-  {% block maintag %}<div role="main">{% endblock %}
-  {% block main_content %}
+  {% block maintag %}<div class="main">{% endblock %}
     <div id="content" class="container">
       {% block flash %}
         {{ super() }}
@@ -16,7 +15,7 @@
     {% snippet "home/index/idx_topics.html" %}
     {% snippet "home/index/idx_datasets.html" %}
     {% snippet "home/index/idx_partners.html" %}
-  {% endblock %}
+  </div>
 {% endblock %}
 
 {% block secondary %}{% endblock %}
