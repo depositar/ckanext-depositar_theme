@@ -1,4 +1,5 @@
 index-js:
+  filters: rjsmin
   output: depositar_theme/%(version)s_index.js
   contents: scripts/hero-animation.js
   extra:
@@ -12,6 +13,7 @@ index-css:
     - styles/index.css
 
 field-extra-js:
+  filters: rjsmin
   output: depositar_theme/%(version)s_field-extra.js
   contents:
    - scripts/modules/field-extra.js
