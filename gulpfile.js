@@ -8,7 +8,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const with_sourcemaps = () => !!process.env.DEBUG;
 
 const buildLess = () =>
-  src(__dirname + "/ckanext/depositar_theme/fanstatic/less/index.less")
+  src(__dirname + "/ckanext/depositar_theme/fanstatic/less/index/index.less")
     .pipe(if_(with_sourcemaps(), sourcemaps.init()))
     .pipe(less())
     .pipe(if_(with_sourcemaps(), sourcemaps.write()))
