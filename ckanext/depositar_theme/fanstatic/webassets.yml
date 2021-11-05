@@ -1,3 +1,8 @@
+main:
+  filters: cssrewrite
+  output: depositar_theme/%(version)s_main.css
+  contents: styles/main.css
+
 index-js:
   filters: rjsmin
   output: depositar_theme/%(version)s_index.js

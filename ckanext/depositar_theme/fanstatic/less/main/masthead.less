@@ -1,0 +1,91 @@
+.account-masthead {
+  color: contrast(@mastheadTextColor);
+  background: contrast(@mastheadBackgroundColor);
+  padding-top: 5px;
+
+  .account {
+    ul {
+      li {
+        a {
+          color: contrast(@mastheadTextColor);
+          line-height: 21px;
+
+          &:hover {
+            color: contrast(@mastheadTextColor);
+            background-color: @gray-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.masthead {
+  padding: 0;
+
+  .logo img {
+    width: 185px;
+    margin: 10px 0;
+  }
+
+  .header-text-logo {
+    padding-top: 10px;
+  }
+
+  .navigation {
+    .nav-pills {
+      li {
+        a:hover,
+        a:focus,
+        &.active a {
+          background-color: @mastheadBackgroundColor;
+
+          &::after {
+            width: 100%;
+          }
+        }
+
+        a::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 3px;
+          background-color: @depositarMain;
+          -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+          -webkit-transition-property: width, color;
+          transition-property: width, color;
+        }
+      }
+    }
+  }
+
+  .nav > li > a,
+  .nav > li > a:focus,
+  .nav > li > a:hover,
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    color: @mastheadTextColor;
+  }
+
+  .site-search {
+    margin-top: 12px;
+
+    input {
+      background: darken(@mastheadBackgroundColor, 7%);
+      width: 90px;
+      padding: 10px 15px;
+      margin: -7px -10px 0 0;
+      border: 0;
+      border-radius: 50px;
+      box-shadow: none;
+      -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+
+      &:hover {
+        width: 200px;
+      }
+    }
+  }
+}

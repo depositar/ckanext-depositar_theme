@@ -1,0 +1,93 @@
+::selection {
+  background: @depositarMain;
+  color: contrast(@text-color);
+}
+
+a {
+  word-wrap: break-word;
+
+  &.external::after {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-size: 10px;
+    line-height: 10px;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    margin-right: 5px;
+  }
+}
+
+.dataset-search {
+  background-color: @moduleHeadingBackgroundColor;
+  padding-top: 20px;
+  border-bottom: 1px solid @genericBorderColor;
+}
+
+// Spatial Coverage
+#map {
+  height: 400px;
+
+  input {
+    width: auto;
+    top: auto;
+  }
+
+  label::after {
+    content: none;
+  }
+
+  a {
+    color: unset;
+  }
+}
+
+.btn-hover() {
+  &:hover,
+  &:focus {
+    background-color: @depositarMain;
+    transition: 0.2s;
+    border: 1px solid @depositarMain;
+  }
+}
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.cancel {
+  .btn-hover();
+}
+
+// Form actions without border-top
+.form-messages {
+  &::after {
+    clear: left;
+    display: table;
+    content: "";
+  }
+
+  .control-required-message {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 0;
+    line-height: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.about-img {
+  width: 400px;
+  max-width: 100%;
+  float: right;
+}
+
+// Filter by location
+.dataset-map-expanded #dataset-map {
+  width: 1170px !important;
+  height: 410px !important;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: all 0.3s;
+}
