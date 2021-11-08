@@ -33,6 +33,13 @@
   }
 
   .navigation {
+    &.section {
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        float: left;
+        margin-left: 40px;
+      }
+    }
+
     .nav-pills {
       li {
         a:hover,
@@ -74,9 +81,9 @@
 
     input {
       background: darken(@mastheadBackgroundColor, 7%);
-      width: 90px;
+      width: 75px;
       padding: 10px 15px;
-      margin: -7px -10px 0 0;
+      margin-top: -7px;
       border: 0;
       border-radius: 50px;
       box-shadow: none;
@@ -84,7 +91,42 @@
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
 
       &:hover {
-        width: 200px;
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .masthead {
+    .section {
+      float: right;
+    }
+
+    .site-search {
+      display: block;
+
+      input {
+        &:hover {
+          width: 75px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .masthead {
+    .site-search {
+      display: inherit;
+
+      input {
+        width: 100%;
+        border-radius: @border-radius-base;
+
+        &:hover {
+          width: 100%;
+        }
       }
     }
   }
