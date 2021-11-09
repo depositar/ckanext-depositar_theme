@@ -58,6 +58,10 @@ a {
   .btn-hover();
 }
 
+.cancel {
+  border-color: @btn-primary-border;
+}
+
 // Form actions without border-top
 .form-messages {
   &::after {
@@ -85,9 +89,29 @@ a {
 }
 
 // Filter by location
-.dataset-map-expanded #dataset-map {
-  width: 1170px !important;
-  height: 410px !important;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  transition: all 0.3s;
+@media (min-width: @screen-sm-min) {
+  .dataset-map-expanded #dataset-map {
+    height: 410px !important;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s;
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .dataset-map-expanded #dataset-map {
+    width: @container-sm !important;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .dataset-map-expanded #dataset-map {
+    width: initial !important;
+    height: initial !important;
+    position: initial !important;
+  }
+}
+
+// Workaround for draw toolbar on mobile
+.dataset-map .leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-rectangle {
+  background-position: center center;
 }
