@@ -52,7 +52,9 @@
   background-image: url("../../images/logo_ani.svg");
   background-repeat: no-repeat;
 }
-.hero-animation-right {
+#hero-animation {
+  width: 350px;
+  height: 240px;
   margin-top: -81px;
   padding-left: 1px;
 }
@@ -87,16 +89,15 @@
     padding-top: 10px;
   }
 }
-:lang(zh_TW) .idx-topics h5 {
+:lang(zh_Hant_TW) .idx-topics h5 {
   font-size: 16px;
 }
 .btn-search {
-  margin-top: 12px;
   background-color: #333;
   box-shadow: none;
   color: #fff;
   border-radius: 30px;
-  padding: 12px 15px;
+  padding: 8px 16px;
   border: none !important;
   font-size: 16px;
   transition: 0.2s;
@@ -143,8 +144,6 @@
 }
 .content-toggle {
   top: 300px;
-  left: 15px;
-  right: 15px;
   -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
   -webkit-transition-property: all;
@@ -155,6 +154,7 @@
 }
 .content-toggle,
 .content-toggle-s {
+  max-width: 1000px;
   position: absolute;
   z-index: 200;
   bottom: 0;
@@ -259,10 +259,6 @@
   border-top: #ececec 10px solid;
 }
 @media (max-width: 767px) {
-  .idx {
-    margin-right: -20px;
-    margin-left: -20px;
-  }
   .idx:nth-child(n+3) {
     padding-top: 10px;
     padding-bottom: 25px;
