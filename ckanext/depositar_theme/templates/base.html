@@ -1,5 +1,11 @@
 {% ckan_extends %}
 
+{%- block title -%}
+  {%- block subtitle %}{% endblock -%}
+  {%- if self.subtitle()|trim %} {{ g.template_title_delimiter }} {% endif -%}
+  {{ _(g.site_title) }}
+{%- endblock -%}
+
 {% block styles %}
   {% asset 'depositar_theme/main' %}
 {% endblock %}
