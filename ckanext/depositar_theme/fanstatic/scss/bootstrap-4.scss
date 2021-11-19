@@ -17,6 +17,11 @@ html {
 @import "./vendor/bootstrap/functions";
 @import "./vendor/bootstrap/variables";
 
+@import "./vendor/bootstrap/mixins/buttons";
+@import "./vendor/bootstrap/mixins/border-radius";
+@import "./vendor/bootstrap/mixins/clearfix";
+@import "./vendor/bootstrap/mixins/hover";
+@import "./vendor/bootstrap/mixins/transition";
 @import "./vendor/bootstrap/mixins/deprecate";
 @import "./vendor/bootstrap/mixins/breakpoints";
 @import "./vendor/bootstrap/mixins/grid-framework";
@@ -40,3 +45,7 @@ html {
 
 @import "./vendor/bootstrap/utilities/sizing";
 @import "./vendor/bootstrap/utilities/borders";
+
+@import "./vendor/bootstrap/buttons";
+@import "./vendor/bootstrap/card";
+@import "./vendor/bootstrap/carousel";

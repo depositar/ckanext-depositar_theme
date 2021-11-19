@@ -1,0 +1,153 @@
+.banner {
+  color: #fff;
+  background-color: #012819;
+  background-image: linear-gradient(to right, #00e09b -30%, #012819 40%, #012819 95%, #00e09b 130%);
+
+  .container {
+    min-height: 45vh;
+    display: flex;
+    justify-content: space-between;
+  
+    .heading {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .slogon {
+        h2 {
+          font-size: 32pt;
+          font-weight: bolder;
+          word-break: keep-all;
+        }
+      }
+
+      .search {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 3rem 0 2rem 0;
+
+        .input-search {
+          width: 100%;
+          padding: 10px 15px;
+          background-color: #ededed;
+          border: 0;
+          box-shadow: none;
+          border-radius: 30px;
+        }
+
+        .btn-search {
+          color: #999;
+          border: none;
+          background: none;
+          position: absolute;
+          margin-right: 12px;
+
+          &:hover {
+            color: #000;
+          }
+
+          i {
+            font-size: 14pt;
+          }
+        }
+      }
+
+      .function-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .btn {
+          color: #00e09b;
+          border: solid 2px #00e09b;
+          border-radius: 6px;
+          width: 35%;
+          padding: 12px 0;
+          font-weight: bolder;
+
+          &:last-child {
+            width: 25%;
+          }
+
+          &:hover {
+            background-color: #fff;
+            border: solid 2px #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          }
+        }
+      }
+    }
+
+    .animation {
+      display: flex;
+      align-items: center;
+
+      .animation-left {
+        width: 132px;
+        height: 169px;
+      }
+
+      .animation-right {
+        width: 350px;
+        height: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .banner {
+      background-image: url('../images/visual-md.png');
+      background-size: 45%;
+      background-repeat: no-repeat;
+      background-position: 90%;
+
+      .container {
+        .animation {
+          display: none;
+        }
+      }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner {
+      background-size: contain;
+      background-blend-mode: overlay;
+
+      .container {
+        .heading {
+          width: 80%;
+        }
+      }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banner {
+    .container {
+      justify-content: center;
+
+      .heading {
+        width: 100%;
+
+        .function-btn {
+          flex-wrap: wrap;
+
+          .btn {
+            &:not(:last-child) {
+              width: 45%;
+              margin-bottom: 1rem;
+            }
+
+            &.viewAll {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

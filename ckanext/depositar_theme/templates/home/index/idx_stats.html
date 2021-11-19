@@ -1,0 +1,57 @@
+{% set stats = h.get_site_statistics() %}
+{#% set tags = h.get_facet_items_dict(‘res_format’) %#}
+
+<div class="idx stats">
+  <div class="container">
+      <div class="stat-data">
+          <div class="imp-data">
+              <div class="imp-item">
+                  <h1>{{ _('Datasets') }}</h1>
+                  <p class="cnt">{{ h.SI_number_span(stats.dataset_count) }}</p>
+              </div>
+              <div class="imp-item">
+                  <h1>{{ _('Projects') }}</h1>
+                  <p class="cnt">{{ h.SI_number_span(stats.organization_count) }}</p>
+              </div>
+              <div class="imp-item">
+                  <h1>{{ _('Downloads') }}</h1>
+                  <p class="cnt">9999</p>
+              </div>
+          </div>
+          <div class="sec-data">
+              <div class="sec-item">
+                  <h5>PDF</h5>
+                  <p class="cnt">999</p>
+              </div>
+              <div class="sec-item">
+                  <h5>HTML</h5>
+                  <p class="cnt">999</p>
+              </div>
+              <div class="sec-item">
+                  <h5>SHP</h5>
+                  <p class="cnt">999</p>
+              </div>
+              <div class="sec-item">
+                  <h5>JPEG</h5>
+                  <p class="cnt">999</p>
+              </div>
+              <div class="sec-item">
+                  <h5>ZIP</h5>
+                  <p class="cnt">999</p>
+              </div>
+              <div class="sec-item">
+                  <h5>KML</h5>
+                  <p class="cnt">999</p>
+              </div>
+              <div class="sec-item">
+                  <h5>CSV</h5>
+                  <p class="cnt">999</p>
+              </div>
+          </div>
+      </div>
+      <div class="twitter">
+          <a class="twitter-timeline" data-lang="en" data-theme="light"
+              href="https://twitter.com/_depositar?ref_src=twsrc%5Etfw">Tweets by _depositar</a>
+      </div>
+  </div>
+</div>

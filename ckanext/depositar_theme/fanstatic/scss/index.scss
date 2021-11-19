@@ -1,0 +1,56 @@
+@import "variables.scss";
+@import "masthead.scss";
+@import "banner.scss";
+@import "guide.scss";
+@import "showcases.scss";
+@import "topics.scss";
+@import "stats.scss";
+@import "features.scss";
+@import "faq.scss";
+@import "footer.scss";
+
+body {
+  line-height: 30px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
+}
+
+:focus {
+  outline: 0;
+}
+
+::selection {
+  color: #fff;
+  background: #00e09b;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 0;
+  min-height: 100vh;
+}
+
+.idx {
+  padding: 5rem 0;
+  border-bottom: #ececec 10px solid;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.flash {
+  position: relative;
+
+  .alert {
+    position: absolute;
+    width: 100%;
+    top: 1.25rem;
+  }
+}

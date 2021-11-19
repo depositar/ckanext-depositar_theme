@@ -1,0 +1,51 @@
+.account-masthead {
+  background-color: #000;
+
+  .account {
+    display: flex;
+    justify-content: end;
+
+    ul {
+      display: flex;
+      margin: .5rem 0;
+
+      li {
+        border-left: solid 1px #ccc;
+
+        a {
+          color: #fff;
+          padding:  0 10px;
+          font-size: 14px;
+          display: block;
+          line-height: 21px;
+
+          &:hover {
+            background-color: #333;
+            text-decoration: none;
+
+            .badge {
+              color: #fff;
+              background-color: #000f14;
+            }
+          }
+
+          .text {
+            display: none;
+          }
+          
+          .user-image {
+            border-radius: 4px;
+          }
+
+          .badge {
+            color: #bfd7de;
+            background-color: #00232e;
+            margin-left: 3px;
+            padding: 1px 6px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,15 +6,18 @@ main:
 index-js:
   filters: rjsmin
   output: depositar_theme/%(version)s_index.js
-  contents: scripts/hero-animation.js
+  contents: 
+    - scripts/hero-animation.js
+    - scripts/script.js
   extra:
     preload:
+      - depositar_theme/bootstrap-4-js
       - depositar_theme/p5-js
 
 index-css:
   output: depositar_theme/%(version)s_index.css
   contents:
-    - styles/bootstrap-4.css
+    - styles/bootstrap.css
     - styles/index.css
 
 field-extra-js:
@@ -29,3 +32,21 @@ field-extra-js:
 p5-js:
   output: depositar_theme/%(version)s_p5.js
   contents: vendor/p5.js/p5.js
+
+font-awesome-css:
+  output: depositar_theme/%(version)s_font-awesome.css
+  filters: cssrewrite
+  contents: font-awesome/css/font-awesome.css
+
+jquery-js:
+  ouput: depositar_theme/%(version)s_jquery.js
+  contents: vendor/bootstrap-4.js/jquery.min.js
+
+bootstrap-4-js:
+  output: depositar_theme/%(version)s_bootstrap-4.js
+  contents: 
+    - vendor/bootstrap-4.js/bootstrap.js
+    - vendor/bootstrap-4.js/bootstrap.js.map
+  extra:
+    preload:
+      - depositar_theme/jquery-js

@@ -1,0 +1,100 @@
+.carousel {
+  &.slide {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  &-inner {
+    width: 90%;
+
+    .carousel-item {
+      &.active,
+      &-next,
+      &-prev {
+        display: flex;
+      }
+
+      &-left,
+      &-right {
+        transform: translateX(0);
+      }
+    }
+
+    .card {
+      .content {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          overflow: hidden;
+          display: -webkit-inline-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+
+        .btn {
+          &.more {
+            align-self: end;
+            font-weight: bold;
+
+            &:hover {
+              color: #00e09b;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-control {
+    &-prev,
+    &-next {
+      i {
+        color: #000;
+        font-size: 50pt;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .carousel-inner {
+    .carousel-item {
+      .card-col {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-inner {
+    .carousel-item {
+      >div {
+        display: none;
+  
+        &:first-child {
+          display: block;
+        }
+      }
+
+      .card-col {
+        max-width: initial;
+        flex: 1;
+      }
+    }
+  }
+
+  .carousel-control {
+    &-prev,
+    &-next {
+      i {
+        font-size: 40pt;
+      }
+    }
+  }
+}
