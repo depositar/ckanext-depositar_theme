@@ -1,7 +1,7 @@
 {% ckan_extends %}
 
 {% block basic_fields %}
-  {% set doc_url = 'https://docs.depositar.io/{0}/{1}/'.format(h.lang(), h.get_pkg_version()) %}
+  {% set doc_url = h.get_doc_url() %}
   <div class="alert alert-info">
     {% trans %}Please refer to the <a href="{{ doc_url }}user-guide.html#adding-a-new-dataset" target="_blank">guide</a>, the <a href="{{ doc_url }}appendix/fields/index.html#resource-fields" target="_blank">metadata schema</a>, and the <a href="{{ doc_url }}user-guide.html#limitation" target="_blank">limitation</a> while filling the form.{% endtrans %}
     <p>{{ _("Maximum size for each file uploaded to depositar: 1 GB.") }}</p>

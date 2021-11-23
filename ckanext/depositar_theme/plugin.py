@@ -22,6 +22,7 @@ class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
 
     def get_helpers(self):
         function_names = (
+            'get_doc_url',
             'get_legal_versions',
             'get_latest_legal_version',
         )

@@ -9,7 +9,13 @@ import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
 
 from ckanext import depositar_theme
+from ckanext.data_depositario import helpers as depositar_helpers
 
+
+def get_doc_url():
+    lang = 'zh_TW' if h.lang() == 'zh_Hant_TW' else h.lang()
+    return 'https://docs.depositar.io/{0}/{1}/'.format( \
+            lang, depositar_helpers.get_pkg_version())
 
 def get_legal_path(_type):
     return os.path.join(os.path.dirname( \

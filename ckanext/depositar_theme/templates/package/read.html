@@ -12,7 +12,7 @@
 
   {% block other_access %}
     {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-    {% set doc_url = 'https://docs.depositar.io/{0}/{1}/'.format(h.lang(), h.get_pkg_version()) %}
+    {% set doc_url = h.get_doc_url() %}
     <section class="module module-narrow module-shallow">
       <h2 class="module-heading">
         <i class="fa fa-copy"></i>

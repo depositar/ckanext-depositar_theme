@@ -7,9 +7,7 @@
 {% endblock %}
 
 {% block primary %}
-  {% set lang = 'zh_TW' if h.lang() == 'zh_Hant_TW' else h.lang() %}
-  {% set doc_url = 'https://docs.depositar.io/{0}/{1}/'.format(lang, h.get_pkg_version()) %}
-  <iframe src="{{ doc_url }}" frameborder="0" style="width: 100%; height: 895px;">
+  <iframe src="{{ h.get_doc_url() }}" frameborder="0" style="width: 100%; height: 895px;">
     <p>{{ _('Your browser does not support iframes.') }}</p>
   </iframe>
 {% endblock %}
