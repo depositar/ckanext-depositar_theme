@@ -1,12 +1,17 @@
 import os
 import inspect
 
+from sqlalchemy.sql.expression import true
+import ckan.model as model
+from ckan.lib.helpers import core_helper
+
 from ckan.common import config
 from ckan.lib import mailer
 import ckan.lib.base as base
 from ckan.lib.base import render
 import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
+import ckan.logic as logic
 
 from ckanext import depositar_theme
 from ckanext.data_depositario import helpers as depositar_helpers
@@ -67,3 +72,32 @@ def send_reg_link(user):
     subject = subject.split('\n')[0]
 
     mail_user(user, subject, body)
+
+@core_helper
+def get_format_count():
+    results = logic.get_action('package_search')({}, {})['results']
+    format_list = []
+    for res in results:
+        resourceList = res['resources']
+        for resource in resourceList:
+            format_list.append(resource['format'])
+
+    format_count = dict((fmt, format_list.count(fmt)) for fmt in format_list)
+    return list(format_count.items())
+
+@core_helper
+def get_download_count():
+    package_list = logic.get_action('package_list')({},{})
+    context = {
+        "model": model,
+        "session": model.Session,
+    }
+    download_cnt = 0
+    for pkg in package_list:
+        data = {'id': pkg, 'include_tracking': true}
+        resources = logic.get_action('package_show')(context ,data)['resources']
+        print(resources)
+        for resource in resources:
+            print(resource['tracking_summary']['total'])
+            download_cnt += resource['tracking_summary']['total']
+    return download_cnt
