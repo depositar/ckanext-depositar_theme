@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "masthead.scss";
+@import "flash.scss";
 @import "banner.scss";
 @import "guide.scss";
 @import "showcases.scss";
@@ -12,9 +13,9 @@
 body {
   line-height: 30px;
   font-size: 16px;
-  background-color: #fff;
-  color: #000;
-  font-family: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
+  background-color: $bodyBackgroundColor;
+  color: $bodyTextColor;
+  font-family: $bodyFontFamily;
 }
 
 :focus {
@@ -22,8 +23,8 @@ body {
 }
 
 ::selection {
-  color: #fff;
-  background: #00e09b;
+  color: $selectionTextColor;
+  background-color: $selectionBackgroundColor;
 }
 
 h1 {
@@ -37,20 +38,10 @@ h1 {
 
 .idx {
   padding: 5rem 0;
-  border-bottom: #ececec 10px solid;
+  border-bottom: solid 10px $idxBorderBottomColor ;
 }
 
 .container {
   max-width: 80%;
   margin: auto;
-}
-
-.flash {
-  position: relative;
-
-  .alert {
-    position: absolute;
-    width: 100%;
-    top: 1.25rem;
-  }
 }

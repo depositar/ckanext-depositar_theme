@@ -1,99 +1,40 @@
+{% set testContent = 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.' %}
+{% set caseList = [{'title':'Title 1', 'content':testContent}, {'title':'Title 2', 'content':testContent}, {'title':'Title 3', 'content':testContent}, {'title':'Title 4', 'content':testContent}, {'title':'Title 5', 'content':testContent}, {'title':'Title 6', 'content':testContent}] %}
+{% set cnt = [1] %}
+
 <div class="idx showcases">
-  <div class="container">
-      <h1>{{ _('Showcase') }}</h1>
-      <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-          <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-              <i class="fas fa-angle-left"></i>
-          </a>
-          <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                  <div class="card-col col-md-4">
-                      <div class="card card-body">
-                          <img class="img-fluid" src="h.url_for('http://placehold.it/380?text=1')">
-                          <div class="content">
-                              <h3>{{ _('Title') }}</h3>
-                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-                              <a class="btn more" href="#">
-                                  {{ _('more') }}<i class="fas fa-angle-right"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="card-col col-md-4">
-                      <div class="card card-body">
-                          <img class="img-fluid" src="h.url_for('http://placehold.it/380?text=2')">
-                          <div class="content">
-                              <h3>{{ _('Title') }}</h3>
-                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-                              <a class="btn more" href="#">
-                                  {{ _('more') }}<i class="fas fa-angle-right"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="card-col col-md-4">
-                      <div class="card card-body">
-                          <img class="img-fluid" src="h.url_for('http://placehold.it/380?text=3')">
-                          <div class="content">
-                              <h3>{{ _('Title') }}</h3>
-                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-                              <a class="btn more" href="#">
-                                  {{ _('more') }}<i class="fas fa-angle-right"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="card-col col-md-4">
-                      <div class="card card-body">
-                          <img class="img-fluid" src="h.url_for('http://placehold.it/380?text=4')">
-                          <div class="content">
-                              <h3>{{ _('Title') }}</h3>
-                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-                              <a class="btn more" href="#">
-                                  {{ _('more') }}<i class="fas fa-angle-right"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="card-col col-md-4">
-                      <div class="card card-body">
-                          <img class="img-fluid" src="h.url_for('http://placehold.it/380?text=5')">
-                          <div class="content">
-                              <h3>{{ _('Title') }}</h3>
-                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-                              <a class="btn more" href="#">
-                                  {{ _('more') }}<i class="fas fa-angle-right"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="card-col col-md-4">
-                      <div class="card card-body">
-                          <img class="img-fluid" src="h.url_for('http://placehold.it/380?text=6')">
-                          <div class="content">
-                              <h3>{{ _('Title') }}</h3>
-                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-                              <a class="btn more" href="#">
-                                  {{ _('more') }}<i class="fas fa-angle-right"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-              <i class="fas fa-angle-right"></i>
-          </a>
-      </div>
-  </div>
+	<div class="container">
+		<h1>{{ _('Showcase') }}</h1>
+		<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+			<a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+				<i class="fa fa-chevron-left"></i>
+			</a>
+			<div class="carousel-inner" role="listbox">
+				{% for case in caseList %}
+					{% if case == caseList[0] %}
+						<div class="carousel-item active">
+					{% else %}
+						<div class="carousel-item">
+					{% endif %}
+						<div class="card-col col-md-4">
+							<div class="card card-body">
+								<img class="img-fluid" src={{ "http://placehold.it/380?text=" + cnt[0]|string }}>
+								<div class="content">
+									<h3>{{ _( case.title ) }}</h3>
+									<p>{{ _( case.content ) }}</p>
+									<a class="btn more" href="#">
+										{{ _('more') }}<i class="fa fa-chevron-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% if cnt.append(cnt.pop() + 1) %}{% endif %}
+				{% endfor %}
+			</div>
+			<a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+				<i class="fa fa-chevron-right"></i>
+			</a>
+		</div>
+	</div>
 </div>

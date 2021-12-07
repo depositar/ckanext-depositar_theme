@@ -3,7 +3,7 @@
 {% block title %}{{ _('depositar — Deposit, Discover, Reuse') }}{% endblock %}
 
 {%- block content %}
-  {%- block header %}{% endblock -%}
+  {% block header %}{% endblock %}
   {% snippet "home/index/idx_header.html" %}
   {% block maintag %}<div class="container-fluid">{% endblock %}
     <div id="content" class="container flash">
@@ -11,7 +11,9 @@
         {% block flash_inner %}
           {% for message in h.flash.pop_messages() | list %}
             <div class="alert fade in {{ message.category }} alert-dismissible show">
-              {{ h.literal(message) }}
+              <div class="msg-content">
+                {{ h.literal(message) }}
+              </div>
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -35,7 +37,6 @@
 
 {%- block scripts %}
 {% asset 'depositar_theme/index-js' %}
-  <script src="https://kit.fontawesome.com/1254795cd4.js" crossorigin="anonymous"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% endblock -%}
 

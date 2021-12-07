@@ -1,31 +1,32 @@
 .account-masthead {
-  background-color: #000;
+  background-color: $mastheadBackgroundColor;
 
   .account {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     ul {
       display: flex;
+      flex-wrap: wrap;
       margin: .5rem 0;
 
       li {
-        border-left: solid 1px #ccc;
+        border-left: solid 1px $mastheadListBorderLeftColor;
 
         a {
-          color: #fff;
+          color: $mastheadListLinkTextColor;
           padding:  0 10px;
           font-size: 14px;
           display: block;
           line-height: 21px;
 
           &:hover {
-            background-color: #333;
+            background-color: $mastheadListLinkHoverBackgroundColor;
             text-decoration: none;
 
             .badge {
-              color: #fff;
-              background-color: #000f14;
+              color: $mastheadListLinkBadgeHoverTextColor;
+              background-color: $mastheadListLinkBadgeHoverBackgroundColor;
             }
           }
 
@@ -38,8 +39,8 @@
           }
 
           .badge {
-            color: #bfd7de;
-            background-color: #00232e;
+            color: $mastheadListLinkBadgeTextColor;
+            background-color: $mastheadListLinkBadgeBackgroundColor;
             margin-left: 3px;
             padding: 1px 6px;
             font-size: 12px;

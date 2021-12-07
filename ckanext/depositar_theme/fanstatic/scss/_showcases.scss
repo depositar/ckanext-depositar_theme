@@ -41,7 +41,7 @@
             font-weight: bold;
 
             &:hover {
-              color: #00e09b;
+              color: $showcaseCardBtnHoverTextColor;
             }
           }
         }
@@ -53,14 +53,14 @@
     &-prev,
     &-next {
       i {
-        color: #000;
+        color: $showcaseFunctionBtnColor;
         font-size: 50pt;
       }
     }
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: $largeDeviceMaxWidth) {
   .carousel-inner {
     .carousel-item {
       .card-col {
@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: $smallDeviceMaxWidth) {
   .carousel-inner {
     .carousel-item {
       >div {
@@ -93,7 +93,7 @@
     &-prev,
     &-next {
       i {
-        font-size: 40pt;
+        font-size: 30pt;
       }
     }
   }

@@ -5,19 +5,20 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-left: 0;
 
       li {
         width: 14.28%;
         padding: 2%;
 
         a {
-          color: #000;
+          color: $topicLinkTextColor;
           display: flex;
           flex-direction: column;
           text-align: center;
 
           &:hover {
-            color: #00e09b;
+            color: $topicLinkHoverTextColor;
             text-decoration: none;
             transform: scale(1.08);
             transition: 0.1s;
@@ -40,7 +41,7 @@
   }
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: $extraLargeDeviceMaxWidth) {
   .topics {
     .container {
       ul {
@@ -61,7 +62,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: $mediumDeviceMaxWidth) {
   .topics {
     .container {
       ul {
@@ -73,7 +74,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: $smallDeviceMaxWidth) {
   .topics {
     .container {
       ul {
@@ -85,7 +86,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: $extraSmallDeviceMaxWidth) {
   .topics {
     .container {
       ul {

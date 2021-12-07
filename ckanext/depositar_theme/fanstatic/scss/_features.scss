@@ -25,30 +25,30 @@
       }
 
       .link {
-        color: #000;
+        color: $featureLinkTextColor;
         font-weight: bold;
         align-self: end;
         text-decoration: none;
         padding: .25rem .75rem;
-        border: solid 2px #000;
+        border: solid 2px $featureLinkBorderColor;
         border-radius: .5rem;
 
         &:hover {
-          color: #fff;
-          border: solid 2px #fff;
-          background-color: #012819;
+          color: $featureLinkHoverTextColor;
+          border: solid 2px $featureLinkHoverBorderColor;
+          background-color: $featureLinkHoverBackgroundColor;
         }
       }
     }
 
     .bar {
       height: 80%;
-      border: solid 1px #cdcdcd;
+      border: solid 1px $featureBarBorderColor;
     }
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: $mediumDeviceMaxWidth) {
   .features {
     .container {
       height: auto;
@@ -65,7 +65,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: $extraSmallDeviceMaxWidth) {
   .features {
     .container {
       .block {

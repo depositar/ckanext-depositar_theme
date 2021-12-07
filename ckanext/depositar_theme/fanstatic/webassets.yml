@@ -19,6 +19,9 @@ index-css:
   contents:
     - styles/bootstrap.css
     - styles/index.css
+  extra:
+    preload: 
+      - depositar_theme/font-awesome-css
 
 field-extra-js:
   filters: rjsmin
@@ -46,7 +49,6 @@ bootstrap-4-js:
   output: depositar_theme/%(version)s_bootstrap-4.js
   contents: 
     - vendor/bootstrap-4.js/bootstrap.js
-    - vendor/bootstrap-4.js/bootstrap.js.map
   extra:
     preload:
       - depositar_theme/jquery-js

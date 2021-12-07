@@ -1,7 +1,7 @@
 .banner {
-  color: #fff;
-  background-color: #012819;
-  background-image: linear-gradient(to right, #00e09b -30%, #012819 40%, #012819 95%, #00e09b 130%);
+  color: $bannerTextColor;
+  background-color: $bannerBackgroundColor;
+  background-image: $bannerBackgroundImage;
 
   .container {
     min-height: 45vh;
@@ -24,28 +24,33 @@
 
       .search {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
         margin: 3rem 0 2rem 0;
+
+        &:hover {
+          border-radius: 30px;
+          box-shadow: $bannerSearchHoverBoxShadow;
+        }
 
         .input-search {
           width: 100%;
           padding: 10px 15px;
-          background-color: #ededed;
+          background-color: $bannerInputSearchBackgroundColor;
           border: 0;
-          box-shadow: none;
+          box-shadow: $bannerInputSearchBoxShadow;
           border-radius: 30px;
         }
 
         .btn-search {
-          color: #999;
+          color: $bannerBtnSearchTextColor;
           border: none;
           background: none;
           position: absolute;
           margin-right: 12px;
 
           &:hover {
-            color: #000;
+            color: $bannerBtnSearchHoverTextColor;
           }
 
           i {
@@ -60,8 +65,8 @@
         justify-content: space-between;
 
         .btn {
-          color: #00e09b;
-          border: solid 2px #00e09b;
+          color: $bannerFunctionBtnTextColor;
+          border: solid 2px $bannerFunctionBtnBorderColor;
           border-radius: 6px;
           width: 35%;
           padding: 12px 0;
@@ -72,9 +77,9 @@
           }
 
           &:hover {
-            background-color: #fff;
-            border: solid 2px #fff;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            background-color: $bannerFunctionBtnHoverBackgroundColor;
+            border: solid 2px $bannerFunctionBtnHoverBorderColor;
+            box-shadow: $bannerFunctionBtnHoverBoxShadow;
           }
         }
       }
@@ -97,9 +102,9 @@
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: $largeDeviceMaxWidth) {
   .banner {
-      background-image: url('../images/visual-md.png');
+      background-image: $mediaBannerBackgroundImage;
       background-size: 45%;
       background-repeat: no-repeat;
       background-position: 90%;
@@ -112,7 +117,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: $mediumDeviceMaxWidth) {
   .banner {
       background-size: contain;
       background-blend-mode: overlay;
@@ -125,7 +130,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: $extraSmallDeviceMaxWidth) {
   .banner {
     .container {
       justify-content: center;
@@ -142,7 +147,7 @@
               margin-bottom: 1rem;
             }
 
-            &.viewAll {
+            &.view-all {
               width: 100%;
             }
           }

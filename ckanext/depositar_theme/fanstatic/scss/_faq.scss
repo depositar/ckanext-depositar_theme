@@ -9,7 +9,7 @@
 
       .btn-link {
         padding: 0;
-        color: #000;
+        color: $faqBtnLinkTextColor;
         text-decoration: none;
 
         .card-header {
@@ -19,7 +19,7 @@
           justify-content: space-between;
 
           i {
-            font-size: 20pt;
+            font-size: 15pt;
             transform: rotate(0deg);
             transition: .3s;
           }

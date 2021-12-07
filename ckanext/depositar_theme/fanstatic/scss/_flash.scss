@@ -1,0 +1,29 @@
+.flash {
+  position: relative;
+
+  .alert {
+    position: absolute;
+    width: 100%;
+    top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+
+    .msg-content {
+      width: 95%;
+    }
+
+    &-dismissible {
+      padding-right: inherit;
+
+      .close {
+        position: initial;
+        top: initial;
+        right: initial;
+        padding: 0;
+        width: 2%;
+        height: min-content;
+        line-height: 30px;
+      }
+    }
+  }
+}

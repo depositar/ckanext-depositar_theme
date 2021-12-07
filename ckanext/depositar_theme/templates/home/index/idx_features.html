@@ -1,21 +1,17 @@
+{% set testContent = 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.' %}
+{% set featureList = [{'title':'Feature Title 1', 'content':testContent}, {'title':'Feature Title 2', 'content':testContent}, {'title':'Feature Title 3', 'content':testContent}] %}
+
 <div class="idx features">
   <div class="container">
-      <div class="block left">
-          <h2>{{ _('Feature Title') }}</h2>
-          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
-          <a href="#" class="link">{{ _('Link to page') }}</a>
-      </div>
-      <div class="bar"></div>
-      <div class="block center">
-          <h2>{{ _('Feature Title') }}</h2>
-          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
-          <a href="#" class="link">{{ _('Link to page') }}</a>
-      </div>
-      <div class="bar"></div>
-      <div class="block right">
-          <h2>{{ _('Feature Title') }}</h2>
-          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
-          <a href="#" class="link">{{ _('Link to page') }}</a>
-      </div>
+      {% for feature in featureList %}
+        {% if feature != featureList[0] %}
+            <div class="bar"></div>
+        {% endif %}
+        <div class="block">
+            <h2>{{ _( feature.title ) }}</h2>
+            <p>{{ _( feature.content ) }}</p>
+            <a href="#" class="link">{{ _('Link to page') }}</a>
+        </div>
+      {% endfor %}
   </div>
 </div>
