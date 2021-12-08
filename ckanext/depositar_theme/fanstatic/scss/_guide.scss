@@ -12,6 +12,10 @@
       .content {
         margin-right: 5rem;
       }
+
+      .guide-gif {
+        justify-content: flex-end;
+      }
     }
   
     &:nth-child(even) {
@@ -19,6 +23,10 @@
         
         .content {
           margin-left: 5rem;
+        }
+
+        .guide-gif {
+          justify-content: flex-start;
         }
     }
     
@@ -42,12 +50,17 @@
           &:hover {
             color: $guideBtnHoverTextColor
           }
+
+          i {
+            margin-left: 5px;
+          }
         }
       }
     }
 
     .guide-gif {
       width: 80%;
+      display: flex;
 
       .gif {
         width: 100%;
