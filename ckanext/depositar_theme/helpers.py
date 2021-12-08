@@ -11,6 +11,7 @@ from ckan.lib.base import render
 import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
 import ckan.logic as logic
+import ckantoolkit as tk
 
 from ckanext import depositar_theme
 from ckanext.data_depositario import helpers as depositar_helpers
@@ -95,8 +96,19 @@ def get_download_count():
     for pkg in package_list:
         data = {'id': pkg, 'include_tracking': True}
         resources = logic.get_action('package_show')(context ,data)['resources']
-        print(resources)
         for resource in resources:
-            print(resource['tracking_summary']['total'])
             download_cnt += resource['tracking_summary']['total']
     return download_cnt
+
+@core_helper
+def get_showcase():
+    showcase_list = tk.get_action('ckanext_showcase_list')({},{})
+    case_list = []
+    for showcase in showcase_list:
+        case_list.append({
+            'title': showcase['title'],
+            'href': showcase['name'],
+            'content': h.render_markdown(showcase['notes']),
+            'image_url': showcase['extras'][0]['value']
+        })
+    return case_list
