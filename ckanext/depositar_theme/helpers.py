@@ -1,7 +1,6 @@
 import os
 import inspect
 
-from sqlalchemy.sql.expression import true
 import ckan.model as model
 from ckan.lib.helpers import core_helper
 
@@ -94,7 +93,7 @@ def get_download_count():
     }
     download_cnt = 0
     for pkg in package_list:
-        data = {'id': pkg, 'include_tracking': true}
+        data = {'id': pkg, 'include_tracking': True}
         resources = logic.get_action('package_show')(context ,data)['resources']
         print(resources)
         for resource in resources:
