@@ -14,6 +14,16 @@
       &-prev {
         display: flex;
       }
+      
+      &-right.active,
+      &-next {
+        transform: translateX(33.33%);
+      }
+      
+      &-left.active,
+      &-prev {
+        transform: translateX(-33.33%);
+      }
 
       &-left,
       &-right {
@@ -81,6 +91,16 @@
 @media (max-width: $largeDeviceMaxWidth) {
   .carousel-inner {
     .carousel-item {
+      &-right.active,
+      &-next {
+        transform: translateX(50%);
+      }
+
+      &-left.active,
+      &-prev {
+        transform: translateX(-50%);
+      }
+
       .card-col {
         max-width: 50%;
         flex: 0 0 50%;
@@ -92,6 +112,16 @@
 @media (max-width: $smallDeviceMaxWidth) {
   .carousel-inner {
     .carousel-item {
+      &-right.active,
+      &-next {
+        transform: translateX(100%);
+      }
+
+      &-left.active,
+      &-prev {
+        transform: translateX(-100%);
+      }
+
       >div {
         display: none;
   

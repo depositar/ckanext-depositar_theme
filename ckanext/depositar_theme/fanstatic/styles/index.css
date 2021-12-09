@@ -270,6 +270,12 @@
 .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
   display: flex;
 }
+.carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+  transform: translateX(33.33%);
+}
+.carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+  transform: translateX(-33.33%);
+}
 .carousel-inner .carousel-item-left, .carousel-inner .carousel-item-right {
   transform: translateX(0);
 }
@@ -313,12 +319,24 @@
 }
 
 @media (max-width: 1199.98px) {
+  .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+  .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
   .carousel-inner .carousel-item .card-col {
     max-width: 50%;
     flex: 0 0 50%;
   }
 }
 @media (max-width: 767.98px) {
+  .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+    transform: translateX(100%);
+  }
+  .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+    transform: translateX(-100%);
+  }
   .carousel-inner .carousel-item > div {
     display: none;
   }
