@@ -85,7 +85,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.banner .container .heading .slogon h2 {
+.banner .container .heading .slogan h2 {
   font-size: 32pt;
   font-weight: bolder;
   word-break: keep-all;
@@ -431,6 +431,10 @@
 }
 .stats .container .stat-data .imp-data .imp-item:not(:last-child) {
   margin-right: 2.5rem;
+}
+.stats .container .stat-data .imp-data .imp-item .btn {
+  padding: 0;
+  line-height: inherit;
 }
 .stats .container .stat-data .imp-data .imp-item .btn:hover {
   color: #00e09b;
