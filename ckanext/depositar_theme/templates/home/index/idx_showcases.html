@@ -22,7 +22,7 @@
 									<div class="case-content">
 										<div>{{ case.content }}</div>
 									</div>
-									<a class="btn more" href={{ "/showcase/" + case.href }}>
+									<a class="btn more" href="{{ h.url_for('/showcase/' + case.href) }}">
 										{{ _('more') }}<i class="fa fa-chevron-right"></i>
 									</a>
 								</div>

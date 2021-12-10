@@ -10,14 +10,14 @@
 				<button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
 			</div>
 			<div class="function-btn">
-				<a class="btn create-dataset" href="dataset/new">{{ _('Create Dataset') }}</a>
-				<a class="btn create-project" href="organization/new">{{ _('Create Project') }}</a>
-				<a class="btn view-all" href="dataset">{{ _('All Datasets') }}</a>
+				<a class="btn create-dataset" href="{{ h.url_for('/dataset/new') }}">{{ _('Create Dataset') }}</a>
+				<a class="btn create-project" href="{{ h.url_for('/organization/new') }}">{{ _('Create Project') }}</a>
+				<a class="btn view-all" href="{{ h.url_for('/dataset') }}">{{ _('All Datasets') }}</a>
 			</div>
 		</div>
 		<div class="animation">
 			<div class="animation-left">
-				<img src="{{ h.url_for_static('/images/logo_ani.svg') }}">
+				<img src="{{ h.url_for('/images/logo_ani.svg') }}">
 			</div>
 			<div id="hero-animation" class="animation-right"></div>
 		</div>
