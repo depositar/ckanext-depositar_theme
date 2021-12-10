@@ -17,7 +17,7 @@ index-js:
 index-css:
   output: depositar_theme/%(version)s_index.css
   contents:
-    - styles/bootstrap.css
+    - styles/bootstrap-4.css
     - styles/index.css
   extra:
     preload: 
