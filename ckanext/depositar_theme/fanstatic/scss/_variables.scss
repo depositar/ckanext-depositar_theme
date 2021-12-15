@@ -1,10 +1,8 @@
 // base variables
-$imagePath: '/images';
+$imagePath: '../../images';
 
 $mainThemeColor: #00e09b;
 $secondThemeColor: #012819;
-$white: #fff;
-$black: #000;
 
 $extraSmallDeviceMaxWidth: 575.98px;
 $smallDeviceMaxWidth: 767.98px;
@@ -13,71 +11,71 @@ $largeDeviceMaxWidth: 1199.98px;
 $extraLargeDeviceMaxWidth: 1399.98px;
 
 // index
-$bodyTextColor: $black;
-$bodyBackgroundColor: $white;
+$bodyTextColor: black;
+$bodyBackgroundColor: white;
 $bodyFontFamily: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
-$selectionTextColor: $white;
+$selectionTextColor: white;
 $selectionBackgroundColor: $mainThemeColor;
 $idxBorderBottomColor: #ececec;
 
 // masthead
-$mastheadBackgroundColor: $black;
+$mastheadBackgroundColor: black;
 $mastheadListBorderLeftColor: #ccc;
-$mastheadListLinkTextColor: $white;
+$mastheadListLinkTextColor: white;
 $mastheadListLinkBadgeTextColor: #bfd7de;
 $mastheadListLinkBadgeBackgroundColor:#00232e;
 $mastheadListLinkHoverBackgroundColor: #333;
-$mastheadListLinkBadgeHoverTextColor: $white;
+$mastheadListLinkBadgeHoverTextColor: white;
 $mastheadListLinkBadgeHoverBackgroundColor: #000f14;
 
 // banner
-$bannerTextColor: $white;
+$bannerTextColor: white;
 $bannerBackgroundColor: $secondThemeColor;
 $bannerBackgroundImage: linear-gradient(to right, $mainThemeColor -30%, $secondThemeColor 40%, $secondThemeColor 95%, $mainThemeColor 130%);
-$bannerSearchHoverBoxShadow: 0 3px 6px rgba($black, 0.16), 0 3px 6px rgba($black, 0.23);
-$bannerInputSearchBoxShadow: 0 1px 3px rgba($black, 0.12), 0 1px 2px rgba($black, 0.24);
+$bannerSearchHoverBoxShadow: 0 3px 6px rgba(black, 0.16), 0 3px 6px rgba(black, 0.23);
+$bannerInputSearchBoxShadow: 0 1px 3px rgba(black, 0.12), 0 1px 2px rgba(black, 0.24);
 $bannerInputSearchBackgroundColor: #ededed;
 $bannerBtnSearchTextColor: #999;
-$bannerBtnSearchHoverTextColor: $black;
+$bannerBtnSearchHoverTextColor: black;
 $bannerFunctionBtnTextColor: $mainThemeColor;
 $bannerFunctionBtnBorderColor: $mainThemeColor;
-$bannerFunctionBtnHoverBorderColor: $white;
-$bannerFunctionBtnHoverBackgroundColor: $white;
-$bannerFunctionBtnHoverBoxShadow: 0 10px 20px rgba($black, 0.19), 0 6px 6px rgba($black, 0.23);
+$bannerFunctionBtnHoverBorderColor: white;
+$bannerFunctionBtnHoverBackgroundColor: white;
+$bannerFunctionBtnHoverBoxShadow: 0 10px 20px rgba(black, 0.19), 0 6px 6px rgba(black, 0.23);
 $mediaBannerBackgroundImage: url('#{$imagePath}/visual-md.png');
 
 // guide
 $guideBtnHoverTextColor: $mainThemeColor;
-$guideGifBoxShadow: 0 0 4px 2px rgba($black, 0.2);
+$guideGifBoxShadow: 0 0 4px 2px rgba(black, 0.2);
 
 // showcases
 $showcaseCardBtnHoverTextColor: $mainThemeColor;
-$showcaseFunctionBtnColor: $black;
+$showcaseFunctionBtnColor: black;
 
 // topics
-$topicLinkTextColor: $black;
+$topicLinkTextColor: black;
 $topicLinkHoverTextColor: $mainThemeColor;
 
 // stats
 $statLinkHoverTextColor: $mainThemeColor;
-$statSecDataTagBorderColor: $black;
-$statTwitterBoxShadow: 0 0 4px 2px rgba($black, 0.2);
+$statSecDataTagBorderColor: black;
+$statTwitterBoxShadow: 0 0 4px 2px rgba(black, 0.2);
 
 // features
-$featureLinkTextColor: $black;
-$featureLinkBorderColor: $black;
-$featureLinkHoverTextColor: $white;
-$featureLinkHoverBorderColor: $white;
+$featureLinkTextColor: black;
+$featureLinkBorderColor: black;
+$featureLinkHoverTextColor: white;
+$featureLinkHoverBorderColor: white;
 $featureLinkHoverBackgroundColor: $secondThemeColor;
 $featureBarBorderColor: #cdcdcd;
 
 // faq
-$faqBtnLinkTextColor: $black;
+$faqBtnLinkTextColor: black;
 
 // footer
-$footerTextColor: $white;
-$footerBackgroundColor: $black;
-$footerLinkTextColor: $white;
+$footerTextColor: white;
+$footerBackgroundColor: black;
+$footerLinkTextColor: white;
 $footerLinkHoverTextColor: $mainThemeColor;
 $footerLogoImage: url('#{$imagePath}/logo_eng_horizontal_w.svg');
 $footerCkanLogoImage: url('../../../base/images/ckan-logo-footer.png')
