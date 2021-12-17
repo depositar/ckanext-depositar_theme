@@ -14,12 +14,12 @@
       &-prev {
         display: flex;
       }
-      
+
       &-right.active,
       &-next {
         transform: translateX(33.33%);
       }
-      
+
       &-left.active,
       &-prev {
         transform: translateX(-33.33%);
@@ -119,7 +119,7 @@
 
       >div {
         display: none;
-  
+
         &:first-child {
           display: block;
         }

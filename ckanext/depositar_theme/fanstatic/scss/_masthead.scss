@@ -8,14 +8,14 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      margin: .5rem 0;
+      margin: 0.5rem 0;
 
       li {
         border-left: solid 1px $mastheadListBorderLeftColor;
 
         a {
           color: $mastheadListLinkTextColor;
-          padding:  0 10px;
+          padding: 0 10px;
           font-size: 14px;
           display: block;
           line-height: 21px;
@@ -33,7 +33,7 @@
           .text {
             display: none;
           }
-          
+
           .user-image {
             border-radius: 4px;
           }

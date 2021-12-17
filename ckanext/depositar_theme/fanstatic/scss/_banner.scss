@@ -7,7 +7,7 @@
     min-height: 45vh;
     display: flex;
     justify-content: space-between;
-  
+
     .heading {
       width: 45%;
       display: flex;
@@ -26,7 +26,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin: 3rem 0 2rem 0;
+        margin: 3rem 0 2rem;
 
         &:hover {
           border-radius: 30px;
@@ -104,29 +104,29 @@
 
 @media (max-width: $largeDeviceMaxWidth) {
   .banner {
-      background-image: $mediaBannerBackgroundImage;
-      background-size: 45%;
-      background-repeat: no-repeat;
-      background-position: 90%;
+    background-image: $mediaBannerBackgroundImage;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 90%;
 
-      .container {
-        .animation {
-          display: none;
-        }
+    .container {
+      .animation {
+        display: none;
       }
+    }
   }
 }
 
 @media (max-width: $mediumDeviceMaxWidth) {
   .banner {
-      background-size: contain;
-      background-blend-mode: overlay;
+    background-size: contain;
+    background-blend-mode: overlay;
 
-      .container {
-        .heading {
-          width: 80%;
-        }
+    .container {
+      .heading {
+        width: 80%;
       }
+    }
   }
 }
 

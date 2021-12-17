@@ -1,40 +1,40 @@
 {% set formatCntList = h.get_format_count() %}
 
 <div class="idx stats">
-	<div class="container">
-		<div class="stat-data">
-			<div class="imp-data">
-				<div class="imp-item">
-					<h1>{{ _('Datasets') }}</h1>
-					<a href="{{ h.url_for('/dataset') }}" class="btn">
-						<p class="cnt">{{ h.get_site_statistics()['dataset_count'] }}</p>
-					</a>
-				</div>
-				<div class="imp-item">
-					<h1>{{ _('Projects') }}</h1>
-					<a href="{{ h.url_for('/organization') }}" class="btn">
-						<p class="cnt">{{ h.get_site_statistics()['organization_count'] }}</p>
-					</a>
-				</div>
-				<div class="imp-item">
-					<h1>{{ _('Downloads') }}</h1>
-					<p class="cnt">{{ h.get_download_count() }}</p> 
-				</div>
-			</div>
-			<div class="sec-data">
-				{% for formatCnt in formatCntList[:7] %}
-				<div class="sec-item">
-					<h5>{{ formatCnt[0] }}</h5>
-					<a href="{{ h.url_for('/dataset?res_format=' + formatCnt[0]) }}" class="btn">
-						<p class="cnt">{{ formatCnt[1] }}</p>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-		<div class="twitter">
-			<a class="twitter-timeline" data-lang="en" data-theme="light"
-				href="https://twitter.com/_depositar?ref_src=twsrc%5Etfw">Tweets by _depositar</a>
-		</div>
-	</div>
+  <div class="container">
+    <div class="stat-data">
+      <div class="imp-data">
+        <div class="imp-item">
+          <h1>{{ _('Datasets') }}</h1>
+          <a href="{{ h.url_for('/dataset') }}" class="btn">
+            <p class="cnt">{{ h.get_site_statistics()['dataset_count'] }}</p>
+          </a>
+        </div>
+        <div class="imp-item">
+          <h1>{{ _('Projects') }}</h1>
+          <a href="{{ h.url_for('/organization') }}" class="btn">
+            <p class="cnt">{{ h.get_site_statistics()['organization_count'] }}</p>
+          </a>
+        </div>
+        <div class="imp-item">
+          <h1>{{ _('Downloads') }}</h1>
+          <p class="cnt">{{ h.get_download_count() }}</p> 
+        </div>
+      </div>
+      <div class="sec-data">
+        {% for formatCnt in formatCntList[:7] %}
+        <div class="sec-item">
+          <h5>{{ formatCnt[0] }}</h5>
+          <a href="{{ h.url_for('/dataset?res_format=' + formatCnt[0]) }}" class="btn">
+            <p class="cnt">{{ formatCnt[1] }}</p>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="twitter">
+      <a class="twitter-timeline" data-lang="en" data-theme="light"
+        href="https://twitter.com/_depositar?ref_src=twsrc%5Etfw">Tweets by _depositar</a>
+    </div>
+  </div>
 </div>

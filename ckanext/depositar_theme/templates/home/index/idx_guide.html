@@ -2,18 +2,18 @@
 {% set guideList = [{'title':'Guide Title 1', 'content':testContent}, {'title':'Guide Title 2', 'content':testContent}, {'title':'Guide Title 3', 'content':testContent}] %}
 
 <div class="idx guide">
-	{% for guide in guideList %}
-	<div class="container">
-		<div class="content">
-			<h1>{{ _( guide.title ) }}</h1>
-			<p>{{ _( guide.content ) }}</p>
-			<a class="btn more" href="#">
-				{{ _('more') }}<i class="fa fa-chevron-right"></i>
-			</a>
-		</div>
-		<div class="guide-gif">
-			<img class="gif" src="#" alt="guide GIF">
-		</div>
-	</div>
-	{% endfor %}
+  {% for guide in guideList %}
+  <div class="container">
+    <div class="content">
+      <h1>{{ _( guide.title ) }}</h1>
+      <p>{{ _( guide.content ) }}</p>
+      <a class="btn more" href="#">
+        {{ _('more') }}<i class="fa fa-chevron-right"></i>
+      </a>
+    </div>
+    <div class="guide-gif">
+      <img class="gif" src="#" alt="guide GIF">
+    </div>
+  </div>
+  {% endfor %}
 </div>
