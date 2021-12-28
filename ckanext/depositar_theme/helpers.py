@@ -1,16 +1,12 @@
 import os
 import inspect
 
-import ckan.model as model
-from ckan.lib.helpers import core_helper
-
 from ckan.common import config
 from ckan.lib import mailer
 import ckan.lib.base as base
 from ckan.lib.base import render
 import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
-import ckan.logic as logic
 import ckantoolkit as tk
 
 from ckanext import depositar_theme
