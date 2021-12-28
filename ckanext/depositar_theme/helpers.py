@@ -73,36 +73,31 @@ def send_reg_link(user):
 
     mail_user(user, subject, body)
 
-@core_helper
 def get_format_count():
-    results = logic.get_action('package_search')({}, {})['results']
+    results = tk.get_action('package_search')({}, {})['results']
     format_list = []
     for res in results:
-        resourceList = res['resources']
-        for resource in resourceList:
-            format_list.append(resource['format'])
+        resource_list = res['resources']
+        for resource in resource_list:
+            format_list.append(resource['format'].upper())
 
     format_count = dict((fmt, format_list.count(fmt)) for fmt in format_list)
-    return list(format_count.items())
+    format_count.pop('')
+    sort_format_count = sorted(format_count.items(), key=lambda tup:(-tup[1], tup[0]))
+    return list(sort_format_count)
 
-@core_helper
 def get_download_count():
-    package_list = logic.get_action('package_list')({},{})
-    context = {
-        "model": model,
-        "session": model.Session,
-    }
+    package_list = tk.get_action('package_list')({},{})
     download_cnt = 0
     for pkg in package_list:
         data = {'id': pkg, 'include_tracking': True}
-        resources = logic.get_action('package_show')(context ,data)['resources']
+        resources = tk.get_action('package_show')({}, data)['resources']
         for resource in resources:
             download_cnt += resource['tracking_summary']['total']
     return download_cnt
 
-@core_helper
 def get_showcase():
-    showcase_list = tk.get_action('ckanext_showcase_list')({},{})
+    showcase_list = tk.get_action('ckanext_showcase_list')({}, {})
     case_list = []
     for showcase in showcase_list:
         case_list.append({
