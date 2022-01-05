@@ -78,6 +78,7 @@ setup(
     entry_points='''
         [ckan.plugins]
         depositar_theme=ckanext.depositar_theme.plugin:Depositar_ThemePlugin
+        depositar_theme_rep_str=ckanext.depositar_theme.plugin:DepositarThemeRepStr
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
