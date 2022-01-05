@@ -1,6 +1,9 @@
 @charset "UTF-8";
 .account-masthead {
   background-color: black;
+  box-sizing: content-box;
+  min-height: 30px;
+  padding-top: 5px;
 }
 .account-masthead .account {
   display: flex;
@@ -9,7 +12,7 @@
 .account-masthead .account ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 .account-masthead .account ul li {
   border-left: solid 1px #ccc;
@@ -43,7 +46,7 @@
   font-size: 12px;
 }
 .masthead {
-  background-color: #fff;
+  background-color: white;
   background-image: none;
 }
 .masthead.navbar {
@@ -80,13 +83,13 @@
   transition-property: width, color;
 }
 .masthead .navigation .nav-pills li a:hover {
-  background-color: #fff;
+  background-color: white;
 }
 .masthead .navigation .nav-pills li a:hover::after {
   width: 100%;
 }
 .masthead .navigation .nav-pills li.active a {
-  background-color: #fff;
+  background-color: white;
 }
 .masthead .navigation .nav-pills li.active a::after {
   width: 100%;
@@ -101,16 +104,16 @@
 .masthead .nav > .active > a,
 .masthead .nav > .active > a:hover,
 .masthead .nav > .active > a:focus {
-  color: #000;
+  color: black;
   border-bottom: none;
   font-size: 15px;
 }
 .masthead .btn-navbar,
 .masthead .btn-navbar:hover,
 .masthead .btn-navbar:focus {
-  background-color: #fff;
+  background-color: white;
   margin-top: 0;
-  color: #000;
+  color: black;
   font-size: 25px;
   border: none !important;
   outline: unset;
@@ -124,7 +127,7 @@
   display: none;
 }
 .masthead .site-search .field input {
-  color: #000;
+  color: black;
   background: #ededed;
   width: 60px;
   padding: 10px 15px;
@@ -149,17 +152,9 @@
   transition: color 0.2s ease-in;
 }
 .masthead .site-search .field .btn-search:hover {
-  color: #000;
+  color: black;
 }
-@media (max-width: 979px) {
-  .masthead .nav-collapse {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .masthead .nav-collapse .nav > li {
-    font-size: 25px;
-    margin-top: 20px;
-  }
+@media (max-width: 991.98px) {
   .masthead .site-search {
     display: inherit;
   }
@@ -167,19 +162,22 @@
     padding: 20px 10px;
     width: 100%;
     border-radius: 4px;
-    margin: 20px 0;
   }
   .masthead .site-search input:hover {
     width: 100%;
   }
 }
+@media (max-width: 767.98px) {
+  .masthead.navbar .container {
+    flex-direction: row-reverse;
+  }
+}
 .flash {
   position: relative;
+  height: 0;
+  top: 1.25rem;
 }
 .flash .alert {
-  position: absolute;
-  width: 100%;
-  top: 1.25rem;
   display: flex;
   justify-content: space-between;
 }
@@ -758,8 +756,11 @@
 .site-footer a.external::after {
   content: "";
   font-family: FontAwesome;
-  font-size: 12px;
-  margin-left: 5px;
+  font-size: 10px;
+  position: relative;
+  margin-right: 5px;
+  top: -3px;
+  left: 3px;
 }
 .site-footer .footer-links .footer-logo {
   background: url("../../images/logo_eng_horizontal_w.svg") no-repeat scroll;
@@ -804,8 +805,4 @@ h1 {
 .idx {
   padding: 5rem 0;
   border-bottom: solid 10px #ececec;
-}
-.container {
-  max-width: 80%;
-  margin: auto;
 }
