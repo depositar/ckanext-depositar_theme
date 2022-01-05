@@ -19,14 +19,19 @@ $selectionBackgroundColor: $mainThemeColor;
 $idxBorderBottomColor: #ececec;
 
 // masthead
-$mastheadBackgroundColor: black;
-$mastheadListBorderLeftColor: #ccc;
-$mastheadListLinkTextColor: white;
-$mastheadListLinkBadgeTextColor: #bfd7de;
-$mastheadListLinkBadgeBackgroundColor:#00232e;
-$mastheadListLinkHoverBackgroundColor: #333;
-$mastheadListLinkBadgeHoverTextColor: white;
-$mastheadListLinkBadgeHoverBackgroundColor: #000f14;
+$accountMastheadBackgroundColor: black;
+$accountMastheadListBorderLeftColor: #ccc;
+$accountMastheadListLinkTextColor: white;
+$accountMastheadListLinkBadgeTextColor: #bfd7de;
+$accountMastheadListLinkBadgeBackgroundColor:#00232e;
+$accountMastheadListLinkHoverBackgroundColor: #333;
+$accountMastheadListLinkBadgeHoverTextColor: white;
+$accountMastheadListLinkBadgeHoverBackgroundColor: #000f14;
+
+$mastheadTextColor: black;
+$mastheadBackgroundColor: white;
+$mastheadBtnSearchTextColor: #999;
+$mastheadListLinkAfterBackgroundColor: $mainThemeColor;
 
 // banner
 $bannerTextColor: white;
