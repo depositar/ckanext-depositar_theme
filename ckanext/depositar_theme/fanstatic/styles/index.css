@@ -154,22 +154,38 @@
 .masthead .site-search .field .btn-search:hover {
   color: black;
 }
-@media (max-width: 991.98px) {
-  .masthead .site-search {
-    display: inherit;
-  }
-  .masthead .site-search input {
-    padding: 20px 10px;
-    width: 100%;
-    border-radius: 4px;
-  }
-  .masthead .site-search input:hover {
-    width: 100%;
-  }
-}
 @media (max-width: 767.98px) {
   .masthead.navbar .container {
     flex-direction: row-reverse;
+  }
+  .masthead.navbar .container .navbar-collapse {
+    padding: 10px inherit;
+  }
+  .masthead.navbar .container .navbar-collapse .navigation .nav-pills {
+    width: 100%;
+    flex-direction: column;
+  }
+  .masthead.navbar .container .navbar-collapse .navigation .nav-pills > li {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .masthead.navbar .container .navbar-collapse .site-search {
+    display: inherit;
+  }
+  .masthead.navbar .container .navbar-collapse .site-search .field {
+    position: relative;
+  }
+  .masthead.navbar .container .navbar-collapse .site-search .field input {
+    padding: 20px 10px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  .masthead.navbar .container .navbar-collapse .site-search .field input:hover {
+    width: 100%;
+  }
+  .masthead.navbar .container .navbar-collapse .site-search .field .btn-search {
+    top: 35px;
   }
 }
 .flash {

@@ -190,29 +190,50 @@
   }
 }
 
-@media (max-width: $mediumDeviceMaxWidth) {
-  .masthead {
-    .site-search {
-      display: inherit;
-
-      input {
-        padding: 20px 10px;
-        width: 100%;
-        border-radius: 4px;
-
-        &:hover {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: $smallDeviceMaxWidth) {
   .masthead {
     &.navbar {
       .container {
         flex-direction: row-reverse;
+
+        .navbar-collapse {
+          padding: 10px inherit;
+
+          .navigation {
+            .nav-pills {
+              width: 100%;
+              flex-direction: column;
+
+              & > li {
+                font-size: 25px;
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .site-search {
+            display: inherit;
+
+            .field {
+              position: relative;
+
+              input {
+                padding: 20px 10px;
+                width: 100%;
+                border-radius: 4px;
+                margin: 20px 0;
+  
+                &:hover {
+                  width: 100%;
+                }
+              }
+
+              .btn-search {
+                top: 35px;
+              }
+            }
+          }
+        }
       }
     }
   }
