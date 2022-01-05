@@ -23,7 +23,7 @@
         </div>
       </div>
     {% endif %}
-    <div class="account-masthead">
+    <header class="account-masthead">
       <div class="container">
         {% block header_account_container_content %} {% if c.userobj %}
         <div class="account avatar authed" data-module="me" data-me="{{ c.userobj.id }}">
@@ -85,7 +85,7 @@
         </nav>
         {% endif %} {% endblock %}
       </div>
-    </div>
+    </header>
   {% endblock %}
   <header class="navbar navbar-static-top masthead">
     {% block header_debug %} {% if g.debug and not g.debug_supress_header %}

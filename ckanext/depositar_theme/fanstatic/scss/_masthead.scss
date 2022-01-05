@@ -1,5 +1,8 @@
 .account-masthead {
   background-color: $accountMastheadBackgroundColor;
+  box-sizing: content-box;
+  min-height: 30px;
+  padding-top: 5px;
 
   .account {
     display: flex;
@@ -8,7 +11,7 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      margin: 0.5rem 0;
+      margin: 0;
 
       li {
         border-left: solid 1px $accountMastheadListBorderLeftColor;
