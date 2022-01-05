@@ -1,10 +1,9 @@
 .flash {
   position: relative;
+  height: 0;
+  top: 1.25rem;
 
   .alert {
-    position: absolute;
-    width: 100%;
-    top: 1.25rem;
     display: flex;
     justify-content: space-between;
 
