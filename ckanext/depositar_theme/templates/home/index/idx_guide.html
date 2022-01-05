@@ -5,8 +5,8 @@
   {% for guide in guideList %}
   <div class="container">
     <div class="content">
-      <h1>{{ _( guide.title ) }}</h1>
-      <p>{{ _( guide.content ) }}</p>
+      <h1>{{ guide.title }}</h1>
+      <p>{{ guide.content }}</p>
       <a class="btn more" href="#">
         {{ _('more') }}<i class="fa fa-chevron-right"></i>
       </a>
