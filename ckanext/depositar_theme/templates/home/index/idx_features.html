@@ -5,12 +5,12 @@
   <div class="container">
       {% for feature in featureList %}
         {% if feature != featureList[0] %}
-            <div class="bar"></div>
+          <div class="bar"></div>
         {% endif %}
         <div class="block">
-            <h2>{{ feature.title }}</h2>
-            <p>{{ feature.content }}</p>
-            <a href="#" class="link">{{ _('Link to page') }}</a>
+          <h2>{{ feature.title }}</h2>
+          <p>{{ feature.content }}</p>
+          <a href="#" class="link">{{ _('Link to page') }}</a>
         </div>
       {% endfor %}
   </div>
