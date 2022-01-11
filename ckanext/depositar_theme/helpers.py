@@ -79,8 +79,8 @@ def get_format_count():
 
     format_count = dict((fmt, format_list.count(fmt)) for fmt in format_list)
     format_count.pop('')
-    sort_format_count = sorted(format_count.items(), key=lambda tup:(-tup[1], tup[0]))
-    return list(sort_format_count)
+    sort_format_count = sorted(format_count.items(), key=lambda tup: tup[1], reverse=True)
+    return sort_format_count
 
 def get_download_count():
     package_list = tk.get_action('package_list')({},{})
