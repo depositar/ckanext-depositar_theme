@@ -18,18 +18,18 @@
 
         a {
           color: $accountMastheadListLinkTextColor;
-          padding: 0 10px;
-          font-size: 14px;
           display: block;
+          font-size: 14px;
           line-height: 21px;
+          padding: 0 10px;
 
           &:hover {
             background-color: $accountMastheadListLinkHoverBackgroundColor;
             text-decoration: none;
 
             .badge {
-              color: $accountMastheadListLinkBadgeHoverTextColor;
               background-color: $accountMastheadListLinkBadgeHoverBackgroundColor;
+              color: $accountMastheadListLinkBadgeHoverTextColor;
             }
           }
 
@@ -42,11 +42,11 @@
           }
 
           .badge {
-            color: $accountMastheadListLinkBadgeTextColor;
             background-color: $accountMastheadListLinkBadgeBackgroundColor;
+            color: $accountMastheadListLinkBadgeTextColor;
+            font-size: 12px;
             margin-left: 3px;
             padding: 1px 6px;
-            font-size: 12px;
           }
         }
       }
@@ -63,13 +63,13 @@
   }
 
   .navbar-collapse {
-    padding-top: 0.5rem;
     justify-content: flex-end;
+    padding-top: 0.5rem;
   }
 
   .logo img {
-    width: 185px;
     padding-left: 5px;
+    width: 185px;
   }
 
   .navigation {
@@ -78,23 +78,23 @@
     .nav-pills {
       li {
         a {
-          display: block;
-          padding: 10px 15px;
           border-radius: 0;
+          display: block;
           line-height: 7px;
+          padding: 10px 15px;
           text-decoration: none;
 
           &::after {
+            background-color: $mastheadListLinkAfterBackgroundColor;
             content: '';
             display: block;
-            width: 0;
-            margin-top: 6px;
             height: 3px;
-            background-color: $mastheadListLinkAfterBackgroundColor;
-            -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+            margin-top: 6px;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-            -webkit-transition-property: width, color;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
             transition-property: width, color;
+            transition-property: width, color;
+            width: 0;
           }
 
           &:hover {
@@ -111,11 +111,11 @@
             background-color: $mastheadBackgroundColor;
 
             &::after {
-              width: 100%;
-              margin-top: 6px;
-              height: 3px;
               background-color: $mastheadListLinkAfterBackgroundColor;
               border-radius: 0;
+              height: 3px;
+              margin-top: 6px;
+              width: 100%;
             }
           }
         }
@@ -129,8 +129,8 @@
   .nav > .active > a,
   .nav > .active > a:hover,
   .nav > .active > a:focus {
-    color: $mastheadTextColor;
     border-bottom: none;
+    color: $mastheadTextColor;
     font-size: 15px;
   }
 
@@ -138,17 +138,24 @@
   .btn-navbar:hover,
   .btn-navbar:focus {
     background-color: $mastheadBackgroundColor;
-    margin-top: 0;
+    border: none !important;
     color: $mastheadTextColor;
     font-size: 25px;
-    border: none !important;
+    margin-top: 0;
     outline: unset;
+  }
+
+  .debug {
+    color: $mastheadDebugColor;
+    left: 10px;
+    position: absolute;
+    top: 37px;
   }
 
   .site-search {
     .field {
-      display: flex;
       align-items: flex-end;
+      display: flex;
       justify-content: flex-end;
 
       label {
@@ -156,18 +163,18 @@
       }
 
       input {
-        color: $mastheadTextColor;
         background: darken($mastheadBackgroundColor, 7%);
-        width: 60px;
-        padding: 10px 15px;
-        margin-top: -7px;
-        padding-bottom: 4px;
         border: 0;
         border-radius: 50px;
         box-shadow: none;
+        color: $mastheadTextColor;
         line-height: 20px;
-        -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+        margin-top: -7px;
+        padding: 10px 15px;
+        padding-bottom: 4px;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+        width: 60px;
 
         &:hover {
           width: 200px;
@@ -175,11 +182,11 @@
       }
 
       .btn-search {
-        color: $mastheadBtnSearchTextColor;
-        border: none;
         background: none;
-        position: absolute;
+        border: none;
+        color: $mastheadBtnSearchTextColor;
         margin-right: 10px;
+        position: absolute;
         transition: color 0.2s ease-in;
 
         &:hover {
@@ -201,8 +208,8 @@
 
           .navigation {
             .nav-pills {
-              width: 100%;
               flex-direction: column;
+              width: 100%;
 
               & > li {
                 font-size: 25px;
@@ -218,10 +225,10 @@
               position: relative;
 
               input {
-                padding: 20px 10px;
-                width: 100%;
                 border-radius: 4px;
                 margin: 20px 0;
+                padding: 20px 10px;
+                width: 100%;
   
                 &:hover {
                   width: 100%;
