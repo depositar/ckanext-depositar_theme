@@ -6,13 +6,13 @@
       <div class="imp-data">
         <div class="imp-item">
           <h1>{{ _('Datasets') }}</h1>
-          <a href="{{ h.url_for('/dataset') }}" class="btn">
+          <a href="{{ h.url_for('dataset.search') }}" class="btn">
             <p class="cnt">{{ h.get_site_statistics()['dataset_count'] }}</p>
           </a>
         </div>
         <div class="imp-item">
           <h1>{{ _('Projects') }}</h1>
-          <a href="{{ h.url_for('/organization') }}" class="btn">
+          <a href="{{ h.url_for('organization.index') }}" class="btn">
             <p class="cnt">{{ h.get_site_statistics()['organization_count'] }}</p>
           </a>
         </div>
@@ -25,7 +25,7 @@
         {% for formatCnt in formatCntList[:7] %}
         <div class="sec-item">
           <h5>{{ formatCnt[0] }}</h5>
-          <a href="{{ h.url_for('/dataset?res_format=' + formatCnt[0]) }}" class="btn">
+          <a href="{{ h.url_for('dataset.search', res_format=formatCnt[0]) }}" class="btn">
             <p class="cnt">{{ formatCnt[1] }}</p>
           </a>
         </div>
