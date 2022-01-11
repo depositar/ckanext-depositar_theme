@@ -1,21 +1,21 @@
-@import "variables.scss";
-@import "masthead.scss";
-@import "flash.scss";
-@import "banner.scss";
-@import "guide.scss";
-@import "showcases.scss";
-@import "topics.scss";
-@import "stats.scss";
-@import "features.scss";
-@import "faq.scss";
-@import "footer.scss";
+@import 'variables.scss';
+@import 'masthead.scss';
+@import 'flash.scss';
+@import 'banner.scss';
+@import 'guide.scss';
+@import 'showcases.scss';
+@import 'topics.scss';
+@import 'stats.scss';
+@import 'features.scss';
+@import 'faq.scss';
+@import 'footer.scss';
 
 body {
-  line-height: 30px;
   font-size: 16px;
-  background-color: $bodyBackgroundColor;
-  color: $bodyTextColor;
   font-family: $bodyFontFamily;
+  color: $bodyTextColor;
+  background-color: $bodyBackgroundColor;
+  line-height: 30px;
 }
 
 :focus {

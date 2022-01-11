@@ -1,11 +1,11 @@
 .site-footer {
-  background-color: $footerBackgroundColor;
   padding: 3.25rem 0;
   color: $footerTextColor;
+  background-color: $footerBackgroundColor;
 
   a {
-    color: $footerLinkTextColor;
     text-decoration: none;
+    color: $footerLinkTextColor;
     transition: 0.1s;
 
     &:hover {
@@ -14,34 +14,34 @@
 
     &.external {
       &::after {
-        content: "\f08e";
-        font-family: FontAwesome;
-        font-size: 10px;
         position: relative;
-        margin-right: 5px;
         top: -3px;
         left: 3px;
+        margin-right: 5px;
+        font-size: 10px;
+        font-family: FontAwesome;
+        content: '\f08e';
       }
     }
   }
 
   .footer-links {
     .footer-logo {
-      background: $footerLogoImage no-repeat scroll;
-      height: 50px;
-      width: 30%;
       padding-bottom: 10px;
+      width: 30%;
+      height: 50px;
+      background: $footerLogoImage no-repeat scroll;
     }
   }
 
   .attribution {
     .ckan-footer-logo {
       display: block;
+      margin-top: 2px;
       width: 68px;
       height: 21px;
-      margin-top: 2px;
-      background: $footerCkanLogoImage no-repeat top left;
       text-indent: -900em;
+      background: $footerCkanLogoImage no-repeat top left;
     }
   }
 }

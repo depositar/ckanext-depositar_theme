@@ -1,8 +1,8 @@
 .account-masthead {
+  padding-top: 5px;
+  min-height: 30px;
   background-color: $accountMastheadBackgroundColor;
   box-sizing: content-box;
-  min-height: 30px;
-  padding-top: 5px;
 
   .account {
     display: flex;
@@ -17,19 +17,19 @@
         border-left: solid 1px $accountMastheadListBorderLeftColor;
 
         a {
-          color: $accountMastheadListLinkTextColor;
           display: block;
-          font-size: 14px;
-          line-height: 21px;
           padding: 0 10px;
+          font-size: 14px;
+          color: $accountMastheadListLinkTextColor;
+          line-height: 21px;
 
           &:hover {
-            background-color: $accountMastheadListLinkHoverBackgroundColor;
             text-decoration: none;
+            background-color: $accountMastheadListLinkHoverBackgroundColor;
 
             .badge {
-              background-color: $accountMastheadListLinkBadgeHoverBackgroundColor;
               color: $accountMastheadListLinkBadgeHoverTextColor;
+              background-color: $accountMastheadListLinkBadgeHoverBackgroundColor;
             }
           }
 
@@ -42,11 +42,11 @@
           }
 
           .badge {
-            background-color: $accountMastheadListLinkBadgeBackgroundColor;
-            color: $accountMastheadListLinkBadgeTextColor;
-            font-size: 12px;
-            margin-left: 3px;
             padding: 1px 6px;
+            margin-left: 3px;
+            font-size: 12px;
+            color: $accountMastheadListLinkBadgeTextColor;
+            background-color: $accountMastheadListLinkBadgeBackgroundColor;
           }
         }
       }
@@ -78,23 +78,23 @@
     .nav-pills {
       li {
         a {
-          border-radius: 0;
           display: block;
-          line-height: 7px;
           padding: 10px 15px;
           text-decoration: none;
+          border-radius: 0;
+          line-height: 7px;
 
           &::after {
-            background-color: $mastheadListLinkAfterBackgroundColor;
-            content: '';
             display: block;
-            height: 3px;
             margin-top: 6px;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-            transition-property: width, color;
-            transition-property: width, color;
             width: 0;
+            height: 3px;
+            background-color: $mastheadListLinkAfterBackgroundColor;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+            content: '';
+            transition-property: width, color;
+            transition-property: width, color;
           }
 
           &:hover {
@@ -111,11 +111,11 @@
             background-color: $mastheadBackgroundColor;
 
             &::after {
-              background-color: $mastheadListLinkAfterBackgroundColor;
-              border-radius: 0;
-              height: 3px;
               margin-top: 6px;
               width: 100%;
+              height: 3px;
+              background-color: $mastheadListLinkAfterBackgroundColor;
+              border-radius: 0;
             }
           }
         }
@@ -129,52 +129,52 @@
   .nav > .active > a,
   .nav > .active > a:hover,
   .nav > .active > a:focus {
-    border-bottom: none;
-    color: $mastheadTextColor;
     font-size: 15px;
+    color: $mastheadTextColor;
+    border-bottom: none;
   }
 
   .btn-navbar,
   .btn-navbar:hover,
   .btn-navbar:focus {
+    margin-top: 0;
+    font-size: 25px;
+    color: $mastheadTextColor;
     background-color: $mastheadBackgroundColor;
     border: none !important;
-    color: $mastheadTextColor;
-    font-size: 25px;
-    margin-top: 0;
     outline: unset;
   }
 
   .debug {
-    color: $mastheadDebugColor;
-    left: 10px;
     position: absolute;
     top: 37px;
+    left: 10px;
+    color: $mastheadDebugColor;
   }
 
   .site-search {
     .field {
-      align-items: flex-end;
       display: flex;
       justify-content: flex-end;
+      align-items: flex-end;
 
       label {
         display: none;
       }
 
       input {
+        padding: 10px 15px;
+        padding-bottom: 4px;
+        margin-top: -7px;
+        width: 60px;
+        color: $mastheadTextColor;
         background: darken($mastheadBackgroundColor, 7%);
         border: 0;
         border-radius: 50px;
         box-shadow: none;
-        color: $mastheadTextColor;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
         line-height: 20px;
-        margin-top: -7px;
-        padding: 10px 15px;
-        padding-bottom: 4px;
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-        width: 60px;
 
         &:hover {
           width: 200px;
@@ -182,11 +182,11 @@
       }
 
       .btn-search {
+        position: absolute;
+        margin-right: 10px;
+        color: $mastheadBtnSearchTextColor;
         background: none;
         border: none;
-        color: $mastheadBtnSearchTextColor;
-        margin-right: 10px;
-        position: absolute;
         transition: color 0.2s ease-in;
 
         &:hover {
@@ -212,8 +212,8 @@
               width: 100%;
 
               & > li {
-                font-size: 25px;
                 margin-top: 20px;
+                font-size: 25px;
               }
             }
           }
@@ -225,10 +225,10 @@
               position: relative;
 
               input {
-                border-radius: 4px;
-                margin: 20px 0;
                 padding: 20px 10px;
+                margin: 20px 0;
                 width: 100%;
+                border-radius: 4px;
   
                 &:hover {
                   width: 100%;

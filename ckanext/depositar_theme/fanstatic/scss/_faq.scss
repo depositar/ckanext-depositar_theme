@@ -9,14 +9,14 @@
 
       .btn-link {
         padding: 0;
-        color: $faqBtnLinkTextColor;
         text-decoration: none;
+        color: $faqBtnLinkTextColor;
 
         .card-header {
-          border-bottom: none;
           display: flex;
-          align-items: center;
           justify-content: space-between;
+          align-items: center;
+          border-bottom: none;
 
           i {
             font-size: 15pt;
@@ -25,7 +25,7 @@
           }
         }
 
-        &[aria-expanded="true"] {
+        &[aria-expanded='true'] {
           .card-header {
             i {
               transform: rotate(-180deg);
