@@ -4,15 +4,15 @@
   background-image: $bannerBackgroundImage;
 
   .container {
-    min-height: 45vh;
     display: flex;
     justify-content: space-between;
+    min-height: 45vh;
 
     .heading {
-      width: 45%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 45%;
 
       .slogan {
         h2 {
@@ -36,20 +36,21 @@
           align-items: center;
 
           .input-search {
-            width: 100%;
             padding: 10px 15px;
+            width: 100%;
             background-color: $bannerInputSearchBackgroundColor;
             border: 0;
-            box-shadow: $bannerInputSearchBoxShadow;
             border-radius: 30px;
+            box-shadow: $bannerInputSearchBoxShadow;
           }
 
           .btn-search {
-            color: $bannerBtnSearchTextColor;
-            border: none;
-            background: none;
             position: absolute;
             margin-right: 12px;
+            color: $bannerBtnSearchTextColor;
+            background: none;
+            border: none;
+            transition: color 0.2s ease-in;
 
             &:hover {
               color: $bannerBtnSearchHoverTextColor;
@@ -63,16 +64,16 @@
       }
 
       .function-btn {
-        width: 100%;
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         .btn {
+          padding: 12px 0;
+          width: 35%;
           color: $bannerFunctionBtnTextColor;
           border: solid 2px $bannerFunctionBtnBorderColor;
           border-radius: 6px;
-          width: 35%;
-          padding: 12px 0;
           font-weight: bolder;
 
           &:last-child {
@@ -93,15 +94,15 @@
       align-items: center;
 
       .animation-left {
+        margin-bottom: -10px;
         width: 132px;
         height: 169px;
-        margin-bottom: -10px;
       }
 
       .animation-right {
+        padding-left: 1px;
         width: 350px;
         height: 240px;
-        padding-left: 1px;
       }
     }
   }
@@ -110,9 +111,9 @@
 @media (max-width: $largeDeviceMaxWidth) {
   .banner {
     background-image: $mediaBannerBackgroundImage;
-    background-size: 45%;
-    background-repeat: no-repeat;
     background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 45%;
 
     .container {
       .animation {
@@ -124,8 +125,8 @@
 
 @media (max-width: $mediumDeviceMaxWidth) {
   .banner {
-    background-size: contain;
     background-blend-mode: overlay;
+    background-size: contain;
 
     .container {
       .heading {
@@ -148,8 +149,8 @@
 
           .btn {
             &:not(:last-child) {
-              width: 45%;
               margin-bottom: 1rem;
+              width: 45%;
             }
 
             &.view-all {

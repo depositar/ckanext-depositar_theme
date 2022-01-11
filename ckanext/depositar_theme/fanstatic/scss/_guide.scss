@@ -1,8 +1,8 @@
 .guide {
   .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     &:not(:last-child) {
       margin-bottom: 5rem;
@@ -31,15 +31,15 @@
     }
 
     .content {
-      width: 45%;
       display: flex;
       flex-direction: column;
+      width: 45%;
 
       p {
-        overflow: hidden;
-        display: -webkit-inline-box;
-        -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
+        display: inline-box;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
       }
 
       .btn {
@@ -59,8 +59,8 @@
     }
 
     .guide-gif {
-      width: 80%;
       display: flex;
+      width: 80%;
 
       .gif {
         width: 100%;
@@ -74,12 +74,12 @@
   .guide {
     .container {
       &:nth-child(n) {
-        height: auto;
         flex-direction: column;
+        height: auto;
 
         .content {
+          margin: 0 0 1rem;
           width: 100%;
-          margin: 0 0 1rem 0;
         }
       }
 

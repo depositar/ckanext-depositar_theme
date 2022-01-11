@@ -1,5 +1,5 @@
 // base variables
-$imagePath: "../../images";
+$imagePath: '../../images';
 
 $mainThemeColor: #00e09b;
 $secondThemeColor: #012819;
@@ -13,7 +13,7 @@ $extraLargeDeviceMaxWidth: 1399.98px;
 // index
 $bodyTextColor: black;
 $bodyBackgroundColor: white;
-$bodyFontFamily: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
+$bodyFontFamily: 'Noto Sans TC', arial, 'Microsoft JhengHei', sans-serif;
 $selectionTextColor: white;
 $selectionBackgroundColor: $mainThemeColor;
 $idxBorderBottomColor: #ececec;
@@ -23,11 +23,12 @@ $accountMastheadBackgroundColor: black;
 $accountMastheadListBorderLeftColor: #ccc;
 $accountMastheadListLinkTextColor: white;
 $accountMastheadListLinkBadgeTextColor: #bfd7de;
-$accountMastheadListLinkBadgeBackgroundColor:#00232e;
+$accountMastheadListLinkBadgeBackgroundColor: #00232e;
 $accountMastheadListLinkHoverBackgroundColor: #333;
 $accountMastheadListLinkBadgeHoverTextColor: white;
 $accountMastheadListLinkBadgeHoverBackgroundColor: #000f14;
 
+$mastheadDebugColor: rgba(white, 0.5);
 $mastheadTextColor: black;
 $mastheadBackgroundColor: white;
 $mastheadBtnSearchTextColor: #999;
@@ -47,7 +48,7 @@ $bannerFunctionBtnBorderColor: $mainThemeColor;
 $bannerFunctionBtnHoverBorderColor: white;
 $bannerFunctionBtnHoverBackgroundColor: white;
 $bannerFunctionBtnHoverBoxShadow: 0 10px 20px rgba(black, 0.19), 0 6px 6px rgba(black, 0.23);
-$mediaBannerBackgroundImage: url("#{$imagePath}/visual-md.png");
+$mediaBannerBackgroundImage: url('#{$imagePath}/visual-md.png');
 
 // guide
 $guideBtnHoverTextColor: $mainThemeColor;
@@ -82,5 +83,5 @@ $footerTextColor: white;
 $footerBackgroundColor: black;
 $footerLinkTextColor: white;
 $footerLinkHoverTextColor: $mainThemeColor;
-$footerLogoImage: url("#{$imagePath}/logo_eng_horizontal_w.svg");
-$footerCkanLogoImage: url("../../../base/images/ckan-logo-footer.png");
+$footerLogoImage: url('#{$imagePath}/logo_eng_horizontal_w.svg');
+$footerCkanLogoImage: url('../../../base/images/ckan-logo-footer.png');

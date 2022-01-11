@@ -4,26 +4,26 @@
     justify-content: space-between;
 
     .stat-data {
-      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      width: 60%;
 
       .imp-data {
         display: flex;
         justify-content: space-around;
 
         .imp-item {
-          text-align: center;
           line-height: initial;
+          text-align: center;
 
           &:not(:last-child) {
             margin-right: 2.5rem;
           }
 
           .btn {
-            padding: 0;
             line-height: inherit;
+            padding: 0;
 
             &:hover {
               color: $statLinkHoverTextColor;
@@ -43,19 +43,19 @@
         justify-content: center;
 
         .sec-item {
+          display: flex;
+          align-items: center;
           width: 25%;
           text-align: center;
-          line-height: initial;
-          display: flex;
           flex-direction: column;
-          align-items: center;
+          line-height: initial;
 
           h5 {
-            width: 5rem;
             padding: 0.25rem 0;
-            font-weight: bold;
+            width: 5rem;
             border: solid 2px $statSecDataTagBorderColor;
             border-radius: 10px 10px 0 0;
+            font-weight: bold;
           }
 
           .btn {
@@ -73,11 +73,11 @@
     }
 
     .twitter {
+      overflow: auto;
+      padding: 5px;
       width: 30%;
       height: 60vh;
       min-height: 35rem;
-      padding: 5px;
-      overflow: auto;
       box-shadow: $statTwitterBoxShadow;
     }
   }
@@ -86,13 +86,13 @@
 @media (max-width: $largeDeviceMaxWidth) {
   .stats {
     .container {
+      flex-direction: column;
       height: auto;
       min-height: 60vh;
-      flex-direction: column;
 
       .stat-data {
-        width: auto;
         margin-bottom: 3rem;
+        width: auto;
 
         .imp-data {
           margin-bottom: 2rem;
@@ -100,8 +100,8 @@
       }
 
       .twitter {
-        width: 50%;
         margin: auto;
+        width: 50%;
       }
     }
   }
