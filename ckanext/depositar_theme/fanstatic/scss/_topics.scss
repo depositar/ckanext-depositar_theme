@@ -2,26 +2,26 @@
   .container {
     ul {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      list-style: none;
       padding-left: 0;
+      list-style: none;
+      flex-wrap: wrap;
 
       li {
         padding: 2%;
         width: 14.28%;
 
         a {
-          color: $topicLinkTextColor;
           display: flex;
-          flex-direction: column;
           text-align: center;
+          color: $topicLinkTextColor;
+          flex-direction: column;
 
           &:hover {
-            color: $topicLinkHoverTextColor;
             text-decoration: none;
-            transform: scale(1.08);
+            color: $topicLinkHoverTextColor;
             transition: 0.1s;
+            transform: scale(1.08);
           }
 
           h5 {
@@ -31,9 +31,9 @@
           }
 
           .img-circle {
-            border-radius: 50%;
             margin: 1rem auto;
             width: 80%;
+            border-radius: 50%;
           }
         }
       }
@@ -48,8 +48,8 @@
         li {
           a {
             h5 {
-              font-size: 1rem;
               width: 5rem;
+              font-size: 1rem;
             }
 
             .img-circle {

@@ -45,7 +45,6 @@
   color: #bfd7de;
   background-color: #00232e;
 }
-
 .masthead {
   background-color: white;
   background-image: none;
@@ -79,7 +78,7 @@
   background-color: #00e09b;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-  content: "";
+  content: '';
   transition-property: width, color;
   transition-property: width, color;
 }
@@ -161,7 +160,6 @@
 .masthead .site-search .field .btn-search:hover {
   color: black;
 }
-
 @media (max-width: 767.98px) {
   .masthead.navbar .container {
     flex-direction: row-reverse;
@@ -220,7 +218,6 @@
   height: min-content;
   line-height: 30px;
 }
-
 .banner {
   color: white;
   background-color: #012819;
@@ -311,10 +308,9 @@
   width: 350px;
   height: 240px;
 }
-
 @media (max-width: 1199.98px) {
   .banner {
-    background-image: url("../../images/visual-md.png");
+    background-image: url('../../images/visual-md.png');
     background-position: 90%;
     background-repeat: no-repeat;
     background-size: 45%;
@@ -402,7 +398,6 @@
   width: 100%;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 1199.98px) {
   .guide .container:nth-child(n) {
     flex-direction: column;
@@ -424,16 +419,21 @@
 .carousel-inner {
   width: 90%;
 }
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
   display: flex;
 }
-.carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
   transform: translateX(33.33%);
 }
-.carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
   transform: translateX(-33.33%);
 }
-.carousel-inner .carousel-item-right, .carousel-inner .carousel-item-left {
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
   transform: translateX(0);
 }
 .carousel-inner .card .img-container {
@@ -470,16 +470,18 @@
 .carousel-inner .card .content .btn.more i {
   margin-left: 5px;
 }
-.carousel-control-prev i, .carousel-control-next i {
+.carousel-control-prev i,
+.carousel-control-next i {
   font-size: 50pt;
   color: black;
 }
-
 @media (max-width: 1199.98px) {
-  .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
     transform: translateX(50%);
   }
-  .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
     transform: translateX(-50%);
   }
   .carousel-inner .carousel-item .card-col {
@@ -488,10 +490,12 @@
   }
 }
 @media (max-width: 767.98px) {
-  .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
     transform: translateX(100%);
   }
-  .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
     transform: translateX(-100%);
   }
   .carousel-inner .carousel-item > div {
@@ -504,33 +508,33 @@
     flex: 1;
     max-width: initial;
   }
-
-  .carousel-control-prev i, .carousel-control-next i {
+  .carousel-control-prev i,
+  .carousel-control-next i {
     font-size: 30pt;
   }
 }
 .topics .container ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
   padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
 .topics .container ul li {
   padding: 2%;
   width: 14.28%;
 }
 .topics .container ul li a {
-  color: black;
   display: flex;
-  flex-direction: column;
   text-align: center;
+  color: black;
+  flex-direction: column;
 }
 .topics .container ul li a:hover {
-  color: #00e09b;
   text-decoration: none;
-  transform: scale(1.08);
+  color: #00e09b;
   transition: 0.1s;
+  transform: scale(1.08);
 }
 .topics .container ul li a h5 {
   font-weight: bold;
@@ -538,15 +542,14 @@
   width: 6.5rem;
 }
 .topics .container ul li a .img-circle {
-  border-radius: 50%;
   margin: 1rem auto;
   width: 80%;
+  border-radius: 50%;
 }
-
 @media (max-width: 1399.98px) {
   .topics .container ul li a h5 {
-    font-size: 1rem;
     width: 5rem;
+    font-size: 1rem;
   }
   .topics .container ul li a .img-circle {
     width: 100%;
@@ -635,7 +638,6 @@
   min-height: 35rem;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 1199.98px) {
   .stats .container {
     flex-direction: column;
@@ -715,7 +717,6 @@
   height: 80%;
   border: solid 1px #cdcdcd;
 }
-
 @media (max-width: 991.98px) {
   .features .container {
     height: auto;
@@ -762,7 +763,6 @@
   transform: rotate(-180deg);
   transition: 0.3s;
 }
-
 .site-footer {
   padding: 3.25rem 0;
   color: white;
@@ -783,13 +783,13 @@
   margin-right: 5px;
   font-size: 10px;
   font-family: FontAwesome;
-  content: "";
+  content: '';
 }
 .site-footer .footer-links .footer-logo {
   padding-bottom: 10px;
   width: 30%;
   height: 50px;
-  background: url("../../images/logo_eng_horizontal_w.svg") no-repeat scroll;
+  background: url('../../images/logo_eng_horizontal_w.svg') no-repeat scroll;
 }
 .site-footer .attribution .ckan-footer-logo {
   display: block;
@@ -797,9 +797,8 @@
   width: 68px;
   height: 21px;
   text-indent: -900em;
-  background: url("../../../base/images/ckan-logo-footer.png") no-repeat top left;
+  background: url('../../../base/images/ckan-logo-footer.png') no-repeat top left;
 }
-
 @media (max-width: 767.98px) {
   .site-footer .footer-links .footer-logo {
     width: 50%;
@@ -807,30 +806,25 @@
 }
 body {
   font-size: 16px;
-  font-family: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
+  font-family: 'Noto Sans TC', arial, 'Microsoft JhengHei', sans-serif;
   color: black;
   background-color: white;
   line-height: 30px;
 }
-
 :focus {
   outline: 0;
 }
-
 ::selection {
   color: white;
   background-color: #00e09b;
 }
-
 h1 {
   font-weight: bold;
 }
-
 .container-fluid {
   padding: 0;
   min-height: 100vh;
 }
-
 .idx {
   padding: 5rem 0;
   border-bottom: solid 10px #ececec;
