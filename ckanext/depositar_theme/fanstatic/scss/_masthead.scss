@@ -91,9 +91,7 @@
             height: 3px;
             background-color: $mastheadListLinkAfterBackgroundColor;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
             content: '';
-            transition-property: width, color;
             transition-property: width, color;
           }
 
@@ -173,7 +171,6 @@
         border-radius: 50px;
         box-shadow: none;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
         line-height: 20px;
 
         &:hover {
@@ -229,7 +226,7 @@
                 margin: 20px 0;
                 width: 100%;
                 border-radius: 4px;
-  
+
                 &:hover {
                   width: 100%;
                 }
