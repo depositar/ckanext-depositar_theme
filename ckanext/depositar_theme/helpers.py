@@ -78,7 +78,8 @@ def get_format_count():
             format_list.append(resource['format'].upper())
 
     format_count = dict((fmt, format_list.count(fmt)) for fmt in format_list)
-    format_count.pop('')
+    if '' in format_count:
+        format_count.pop('')
     sort_format_count = sorted(format_count.items(), key=lambda tup: tup[1], reverse=True)
     return sort_format_count
 
