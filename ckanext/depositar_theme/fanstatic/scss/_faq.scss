@@ -3,6 +3,7 @@
 
   #accordion {
     margin-top: 2rem;
+    counter-reset: cnt;
 
     .card {
       margin-bottom: 1.25rem;
@@ -17,6 +18,20 @@
           justify-content: space-between;
           align-items: center;
           border-bottom: none;
+
+          .mb-0 {
+            display: flex;
+            text-align: left;
+            counter-increment: cnt;
+
+            &::before {
+              width: 45px;
+              flex-shrink: 0;
+              font-family: FontAwesome, arial;
+              font-weight: 550;
+              content: '\f292\ ' counter(cnt);
+            }
+          }
 
           i {
             font-size: 15pt;

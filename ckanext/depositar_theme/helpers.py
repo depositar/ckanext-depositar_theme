@@ -104,3 +104,6 @@ def get_showcase():
             'image_url': showcase['extras'][0]['value']
         })
     return case_list
+
+def get_markdown(content):
+    return h.render_markdown(content)

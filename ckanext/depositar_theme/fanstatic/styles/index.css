@@ -687,6 +687,12 @@
   height: 100%;
   flex-direction: column;
 }
+.features .container .block:first-child {
+  padding-left: 0;
+}
+.features .container .block:last-child {
+  padding-right: 0;
+}
 .features .container .block h2 {
   font-weight: bold;
 }
@@ -722,6 +728,12 @@
   .features .container .block {
     width: 80%;
   }
+  .features .container .block:first-child {
+    padding-left: 1.5rem;
+  }
+  .features .container .block:last-child {
+    padding-right: 1.5rem;
+  }
   .features .container .bar {
     border: initial;
   }
@@ -736,6 +748,7 @@
 }
 .faq #accordion {
   margin-top: 2rem;
+  counter-reset: cnt;
 }
 .faq #accordion .card {
   margin-bottom: 1.25rem;
@@ -750,6 +763,18 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: none;
+}
+.faq #accordion .card .btn-link .card-header .mb-0 {
+  display: flex;
+  text-align: left;
+  counter-increment: cnt;
+}
+.faq #accordion .card .btn-link .card-header .mb-0::before {
+  width: 45px;
+  flex-shrink: 0;
+  font-family: FontAwesome, arial;
+  font-weight: 550;
+  content: ' ' counter(cnt);
 }
 .faq #accordion .card .btn-link .card-header i {
   font-size: 15pt;

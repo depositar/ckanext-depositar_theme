@@ -1,5 +1,5 @@
 {% set testContent = 'This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. ' %}
-{% set guideList = [{'title':'Guide Title 1', 'content':testContent}, {'title':'Guide Title 2', 'content':testContent}, {'title':'Guide Title 3', 'content':testContent}] %}
+{% set guideList = [{'title':'Guide Title 1', 'content':h.get_markdown(testContent)}, {'title':'Guide Title 2', 'content':h.get_markdown(testContent)}, {'title':'Guide Title 3', 'content':h.get_markdown(testContent)}] %}
 
 <div class="idx guide">
   {% for guide in guideList %}

@@ -13,6 +13,14 @@
       height: 100%;
       flex-direction: column;
 
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
       h2 {
         font-weight: bold;
       }
@@ -56,6 +64,14 @@
 
       .block {
         width: 80%;
+
+        &:first-child {
+          padding-left: 1.5rem;
+        }
+
+        &:last-child {
+          padding-right: 1.5rem;
+        }
       }
 
       .bar {
