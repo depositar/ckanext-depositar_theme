@@ -27,6 +27,11 @@ body {
   background-color: $selectionBackgroundColor;
 }
 
+a {
+  text-decoration: none;
+  color: $bodyTextColor;
+}
+
 h1 {
   font-weight: bold;
 }

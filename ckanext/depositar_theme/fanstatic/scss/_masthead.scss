@@ -1,6 +1,6 @@
 .account-masthead {
   padding-top: 5px;
-  min-height: 30px;
+  min-height: 25px;
   background-color: $accountMastheadBackgroundColor;
   box-sizing: content-box;
 
@@ -20,6 +20,7 @@
           display: block;
           padding: 0 10px;
           font-size: 14px;
+          font-weight: bold;
           color: $accountMastheadListLinkTextColor;
           line-height: 21px;
 
