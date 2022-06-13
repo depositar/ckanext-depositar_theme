@@ -26,7 +26,7 @@ class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
             'get_legal_versions',
             'get_latest_legal_version',
             'get_format_count',
-            'get_download_count',
+            'get_total_views',
             'get_showcase',
             'get_markdown'
         )

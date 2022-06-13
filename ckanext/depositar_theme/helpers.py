@@ -1,5 +1,6 @@
 import os
 import inspect
+import numpy as np
 
 from ckan.common import config
 from ckan.lib import mailer
@@ -83,15 +84,15 @@ def get_format_count():
     sort_format_count = sorted(format_count.items(), key=lambda tup: tup[1], reverse=True)
     return sort_format_count
 
-def get_download_count():
+def get_total_views():
     package_list = tk.get_action('package_list')({},{})
-    download_cnt = 0
+    total_views = 0
     for pkg in package_list:
         data = {'id': pkg, 'include_tracking': True}
-        resources = tk.get_action('package_show')({}, data)['resources']
-        for resource in resources:
-            download_cnt += resource['tracking_summary']['total']
-    return download_cnt
+        pkg_content = tk.get_action('package_show')({}, data)
+        if(pkg_content['type'] == 'dataset'):
+            total_views += pkg_content['tracking_summary']['total']
+    return np.round(total_views/1000, 1)
 
 def get_showcase():
     showcase_list = tk.get_action('ckanext_showcase_list')({}, {})
