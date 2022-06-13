@@ -1,19 +1,39 @@
-{% set testContent = 'This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. This is a test guide content. ' %}
-{% set guideList = [{'title':'Guide Title 1', 'content':h.get_markdown(testContent)}, {'title':'Guide Title 2', 'content':h.get_markdown(testContent)}, {'title':'Guide Title 3', 'content':h.get_markdown(testContent)}] %}
+{% set guideList = [{'title':_('Register and Upload'), 'content':h.get_markdown(_('After registration, one can start to upload data. We support all file formats, as well as essential and standardized [metadata fields](https://docs.depositar.io/en/stable/appendix/fields/index.html) for time period, spatial range, Wikidata keywords, among others. With informatic dataset description and file preview, the deposited datasets are nicely presented.')), 'videoName':'CreateUpload'}, {'title':_('Manage and Share'), 'content':h.get_markdown(_('Once a project is created, members can be added to the project. Project members are assigned different roles in data management. A project can manage multiple datasets. A dataset can be set to be open to the public or remain private to project members only. Projects and datasets have unique links. Dataset citation snippets are automatically generated too.')), 'videoName':'ManageShare'}, {'title':_('Search and Preview'), 'content':h.get_markdown(_('Datasets are searched by spatiotemporal ranges, data types, keywords, and other conditions. Data can be previewed without being downloaded. Data previews can be embedded in other web pages too. Dataset catalogs are published as linked data and indexed by [Google Data Search](https://datasetsearch.research.google.com/). Flexible APIs for access to data endpoints and structured data are provided.')), 'videoName':'PreviewSearch'}] %}
 
 <div class="idx guide">
-  {% for guide in guideList %}
   <div class="container">
-    <div class="content">
-      <h1>{{ guide.title }}</h1>
-      <p>{{ guide.content }}</p>
-      <a class="btn more" href="#">
-        {{ _('more') }}<i class="fa fa-chevron-right"></i>
+    <div id="guideCarousel" class="guide carousel slide" data-ride="carousel">
+      <a class="carousel-control-prev" href="#guideCarousel" role="button" data-slide="prev">
+        <i class="fa fa-chevron-left"></i>
       </a>
-    </div>
-    <div class="guide-gif">
-      <img class="gif" src="#" alt="guide GIF">
+      <div class="carousel-inner">
+        {% for guide in guideList %}
+          {% if guide == guideList[0] %}
+            <div class="carousel-item active">
+          {% else %}
+            <div class="carousel-item">
+          {% endif %}
+            <div class="content">
+              <h1>{{ guide.title }}</h1>
+              <p>{{ guide.content }}</p>
+              <!-- <a class="btn more" href="#">
+                {{ _('more') }}<i class="fa fa-chevron-right"></i>
+              </a> -->
+            </div>
+            <div class="guide-gif">
+              <video id="{{ guide.videoName }}" autoplay controls muted loop="loop" class="gif" alt="Guide Video"></video>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-next" href="#guideCarousel" role="button" data-slide="next">
+        <i class="fa fa-chevron-right"></i>
+      </a>
+      <ol class="carousel-indicators">
+        <li data-target="#guideCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#guideCarousel" data-slide-to="1"></li>
+        <li data-target="#guideCarousel" data-slide-to="2"></li>
+      </ol>
     </div>
   </div>
-  {% endfor %}
 </div>

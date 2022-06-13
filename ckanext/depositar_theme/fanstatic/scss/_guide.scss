@@ -1,70 +1,70 @@
 .guide {
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-bottom: 5rem;
-    }
-
-    &:nth-child(odd) {
-      .content {
-        margin-right: 5rem;
-      }
-
-      .guide-gif {
-        justify-content: flex-end;
-      }
-    }
-
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-
-      .content {
-        margin-left: 5rem;
-      }
-
-      .guide-gif {
-        justify-content: flex-start;
-      }
-    }
-
-    .content {
+    .carousel {
       display: flex;
-      flex-direction: column;
-      width: 45%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
 
-      p {
-        -webkit-box-orient: vertical;
-        display: inline-box;
-        -webkit-line-clamp: 6;
-        overflow: hidden;
-      }
+      .carousel-inner {
+        margin-bottom: 1.5rem;
+        width: 90%;
 
-      .btn {
-        &.more {
-          align-self: end;
-          font-weight: bold;
-
-          &:hover {
-            color: $guideBtnHoverTextColor;
+        .carousel-item {
+          &.active,
+          &-next,
+          &-prev {
+            display: flex;
           }
 
-          i {
-            margin-left: 5px;
+          &-right.active,
+          &-next {
+            transform: translateX(100%);
+          }
+
+          &-left.active,
+          &-prev {
+            transform: translateX(-100%);
+          }
+
+          &-right,
+          &-left {
+            transform: translateX(0);
+          }
+
+          .content {
+            display: flex;
+            margin-right: 3rem;
+            width: 40%;
+            flex-direction: column;
+          }
+
+          .guide-gif {
+            display: flex;
+            justify-content: flex-end;
+            width: 80%;
+
+            .gif {
+              width: 100%;
+            }
           }
         }
       }
-    }
 
-    .guide-gif {
-      display: flex;
-      width: 80%;
+      .carousel-control {
+        &-prev,
+        &-next {
+          position: initial;
+          width: 3%;
+        }
+      }
 
-      .gif {
-        width: 100%;
-        box-shadow: $guideGifBoxShadow;
+      .carousel-indicators {
+        position: initial;
+
+        li {
+          background-color: $guideSlideIndicatorsBackgroundColor;
+        }
       }
     }
   }
@@ -73,18 +73,25 @@
 @media (max-width: $largeDeviceMaxWidth) {
   .guide {
     .container {
-      &:nth-child(n) {
-        flex-direction: column;
-        height: auto;
+      .carousel {
+        .carousel-inner {
+          .carousel-item {
+            flex-direction: column;
 
-        .content {
-          margin: 0 0 1rem;
-          width: 100%;
+            &.active {
+              display: flex;
+            }
+
+            .content {
+              margin: 0 0 1rem;
+              width: 100%;
+            }
+
+            .guide-gif {
+              width: 100%;
+            }
+          }
         }
-      }
-
-      .guide-gif {
-        width: 100%;
       }
     }
   }
