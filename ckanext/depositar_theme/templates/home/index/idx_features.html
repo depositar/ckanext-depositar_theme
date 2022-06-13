@@ -1,5 +1,4 @@
-{% set testContent = 'This is a test feature content. This is a test feature content. This is a test feature content. This is a test feature content. This is a test feature content. This is a test feature content.' %}
-{% set featureList = [{'title':'Feature Title 1', 'content':testContent}, {'title':'Feature Title 2', 'content':testContent}, {'title':'Feature Title 3', 'content':testContent}] %}
+{% set featureList = [{'title':_('Open and Free'), 'content':_('This repository is built on top of the open source CKAN package. It has been customized and extended to support research data management. The service is open to all researchers. Registration is free!'), 'link': h.get_doc_url() + 'maintaining/installing/index.html'}, {'title':_('Accessible and Flexible'), 'content':h.get_markdown(_('All kinds of data can be deposited. Datasets can be searched by spatiotemporal ranges, data types, keywords, and other conditions. The datasets are indexed by [Google Dataset Search](https://datasetsearch.research.google.com/).')), 'link': h.get_doc_url() + 'user-guide.html#finding-data'}, {'title':_('Interoperable Data APIs'), 'content':_('The depositar has web APIs for resource catalogs and data endpoints. APIs to access structured data (e.g. CSV and Excel files) are available too. Programmable data access and analytics can be implemented.'), 'link': h.get_doc_url() + 'user-guide.html#data-api'}] %}
 
 <div class="idx features">
   <div class="container">
@@ -9,8 +8,8 @@
         {% endif %}
         <div class="block">
           <h2>{{ feature.title }}</h2>
-          <p>{{ feature.content }}</p>
-          <a href="#" class="link">{{ _('Link to page') }}</a>
+          <div class="content">{{ feature.content }}</div>
+          <a href={{ feature.link }} class="link">{{ _('Link to page') }}</a>
         </div>
       {% endfor %}
   </div>

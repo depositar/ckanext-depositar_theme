@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 325px;
+    height: 380px;
 
     .block {
       display: flex;
@@ -25,9 +25,11 @@
         font-weight: bold;
       }
 
-      p {
+      .content {
         display: inline-box;
         overflow: hidden;
+        text-align: justify;
+        text-justify: distribute;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
       }
@@ -52,6 +54,14 @@
     .bar {
       height: 80%;
       border: solid 1px $featureBarBorderColor;
+    }
+  }
+}
+
+@media (max-width: $largeDeviceMaxWidth) {
+  .features {
+    .container {
+      height: 420px;
     }
   }
 }
