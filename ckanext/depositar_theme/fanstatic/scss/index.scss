@@ -2,11 +2,12 @@
 @import 'masthead.scss';
 @import 'flash.scss';
 @import 'banner.scss';
-@import 'guide.scss';
+@import 'intro.scss';
+@import 'features.scss';
 @import 'showcases.scss';
+@import 'guide.scss';
 @import 'topics.scss';
 @import 'stats.scss';
-@import 'features.scss';
 @import 'faq.scss';
 @import 'footer.scss';
 
@@ -28,12 +29,27 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: $bodyTextColor;
+}
+
+p {
+  margin-top: revert;
 }
 
 h1 {
   font-weight: bold;
+}
+
+.content {
+  a {
+    border-bottom: 2px solid $mainThemeColor;
+  
+    &:hover {
+      text-decoration: none;
+      color: $mainThemeColor;
+      transition: 0.1s;
+    }
+  }
 }
 
 .container-fluid {
