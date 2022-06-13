@@ -34,6 +34,12 @@ $mastheadBackgroundColor: white;
 $mastheadBtnSearchTextColor: #999;
 $mastheadListLinkAfterBackgroundColor: $mainThemeColor;
 
+// flash
+$flashAlterHoverTextColor: black;
+$flashAlertWarningTextColor: #8a6d3b;
+$flashAlertWarningBorderColor: #faebcc;
+$flashAlertWarningBackgroundColor: #fcf8e3;
+
 // banner
 $bannerTextColor: white;
 $bannerBackgroundColor: $secondThemeColor;
@@ -53,6 +59,7 @@ $mediaBannerBackgroundImage: url('#{$imagePath}/visual-md.png');
 // guide
 $guideBtnHoverTextColor: $mainThemeColor;
 $guideGifBoxShadow: 0 0 4px 2px rgba(black, 0.2);
+$guideSlideIndicatorsBackgroundColor: black;
 
 // showcases
 $showcaseCardBtnHoverTextColor: $mainThemeColor;

@@ -9,13 +9,22 @@
       margin-bottom: 0;
 
       &-warning {
-        color: #8a6d3b;
-        background-color: #fcf8e3;
-        border-color: #faebcc;
+        color: $flashAlertWarningTextColor;
+        background-color: $flashAlertWarningBackgroundColor;
+        border-color: $flashAlertWarningBorderColor;
       }
 
       > a:not(.close) {
         border-bottom: 2px solid $mainThemeColor;
+
+        &:hover {
+          text-decoration: none;
+          color: $flashAlterHoverTextColor;
+        }
+      }
+
+      .close {
+        opacity: 0.2;
       }
     }
   }
@@ -26,6 +35,15 @@
 
     .msg-content {
       width: 95%;
+
+      a {
+        border-bottom: 2px solid $mainThemeColor;
+
+        &:hover {
+          text-decoration: none;
+          color: $flashAlterHoverTextColor;
+        }
+      }
     }
 
     &-dismissible {
