@@ -70,14 +70,15 @@
 
         .btn {
           padding: 12px 0;
-          width: 35%;
+          width: 32%;
           color: $bannerFunctionBtnTextColor;
           border: solid 2px $bannerFunctionBtnBorderColor;
           border-radius: 6px;
           font-weight: bolder;
 
           &:last-child {
-            width: 25%;
+            color: $bannerFunctionBtnBorderColor;
+            border-color: $bannerFunctionBtnBorderColor;
           }
 
           &:hover {
