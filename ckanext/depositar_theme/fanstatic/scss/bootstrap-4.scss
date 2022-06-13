@@ -30,6 +30,7 @@ html {
 @import './vendor/bootstrap/mixins/gradients';
 @import './vendor/bootstrap/mixins/image';
 @import './vendor/bootstrap/mixins/lists';
+@import './vendor/bootstrap/mixins/reset-text';
 
 // from mixins/grid
 .row-bs4 {
@@ -43,11 +44,11 @@ html {
 @import './vendor/bootstrap/utilities/spacing';
 
 /*!
- * Bootstrap v4.6.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+* Bootstrap v4.6.0 (https://getbootstrap.com/)
+* Copyright 2011-2021 The Bootstrap Authors
+* Copyright 2011-2021 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+*/
 
 @import './vendor/bootstrap/utilities/sizing';
 @import './vendor/bootstrap/utilities/borders';
@@ -64,3 +65,4 @@ html {
 @import './vendor/bootstrap/grid';
 @import './vendor/bootstrap/nav';
 @import './vendor/bootstrap/navbar';
+@import './vendor/bootstrap/tooltip';
