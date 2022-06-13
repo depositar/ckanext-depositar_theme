@@ -22,15 +22,7 @@
           .mb-0 {
             display: flex;
             text-align: left;
-            counter-increment: cnt;
-
-            &::before {
-              width: 45px;
-              flex-shrink: 0;
-              font-family: FontAwesome, arial;
-              font-weight: 550;
-              content: '\f292\ ' counter(cnt);
-            }
+            font-weight: bold;
           }
 
           i {
@@ -46,6 +38,14 @@
               transform: rotate(-180deg);
               transition: 0.3s;
             }
+          }
+        }
+      }
+
+      .collapse {
+        .content {
+          ul {
+            margin-bottom: 0;
           }
         }
       }
