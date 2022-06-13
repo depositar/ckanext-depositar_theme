@@ -8,11 +8,14 @@ index-js:
   output: depositar_theme/%(version)s_index.js
   contents: 
     - scripts/hero-animation.js
-    - scripts/showcase.js
+    - scripts/hls.js
+    - scripts/carousel.js
+    - javascript/notify.js
   extra:
     preload:
       - depositar_theme/bootstrap-4-js
       - depositar_theme/p5-js
+      - depositar_theme/hls-js
 
 index-css:
   output: depositar_theme/%(version)s_index.css
@@ -44,3 +47,7 @@ bootstrap-4-js:
   extra:
     preload:
       - vendor/jquery
+
+hls-js:
+  output: depositar_theme/%(version)s_hls.js
+  contents: vendor/hls.js/hls.js
