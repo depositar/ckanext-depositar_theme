@@ -92,7 +92,7 @@ def get_total_views():
         pkg_content = tk.get_action('package_show')({}, data)
         if(pkg_content['type'] == 'dataset'):
             total_views += pkg_content['tracking_summary']['total']
-    return np.round(total_views/1000, 1)
+    return h.SI_number_span(total_views)
 
 def get_showcase():
     showcase_list = tk.get_action('ckanext_showcase_list')({}, {})
