@@ -476,10 +476,6 @@
 .carousel-inner .carousel-item-prev {
   transform: translateX(-33.33%);
 }
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left {
-  transform: translateX(0);
-}
 .carousel-inner .card .img-container {
   display: flex;
   justify-content: center;
@@ -557,6 +553,10 @@
   .carousel-control-next i {
     font-size: 30pt;
   }
+}
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
 }
 .guide .container .carousel {
   display: flex;

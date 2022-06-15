@@ -25,11 +25,6 @@
       &-prev {
         transform: translateX(-33.33%);
       }
-
-      &-right,
-      &-left {
-        transform: translateX(0);
-      }
     }
 
     .card {
@@ -145,6 +140,15 @@
       i {
         font-size: 30pt;
       }
+    }
+  }
+}
+
+.carousel-inner {
+  .carousel-item {
+    &-right,
+    &-left {
+      transform: translateX(0);
     }
   }
 }
