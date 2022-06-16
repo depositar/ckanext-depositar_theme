@@ -10,6 +10,7 @@ index-js:
     - scripts/hero-animation.js
     - scripts/hls.js
     - scripts/carousel.js
+    - scripts/tooltip.js
     - javascript/notify.js
   extra:
     preload:
@@ -47,7 +48,12 @@ bootstrap-4-js:
   extra:
     preload:
       - vendor/jquery
+      - depositar_theme/popper-js
 
 hls-js:
   output: depositar_theme/%(version)s_hls.js
   contents: vendor/hls.js/hls.js
+
+popper-js:
+  output: depositar_theme/%(version)s_popper.min.js
+  contents: vendor/popper.js/popper.min.js
