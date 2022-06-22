@@ -1,5 +1,5 @@
 if (Hls.isSupported()) {
-  let videoList = document.getElementsByClassName("gif");
+  let videoList = document.getElementsByClassName("video");
   let hls = Array.from(Array(3), (_, i) => new Hls());
 
   for (let i = 0; i < videoList.length; i++) {
