@@ -1,5 +1,5 @@
 {% 
-  set faqList = [
+  set faq_list = [
     {
       'id':'1',
       'title':_('Where is the term depositar from?'),
@@ -37,9 +37,9 @@
   <div class="container">
     <h1>{{ _('FAQ') }}</h1>
     <div id="accordion">
-      {% for faq in faqList %}
+      {% for faq in faq_list %}
       <div class="card">
-        {% if faq == faqList[0] %}
+        {% if faq == faq_list[0] %}
           <button class="btn btn-link" data-toggle="collapse" data-target={{ "#collapse" + faq.id }} aria-expanded="true" aria-controls={{ "collapse" + faq.id }}>
         {% else %}
           <button class="btn btn-link" data-toggle="collapse" data-target={{ "#collapse" + faq.id }} aria-expanded="false" aria-controls={{ "collapse" + faq.id }}>
@@ -52,7 +52,7 @@
           </div>
         </button>
 
-        {% if faq == faqList[0] %}
+        {% if faq == faq_list[0] %}
           <div id={{ "collapse" + faq.id }} class="collapse show" aria-labelledby={{ "heading" + faq.id }} data-parent="#accordion">
         {% else %}
           <div id={{ "collapse" + faq.id }} class="collapse" aria-labelledby={{ "heading" + faq.id }} data-parent="#accordion">

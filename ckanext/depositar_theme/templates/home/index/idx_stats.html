@@ -1,4 +1,4 @@
-{% set formatCntList = h.get_format_count() %}
+{% set format_cnt_list = h.get_format_count() %}
 
 <div class="idx stats">
   <div class="container">
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="sec-data">
-        {% for formatCnt in formatCntList[:7] %}
+        {% for formatCnt in format_cnt_list[:7] %}
         <div class="sec-item">
           <h5>{{ formatCnt[0] }}</h5>
           <a href="{{ h.url_for('dataset.search', res_format=formatCnt[0]) }}" class="btn">
