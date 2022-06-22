@@ -823,9 +823,6 @@
   transform: rotate(-180deg);
   transition: 0.3s;
 }
-.faq #accordion .card .collapse .content ul {
-  margin-bottom: 0;
-}
 .site-footer {
   padding: 3.25rem 0;
   color: white;
