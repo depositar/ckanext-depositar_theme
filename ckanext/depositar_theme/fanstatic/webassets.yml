@@ -51,8 +51,8 @@ bootstrap-4-js:
       - depositar_theme/popper-js
 
 hls-js:
-  output: depositar_theme/%(version)s_hls.js
-  contents: vendor/hls.js/hls.js
+  output: depositar_theme/%(version)s_hls.light.js
+  contents: vendor/hls.js/hls.light.js
 
 popper-js:
   output: depositar_theme/%(version)s_popper.min.js
