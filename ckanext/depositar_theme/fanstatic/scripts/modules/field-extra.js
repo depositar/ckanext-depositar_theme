@@ -6,6 +6,7 @@ this.ckan.module('field-extra', function (jQuery) {
       var label_name = this.el.data('label-name') || this.el.data('name');
       var icon = this.el.data('icon');
       var multiple = this.el.data('multiple');
+      var ark = this.el.data('ark');
       var label = $("[for=field-" + label_name + "]");
       var required = label.find(".control-required");
 
@@ -19,6 +20,10 @@ this.ckan.module('field-extra', function (jQuery) {
 
       if (multiple) {
         $('<span title="' + this._("This field accepts multiple values") + '" class="control-required">§</span>').appendTo(label);
+      }
+
+      if (ark) {
+        $('<span title="' + this._("This field is required for assigning ARK") + '" class="control-required"><i class="fa fa-key fa-fw"></i></span>').appendTo(label);
       }
     }
   }
