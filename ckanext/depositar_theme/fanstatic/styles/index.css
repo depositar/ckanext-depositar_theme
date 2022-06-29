@@ -204,6 +204,11 @@
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
+.flash-messages .alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
 .flash-messages .alert > a:not(.close) {
   border-bottom: 2px solid #00e09b;
 }
@@ -213,6 +218,9 @@
 }
 .flash-messages .alert .close {
   opacity: 0.2;
+}
+.flash-messages .alert .close:hover {
+  opacity: 0.5;
 }
 .flash .alert {
   display: flex;
@@ -373,9 +381,8 @@
   border-left: 1em solid #00e09b;
   padding: 1rem;
   margin-top: 1.5rem;
-  font-size: large;
+  font-size: larger;
   font-weight: bold;
-  line-height: 2;
 }
 .features .container {
   display: flex;
@@ -403,8 +410,6 @@
 .features .container .block .content {
   display: inline-box;
   overflow: hidden;
-  text-align: justify;
-  text-justify: distribute;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
