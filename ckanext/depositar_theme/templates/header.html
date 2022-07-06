@@ -17,7 +17,7 @@
 {% block header_account %}
   {% if h.is_demo() %}
     <div class="flash-messages">
-      <div class="alert fade in alert-warning show">
+      <div class="alert alert-dismissible fade in alert-warning show">
         {%- trans -%}
         This is the demo site for <a href="http://data.depositar.io/" target="_blank">depositar</a>. You can create a new account and try any functions provided by the depositar. Please note that all data in this site will be deleted occasionally.
         {%- endtrans -%}

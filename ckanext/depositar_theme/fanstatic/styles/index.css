@@ -217,6 +217,8 @@
   color: black;
 }
 .flash-messages .alert .close {
+  position: initial;
+  padding: 0;
   opacity: 0.2;
 }
 .flash-messages .alert .close:hover {
@@ -719,6 +721,9 @@
 .stats .container .stat-data .imp-data .imp-item .cnt {
   font-size: 60pt;
   font-weight: bolder;
+}
+.stats .container .stat-data .imp-data .imp-item .cnt:last-child {
+  display: inline-block;
 }
 .stats .container .stat-data .sec-data {
   display: flex;

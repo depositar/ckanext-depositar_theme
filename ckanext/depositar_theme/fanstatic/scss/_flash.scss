@@ -30,6 +30,8 @@
       }
 
       .close {
+        position: initial;
+        padding: 0;
         opacity: 0.2;
 
         &:hover {

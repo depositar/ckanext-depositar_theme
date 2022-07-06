@@ -33,6 +33,10 @@
           .cnt {
             font-size: 60pt;
             font-weight: bolder;
+
+            &:last-child {
+              display: inline-block;
+            }
           }
         }
       }
