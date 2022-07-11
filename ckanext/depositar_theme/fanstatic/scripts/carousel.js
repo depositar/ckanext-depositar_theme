@@ -1,5 +1,5 @@
 // showcase
-$("#recipeCarousel").carousel({
+$("#showcaseCarousel").carousel({
   interval: 10000,
 });
 
