@@ -824,6 +824,9 @@
   text-align: left;
   font-weight: bold;
 }
+.faq #accordion .card .btn-link .card-header .mb-0 p {
+  margin: 0;
+}
 .faq #accordion .card .btn-link .card-header i {
   font-size: 15pt;
   transform: rotate(0deg);
