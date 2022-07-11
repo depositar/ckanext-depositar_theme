@@ -1,6 +1,5 @@
 import os
 import inspect
-import numpy as np
 
 from ckan.common import config
 from ckan.lib import mailer
