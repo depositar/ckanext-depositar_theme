@@ -11,7 +11,6 @@ index-js:
     - scripts/hls.js
     - scripts/carousel.js
     - scripts/tooltip.js
-    - scripts/notify.js
   extra:
     preload:
       - depositar_theme/bootstrap-4-js

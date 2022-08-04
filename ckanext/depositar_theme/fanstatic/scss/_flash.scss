@@ -5,6 +5,7 @@
 
   &-messages {
     .alert {
+      display: block;
       padding: 15px;
       margin-bottom: 0;
 
@@ -20,17 +21,22 @@
         border-color: $flashAlertInfoBorderColor;
       }
 
-      > a:not(.close) {
-        border-bottom: 2px solid $mainThemeColor;
+      .msg-content {
+        width: 95%;
 
-        &:hover {
-          text-decoration: none;
-          color: $flashAlterHoverTextColor;
+        a:not(.close) {
+          border-bottom: 2px solid $mainThemeColor;
+  
+          &:hover {
+            text-decoration: none;
+            color: $flashAlterHoverTextColor;
+          }
         }
       }
 
       .close {
-        position: initial;
+        position: relative;
+        top: -30px;
         padding: 0;
         opacity: 0.2;
 

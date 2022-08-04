@@ -196,6 +196,7 @@
   height: 0;
 }
 .flash-messages .alert {
+  display: block;
   padding: 15px;
   margin-bottom: 0;
 }
@@ -209,15 +210,19 @@
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
-.flash-messages .alert > a:not(.close) {
+.flash-messages .alert .msg-content {
+  width: 95%;
+}
+.flash-messages .alert .msg-content a:not(.close) {
   border-bottom: 2px solid #00e09b;
 }
-.flash-messages .alert > a:not(.close):hover {
+.flash-messages .alert .msg-content a:not(.close):hover {
   text-decoration: none;
   color: black;
 }
 .flash-messages .alert .close {
-  position: initial;
+  position: relative;
+  top: -30px;
   padding: 0;
   opacity: 0.2;
 }
