@@ -21,27 +21,32 @@
         border-color: $flashAlertInfoBorderColor;
       }
 
-      .msg-content {
-        width: 95%;
+      &-dismissible {
+        padding-right: 35px;
 
         a:not(.close) {
           border-bottom: 2px solid $mainThemeColor;
 
           &:hover {
             text-decoration: none;
-            color: $flashAlterHoverTextColor;
+            color: $flashAlertTextColor;
           }
         }
-      }
 
-      .close {
-        position: relative;
-        top: -30px;
-        padding: 0;
-        opacity: 0.2;
+        .close {
+          position: relative;
+          top: -2px;
+          right: -21px;
+          padding: 0;
 
-        &:hover {
-          opacity: 0.5;
+          span {
+            color: $flashAlertTextColor;
+            opacity: 0.2;
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
         }
       }
     }
@@ -59,7 +64,7 @@
 
         &:hover {
           text-decoration: none;
-          color: $flashAlterHoverTextColor;
+          color: $flashAlertTextColor;
         }
       }
     }

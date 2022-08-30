@@ -9,6 +9,7 @@ index-js:
   contents: 
     - scripts/hero-animation.js
     - scripts/hls.js
+    - scripts/alert.js
     - scripts/carousel.js
     - scripts/tooltip.js
   extra:
