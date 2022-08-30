@@ -144,6 +144,10 @@
   }
 }
 
+/*
+  stylelint-disable no-duplicate-selectors --
+  A workaround for the carousel containing less than 3 items.
+*/
 .carousel-inner {
   .carousel-item {
     &-right,
