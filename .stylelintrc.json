@@ -1,11 +1,16 @@
 {
   "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "ckanext/depositar_theme/fanstatic/scss/bootstrap-4.scss",
+    "ckanext/depositar_theme/fanstatic/scss/vendor/**"
+  ],
   "rules": {
     "font-family-no-missing-generic-family-keyword": [
       true,
       {
         "ignoreFontFamilies": ["FontAwesome"]
       }
-    ]
+    ],
+    "no-descending-specificity": null
   }
 }

@@ -21,7 +21,8 @@
      data-name="{{ field.field_name }}"
      {% if field.icon %} data-icon="{{ field.icon }}"{% endif %}
      {% if field.label_name %} data-label-name="{{ field.label_name }}"{% endif %}
-     {% if field.multiple %} data-multiple="{{ field.multiple }}"{% endif %}>
+     {% if field.multiple %} data-multiple="{{ field.multiple }}"{% endif %}
+     {% if field.ark %} data-ark="{{ field.ark }}"{% endif %}>
 </div>
 
 {% asset 'depositar_theme/field-extra-js' %}

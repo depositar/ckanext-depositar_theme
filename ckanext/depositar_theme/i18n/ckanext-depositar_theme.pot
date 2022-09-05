@@ -1,46 +1,57 @@
 # Translations template for ckanext-depositar_theme.
-# Copyright (C) 2021 ORGANIZATION
+# Copyright (C) 2022 ORGANIZATION
 # This file is distributed under the same license as the ckanext-depositar_theme
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.0.5b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.1b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-09-09 14:00+0800\n"
+"POT-Creation-Date: 2022-06-28 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.7.0\n"
 
-#: ckanext/depositar_theme/controllers/legal.py:15
+#: ckanext/depositar_theme/fanstatic/scripts/modules/field-extra.js:22
+msgid "This field accepts multiple values"
+msgstr ""
+
+#: ckanext/depositar_theme/fanstatic/scripts/modules/field-extra.js:26
+msgid "This field is required for assigning ARK"
+msgstr ""
+
+#: ckanext/depositar_theme/routes/help.py:14
+#: ckanext/depositar_theme/templates/header.html:46
+#: ckanext/depositar_theme/templates/help/index.html:3
+#: ckanext/depositar_theme/templates/help/index.html:6
+msgid "Help"
+msgstr ""
+
+#: ckanext/depositar_theme/routes/legal.py:22
 #: ckanext/depositar_theme/templates/legal/tou_archive.html:6
 msgid "Terms of Use"
 msgstr ""
 
-#: ckanext/depositar_theme/controllers/legal.py:20
+#: ckanext/depositar_theme/routes/legal.py:28
 msgid "Terms of Use (Archive)"
 msgstr ""
 
-#: ckanext/depositar_theme/controllers/legal.py:27
+#: ckanext/depositar_theme/routes/legal.py:35
 #: ckanext/depositar_theme/templates/legal/privacy_archive.html:6
 msgid "Privacy Policy"
 msgstr ""
 
-#: ckanext/depositar_theme/controllers/legal.py:32
+#: ckanext/depositar_theme/routes/legal.py:41
 msgid "Privacy Policy (Archive)"
 msgstr ""
 
-#: ckanext/depositar_theme/fanstatic/scripts/modules/field-extra.js:21
-msgid "This field accepts multiple values"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:6
+#: ckanext/depositar_theme/templates/header.html:21
 msgid ""
 "This is the demo site for <a href=\"http://data.depositar.io/\" "
 "target=\"_blank\">depositar</a>. You can create a new account and try any "
@@ -48,110 +59,41 @@ msgid ""
 "will be deleted occasionally."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:21
-msgid "Sysadmin settings"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:23
-msgid "Admin"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:28
-msgid "View profile"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:35
-#, python-format
-msgid "Dashboard (%(num)d new item)"
-msgid_plural "Dashboard (%(num)d new items)"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/header.html:38
-#: ckanext/depositar_theme/templates/user/dashboard.html:6
-msgid "Dashboard"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:44
-#: ckanext/depositar_theme/templates/user/dashboard.html:16
-msgid "Edit settings"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:46
-msgid "Settings"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:52
-#: ckanext/depositar_theme/templates/header.html:54
-msgid "Log out"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:65
-msgid "Log in"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/header.html:67
-#: ckanext/depositar_theme/templates/user/new.html:3
-msgid "Register"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/read_base.html:17
-#: ckanext/depositar_theme/templates/header.html:110
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:20
-#: ckanext/depositar_theme/templates/organization/edit_base.html:23
-#: ckanext/depositar_theme/templates/organization/read_base.html:17
-#: ckanext/depositar_theme/templates/package/base.html:7
-#: ckanext/depositar_theme/templates/package/base.html:17
-#: ckanext/depositar_theme/templates/package/base.html:21
-#: ckanext/depositar_theme/templates/revision/diff.html:11
-#: ckanext/depositar_theme/templates/revision/read.html:65
-#: ckanext/depositar_theme/templates/snippets/organization.html:59
+#: ckanext/depositar_theme/templates/header.html:42
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:111
-#: ckanext/depositar_theme/templates/organization/edit_base.html:5
-#: ckanext/depositar_theme/templates/organization/edit_base.html:8
-#: ckanext/depositar_theme/templates/organization/index.html:3
-#: ckanext/depositar_theme/templates/organization/index.html:6
-#: ckanext/depositar_theme/templates/organization/index.html:18
-#: ckanext/depositar_theme/templates/organization/read_base.html:3
-#: ckanext/depositar_theme/templates/organization/read_base.html:6
-#: ckanext/depositar_theme/templates/package/base.html:14
-msgid "Projects"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/base_form_page.html:6
-#: ckanext/depositar_theme/templates/group/edit.html:4
-#: ckanext/depositar_theme/templates/group/edit_base.html:4
-#: ckanext/depositar_theme/templates/group/edit_base.html:10
-#: ckanext/depositar_theme/templates/group/index.html:3
-#: ckanext/depositar_theme/templates/group/index.html:6
-#: ckanext/depositar_theme/templates/group/index.html:18
-#: ckanext/depositar_theme/templates/group/members.html:3
-#: ckanext/depositar_theme/templates/group/read_base.html:3
-#: ckanext/depositar_theme/templates/group/read_base.html:6
-#: ckanext/depositar_theme/templates/header.html:112
+#: ckanext/depositar_theme/templates/header.html:43
 #: ckanext/depositar_theme/templates/home/index/idx_topics.html:7
 #: ckanext/depositar_theme/templates/package/group_list.html:5
-#: ckanext/depositar_theme/templates/package/read_base.html:20
-#: ckanext/depositar_theme/templates/revision/diff.html:16
-#: ckanext/depositar_theme/templates/revision/read.html:84
 msgid "Topics"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/group/read_base.html:19
-#: ckanext/depositar_theme/templates/header.html:113
-#: ckanext/depositar_theme/templates/organization/read_base.html:19
+#: ckanext/depositar_theme/templates/header.html:44
+msgid "Projects"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/header.html:45
 msgid "About"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:123
+#: ckanext/depositar_theme/templates/header.html:53
 msgid "Search Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:124
-msgid "Search"
+#: ckanext/depositar_theme/templates/header.html:54
+msgid "Search datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/header.html:55
+msgid "Submit"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/ark/snippets/ark.html:18
+#, python-format
+msgid ""
+"Not assigned. Please find the <a href=\"%(doc_url)suser-guide.html#ark-"
+"identifier\" target=\"_blank\">criteria</a> for assigning ARK."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/emails/user_registration.txt:1
@@ -198,286 +140,8 @@ msgstr ""
 msgid "Welcome - %(site_title)s"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/group/base_form_page.html:7
-msgid "Add a Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/base_form_page.html:11
-msgid "Topic Form"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/confirm_delete.html:3
-#: ckanext/depositar_theme/templates/group/confirm_delete.html:15
-#: ckanext/depositar_theme/templates/organization/confirm_delete.html:3
-#: ckanext/depositar_theme/templates/organization/confirm_delete.html:15
-msgid "Confirm Delete"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/confirm_delete.html:11
-msgid "Are you sure you want to delete topic - {name}?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/confirm_delete.html:14
-#: ckanext/depositar_theme/templates/organization/confirm_delete.html:14
-msgid "Cancel"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/edit.html:7
-#: ckanext/depositar_theme/templates/group/edit_base.html:4
-#: ckanext/depositar_theme/templates/group/edit_base.html:13
-#: ckanext/depositar_theme/templates/group/read_base.html:12
-#: ckanext/depositar_theme/templates/organization/edit_base.html:11
-#: ckanext/depositar_theme/templates/organization/read_base.html:12
-#: ckanext/depositar_theme/templates/package/read_base.html:14
-msgid "Manage"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/edit.html:12
-msgid "Edit Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/edit_base.html:18
-#: ckanext/depositar_theme/templates/organization/edit_base.html:17
-msgid "View"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/edit_base.html:22
-#: ckanext/depositar_theme/templates/group/members.html:28
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:65
-#: ckanext/depositar_theme/templates/organization/edit.html:3
-#: ckanext/depositar_theme/templates/organization/edit_base.html:22
-msgid "Edit"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/edit_base.html:23
-#: ckanext/depositar_theme/templates/group/members.html:3
-#: ckanext/depositar_theme/templates/organization/edit_base.html:24
-msgid "Members"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/index.html:13
-#: ckanext/depositar_theme/templates/user/dashboard_groups.html:7
-msgid "Add Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/index.html:20
-msgid "Search topics..."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/index.html:20
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:97
-#: ckanext/depositar_theme/templates/organization/index.html:20
-msgid "Name Ascending"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/index.html:20
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:98
-#: ckanext/depositar_theme/templates/organization/index.html:20
-msgid "Name Descending"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/index.html:29
-msgid "There are currently no topics for this site"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/index.html:31
-#: ckanext/depositar_theme/templates/organization/index.html:31
-msgid "How about creating one?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:8
-#: ckanext/depositar_theme/templates/organization/member_new.html:10
-msgid "Back to all members"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:10
-#: ckanext/depositar_theme/templates/organization/member_new.html:7
-#: ckanext/depositar_theme/templates/organization/member_new.html:12
-msgid "Edit Member"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:10
-#: ckanext/depositar_theme/templates/group/member_new.html:64
-#: ckanext/depositar_theme/templates/group/members.html:6
-#: ckanext/depositar_theme/templates/organization/member_new.html:7
-#: ckanext/depositar_theme/templates/organization/member_new.html:12
-#: ckanext/depositar_theme/templates/organization/member_new.html:65
-msgid "Add Member"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:18
-#: ckanext/depositar_theme/templates/organization/member_new.html:20
-msgid "Existing User"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:21
-#: ckanext/depositar_theme/templates/organization/member_new.html:23
-msgid "If you wish to add an existing user, search for their username below."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:38
-#: ckanext/depositar_theme/templates/organization/member_new.html:40
-msgid "or"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:42
-#: ckanext/depositar_theme/templates/organization/member_new.html:44
-msgid "New User"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:45
-#: ckanext/depositar_theme/templates/organization/member_new.html:47
-msgid "If you wish to invite a new user, enter their email address."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:55
-#: ckanext/depositar_theme/templates/group/members.html:15
-#: ckanext/depositar_theme/templates/organization/member_new.html:56
-msgid "Role"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:58
-#: ckanext/depositar_theme/templates/group/members.html:31
-#: ckanext/depositar_theme/templates/organization/member_new.html:59
-msgid "Are you sure you want to delete this member?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:58
-#: ckanext/depositar_theme/templates/group/members.html:31
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:60
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:47
-#: ckanext/depositar_theme/templates/organization/member_new.html:59
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:60
-#: ckanext/depositar_theme/templates/revision/read.html:24
-msgid "Delete"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:60
-msgid "Save"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:77
-#: ckanext/depositar_theme/templates/organization/member_new.html:78
-msgid "What are roles?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/member_new.html:80
-msgid ""
-" <p><strong>Admin:</strong> Can edit topic information, as well as manage "
-"topic members.</p> <p><strong>Member:</strong> Can add/remove datasets from "
-"topics</p> "
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/members.html:14
-msgid "User"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/new.html:3
-#: ckanext/depositar_theme/templates/group/new.html:5
-#: ckanext/depositar_theme/templates/group/new.html:7
-msgid "Create a Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/new_group_form.html:17
-msgid "Update Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/new_group_form.html:19
-msgid "Create Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/read_base.html:18
-#: ckanext/depositar_theme/templates/organization/read_base.html:18
-#: ckanext/depositar_theme/templates/package/read_base.html:21
-msgid "Activity Stream"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/feeds.html:3
-msgid "Datasets in topic: {group}"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/feeds.html:4
-#: ckanext/depositar_theme/templates/organization/snippets/feeds.html:4
-msgid "Recent Revision History"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:10
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:10
-msgid "Name"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:10
-msgid "My Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:18
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:18
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:13
-msgid "URL"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:18
-msgid "my-topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:20
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:20
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:19
-msgid "Description"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:20
-msgid "A little information about my topic..."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:35
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:48
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:35
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:48
-msgid "Custom Field"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:60
-msgid "Are you sure you want to delete this Topic?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_form.html:63
-msgid "Save Topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_item.html:32
-msgid "{num} Dataset"
-msgid_plural "{num} Datasets"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_item.html:34
-msgid "0 Datasets"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_item.html:38
-#: ckanext/depositar_theme/templates/group/snippets/group_item.html:39
-msgid "View {name}"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_item.html:43
-msgid "Remove"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/group_item.html:43
-msgid "Remove dataset from this topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/helper.html:4
-msgid "What are Topics?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/group/snippets/helper.html:8
-msgid ""
-" You can use Topics to create and manage collections of datasets. This could "
-"be to catalogue datasets for a particular project or team, or on a particular"
-" theme, or as a very simple way to help people find and search your own "
-"published datasets. "
+#: ckanext/depositar_theme/templates/help/index.html:11
+msgid "Your browser does not support iframes."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index.html:3
@@ -516,7 +180,6 @@ msgid "FOR YOUR ––––"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:7
-#: ckanext/depositar_theme/templates/package/read_base.html:19
 msgid "Dataset"
 msgstr ""
 
@@ -527,8 +190,6 @@ msgid "more"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:16
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:70
-#: ckanext/depositar_theme/templates/snippets/organization.html:23
 msgid "Project"
 msgstr ""
 
@@ -632,208 +293,98 @@ msgstr ""
 msgid "Technology and applied sciences"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:5
-msgid "{0} statistics"
+#: ckanext/depositar_theme/templates/home/snippets/about_text.html:5
+msgid ""
+"<h1>What is <em>depositar</em>?</h1> <p><em>depositar</em> — taking the term "
+"from the Portuguese/Spanish verb for <em>to deposit</em> — is an online "
+"repository for research data. The site <a "
+"href=\"https://data.depositar.io/\">data.depositar.io</a> is built by the "
+"researchers for the researchers. You are free to deposit, discover, and reuse"
+" datasets on <em>depositar</em> for all your research purposes.</p>"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:11
-msgid "dataset"
+#: ckanext/depositar_theme/templates/home/snippets/about_text.html:15
+msgid ""
+"<h2>Your datasets</h2> <p>Datasets — collections of tables, maps, documents, "
+"or other data files — are fast to upload and preview. Once uploaded, datasets"
+" have permanent links for all to reference and download. You are encouraged "
+"to annotate your datasets with rich metadata so that they can be better "
+"discovered. An intuitive interface is provided to support spatiotemporal "
+"description and query for datasets. Moreover, in <em>depositar</em> all "
+"datasets use keywords sourced from <a href=\"https://wikidata.org/\" "
+"class=\"external\" target=\"_blank\">Wikidata</a>! Datasets on "
+"<em>depositar</em> are inter-connected by their semantics. They are ready to "
+"be explored and reused.</p>"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:11
-msgid "datasets"
+#: ckanext/depositar_theme/templates/home/snippets/about_text.html:31
+msgid ""
+"<h2>Your projects</h2> <p>Research is team work, and <em>depositar</em> is "
+"built for collaborative research! After getting accounts on "
+"<em>depositar</em>, researchers can form projects to share datasets among "
+"themselves. Datasets can be put under access control, so that they remain "
+"private to project members. Metadata in <em>depositar</em> can be "
+"collaboratively edited, and different uploads of a dataset are versioned. "
+"When it is time to release the data, there are several open licenses to "
+"choose from. Of course, data can be dedicated to the public domain too.</p>"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:17
-msgid "project"
+#: ckanext/depositar_theme/templates/home/snippets/about_text.html:44
+msgid ""
+"<h2>It's open and free!</h2> <p>The software for <em>depositar</em> is built "
+"on top of <a href=\"https://ckan.org/\" class=\"external\" "
+"target=\"_blank\">CKAN</a>, an open source software package for publishing "
+"open data. CKAN stands for <em>Comprehensive Knowledge Archive Network</em>. "
+"CKAN is a project from <a href=\"https://okfn.org/\" class=\"external\" "
+"target=\"_blank\">Open Knowledge International</a>, and is itself supported "
+"by a viable developer and user community. We customize and extend the CKAN "
+"codebase to better support research data management. Our extensions to CKAN "
+"are <a href=\"https://github.com/depositar/\" class=\"external\" "
+"target=\"_blank\">open source</a> too. The service provided by <a "
+"href=\"https://data.depositar.io/\">data.depositar.io</a> is experimental as "
+"of now. It is free for all academic use.</p>"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:17
-msgid "projects"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:23
-msgid "topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/snippets/stats.html:23
-msgid "topics"
+#: ckanext/depositar_theme/templates/home/snippets/about_text.html:60
+#, python-format
+msgid ""
+"<h2>More about <em>depositar</em></h2> <p>Project <em>depositar</em> is a "
+"work in progress. Both <a href=\"https://github.com/depositar/\" "
+"class=\"external\" target=\"_blank\">source code</a> and <a "
+"href=\"%(doc_url)s\" class=\"external\" target=\"_blank\">user manual</a> are"
+" available. Please send comments and feedbacks to data.contact AT "
+"depositar.io.</p> <p>This work has been carried out in <a "
+"href=\"https://www.sinica.edu.tw/\" class=\"external\" "
+"target=\"_blank\">Academia Sinica</a>, Taiwan. It has been supported by the "
+"<a href=\"https://www.iis.sinica.edu.tw/\" class=\"external\" "
+"target=\"_blank\">Institute of Information Science</a> and the <a "
+"href=\"https://www.citi.sinica.edu.tw/\" class=\"external\" "
+"target=\"_blank\">Research Center for Information Technology Innovation</a> "
+"(both at Academia Sinica), and in part by research grants from the Ministry "
+"of Science and Technology of Taiwan. The project started from and remains as "
+"a collaboration with the <a href=\"http://gis.rchss.sinica.edu.tw/\" "
+"class=\"external\" target=\"_blank\">Center for GIS</a> at the Research "
+"Center for Humanities and Social Sciences, Academia Sinica.</p> <p>Developing"
+" <em>depositar</em> has been a team work. The following people, in "
+"alphabetical order, have been or were once in the project team: Tyng-Ruey "
+"Chuang (project lead), Ming-Syuan Ho (project manager), Andrea Wei-Ching "
+"Huang, Cheng-Jen Lee (tech lead), Hsiung-Ming Liao, Yen-Tsen Liu, Monica Yu-"
+"Chia Mu, Huang-Sin Syu, Ally Chia-Hsun Wang (project manager), Yu-Huang Wang,"
+" and Yao-Hsien Yeh.</p>"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/legal/privacy.html:8
-#: ckanext/depositar_theme/templates/legal/privacy.html:17
+#: ckanext/depositar_theme/templates/legal/privacy.html:19
 #: ckanext/depositar_theme/templates/legal/privacy_archive.html:7
 #: ckanext/depositar_theme/templates/legal/tou.html:8
-#: ckanext/depositar_theme/templates/legal/tou.html:17
+#: ckanext/depositar_theme/templates/legal/tou.html:19
 #: ckanext/depositar_theme/templates/legal/tou_archive.html:7
 msgid "Archive"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/legal/privacy.html:17
-#: ckanext/depositar_theme/templates/legal/tou.html:17
+#: ckanext/depositar_theme/templates/legal/privacy.html:19
+#: ckanext/depositar_theme/templates/legal/tou.html:19
 msgid "Effective "
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/base_form_page.html:5
-msgid "Project Form"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:3
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:11
-msgid "Edit datasets"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:6
-msgid "Add dataset"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:16
-msgid " found for \"{query}\""
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:18
-msgid "Sorry no datasets found for \"{query}\""
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:37
-msgid "Make public"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:41
-msgid "Make private"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:70
-msgid "Draft"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:72
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:112
-#: ckanext/depositar_theme/templates/snippets/organization.html:37
-msgid "Deleted"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:75
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:92
-msgid "Private"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:88
-msgid "This project has no datasets associated to it"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/bulk_process.html:99
-msgid "Last Modified"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/confirm_delete.html:11
-msgid "Are you sure you want to delete project - {name}?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/edit.html:6
-#: ckanext/depositar_theme/templates/organization/snippets/info.html:13
-#: ckanext/depositar_theme/templates/organization/snippets/info.html:16
-msgid "Edit Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/index.html:13
-#: ckanext/depositar_theme/templates/user/dashboard_organizations.html:7
-msgid "Add Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/index.html:20
-msgid "Search projects..."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/index.html:29
-msgid "There are currently no projects for this site"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/member_new.html:32
-msgid "Username"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/member_new.html:50
-msgid "Email address"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/member_new.html:61
-msgid "Update Member"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/member_new.html:81
-msgid ""
-" <p><strong>Admin:</strong> Can add/edit and delete datasets, as well as "
-"manage project members.</p> <p><strong>Editor:</strong> Can add and edit "
-"datasets, but not manage project members.</p> <p><strong>Member:</strong> Can"
-" view the project's private datasets, but not add new datasets.</p> "
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/new.html:3
-#: ckanext/depositar_theme/templates/organization/new.html:5
-#: ckanext/depositar_theme/templates/organization/new.html:7
-#: ckanext/depositar_theme/templates/organization/new.html:12
-msgid "Create a Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/new_organization_form.html:17
-msgid "Update Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/new_organization_form.html:19
-msgid "Create Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/feeds.html:3
-msgid "Datasets in project: {group}"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/help.html:4
-#: ckanext/depositar_theme/templates/organization/snippets/helper.html:4
-msgid "What are Projects?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/help.html:7
-msgid ""
-" <p>Projects act like publishing departments for datasets (for example, the "
-"Department of Health). This means that datasets can be published by and "
-"belong to a department instead of an individual user.</p> <p>Within projects,"
-" admins can assign roles and authorise its members, giving individual users "
-"the right to publish datasets from that particular project (e.g. Office of "
-"National Statistics).</p> "
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/helper.html:8
-msgid ""
-" Projects are used to create, manage and publish collections of datasets. "
-"Users can have different roles within a Project, depending on their level of "
-"authorisation to create, edit and publish. "
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:10
-msgid "My Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:18
-msgid "my-project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:20
-msgid "A little information about my project..."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:60
-msgid ""
-"Are you sure you want to delete this Project? This will delete all the public"
-" and private datasets belonging to this project."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/organization/snippets/organization_form.html:63
-msgid "Save Project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/base.html:22
-msgid "Create Dataset"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/package/group_list.html:15
@@ -848,195 +399,66 @@ msgstr ""
 msgid "There are no topics associated with this dataset"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/package/read.html:19
+#: ckanext/depositar_theme/templates/package/read.html:21
 msgid "Other Access"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/package/read.html:22
+#: ckanext/depositar_theme/templates/package/read.html:24
 msgid ""
 "The information on this page (the dataset metadata) is also available in "
 "these formats:"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/package/read.html:28
+#: ckanext/depositar_theme/templates/package/read.html:30
 #, python-format
 msgid ""
 "<a href=\"%(doc_url)suser-guide.html#rdf-serializations\" "
 "target=\"_blank\">RDF serializations</a> based on DCAT 2:"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/package/read.html:40
+#: ckanext/depositar_theme/templates/package/read.html:42
 msgid "via the "
 msgstr ""
 
-#: ckanext/depositar_theme/templates/package/read.html:48
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:24
+#: ckanext/depositar_theme/templates/package/read.html:50
 msgid "Tags"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/read_base.html:32
-#, python-format
-msgid ""
-"This is an old revision of this dataset, as edited at %(timestamp)s. It may "
-"differ significantly from the <a href=\"%(url)s\">current revision</a>."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/cannot_create_package.html:10
-msgid "Before you can create a dataset you need to create a project."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/cannot_create_package.html:13
-msgid "Create a new project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/cannot_create_package.html:18
-msgid "There are no projects to which you can assign this dataset."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/cannot_create_package.html:19
-msgid "Ask a system administrator to create a project before you can continue."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:4
-msgid "Title"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:4
-msgid "eg. A descriptive title"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:13
-msgid "eg. my-dataset"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:19
-msgid "eg. Some useful notes about the data"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:24
-msgid "eg. economy, mental health, government"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:30
-msgid "License"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:41
-msgid ""
-" License definitions and additional information can be found at <a "
-"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:74
-msgid "No project"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:89
-msgid "Visibility"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:92
-msgid "Public"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:108
-msgid "State"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/snippets/package_basic_fields.html:111
-msgid "Active"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/diff.html:6
-msgid "Differences"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/diff.html:13
-#: ckanext/depositar_theme/templates/revision/diff.html:18
-#: ckanext/depositar_theme/templates/revision/diff.html:23
-msgid "Revision Differences"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/diff.html:43
-msgid "Field"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/diff.html:44
-msgid "Difference"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/diff.html:54
-msgid "No Differences"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:5
-#: ckanext/depositar_theme/templates/revision/read.html:9
-#: ckanext/depositar_theme/templates/revision/read.html:39
-msgid "Revision"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:8
-msgid "Revisions"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:30
-msgid "Undelete"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:50
-msgid "Author"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:53
-msgid "Timestamp"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:56
-msgid "Log Message"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:64
-msgid "Changes"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/revision/read.html:74
-msgid "Datasets' Tags"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:21
 #, python-format
 msgid ""
-"Please refer to the <a href=\"%(doc_url)suser-guide.html#adding-a-new-"
-"dataset\" target=\"_blank\">guide</a> and the <a "
-"href=\"%(doc_url)sappendix/fields/index.html#dataset-level\" "
-"target=\"_blank\">metadata schema</a> while filling the form."
+"<p>Please refer to the <a href=\"%(doc_url)suser-guide.html#adding-a-new-"
+"dataset\" target=\"_blank\">guide</a> while filling out the form.</p> <p>A "
+"public dataset will acquire an <a href=\"%(doc_url)suser-guide.html#ark-"
+"identifier\" target=\"_blank\">ARK identifier</a> if it has a Title, a Start "
+"and/or End Time, and a Creator.</p>"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:29
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:35
 msgid "Basic Information"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:32
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:38
 msgid "Spatio-temporal Information"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:33
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:39
 msgid "Temporal Information (Time Period of Dataset)"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:37
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:43
 msgid "Use your account information to fill in contact person's name and email"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:41
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:47
 msgid "Spatial Information"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:45
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:51
 msgid "Use parcel corners to fill in spatial coverage"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:49
+#: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:55
 msgid "Management Information"
 msgstr ""
 
@@ -1065,128 +487,16 @@ msgstr ""
 msgid "Accept multiple values"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/snippets/organization.html:45
-msgid "read more"
+#: ckanext/depositar_theme/templates/snippets/multivalue_message.html:6
+msgid "Required field for ARK"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/snippets/organization.html:48
-msgid "There is no description for this project"
+#: ckanext/depositar_theme/templates/snippets/theme.html:3
+msgid "Filter by location"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/snippets/organization.html:55
-msgid "Followers"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:15
-msgid "{number} dataset found for \"{query}\""
-msgid_plural "{number} datasets found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:16
-msgid "No datasets found for \"{query}\""
-msgstr ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:17
-msgid "{number} dataset found"
-msgid_plural "{number} datasets found"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:18
-msgid "No datasets found"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:21
-msgid "{number} topic found for \"{query}\""
-msgid_plural "{number} topics found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:22
-msgid "No topics found for \"{query}\""
-msgstr ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:23
-msgid "{number} topic found"
-msgid_plural "{number} topics found"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:24
-msgid "No topics found"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:27
-msgid "{number} project found for \"{query}\""
-msgid_plural "{number} projects found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:28
-msgid "No projects found for \"{query}\""
-msgstr ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:29
-msgid "{number} project found"
-msgid_plural "{number} projects found"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/depositar_theme/templates/snippets/search_result_text.html:30
-msgid "No projects found"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard.html:19
-#: ckanext/depositar_theme/templates/user/dashboard.html:37
-msgid "News feed"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard.html:20
-msgid "My Datasets"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard.html:21
-#: ckanext/depositar_theme/templates/user/dashboard_organizations.html:12
-msgid "My Projects"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard.html:22
-#: ckanext/depositar_theme/templates/user/dashboard_groups.html:12
-msgid "My Topics"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard.html:39
-msgid "Activity from items that I'm following"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard_groups.html:20
-msgid "You are not a member of any topics."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard_groups.html:22
-#: ckanext/depositar_theme/templates/user/dashboard_organizations.html:23
-msgid "Create one now?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/dashboard_organizations.html:21
-msgid "You are not a member of any projects."
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/new.html:6
-msgid "Registration"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/new.html:14
-msgid "Register for an Account"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/new.html:26
-msgid "Why Sign Up?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/user/new.html:28
-msgid "Create datasets, topics and other exciting things"
+#: ckanext/depositar_theme/templates/snippets/theme.html:4
+msgid "depositar"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/user/snippets/tou_notice.html:2

@@ -1,0 +1,6 @@
+repos:
+- repo: https://github.com/thibaudcolas/pre-commit-stylelint
+  rev: v13.13.1
+  hooks:
+    - id: stylelint
+      files: \.(less|scss)$

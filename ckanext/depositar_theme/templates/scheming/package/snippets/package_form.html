@@ -18,7 +18,13 @@
   {%- endif -%}
   <div class="alert alert-info">
     {% set doc_url = h.get_doc_url() %}
-    {% trans %}Please refer to the <a href="{{ doc_url }}user-guide.html#adding-a-new-dataset" target="_blank">guide</a> and the <a href="{{ doc_url }}appendix/fields/index.html#dataset-level" target="_blank">metadata schema</a> while filling the form.{% endtrans %}
+    {% trans %}
+      <p>Please refer to the
+      <a href="{{ doc_url }}user-guide.html#adding-a-new-dataset" target="_blank">guide</a> while filling out the form.</p>
+      <p>A public dataset will acquire an
+      <a href="{{ doc_url }}user-guide.html#ark-identifier" target="_blank">ARK identifier</a>
+      if it has a Title, a Start and/or End Time, and a Creator.</p>
+    {% endtrans %}
   </div>
   {% snippet "snippets/demo_notice.html" %}
   <div class="form-messages">

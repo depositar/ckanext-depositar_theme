@@ -11246,6 +11246,7 @@ a.external::after {
   border-color: #ddd;
 }
 a.tag:hover {
+  color: #000;
   box-shadow: none;
   transition: 0.2s;
 }

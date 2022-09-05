@@ -8,7 +8,7 @@ This extension includes some visual customizations for depositar.
 Requirements
 ------------
 
-This extension is only tested in CKAN 2.7 and later.
+This extension is only tested in CKAN 2.9 and later.
 
 ------------
 Installation
@@ -26,7 +26,7 @@ To install ckanext-depositar_theme:
 
 3. Add ``depositar_theme`` to the ``ckan.plugins`` setting in your CKAN
    config file (by default the config file is located at
-   ``/etc/ckan/default/production.ini``).
+   ``/etc/ckan/default/ckan.ini``).
 
 4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
 

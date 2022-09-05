@@ -15,7 +15,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='1.1.0b',
+    version='1.1.2b',
 
     description='''Theming extension for depositar''',
     long_description=long_description,
@@ -78,6 +78,7 @@ setup(
     entry_points='''
         [ckan.plugins]
         depositar_theme=ckanext.depositar_theme.plugin:Depositar_ThemePlugin
+        depositar_theme_rep_str=ckanext.depositar_theme.plugin:DepositarThemeRepStr
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
