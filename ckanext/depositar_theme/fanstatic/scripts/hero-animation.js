@@ -170,7 +170,7 @@ function initializeFields() {
   mouseBX = 0;
   mouseBY = 0;
   f = null;
-  message = [ "data", "WGS", "GM_8", "age", "TR8A", "U2E", "edu", "gen", "gis", "type", "yr", "st" ];
+  message = [ 'data', 'WGS', 'GM_8', 'age', 'TR8A', 'U2E', 'edu', 'gen', 'gis', 'type', 'yr', 'st' ];
   rantext = 0;
   rantsize = 0;
   tsize = [ 8, 13 ];
