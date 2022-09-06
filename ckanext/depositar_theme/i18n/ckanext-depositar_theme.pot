@@ -7,9 +7,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.1b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.2b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-06-28 01:29+0000\n"
+"POT-Creation-Date: 2022-09-05 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,16 +60,17 @@ msgid ""
 msgstr ""
 
 #: ckanext/depositar_theme/templates/header.html:42
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:8
 msgid "Datasets"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/header.html:43
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:7
 #: ckanext/depositar_theme/templates/package/group_list.html:5
 msgid "Topics"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/header.html:44
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:14
 msgid "Projects"
 msgstr ""
 
@@ -148,136 +149,251 @@ msgstr ""
 msgid "depositar — Deposit, Discover, Reuse"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_datasets.html:3
-msgid "Taiwan History and Culture in Time and Space"
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:5
+msgid "deposit・<wbr>discover・<wbr>reuse"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_datasets.html:6
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:9
+msgid "Search datasets..."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:14
+msgid "Upload Dataset"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:15
+msgid "Create Project"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:16
+msgid "List All Datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:5
+msgid "Where is the term *depositar* from?"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:6
 msgid ""
-"Do you know that there are ancient waterway routes around Taiwan?<br/>Have "
-"you heard about the routes for gold prospecting in Eastern Taiwan during the "
-"Dutch Formosa period?"
+"The term *depositar* is from the Portuguese/Spanish verb for \"to deposit\". "
+"The term *depositario* is a noun for depository or repository. This service "
+"has a Taiwanese Mandarin name 研究資料寄存所 meaning \"research data depository\"."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_datasets.html:7
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:10
+msgid "What is the benefit of using the depositar?"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:11
 msgid ""
-"The Taiwan History and Culture in Time and Space (THCTS) is a digital "
-"collection of historical atlas focused on the development and environmental "
-"changes in Taiwan from 1654 to 1990. This rich dataset covers a wide range of"
-" subjects including population distribution, education, societal events, "
-"waterways, routes for gold prospecting, etc. It allows you to have a glimpse "
-"of people’s life in ancient Taiwan."
+"In addtion to data preservation, at the depositar registered users can create"
+" projects to collaboratively manage research data. All datasets can be "
+"searched by their spatiotemporal ranges, data types, keywords, and other "
+"conditions. Dataset catalogs are published as linked data and indexed by "
+"[Google Dataset Search](https://datasetsearch.research.google.com/)."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_datasets.html:16
-msgid "Selected Datasets"
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:15
+msgid "What preparation is needed for depositing data?"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:6
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:15
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:24
-msgid "FOR YOUR ––––"
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:16
+msgid ""
+"Before creating a dataset and starting to upload data, you will need to first"
+" prepare the necessary metadata for the dataset such as the dataset's name, "
+"description, license, creator, contact information, among others."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:7
-msgid "Dataset"
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:20
+msgid "Are there size limits on the datasets?"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:21
+msgid ""
+"You can deposit as many datasets as you like. Currently there is no "
+"limitation on the number of files in a single dataset. However, the size of a"
+" single file must not exceed 1 GB. If you would need to deposit larger files,"
+" please contact us."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:25
+msgid "How long will data be kept? Is this service forever?"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:26
+msgid ""
+"You data data will be kept as long as the depositar is in service. The "
+"depositar is funded by the Institute of Information Science and the Research "
+"Center for Information Technology Innovation, Academia Sinica. It is "
+"supported in part by a grant from Taiwan's Ministry of Science and Techology."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:30
+msgid ""
+"How to write a Data Managment Plan (DMP)? What is Research Data Management "
+"(RDM)?"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:31
+msgid ""
+"You may want to read [Practical Guide to the International Alignment of "
+"Research Data Management – Extended "
+"Version](https://data.depositar.io/en/dataset/se_rdm_guides) (in English and "
+"Taiwanese Mandarin) and visit the [Research Data Management "
+"Hub](https://rdm.depositar.io/) (mostly in Taiwanese Mandarin)."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_faq.html:38
+msgid "FAQ"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_features.html:4
+msgid "Open and Free"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_features.html:5
+msgid ""
+"This repository is built on top of the open source CKAN package. It has been "
+"customized and extended to support research data management. The service is "
+"open to all researchers. Registration is free!"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:9
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:18
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:27
+msgid "Flexible"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_features.html:10
+msgid ""
+"All kinds of data can be deposited. Datasets can be searched by "
+"spatiotemporal ranges, data types, keywords, and other conditions. The "
+"datasets are indexed by [Google Dataset "
+"Search](https://datasetsearch.research.google.com/)."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_features.html:14
+msgid "Interoperable"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_features.html:15
+msgid ""
+"The depositar has web APIs for resource catalogs and data endpoints. APIs to "
+"access structured data (e.g. CSV and Excel files) are available too. "
+"Programmable data access and analytics can be implemented."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_features.html:30
+msgid "Link to page"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_guide.html:4
+msgid "Register and Upload"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_guide.html:5
+msgid ""
+"After registration, one can start to upload data. We support all file "
+"formats, as well as essential and standardized [metadata "
+"fields](https://docs.depositar.io/en/stable/appendix/fields/index.html) for "
+"time period, spatial range, Wikidata keywords, among others. With informatic "
+"dataset description and file preview, the deposited datasets are nicely "
+"presented."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_guide.html:9
+msgid "Manage and Share"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_guide.html:10
+msgid ""
+"Once a project is created, members can be added to the project. Project "
+"members are assigned different roles in data management. A project can manage"
+" multiple datasets. A dataset can be set to be open to the public or remain "
+"private to project members only. Projects and datasets have unique links. "
+"Dataset citation snippets are automatically generated too."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_guide.html:14
+msgid "Search and Preview"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_guide.html:15
+msgid ""
+"Datasets are searched by spatiotemporal ranges, data types, keywords, and "
+"other conditions. Data can be previewed without being downloaded. Data "
+"previews can be embedded in other web pages too. Dataset catalogs are "
+"published as linked data and indexed by [Google Data "
+"Search](https://datasetsearch.research.google.com/). Flexible APIs for access"
+" to data endpoints and structured data are provided."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_header.html:10
+msgid "Toggle navigation"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_intro.html:4
+msgid ""
+"Well managed and preserved research data is the cornerstone of reproducible "
+"research.<br><br>Let's practice the FAIR data principles together. May all "
+"research data be findable, accessible, interoperable, and reusable!"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:3
+msgid "Showcase"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:26
 msgid "more"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:16
-msgid "Project"
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:19
+msgid "Total views of all datasets since 2022-03-25."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_features.html:25
-msgid "Promotion"
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:20
+msgid "Total Views"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_hero.html:7
-msgid "deposit・discover・reuse"
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:3
+msgid "Topic"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_hero.html:8
-msgid "Learn More"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_partners.html:5
-msgid "Partners"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_partners.html:9
-msgid ""
-"<a href=\"http://gis.rchss.sinica.edu.tw/index.php?lang=en\">Center for GIS, "
-"RCHSS, Academia Sinica</a><br/>"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_partners.html:11
-msgid ""
-"<a href=\"https://chia-nan.geospat.io/en/\">Chia-nan Interdisciplinary "
-"Project</a><br/>"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_partners.html:15
-msgid "<a href=\"#\">Collaborative Zuojhen Project</a><br/>"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_partners.html:16
-msgid ""
-"<a href=\"http://soundscape.twgrid.org/\">Asian Soundscape Monitoring "
-"Network</a><br/>"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_partners.html:17
-msgid ""
-"<a href=\"https://roadkill.tw/en/\">Taiwan Roadkill Observation "
-"Network</a><br/>"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:12
-msgid "Find datasets?"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:24
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:8
 msgid "General reference"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:28
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:14
 msgid "Culture and the arts"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:33
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:20
 msgid "Geography and places"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:37
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:26
 msgid "Health and fitness"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:42
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:32
 msgid "History and events"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:46
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:38
 msgid "Human activities"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:51
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:44
 msgid "Mathematics and logic"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:55
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:51
 msgid "Natural and physical sciences"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:60
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:57
 msgid "People and self"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:64
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:63
 msgid "Philosophy and thinking"
 msgstr ""
 
@@ -285,11 +401,11 @@ msgstr ""
 msgid "Religion and belief systems"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:73
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:75
 msgid "Society and social sciences"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_topics.html:78
+#: ckanext/depositar_theme/templates/home/index/idx_topics.html:82
 msgid "Technology and applied sciences"
 msgstr ""
 
