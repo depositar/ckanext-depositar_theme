@@ -682,4 +682,3 @@ msgid ""
 "By clicking the button to signup, you're agreeing to our <a "
 "href=\"/terms_of_use\">terms of use</a>."
 msgstr "當您按下建立帳號按鈕時，表示您已同意我們的<a href=\"/terms_of_use\">使用條款</a>。"
-

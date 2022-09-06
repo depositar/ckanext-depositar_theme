@@ -620,4 +620,3 @@ msgid ""
 "By clicking the button to signup, you're agreeing to our <a "
 "href=\"/terms_of_use\">terms of use</a>."
 msgstr ""
-
