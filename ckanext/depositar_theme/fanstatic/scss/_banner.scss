@@ -70,7 +70,7 @@
 
         .btn {
           padding: 12px 0;
-          width: 32%;
+          width: 100%;
           color: $bannerFunctionBtnTextColor;
           border: solid 2px $bannerFunctionBtnBorderColor;
           border-radius: 6px;
@@ -86,6 +86,10 @@
             border: solid 2px $bannerFunctionBtnHoverBorderColor;
             box-shadow: $bannerFunctionBtnHoverBoxShadow;
           }
+        }
+
+        span {
+          width: 32%;
         }
       }
     }
@@ -148,9 +152,9 @@
         .function-btn {
           flex-wrap: wrap;
 
-          .btn {
-            &:not(:last-child) {
-              margin-bottom: 1rem;
+          span {
+            &:not(:first-child) {
+              margin-top: 1rem;
               width: 45%;
             }
 
