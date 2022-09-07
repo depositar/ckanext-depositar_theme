@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .account-masthead {
   padding-top: 5px;
   min-height: 30px;
@@ -324,7 +325,7 @@
 }
 .banner .container .heading .function-btn .btn {
   padding: 12px 0;
-  width: 32%;
+  width: 100%;
   color: #00e09b;
   border: solid 2px #00e09b;
   border-radius: 6px;
@@ -338,6 +339,9 @@
   background-color: white;
   border: solid 2px white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.banner .container .heading .function-btn span {
+  width: 32%;
 }
 .banner .container .animation {
   display: flex;
@@ -384,11 +388,11 @@
   .banner .container .heading .function-btn {
     flex-wrap: wrap;
   }
-  .banner .container .heading .function-btn .btn:not(:last-child) {
-    margin-bottom: 1rem;
+  .banner .container .heading .function-btn span:not(:first-child) {
+    margin-top: 1rem;
     width: 45%;
   }
-  .banner .container .heading .function-btn .btn.view-all {
+  .banner .container .heading .function-btn span.view-all {
     width: 100%;
   }
 }
@@ -864,7 +868,7 @@
   margin-right: 5px;
   font-size: 10px;
   font-family: FontAwesome;
-  content: "\f08e";
+  content: "";
 }
 .site-footer .footer-links .footer-logo {
   padding-bottom: 10px;

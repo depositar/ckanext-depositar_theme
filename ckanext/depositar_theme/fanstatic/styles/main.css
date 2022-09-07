@@ -9685,7 +9685,6 @@ h4 small {
 .flash-messages .alert {
   -webkit-box-shadow: 0 0 0 1px white;
   box-shadow: 0 0 0 1px white;
-  margin-bottom: 0;
 }
 .view-preview-container {
   margin-top: 20px;
