@@ -1,0 +1,165 @@
+.banner {
+  color: $bannerTextColor;
+  background-color: $bannerBackgroundColor;
+  background-image: $bannerBackgroundImage;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 45vh;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+
+      .slogan {
+        h2 {
+          font-size: 32pt;
+          font-weight: bolder;
+          word-break: keep-all;
+        }
+      }
+
+      .search {
+        margin: 3rem 0 2rem;
+
+        &:hover {
+          border-radius: 30px;
+          box-shadow: $bannerSearchHoverBoxShadow;
+        }
+
+        .site-search {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .input-search {
+            padding: 10px 15px;
+            width: 100%;
+            background-color: $bannerInputSearchBackgroundColor;
+            border: 0;
+            border-radius: 30px;
+            box-shadow: $bannerInputSearchBoxShadow;
+          }
+
+          .btn-search {
+            position: absolute;
+            margin-right: 12px;
+            color: $bannerBtnSearchTextColor;
+            background: none;
+            border: none;
+            transition: color 0.2s ease-in;
+
+            &:hover {
+              color: $bannerBtnSearchHoverTextColor;
+            }
+
+            i {
+              font-size: 14pt;
+            }
+          }
+        }
+      }
+
+      .function-btn {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .btn {
+          padding: 12px 0;
+          width: 32%;
+          color: $bannerFunctionBtnTextColor;
+          border: solid 2px $bannerFunctionBtnBorderColor;
+          border-radius: 6px;
+          font-weight: bolder;
+
+          &:last-child {
+            color: $bannerFunctionBtnBorderColor;
+            border-color: $bannerFunctionBtnBorderColor;
+          }
+
+          &:hover {
+            background-color: $bannerFunctionBtnHoverBackgroundColor;
+            border: solid 2px $bannerFunctionBtnHoverBorderColor;
+            box-shadow: $bannerFunctionBtnHoverBoxShadow;
+          }
+        }
+      }
+    }
+
+    .animation {
+      display: flex;
+      align-items: center;
+
+      .animation-left {
+        margin-bottom: -10px;
+        width: 132px;
+        height: 169px;
+      }
+
+      .animation-right {
+        padding-left: 1px;
+        width: 350px;
+        height: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: $largeDeviceMaxWidth) {
+  .banner {
+    background-image: $mediaBannerBackgroundImage;
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 45%;
+
+    .container {
+      .animation {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $mediumDeviceMaxWidth) {
+  .banner {
+    background-blend-mode: overlay;
+    background-size: contain;
+
+    .container {
+      .heading {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: $extraSmallDeviceMaxWidth) {
+  .banner {
+    .container {
+      justify-content: center;
+
+      .heading {
+        width: 100%;
+
+        .function-btn {
+          flex-wrap: wrap;
+
+          .btn {
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+              width: 45%;
+            }
+
+            &.view-all {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

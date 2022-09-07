@@ -1,0 +1,244 @@
+.account-masthead {
+  padding-top: 5px;
+  min-height: 30px;
+  background-color: $accountMastheadBackgroundColor;
+  box-sizing: content-box;
+
+  .account {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+
+      li {
+        border-left: solid 1px $accountMastheadListBorderLeftColor;
+
+        a {
+          display: block;
+          padding: 0 10px;
+          font-size: 14px;
+          color: $accountMastheadListLinkTextColor;
+          line-height: 21px;
+
+          &:hover {
+            text-decoration: none;
+            background-color: $accountMastheadListLinkHoverBackgroundColor;
+
+            .badge {
+              color: $accountMastheadListLinkBadgeHoverTextColor;
+              background-color: $accountMastheadListLinkBadgeHoverBackgroundColor;
+            }
+          }
+
+          .text {
+            display: none;
+          }
+
+          .user-image {
+            border-radius: 4px;
+          }
+
+          .badge {
+            padding: 1px 6px;
+            margin-left: 3px;
+            font-size: 12px;
+            color: $accountMastheadListLinkBadgeTextColor;
+            background-color: $accountMastheadListLinkBadgeBackgroundColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.masthead {
+  background-color: $mastheadBackgroundColor;
+  background-image: none;
+
+  &.navbar {
+    padding: 5px 0;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+  }
+
+  .logo img {
+    padding-left: 5px;
+    width: 185px;
+  }
+
+  .navigation {
+    margin-top: 5px;
+
+    .nav-pills {
+      li {
+        a {
+          display: block;
+          padding: 10px 15px;
+          text-decoration: none;
+          border-radius: 0;
+          line-height: 7px;
+
+          &::after {
+            display: block;
+            margin-top: 6px;
+            width: 0;
+            height: 3px;
+            background-color: $mastheadListLinkAfterBackgroundColor;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+            content: '';
+            transition-property: width, color;
+          }
+
+          &:hover {
+            background-color: $mastheadBackgroundColor;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        &.active {
+          a {
+            background-color: $mastheadBackgroundColor;
+
+            &::after {
+              margin-top: 6px;
+              width: 100%;
+              height: 3px;
+              background-color: $mastheadListLinkAfterBackgroundColor;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav > li > a,
+  .nav > li > a:focus,
+  .nav > li > a:hover,
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    font-size: 15px;
+    color: $mastheadTextColor;
+    border-bottom: none;
+  }
+
+  .btn-navbar,
+  .btn-navbar:hover,
+  .btn-navbar:focus {
+    margin-top: 0;
+    font-size: 25px;
+    color: $mastheadTextColor;
+    background-color: $mastheadBackgroundColor;
+    border: none !important;
+    outline: unset;
+  }
+
+  .debug {
+    position: absolute;
+    top: 37px;
+    left: 10px;
+    color: $mastheadDebugColor;
+  }
+
+  .site-search {
+    .field {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      label {
+        display: none;
+      }
+
+      input {
+        padding: 10px 15px;
+        padding-bottom: 4px;
+        margin-top: -7px;
+        width: 60px;
+        color: $mastheadTextColor;
+        background: darken($mastheadBackgroundColor, 7%);
+        border: 0;
+        border-radius: 50px;
+        box-shadow: none;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+        line-height: 20px;
+
+        &:hover {
+          width: 200px;
+        }
+      }
+
+      .btn-search {
+        position: absolute;
+        margin-right: 10px;
+        color: $mastheadBtnSearchTextColor;
+        background: none;
+        border: none;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: $mastheadTextColor;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDeviceMaxWidth) {
+  .masthead {
+    &.navbar {
+      .container {
+        flex-direction: row-reverse;
+
+        .navbar-collapse {
+          padding: 10px inherit;
+
+          .navigation {
+            .nav-pills {
+              flex-direction: column;
+              width: 100%;
+
+              & > li {
+                margin-top: 20px;
+                font-size: 25px;
+              }
+            }
+          }
+
+          .site-search {
+            display: inherit;
+
+            .field {
+              position: relative;
+
+              input {
+                padding: 20px 10px;
+                margin: 20px 0;
+                width: 100%;
+                border-radius: 4px;
+
+                &:hover {
+                  width: 100%;
+                }
+              }
+
+              .btn-search {
+                top: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.flash {
+  position: relative;
+  top: 1.25rem;
+  height: 0;
+
+  &-messages {
+    .alert {
+      display: block;
+      padding: 15px;
+      margin-bottom: 0;
+
+      &-warning {
+        color: $flashAlertWarningTextColor;
+        background-color: $flashAlertWarningBackgroundColor;
+        border-color: $flashAlertWarningBorderColor;
+      }
+
+      &-info {
+        color: $flashAlertInfoTextColor;
+        background-color: $flashAlertInfoBackgroundColor;
+        border-color: $flashAlertInfoBorderColor;
+      }
+
+      &-dismissible {
+        padding-right: 35px;
+
+        a:not(.close) {
+          border-bottom: 2px solid $mainThemeColor;
+
+          &:hover {
+            text-decoration: none;
+            color: $flashAlertTextColor;
+          }
+        }
+
+        .close {
+          position: relative;
+          top: -2px;
+          right: -21px;
+          padding: 0;
+
+          span {
+            color: $flashAlertTextColor;
+            opacity: 0.2;
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .alert {
+    display: flex;
+    justify-content: space-between;
+
+    .msg-content {
+      width: 95%;
+
+      a {
+        border-bottom: 2px solid $mainThemeColor;
+
+        &:hover {
+          text-decoration: none;
+          color: $flashAlertTextColor;
+        }
+      }
+    }
+
+    &-dismissible {
+      padding-right: inherit;
+
+      .close {
+        position: initial;
+        top: initial;
+        right: initial;
+        padding: 0;
+        width: 2%;
+        height: min-content;
+        line-height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.carousel {
+  &.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &-inner {
+    width: 90%;
+
+    .carousel-item {
+      &.active,
+      &-next,
+      &-prev {
+        display: flex;
+      }
+
+      &-right.active,
+      &-next {
+        transform: translateX(33.33%);
+      }
+
+      &-left.active,
+      &-prev {
+        transform: translateX(-33.33%);
+      }
+    }
+
+    .card {
+      .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+
+        .img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.25rem;
+        height: 220px;
+        flex-direction: column;
+
+        .case-content {
+          -webkit-box-orient: vertical;
+          display: inline-box;
+          -webkit-line-clamp: 4;
+          overflow: hidden;
+        }
+
+        .btn {
+          &.more {
+            align-self: end;
+            font-weight: bold;
+            border-bottom: none;
+
+            &:hover {
+              color: $showcaseCardBtnHoverTextColor;
+            }
+
+            i {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-control {
+    &-prev,
+    &-next {
+      i {
+        font-size: 50pt;
+        color: $showcaseFunctionBtnColor;
+      }
+    }
+  }
+}
+
+@media (max-width: $largeDeviceMaxWidth) {
+  .carousel-inner {
+    .carousel-item {
+      &-right.active,
+      &-next {
+        transform: translateX(50%);
+      }
+
+      &-left.active,
+      &-prev {
+        transform: translateX(-50%);
+      }
+
+      .card-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDeviceMaxWidth) {
+  .carousel-inner {
+    .carousel-item {
+      &-right.active,
+      &-next {
+        transform: translateX(100%);
+      }
+
+      &-left.active,
+      &-prev {
+        transform: translateX(-100%);
+      }
+
+      >div {
+        display: none;
+
+        &:first-child {
+          display: block;
+        }
+      }
+
+      .card-col {
+        flex: 1;
+        max-width: initial;
+      }
+    }
+  }
+
+  .carousel-control {
+    &-prev,
+    &-next {
+      i {
+        font-size: 30pt;
+      }
+    }
+  }
+}
+
+/*
+  stylelint-disable no-duplicate-selectors --
+  A workaround for the carousel containing less than 3 items.
+*/
+.carousel-inner {
+  .carousel-item {
+    &-right,
+    &-left {
+      transform: translateX(0);
+    }
+  }
+}

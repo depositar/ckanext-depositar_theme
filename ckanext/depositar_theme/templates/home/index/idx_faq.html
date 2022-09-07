@@ -1,0 +1,68 @@
+{% 
+  set faq_list = [
+    {
+      'id':'1',
+      'title':h.get_markdown(_('Where is the term *depositar* from?')),
+      'content':h.get_markdown(_('The term *depositar* is from the Portuguese/Spanish verb for \"to deposit\". The term *depositario* is a noun for depository or repository. This service has a Taiwanese Mandarin name 研究資料寄存所 meaning \"research data depository\".'))
+    },
+    {
+      'id':'2',
+      'title':_('What is the benefit of using the depositar?'),
+      'content':h.get_markdown(_('In addtion to data preservation, at the depositar registered users can create projects to collaboratively manage research data. All datasets can be searched by their spatiotemporal ranges, data types, keywords, and other conditions. Dataset catalogs are published as linked data and indexed by [Google Dataset Search](https://datasetsearch.research.google.com/).'))
+    },
+    {
+      'id':'3',
+      'title':_('What preparation is needed for depositing data?'),
+      'content':_('Before creating a dataset and starting to upload data, you will need to first prepare the necessary metadata for the dataset such as the dataset\'s name, description, license, creator, contact information, among others.')
+    },
+    {
+      'id':'4',
+      'title':_('Are there size limits on the datasets?'),
+      'content':_('You can deposit as many datasets as you like. Currently there is no limitation on the number of files in a single dataset. However, the size of a single file must not exceed 1 GB. If you would need to deposit larger files, please contact us.')
+    },
+    {
+      'id':'5',
+      'title':_('How long will data be kept? Is this service forever?'),
+      'content':_('You data data will be kept as long as the depositar is in service. The depositar is funded by the Institute of Information Science and the Research Center for Information Technology Innovation, Academia Sinica. It is supported in part by a grant from Taiwan\'s Ministry of Science and Techology.')
+    },
+    {
+      'id':'6',
+      'title':_('How to write a Data Managment Plan (DMP)? What is Research Data Management (RDM)?'),
+      'content':h.get_markdown(_('You may want to read [Practical Guide to the International Alignment of Research Data Management – Extended Version](https://data.depositar.io/en/dataset/se_rdm_guides) (in English and Taiwanese Mandarin) and visit the [Research Data Management Hub](https://rdm.depositar.io/) (mostly in Taiwanese Mandarin).'))
+    }
+  ]
+%}
+
+<div class="idx faq">
+  <div class="container">
+    <h1>{{ _('FAQ') }}</h1>
+    <div id="accordion">
+      {% for faq in faq_list %}
+      <div class="card">
+        {% if faq == faq_list[0] %}
+          <button class="btn btn-link" data-toggle="collapse" data-target={{ "#collapse" + faq.id }} aria-expanded="true" aria-controls={{ "collapse" + faq.id }}>
+        {% else %}
+          <button class="btn btn-link" data-toggle="collapse" data-target={{ "#collapse" + faq.id }} aria-expanded="false" aria-controls={{ "collapse" + faq.id }}>
+        {% endif %}
+          <div class="card-header" id={{ "heading" + faq.id }}>
+            <h5 class="mb-0">
+              {{ faq.title }}
+            </h5>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </button>
+
+        {% if faq == faq_list[0] %}
+          <div id={{ "collapse" + faq.id }} class="collapse show" aria-labelledby={{ "heading" + faq.id }} data-parent="#accordion">
+        {% else %}
+          <div id={{ "collapse" + faq.id }} class="collapse" aria-labelledby={{ "heading" + faq.id }} data-parent="#accordion">
+        {% endif %}
+          <div class="content card-body">
+            {{ faq.content }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

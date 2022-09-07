@@ -1,0 +1,50 @@
+.faq {
+  margin-bottom: 0;
+
+  #accordion {
+    margin-top: 2rem;
+    counter-reset: cnt;
+
+    .card {
+      margin-bottom: 1.25rem;
+
+      .btn-link {
+        padding: 0;
+        text-decoration: none;
+        color: $faqBtnLinkTextColor;
+
+        .card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: none;
+
+          .mb-0 {
+            display: flex;
+            text-align: left;
+            font-weight: bold;
+
+            p {
+              margin: 0;
+            }
+          }
+
+          i {
+            font-size: 15pt;
+            transform: rotate(0deg);
+            transition: 0.3s;
+          }
+        }
+
+        &[aria-expanded='true'] {
+          .card-header {
+            i {
+              transform: rotate(-180deg);
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<div class="idx banner">
+  <div class="container">
+    <div class="heading">
+      <div class="slogan">
+        <h2>{{ _('deposit・<wbr>discover・<wbr>reuse') }}</h2>
+      </div>
+      <div class="search">
+        <form action="{% url_for controller='dataset', action='search' %}" class="site-search" method="get">
+          <input type="text" name="q" value="" class="input-search" placeholder="{{ _('Search datasets...') }}">
+          <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div class="function-btn">
+        {% link_for _('Upload Dataset'), named_route='dataset.new', class_='btn create-dataset' %}
+        {% link_for _('Create Project'), named_route='organization.new', class_='btn create-project' %}
+        {% link_for _('List All Datasets'), named_route='dataset.search', class_='btn view-all' %}
+      </div>
+    </div>
+    <div class="animation">
+      <div class="animation-left">
+        <img src="images/logo_ani.svg">
+      </div>
+      <div id="hero-animation" class="animation-right"></div>
+    </div>
+  </div>
+</div>

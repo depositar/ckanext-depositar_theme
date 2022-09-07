@@ -1,0 +1,63 @@
+@import 'variables.scss';
+@import 'masthead.scss';
+@import 'flash.scss';
+@import 'banner.scss';
+@import 'intro.scss';
+@import 'features.scss';
+@import 'showcases.scss';
+@import 'guide.scss';
+@import 'topics.scss';
+@import 'stats.scss';
+@import 'faq.scss';
+@import 'footer.scss';
+
+body {
+  font-size: 16px;
+  font-family: $bodyFontFamily;
+  color: $bodyTextColor;
+  background-color: $bodyBackgroundColor;
+  line-height: 30px;
+}
+
+:focus {
+  outline: 0;
+}
+
+::selection {
+  color: $selectionTextColor;
+  background-color: $selectionBackgroundColor;
+}
+
+a {
+  color: $bodyTextColor;
+}
+
+p {
+  margin-top: revert;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.content {
+  a {
+    border-bottom: 2px solid $mainThemeColor;
+
+    &:hover {
+      text-decoration: none;
+      color: $mainThemeColor;
+      transition: 0.1s;
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0;
+  min-height: 100vh;
+}
+
+.idx {
+  padding: 5rem 0;
+  border-bottom: solid 10px $idxBorderBottomColor;
+}

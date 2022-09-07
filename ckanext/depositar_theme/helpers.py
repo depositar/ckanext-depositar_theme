@@ -7,6 +7,7 @@ import ckan.lib.base as base
 from ckan.lib.base import render
 import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
+import ckantoolkit as tk
 
 from ckanext import depositar_theme
 from ckanext.data_depositario import helpers as depositar_helpers
@@ -67,3 +68,42 @@ def send_reg_link(user):
     subject = subject.split('\n')[0]
 
     mail_user(user, subject, body)
+
+def get_format_count():
+    results = tk.get_action('package_search')({}, {})['results']
+    format_list = []
+    for res in results:
+        resource_list = res['resources']
+        for resource in resource_list:
+            format_list.append(resource['format'].upper())
+
+    format_count = dict((fmt, format_list.count(fmt)) for fmt in format_list)
+    if '' in format_count:
+        format_count.pop('')
+    sort_format_count = sorted(format_count.items(), key=lambda tup: tup[1], reverse=True)
+    return sort_format_count
+
+def get_total_views():
+    package_list = tk.get_action('package_list')({},{})
+    total_views = 0
+    for pkg in package_list:
+        data = {'id': pkg, 'include_tracking': True}
+        pkg_content = tk.get_action('package_show')({}, data)
+        if(pkg_content['type'] == 'dataset'):
+            total_views += pkg_content['tracking_summary']['total']
+    return h.SI_number_span(total_views)
+
+def get_showcase():
+    showcase_list = tk.get_action('ckanext_showcase_list')({}, {})
+    case_list = []
+    for showcase in showcase_list:
+        case_list.append({
+            'title': showcase['title'],
+            'href': showcase['name'],
+            'content': h.render_markdown(showcase['notes']),
+            'image_url': showcase['extras'][0]['value']
+        })
+    return case_list
+
+def get_markdown(content):
+    return h.render_markdown(content)
