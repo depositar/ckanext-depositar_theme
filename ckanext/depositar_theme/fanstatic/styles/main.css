@@ -11238,6 +11238,9 @@ a.external::after {
   border: none;
   box-shadow: none;
 }
+.flash-messages .alert {
+  margin-bottom: 0;
+}
 .media-grid {
   border: none;
 }
