@@ -48,6 +48,10 @@
         height: 220px;
         flex-direction: column;
 
+        .case-title a {
+          border-bottom: none;
+        }
+
         .case-content {
           -webkit-box-orient: vertical;
           display: inline-box;
