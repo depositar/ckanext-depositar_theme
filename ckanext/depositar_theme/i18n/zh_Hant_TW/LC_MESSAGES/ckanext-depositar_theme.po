@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.1b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.2b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-05 09:33+0000\n"
+"POT-Creation-Date: 2022-09-15 05:55+0000\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -164,16 +164,26 @@ msgid "Search datasets..."
 msgstr "搜尋資料集"
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:14
+msgid "List All Datasets"
+msgstr "資料集列表"
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:16
+msgid "Log in to upload a dataset"
+msgstr "登入以上傳資料集"
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:17
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:23
 msgid "Upload Dataset"
 msgstr "上傳資料集"
 
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:15
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:19
+msgid "Log in to create a project"
+msgstr "登入以建立新專案"
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:20
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:24
 msgid "Create Project"
 msgstr "建立新專案"
-
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:16
-msgid "List All Datasets"
-msgstr "資料集列表"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:5
 msgid "Where is the term *depositar* from?"
@@ -185,21 +195,26 @@ msgid ""
 "deposit\". The term *depositario* is a noun for depository or repository."
 " This service has a Taiwanese Mandarin name 研究資料寄存所 meaning \"research "
 "data depository\"."
-msgstr "*depositar* (/depozi’taɾ/) 在葡萄牙語／西班牙語裡是「寄存」的意思，是個動詞。depositario 則是名詞，意指「寄存的處所」。本服務的台灣華語名稱為「研究資料寄存所」。"
+msgstr ""
+"*depositar* (/depozi’taɾ/) 在葡萄牙語／西班牙語裡是「寄存」的意思，是個動詞。depositario "
+"則是名詞，意指「寄存的處所」。本服務的台灣華語名稱為「研究資料寄存所」。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:10
 msgid "What is the benefit of using the depositar?"
-msgstr "資料存放在 depositar（研究資料寄存所）有什麼好處？"
+msgstr "資料存放在 depositar （研究資料寄存所）有什麼好處？"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:11
 msgid ""
-"In addtion to data preservation, at the depositar registered users can "
+"In addition to data preservation, at the depositar registered users can "
 "create projects to collaboratively manage research data. All datasets can"
 " be searched by their spatiotemporal ranges, data types, keywords, and "
 "other conditions. Dataset catalogs are published as linked data and "
 "indexed by [Google Dataset "
 "Search](https://datasetsearch.research.google.com/)."
-msgstr "除了保存研究資料，在 depositar（研究資料寄存所）並可建立專案，用來管理研究團隊的資料集。透過時空範圍、資料類型、關鍵字等，可快速找到寄存的資料集。資料集並由 [Google 資料集搜尋](https://datasetsearch.research.google.com/)所收錄索引。"
+msgstr ""
+"除了保存研究資料，在 depositar "
+"（研究資料寄存所）並可建立專案，用來管理研究團隊的資料集。透過時空範圍、資料類型、關鍵字等，可快速找到寄存的資料集。資料集並由 [Google "
+"資料集搜尋](https://datasetsearch.research.google.com/)所收錄索引。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:15
 msgid "What preparation is needed for depositing data?"
@@ -207,10 +222,9 @@ msgstr "要準備什麼才能寄存資料？"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:16
 msgid ""
-"Before creating a dataset and starting to upload data, you will need to "
-"first prepare the necessary metadata for the dataset such as the "
-"dataset's name, description, license, creator, contact information, among"
-" others."
+"Before creating a dataset and starting to upload data, you need to first "
+"prepare the necessary metadata for the dataset such as the dataset's "
+"name, description, license, creator, contact information, among others."
 msgstr "要先準備關於資料集的名稱、描述、授權方式、產製者、聯絡人等後設資料欄位值，才能新增資料集，上傳資料檔案。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:20
@@ -231,12 +245,14 @@ msgstr "資料可以存放多久？你們會終止服務嗎？"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:26
 msgid ""
-"You data data will be kept as long as the depositar is in service. The "
-"depositar is funded by the Institute of Information Science and the "
-"Research Center for Information Technology Innovation, Academia Sinica. "
-"It is supported in part by a grant from Taiwan's Ministry of Science and "
-"Techology."
-msgstr "只要 depositar（研究資料寄存所）持續運作，您所寄存的資料就會被持續保存。本服務目前由中央研究院資訊科學研究所、資訊科技創新研究中心共同支持，並由科技部專題計畫補助。"
+"Your data will be kept as long as the depositar is in service. The "
+"depositar has been funded by the Institute of Information Science and the"
+" Research Center for Information Technology Innovation, Academia Sinica. "
+"It is supported in part by a grant from the National Science and "
+"Technology Council of Taiwan."
+msgstr ""
+"只要 depositar "
+"（研究資料寄存所）持續運作，您所寄存的資料就會被持續保存。本服務目前由中央研究院資訊科學研究所、資訊科技創新研究中心共同支持，並由國家科學及技術委員會專題計畫補助。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:30
 msgid ""
@@ -263,9 +279,9 @@ msgstr "開放且自由使用"
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:5
 msgid ""
-"This repository is built on top of the open source CKAN package. It has "
-"been customized and extended to support research data management. The "
-"service is open to all researchers. Registration is free!"
+"The data repository is built on top of the open source CKAN package. It "
+"has been customized and extended to support research data management. The"
+" service is open to all researchers. Registration is free!"
 msgstr "以開放原始碼軟體 CKAN 為基底建構的資料儲存服務，已客製化並擴增功能，並支援研究資料管理。所有研究者都可註冊使用，用來管理和開放研究資料集。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:9
@@ -278,7 +294,9 @@ msgid ""
 "spatiotemporal ranges, data types, keywords, and other conditions. The "
 "datasets are indexed by [Google Dataset "
 "Search](https://datasetsearch.research.google.com/)."
-msgstr "註冊沒有資格限制、寄存不限資料類型，使用不須安裝軟體。透過時空範圍、資料類型、關鍵字等條件，可快速找到資料集。資料集並由 [Google 資料集搜尋](https://datasetsearch.research.google.com/)所收錄索引。"
+msgstr ""
+"註冊沒有資格限制、寄存不限資料類型，使用不須安裝軟體。透過時空範圍、資料類型、關鍵字等條件，可快速找到資料集。資料集並由 [Google "
+"資料集搜尋](https://datasetsearch.research.google.com/)所收錄索引。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:14
 msgid "Interoperable"
@@ -286,14 +304,16 @@ msgstr "具程式存取介面"
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:15
 msgid ""
-"The depositar has web APIs for resource catalogs and data endpoints. APIs"
-" to access structured data (e.g. CSV and Excel files) are available too. "
+"Resource catalogs and data endpoints are suppoted by Web APIs. APIs to "
+"access structured data (e.g. CSV and Excel files) are available too. "
 "Programmable data access and analytics can be implemented."
-msgstr "可透過程式存取介面 (API)，自動取用並匯入資料集。API 亦可用於存取結構化的資源內容，如 CSV 與 Excel 表格，方便開發者進行資料取用與分析。"
+msgstr ""
+"可透過程式存取介面 (API)，自動取用並匯入資料集。API 亦可用於存取結構化的資源內容，如 CSV 與 Excel "
+"表格，方便開發者進行資料取用與分析。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:30
-msgid "Link to page"
-msgstr "連結至頁面"
+msgid "More"
+msgstr "更多資訊"
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:4
 msgid "Register and Upload"
@@ -301,13 +321,16 @@ msgstr "建立及上傳"
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:5
 msgid ""
-"After registration, one can start to upload data. We support all file "
-"formats, as well as essential and standardized [metadata "
+"After registration, everyone can start to upload data. We support all "
+"file formats, as well as essential and standardized [metadata "
 "fields](https://docs.depositar.io/en/stable/appendix/fields/index.html) "
-"for time period, spatial range, Wikidata keywords, among others. With "
+"for time period, spatial range, Wikidata keyword, among others. With "
 "informatic dataset description and file preview, the deposited datasets "
 "are nicely presented."
-msgstr "經由網頁介面建立專案，可上傳各類研究資料。我們支援各種檔案格式，並提供符合國際標準的[後設資料 (Metadata) 欄位](https://docs.depositar.io/zh_TW/stable/appendix/fields/index.html)，包括時間資訊、空間範圍、維基資料 (Wikidata) 關鍵字等。搭配資料集描述與檔案預覽，充分展現您的資料內涵！"
+msgstr ""
+"經由網頁介面建立專案，可上傳各類研究資料。我們支援各種檔案格式，並提供符合國際標準的[後設資料 (Metadata) "
+"欄位](https://docs.depositar.io/zh_TW/stable/appendix/fields/index.html)，包括時間資訊、空間範圍、維基資料"
+" (Wikidata) 關鍵字等。搭配資料集描述與檔案預覽，充分展現您的資料內涵！"
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:9
 msgid "Manage and Share"
@@ -317,9 +340,9 @@ msgstr "管理及分享"
 msgid ""
 "Once a project is created, members can be added to the project. Project "
 "members are assigned different roles in data management. A project can "
-"manage multiple datasets. A dataset can be set to be open to the public "
-"or remain private to project members only. Projects and datasets have "
-"unique links. Dataset citation snippets are automatically generated too."
+"manage multiple datasets. A dataset can be open to the public or remain "
+"private to project members. Projects and datasets all have unique URLs. "
+"Dataset citation snippets are automatically generated too."
 msgstr "專案建立後可新增專案管理成員，並賦予不同層級的資料管理權限。一項專案下可管理任意多個資料集，資料集可設為公開或僅分享給專案成員。專案和資料集皆有唯一網址，方便引用，並備有多種資料集引用格式供使用。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:14
@@ -328,13 +351,17 @@ msgstr "搜尋與預覽"
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:15
 msgid ""
-"Datasets are searched by spatiotemporal ranges, data types, keywords, and"
+"Datasets are filtered by spatiotemporal ranges, data types, keywords, and"
 " other conditions. Data can be previewed without being downloaded. Data "
-"previews can be embedded in other web pages too. Dataset catalogs are "
-"published as linked data and indexed by [Google Data "
+"previews can be embedded in web pages too. Dataset catalogs are published"
+" as linked data and indexed by [Google Dataset "
 "Search](https://datasetsearch.research.google.com/). Flexible APIs for "
 "access to data endpoints and structured data are provided."
-msgstr "可針對時空間資訊、資料類型、關鍵字等執行多條件搜尋資料集。可於瀏覽器內預覽資料與進行簡易分析，預覽畫面並可嵌入其他網頁。資料集目錄以適合機器取用的資料連結 (Linked Data) 形式發布，並可在 [Google 資料集搜尋](https://datasetsearch.research.google.com/)中找到，提升資料能見度。具備結構資料 API，易於資料介接及分析。"
+msgstr ""
+"可針對時空間資訊、資料類型、關鍵字等執行多條件搜尋資料集。可於瀏覽器內預覽資料與進行簡易分析，預覽畫面並可嵌入其他網頁。資料集目錄以適合機器取用的資料連結"
+" (Linked Data) 形式發布，並可在 [Google "
+"資料集搜尋](https://datasetsearch.research.google.com/)中找到，提升資料能見度。具備結構資料 "
+"API，易於資料介接及分析。"
 
 #: ckanext/depositar_theme/templates/home/index/idx_header.html:10
 msgid "Toggle navigation"
@@ -346,13 +373,15 @@ msgid ""
 "reproducible research.<br><br>Let's practice the FAIR data principles "
 "together. May all research data be findable, accessible, interoperable, "
 "and reusable!"
-msgstr "研究資料的妥善管理和保存，讓您的研究可再次重現。<br><br>讓我們一起實踐 FAIR 資料原則，讓研究資料可被找用、可被取用、可相互操作、可再次使用！"
+msgstr ""
+"研究資料的妥善管理和保存，讓您的研究可再次重現。<br><br>讓我們一起實踐 FAIR "
+"資料原則，讓研究資料可被找用、可被取用、可相互操作、可再次使用！"
 
 #: ckanext/depositar_theme/templates/home/index/idx_showcases.html:3
-msgid "Showcase"
-msgstr "案例展示"
+msgid "Featured Projects"
+msgstr "特色專案"
 
-#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:26
+#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:27
 msgid "more"
 msgstr "更多"
 
@@ -476,8 +505,8 @@ msgid ""
 "target=\"_blank\">CKAN</a>, an open source software package for "
 "publishing open data. CKAN stands for <em>Comprehensive Knowledge Archive"
 " Network</em>. CKAN is a project from <a href=\"https://okfn.org/\" "
-"class=\"external\" target=\"_blank\">Open Knowledge International</a>, "
-"and is itself supported by a viable developer and user community. We "
+"class=\"external\" target=\"_blank\">Open Knowledge Foundation</a>, and "
+"is itself supported by a viable developer and user community. We "
 "customize and extend the CKAN codebase to better support research data "
 "management. Our extensions to CKAN are <a "
 "href=\"https://github.com/depositar/\" class=\"external\" "
@@ -487,9 +516,9 @@ msgid ""
 msgstr ""
 "<h2>開放且自由使用</h2> <p><b>研究資料寄存所</b>此平台是基於 <a href=\"https://ckan.org/\" "
 "class=\"external\" target=\"_blank\">CKAN</a> 這套軟體建立的。CKAN (Comprehensive"
-" Knowledge Archive Network) 是一套用來發布開放資料的開放原始碼軟體，乃是「開放知識國際」(<a "
+" Knowledge Archive Network) 是一套用來發布開放資料的開放原始碼軟體，乃是「開放知識基金會」(<a "
 "href=\"https://okfn.org/\" class=\"external\" target=\"_blank\">Open "
-"Knowledge International</a>) 此組織的一項專案產出，並由眾多開發者和用戶群所支持。我們客製化並擴充 CKAN "
+"Knowledge Foundation</a>) 此組織的一項專案產出，並由眾多開發者和用戶群所支持。我們客製化並擴充 CKAN "
 "的程式碼，以支援研究資料管理。我們新擴充的功能也採用<a href=\"https://github.com/depositar/\" "
 "class=\"external\" target=\"_blank\">開放原始碼</a>方式對外釋出。目前 <a "
 "href=\"https://data.depositar.io/\">data.depositar.io</a> "
@@ -511,7 +540,7 @@ msgid ""
 "href=\"https://www.citi.sinica.edu.tw/\" class=\"external\" "
 "target=\"_blank\">Research Center for Information Technology "
 "Innovation</a> (both at Academia Sinica), and in part by research grants "
-"from the Ministry of Science and Technology of Taiwan. The project "
+"from the National Science and Technology Council of Taiwan. The project "
 "started from and remains as a collaboration with the <a "
 "href=\"http://gis.rchss.sinica.edu.tw/\" class=\"external\" "
 "target=\"_blank\">Center for GIS</a> at the Research Center for "
@@ -532,7 +561,7 @@ msgstr ""
 "href=\"https://www.iis.sinica.edu.tw/\" class=\"external\" "
 "target=\"_blank\">資訊科學研究所</a>以及<a "
 "href=\"https://www.citi.sinica.edu.tw/\" class=\"external\" "
-"target=\"_blank\">資訊科技創新研究中心</a>的支持，另外也得到台灣科技部的專題研究計畫的補助。這項計畫啟始於和同在中央研究院的<a"
+"target=\"_blank\">資訊科技創新研究中心</a>的支持，另外也得到台灣國家科學及技術委員會的專題研究計畫的補助。這項計畫啟始於和同在中央研究院的<a"
 " href=\"http://gis.rchss.sinica.edu.tw/\" class=\"external\" "
 "target=\"_blank\">地理資訊科學研究專題中心</a>（隸屬於人文社會科學研究中心）的協力研究工作，並維持到現在。</p> "
 "<p><b>研究資料寄存所</b>的發展是一項團隊工作。目前或是曾經參與此計畫團隊的人員包括（按姓名英文字母序）：莊庭瑞（計畫主持）、何明諠（專案經理）、黃韋菁、李承錱（技術經理）、廖泫銘、劉彥岑、穆昱佳、許煌鑫、王家薰（專案經理）、王豫煌，以及葉耀鮮。</p>"
@@ -682,3 +711,4 @@ msgid ""
 "By clicking the button to signup, you're agreeing to our <a "
 "href=\"/terms_of_use\">terms of use</a>."
 msgstr "當您按下建立帳號按鈕時，表示您已同意我們的<a href=\"/terms_of_use\">使用條款</a>。"
+

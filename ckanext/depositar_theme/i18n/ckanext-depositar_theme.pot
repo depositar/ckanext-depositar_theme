@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-depositar_theme 1.1.2b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-05 09:33+0000\n"
+"POT-Creation-Date: 2022-09-15 05:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,15 +158,25 @@ msgid "Search datasets..."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:14
-msgid "Upload Dataset"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:15
-msgid "Create Project"
+msgid "List All Datasets"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:16
-msgid "List All Datasets"
+msgid "Log in to upload a dataset"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:17
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:23
+msgid "Upload Dataset"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:19
+msgid "Log in to create a project"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:20
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:24
+msgid "Create Project"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:5
@@ -186,8 +196,8 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:11
 msgid ""
-"In addtion to data preservation, at the depositar registered users can create"
-" projects to collaboratively manage research data. All datasets can be "
+"In addition to data preservation, at the depositar registered users can "
+"create projects to collaboratively manage research data. All datasets can be "
 "searched by their spatiotemporal ranges, data types, keywords, and other "
 "conditions. Dataset catalogs are published as linked data and indexed by "
 "[Google Dataset Search](https://datasetsearch.research.google.com/)."
@@ -199,8 +209,8 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:16
 msgid ""
-"Before creating a dataset and starting to upload data, you will need to first"
-" prepare the necessary metadata for the dataset such as the dataset's name, "
+"Before creating a dataset and starting to upload data, you need to first "
+"prepare the necessary metadata for the dataset such as the dataset's name, "
 "description, license, creator, contact information, among others."
 msgstr ""
 
@@ -222,10 +232,11 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:26
 msgid ""
-"You data data will be kept as long as the depositar is in service. The "
-"depositar is funded by the Institute of Information Science and the Research "
+"Your data will be kept as long as the depositar is in service. The depositar "
+"has been funded by the Institute of Information Science and the Research "
 "Center for Information Technology Innovation, Academia Sinica. It is "
-"supported in part by a grant from Taiwan's Ministry of Science and Techology."
+"supported in part by a grant from the National Science and Technology Council"
+" of Taiwan."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_faq.html:30
@@ -253,9 +264,9 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:5
 msgid ""
-"This repository is built on top of the open source CKAN package. It has been "
-"customized and extended to support research data management. The service is "
-"open to all researchers. Registration is free!"
+"The data repository is built on top of the open source CKAN package. It has "
+"been customized and extended to support research data management. The service"
+" is open to all researchers. Registration is free!"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:9
@@ -276,13 +287,13 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:15
 msgid ""
-"The depositar has web APIs for resource catalogs and data endpoints. APIs to "
-"access structured data (e.g. CSV and Excel files) are available too. "
-"Programmable data access and analytics can be implemented."
+"Resource catalogs and data endpoints are suppoted by Web APIs. APIs to access"
+" structured data (e.g. CSV and Excel files) are available too. Programmable "
+"data access and analytics can be implemented."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_features.html:30
-msgid "Link to page"
+msgid "More"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:4
@@ -291,10 +302,10 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:5
 msgid ""
-"After registration, one can start to upload data. We support all file "
+"After registration, everyone can start to upload data. We support all file "
 "formats, as well as essential and standardized [metadata "
 "fields](https://docs.depositar.io/en/stable/appendix/fields/index.html) for "
-"time period, spatial range, Wikidata keywords, among others. With informatic "
+"time period, spatial range, Wikidata keyword, among others. With informatic "
 "dataset description and file preview, the deposited datasets are nicely "
 "presented."
 msgstr ""
@@ -307,9 +318,9 @@ msgstr ""
 msgid ""
 "Once a project is created, members can be added to the project. Project "
 "members are assigned different roles in data management. A project can manage"
-" multiple datasets. A dataset can be set to be open to the public or remain "
-"private to project members only. Projects and datasets have unique links. "
-"Dataset citation snippets are automatically generated too."
+" multiple datasets. A dataset can be open to the public or remain private to "
+"project members. Projects and datasets all have unique URLs. Dataset citation"
+" snippets are automatically generated too."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:14
@@ -318,10 +329,10 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_guide.html:15
 msgid ""
-"Datasets are searched by spatiotemporal ranges, data types, keywords, and "
+"Datasets are filtered by spatiotemporal ranges, data types, keywords, and "
 "other conditions. Data can be previewed without being downloaded. Data "
-"previews can be embedded in other web pages too. Dataset catalogs are "
-"published as linked data and indexed by [Google Data "
+"previews can be embedded in web pages too. Dataset catalogs are published as "
+"linked data and indexed by [Google Dataset "
 "Search](https://datasetsearch.research.google.com/). Flexible APIs for access"
 " to data endpoints and structured data are provided."
 msgstr ""
@@ -338,10 +349,10 @@ msgid ""
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_showcases.html:3
-msgid "Showcase"
+msgid "Featured Projects"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:26
+#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:27
 msgid "more"
 msgstr ""
 
@@ -452,8 +463,8 @@ msgid ""
 "target=\"_blank\">CKAN</a>, an open source software package for publishing "
 "open data. CKAN stands for <em>Comprehensive Knowledge Archive Network</em>. "
 "CKAN is a project from <a href=\"https://okfn.org/\" class=\"external\" "
-"target=\"_blank\">Open Knowledge International</a>, and is itself supported "
-"by a viable developer and user community. We customize and extend the CKAN "
+"target=\"_blank\">Open Knowledge Foundation</a>, and is itself supported by a"
+" viable developer and user community. We customize and extend the CKAN "
 "codebase to better support research data management. Our extensions to CKAN "
 "are <a href=\"https://github.com/depositar/\" class=\"external\" "
 "target=\"_blank\">open source</a> too. The service provided by <a "
@@ -476,17 +487,17 @@ msgid ""
 "target=\"_blank\">Institute of Information Science</a> and the <a "
 "href=\"https://www.citi.sinica.edu.tw/\" class=\"external\" "
 "target=\"_blank\">Research Center for Information Technology Innovation</a> "
-"(both at Academia Sinica), and in part by research grants from the Ministry "
-"of Science and Technology of Taiwan. The project started from and remains as "
-"a collaboration with the <a href=\"http://gis.rchss.sinica.edu.tw/\" "
-"class=\"external\" target=\"_blank\">Center for GIS</a> at the Research "
-"Center for Humanities and Social Sciences, Academia Sinica.</p> <p>Developing"
-" <em>depositar</em> has been a team work. The following people, in "
-"alphabetical order, have been or were once in the project team: Tyng-Ruey "
-"Chuang (project lead), Ming-Syuan Ho (project manager), Andrea Wei-Ching "
-"Huang, Cheng-Jen Lee (tech lead), Hsiung-Ming Liao, Yen-Tsen Liu, Monica Yu-"
-"Chia Mu, Huang-Sin Syu, Ally Chia-Hsun Wang (project manager), Yu-Huang Wang,"
-" and Yao-Hsien Yeh.</p>"
+"(both at Academia Sinica), and in part by research grants from the National "
+"Science and Technology Council of Taiwan. The project started from and "
+"remains as a collaboration with the <a "
+"href=\"http://gis.rchss.sinica.edu.tw/\" class=\"external\" "
+"target=\"_blank\">Center for GIS</a> at the Research Center for Humanities "
+"and Social Sciences, Academia Sinica.</p> <p>Developing <em>depositar</em> "
+"has been a team work. The following people, in alphabetical order, have been "
+"or were once in the project team: Tyng-Ruey Chuang (project lead), Ming-Syuan"
+" Ho (project manager), Andrea Wei-Ching Huang, Cheng-Jen Lee (tech lead), "
+"Hsiung-Ming Liao, Yen-Tsen Liu, Monica Yu-Chia Mu, Huang-Sin Syu, Ally Chia-"
+"Hsun Wang (project manager), Yu-Huang Wang, and Yao-Hsien Yeh.</p>"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/legal/privacy.html:8
@@ -620,3 +631,4 @@ msgid ""
 "By clicking the button to signup, you're agreeing to our <a "
 "href=\"/terms_of_use\">terms of use</a>."
 msgstr ""
+
