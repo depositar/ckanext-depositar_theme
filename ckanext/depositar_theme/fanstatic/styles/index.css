@@ -516,6 +516,9 @@
   height: 220px;
   flex-direction: column;
 }
+.carousel-inner .card .content .case-title a {
+  border-bottom: none;
+}
 .carousel-inner .card .content .case-content {
   -webkit-box-orient: vertical;
   display: inline-box;
