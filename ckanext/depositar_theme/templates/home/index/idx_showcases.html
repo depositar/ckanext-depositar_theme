@@ -6,9 +6,9 @@
         <i class="fa fa-chevron-left"></i>
       </a>
       <div class="carousel-inner" role="listbox">
-        {% for case in h.get_showcase() %}
-          {% set case_url = h.url_for('showcase_blueprint.read', id=case.href) %}
-          {% if case == h.get_showcase()[0] %}
+        {% for case in h.get_showcases() %}
+          {% set case_url = h.url_for('showcase_blueprint.read', id=case.name) %}
+          {% if case == h.get_showcases()[0] %}
             <div class="carousel-item active">
           {% else %}
             <div class="carousel-item">
@@ -16,12 +16,12 @@
             <div class="card-col col-md-4">
               <div class="card card-body">
                 <div class="img-container">
-                  <a href="{{ case_url }}"><img class="img" src={{ case.image_url }}></a>
+                  <a href="{{ case_url }}"><img class="img" src={{ case.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}></a>
                 </div>
                 <div class="content">
                   <h3 class="case-title"><a href="{{ case_url }}">{{ case.title }}</a></h3>
                   <div class="case-content">
-                    <div>{{ case.content }}</div>
+                    <div>{{ h.render_markdown(case.notes) }}</div>
                   </div>
                   <a class="btn more" href="{{ case_url }}">
                     {{ _('more') }}<i class="fa fa-chevron-right"></i>

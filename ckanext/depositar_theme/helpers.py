@@ -93,17 +93,12 @@ def get_total_views():
             total_views += pkg_content['tracking_summary']['total']
     return h.SI_number_span(total_views)
 
-def get_showcase():
+def get_showcases():
     showcase_list = tk.get_action('ckanext_showcase_list')({}, {})
-    case_list = []
-    for showcase in showcase_list:
-        case_list.append({
-            'title': showcase['title'],
-            'href': showcase['name'],
-            'content': h.render_markdown(showcase['notes']),
-            'image_url': showcase['extras'][0]['value']
-        })
-    return case_list
+    showcases = [tk.get_action('ckanext_showcase_show')
+                 ({}, {'id': showcase['id']})
+                 for showcase in showcase_list]
+    return showcases
 
 def get_markdown(content):
     return h.render_markdown(content)
