@@ -7,6 +7,7 @@ import ckan.lib.base as base
 from ckan.lib.base import render
 import ckan.lib.helpers as h
 from ckan.lib.mailer import create_reset_key, get_reset_link, mail_user
+import ckan.model as model
 import ckantoolkit as tk
 
 from ckanext import depositar_theme
@@ -69,28 +70,19 @@ def send_reg_link(user):
 
     mail_user(user, subject, body)
 
-def get_format_count():
-    results = tk.get_action('package_search')({}, {})['results']
-    format_list = []
-    for res in results:
-        resource_list = res['resources']
-        for resource in resource_list:
-            format_list.append(resource['format'].upper())
-
-    format_count = dict((fmt, format_list.count(fmt)) for fmt in format_list)
-    if '' in format_count:
-        format_count.pop('')
-    sort_format_count = sorted(format_count.items(), key=lambda tup: tup[1], reverse=True)
-    return sort_format_count
-
 def get_total_views():
-    package_list = tk.get_action('package_list')({},{})
-    total_views = 0
-    for pkg in package_list:
-        data = {'id': pkg, 'include_tracking': True}
-        pkg_content = tk.get_action('package_show')({}, data)
-        if(pkg_content['type'] == 'dataset'):
-            total_views += pkg_content['tracking_summary']['total']
+    sql = """
+        SELECT SUM(t.total_views) FROM (
+            SELECT COALESCE(SUM(s.count), 0) AS total_views
+            FROM package AS p
+            LEFT OUTER JOIN tracking_summary AS s ON s.package_id = p.id
+            WHERE p.private = 'false' AND p.state = 'active'
+            ORDER BY total_views DESC) t
+    """
+
+    engine = model.meta.engine
+    total_views = engine.execute(sql).fetchone()[0]
+
     return h.SI_number_span(total_views)
 
 def get_showcases():

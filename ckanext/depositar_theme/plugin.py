@@ -35,7 +35,6 @@ class Depositar_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
             'get_doc_url',
             'get_legal_versions',
             'get_latest_legal_version',
-            'get_format_count',
             'get_total_views',
             'get_showcases',
             'get_markdown'

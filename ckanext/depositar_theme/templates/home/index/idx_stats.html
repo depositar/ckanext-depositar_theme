@@ -1,5 +1,3 @@
-{% set format_cnt_list = h.get_format_count() %}
-
 <div class="idx stats">
   <div class="container">
     <div class="stat-data">
@@ -22,14 +20,18 @@
         </div>
       </div>
       <div class="sec-data">
-        {% for formatCnt in format_cnt_list[:7] %}
-        <div class="sec-item">
-          <h5>{{ formatCnt[0] }}</h5>
-          <a href="{{ h.url_for('dataset.search', res_format=formatCnt[0]) }}" class="btn">
-            <p class="cnt">{{ formatCnt[1] }}</p>
-          </a>
-        </div>
-        {% endfor %}
+        {% with items = h.get_facet_items_dict('res_format')[:7] %}
+          {% if items %}
+            {% for item in items %}
+              <div class="sec-item">
+                <h5>{{ item.display_name }}</h5>
+                <a href="{{ h.url_for('dataset.search', res_format=item.name) }}" class="btn">
+                  <p class="cnt">{{ item.count }}</p>
+                </a>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
       </div>
     </div>
     <div class="twitter">
