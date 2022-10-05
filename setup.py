@@ -56,7 +56,6 @@ setup(
     namespace_packages=['ckanext'],
 
     install_requires=[
-        'Markdown==3.1.1'
     ],
 
     # If there are data files included in your packages that need to be
