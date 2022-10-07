@@ -36,7 +36,7 @@
               <div>{{ guide.content }}</div>
             </div>
             <div class="guide-video">
-              <video id="{{ guide.video_name }}" autoplay muted loop class="video" alt="Guide Video"></video>
+              <video id="{{ guide.video_name }}" autoplay muted loop playsinline="true" class="video" alt="Guide Video"></video>
             </div>
           </div>
         {% endfor %}
