@@ -1,22 +1,25 @@
 <div class="idx stats">
   <div class="container">
     <div class="stat-data">
-      <div class="imp-data">
+      <div class="imp-data mb-4">
         <div class="imp-item">
+          <i class="fa fa-file-text fa-5x mb-3" aria-hidden="true"></i>
           <h1>{{ _('Datasets') }}</h1>
           <a href="{{ h.url_for('dataset.search') }}" class="btn">
-            <p class="cnt">{{ h.get_site_statistics()['dataset_count'] }}</p>
+            <div class="cnt">{{ h.get_site_statistics()['dataset_count'] }}</div>
           </a>
         </div>
         <div class="imp-item">
+          <i class="fa fa-users fa-5x mb-3" aria-hidden="true"></i>
           <h1>{{ _('Projects') }}</h1>
           <a href="{{ h.url_for('organization.index') }}" class="btn">
-            <p class="cnt">{{ h.get_site_statistics()['organization_count'] }}</p>
+            <div class="cnt">{{ h.get_site_statistics()['organization_count'] }}</div>
           </a>
         </div>
         <div class="imp-item" data-toggle="tooltip" data-placement="top" title="{{ _('Total views of all datasets since 2022-03-25.') }}">
+          <i class="fa fa-line-chart fa-5x mb-3" aria-hidden="true"></i>
           <h1>{{ _('Total Views') }}</h1>
-          <p class="cnt">{{ h.get_total_views() }}</p>
+          <div class="cnt">{{ h.get_total_views() }}</div>
         </div>
       </div>
       <div class="sec-data">

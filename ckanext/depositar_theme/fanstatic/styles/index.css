@@ -513,7 +513,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 1.25rem;
-  height: 220px;
+  height: 210px;
   flex-direction: column;
 }
 .carousel-inner .card .content .case-title a {
@@ -537,7 +537,7 @@
   margin-left: 5px;
 }
 .carousel-control-prev i, .carousel-control-next i {
-  font-size: 50pt;
+  font-size: 35pt;
   color: black;
 }
 
@@ -572,7 +572,7 @@
   }
 
   .carousel-control-prev i, .carousel-control-next i {
-    font-size: 30pt;
+    font-size: 20pt;
   }
 }
 /*
@@ -798,7 +798,7 @@
     margin-bottom: 2rem;
   }
   .stats .container .stat-data .imp-data .imp-item:not(:last-child) {
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 2.5rem;
   }
   .stats .container .stat-data .sec-data .sec-item {
     width: 33.33%;

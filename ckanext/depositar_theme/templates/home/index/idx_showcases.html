@@ -19,7 +19,7 @@
                   <a href="{{ case_url }}"><img class="img" src={{ case.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}></a>
                 </div>
                 <div class="content">
-                  <h3 class="case-title"><a href="{{ case_url }}">{{ case.title }}</a></h3>
+                  <h4 class="case-title"><a href="{{ case_url }}">{{ case.title }}</a></h4>
                   <div class="case-content">
                     <div>{{ h.render_markdown(case.notes) }}</div>
                   </div>

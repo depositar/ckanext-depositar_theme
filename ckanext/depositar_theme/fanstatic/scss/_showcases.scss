@@ -45,7 +45,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 1.25rem;
-        height: 220px;
+        height: 210px;
         flex-direction: column;
 
         .case-title a {
@@ -82,7 +82,7 @@
     &-prev,
     &-next {
       i {
-        font-size: 50pt;
+        font-size: 35pt;
         color: $showcaseFunctionBtnColor;
       }
     }
@@ -142,7 +142,7 @@
     &-prev,
     &-next {
       i {
-        font-size: 30pt;
+        font-size: 20pt;
       }
     }
   }
