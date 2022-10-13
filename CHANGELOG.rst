@@ -2,6 +2,11 @@
 Changelog
 ---------
 
+v1.1.3 2022-10-14
+=================
+
+* Performance and design tweaks for the homepage.
+
 v1.1.2 2022-09-23
 =================
 
