@@ -86,10 +86,22 @@ def get_total_views():
     return h.SI_number_span(total_views)
 
 def get_showcases():
-    showcase_list = tk.get_action('ckanext_showcase_list')({}, {})
-    showcases = [tk.get_action('ckanext_showcase_show')
-                 ({}, {'id': showcase['id']})
-                 for showcase in showcase_list]
+    showcases = tk.get_action('package_search')(
+        {},
+        {'fq': 'dataset_type:showcase'})['results']
+
+    for showcase in showcases:
+        # Borrowed from ckanext-showcase
+        image_url = showcase.get('image_url')
+        showcase['image_display_url'] = image_url
+        if image_url and not image_url.startswith('http'):
+            showcase['image_url'] = image_url
+            showcase['image_display_url'] = \
+                h.url_for_static('uploads/{0}/{1}'
+                                 .format('showcase',
+                                         showcase.get('image_url')),
+                                 qualified=True)
+
     return showcases
 
 def get_markdown(content):
