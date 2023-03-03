@@ -15,6 +15,7 @@
 {% endmacro %}
 
 {% block header_account %}
+  {{ h.get_site_notice() }}
   {% if h.is_demo() %}
     <div class="flash-messages">
       <div class="alert alert-dismissible fade in alert-warning show">
