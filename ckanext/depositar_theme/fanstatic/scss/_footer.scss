@@ -32,6 +32,10 @@
       height: 50px;
       background: $footerLogoImage no-repeat scroll;
     }
+
+    .footer-contacts a:not(:last-child) {
+      padding-right: 0.25rem !important;
+    }
   }
 
   .attribution {
