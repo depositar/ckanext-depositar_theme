@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.2b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.6b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-15 05:55+0000\n"
+"POT-Creation-Date: 2023-05-02 04:00+0000\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -29,13 +29,15 @@ msgid "This field is required for assigning ARK"
 msgstr "此欄位為 ARK 識別碼所需欄位"
 
 #: ckanext/depositar_theme/routes/help.py:14
-#: ckanext/depositar_theme/templates/header.html:46
+#: ckanext/depositar_theme/templates/footer.html:17
+#: ckanext/depositar_theme/templates/header.html:47
 #: ckanext/depositar_theme/templates/help/index.html:3
 #: ckanext/depositar_theme/templates/help/index.html:6
 msgid "Help"
 msgstr "支援"
 
 #: ckanext/depositar_theme/routes/legal.py:22
+#: ckanext/depositar_theme/templates/footer.html:18
 #: ckanext/depositar_theme/templates/legal/tou_archive.html:6
 msgid "Terms of Use"
 msgstr "使用條款"
@@ -45,6 +47,7 @@ msgid "Terms of Use (Archive)"
 msgstr "使用條款 (封存版本)"
 
 #: ckanext/depositar_theme/routes/legal.py:35
+#: ckanext/depositar_theme/templates/footer.html:18
 #: ckanext/depositar_theme/templates/legal/privacy_archive.html:6
 msgid "Privacy Policy"
 msgstr "隱私政策"
@@ -53,7 +56,35 @@ msgstr "隱私政策"
 msgid "Privacy Policy (Archive)"
 msgstr "隱私政策 (封存版本)"
 
-#: ckanext/depositar_theme/templates/header.html:21
+#: ckanext/depositar_theme/templates/footer.html:7
+msgid "About depositar"
+msgstr "關於研究資料寄存所"
+
+#: ckanext/depositar_theme/templates/footer.html:8
+msgid "Team"
+msgstr "團隊"
+
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "CKAN API"
+msgstr "CKAN API"
+
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "Site Statistics"
+msgstr "網站統計"
+
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "Site Status"
+msgstr "網站狀態"
+
+#: ckanext/depositar_theme/templates/footer.html:23
+msgid ""
+"<p>Source code available on <a href=\"https://github.com/depositar/\" "
+"class=\"external\" target=\"_blank\">GitHub.</a></p>"
+msgstr ""
+"<p>程式碼可於 <a href=\"https://github.com/depositar/\" class=\"external\" "
+"target=\"_blank\">GitHub</a> 取得。</p>"
+
+#: ckanext/depositar_theme/templates/header.html:22
 msgid ""
 "This is the demo site for <a href=\"http://data.depositar.io/\" "
 "target=\"_blank\">depositar</a>. You can create a new account and try any"
@@ -63,34 +94,34 @@ msgstr ""
 "此為<a href=\"http://data.depositar.io/\" "
 "target=\"_blank\">depositar</a>的展示用網站。您可於此註冊帳號與測試任何該平台提供之功能。請留意展示用網站之資料會定期清除。"
 
-#: ckanext/depositar_theme/templates/header.html:42
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:8
+#: ckanext/depositar_theme/templates/header.html:43
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:7
 msgid "Datasets"
 msgstr "資料集"
 
-#: ckanext/depositar_theme/templates/header.html:43
+#: ckanext/depositar_theme/templates/header.html:44
 #: ckanext/depositar_theme/templates/package/group_list.html:5
 msgid "Topics"
 msgstr "主題"
 
-#: ckanext/depositar_theme/templates/header.html:44
+#: ckanext/depositar_theme/templates/header.html:45
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:14
 msgid "Projects"
 msgstr "專案"
 
-#: ckanext/depositar_theme/templates/header.html:45
+#: ckanext/depositar_theme/templates/header.html:46
 msgid "About"
 msgstr "關於"
 
-#: ckanext/depositar_theme/templates/header.html:53
+#: ckanext/depositar_theme/templates/header.html:54
 msgid "Search Datasets"
 msgstr "搜尋資料集"
 
-#: ckanext/depositar_theme/templates/header.html:54
+#: ckanext/depositar_theme/templates/header.html:55
 msgid "Search datasets"
 msgstr "搜尋資料集"
 
-#: ckanext/depositar_theme/templates/header.html:55
+#: ckanext/depositar_theme/templates/header.html:56
 msgid "Submit"
 msgstr "送出"
 
@@ -389,7 +420,7 @@ msgstr "更多"
 msgid "Total views of all datasets since 2022-03-25."
 msgstr "自 2022-03-25 起全部資料集累計瀏覽總數"
 
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:20
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:21
 msgid "Total Views"
 msgstr "瀏覽總數"
 

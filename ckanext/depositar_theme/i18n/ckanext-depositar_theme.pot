@@ -1,15 +1,15 @@
 # Translations template for ckanext-depositar_theme.
-# Copyright (C) 2022 ORGANIZATION
+# Copyright (C) 2023 ORGANIZATION
 # This file is distributed under the same license as the ckanext-depositar_theme
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.2b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.6b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-15 05:55+0000\n"
+"POT-Creation-Date: 2023-05-02 04:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,13 +27,15 @@ msgid "This field is required for assigning ARK"
 msgstr ""
 
 #: ckanext/depositar_theme/routes/help.py:14
-#: ckanext/depositar_theme/templates/header.html:46
+#: ckanext/depositar_theme/templates/footer.html:17
+#: ckanext/depositar_theme/templates/header.html:47
 #: ckanext/depositar_theme/templates/help/index.html:3
 #: ckanext/depositar_theme/templates/help/index.html:6
 msgid "Help"
 msgstr ""
 
 #: ckanext/depositar_theme/routes/legal.py:22
+#: ckanext/depositar_theme/templates/footer.html:18
 #: ckanext/depositar_theme/templates/legal/tou_archive.html:6
 msgid "Terms of Use"
 msgstr ""
@@ -43,6 +45,7 @@ msgid "Terms of Use (Archive)"
 msgstr ""
 
 #: ckanext/depositar_theme/routes/legal.py:35
+#: ckanext/depositar_theme/templates/footer.html:18
 #: ckanext/depositar_theme/templates/legal/privacy_archive.html:6
 msgid "Privacy Policy"
 msgstr ""
@@ -51,7 +54,33 @@ msgstr ""
 msgid "Privacy Policy (Archive)"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:21
+#: ckanext/depositar_theme/templates/footer.html:7
+msgid "About depositar"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/footer.html:8
+msgid "Team"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "CKAN API"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "Site Statistics"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "Site Status"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/footer.html:23
+msgid ""
+"<p>Source code available on <a href=\"https://github.com/depositar/\" "
+"class=\"external\" target=\"_blank\">GitHub.</a></p>"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/header.html:22
 msgid ""
 "This is the demo site for <a href=\"http://data.depositar.io/\" "
 "target=\"_blank\">depositar</a>. You can create a new account and try any "
@@ -59,34 +88,34 @@ msgid ""
 "will be deleted occasionally."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:42
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:8
+#: ckanext/depositar_theme/templates/header.html:43
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:7
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:43
+#: ckanext/depositar_theme/templates/header.html:44
 #: ckanext/depositar_theme/templates/package/group_list.html:5
 msgid "Topics"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:44
+#: ckanext/depositar_theme/templates/header.html:45
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:14
 msgid "Projects"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:45
+#: ckanext/depositar_theme/templates/header.html:46
 msgid "About"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:53
+#: ckanext/depositar_theme/templates/header.html:54
 msgid "Search Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:54
+#: ckanext/depositar_theme/templates/header.html:55
 msgid "Search datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:55
+#: ckanext/depositar_theme/templates/header.html:56
 msgid "Submit"
 msgstr ""
 
@@ -360,7 +389,7 @@ msgstr ""
 msgid "Total views of all datasets since 2022-03-25."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:20
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:21
 msgid "Total Views"
 msgstr ""
 
