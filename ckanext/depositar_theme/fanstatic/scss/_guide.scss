@@ -1,4 +1,9 @@
 .guide {
+  background-image: $guildBackgroundImage;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
   .container {
     .carousel {
       display: flex;
