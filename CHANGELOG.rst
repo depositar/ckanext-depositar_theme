@@ -2,6 +2,13 @@
 Changelog
 ---------
 
+v1.1.6 2023-05-11
+=================
+
+* Remove Twitter widget.
+* Update the footer.
+* Add a background image to the guide section of the homepage.
+
 v1.1.5 2023-03-09
 =================
 
