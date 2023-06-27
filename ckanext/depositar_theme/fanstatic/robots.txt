@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /user/activity/*
+Disallow: /dataset/rate/
+Disallow: /revision/
+Disallow: /dataset/*/history
+Disallow: /api/
+Crawl-Delay: 10
+
+User-Agent: PetalBot
+Disallow: /
+
+User-Agent: AhrefsBot
+Disallow: /
+
+User-Agent: DataForSeoBot
+Disallow: /
+
+User-Agent: MJ12bot
+Disallow: /
