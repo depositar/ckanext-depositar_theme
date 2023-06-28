@@ -2,6 +2,12 @@
 Changelog
 ---------
 
+v1.1.7 2023-06-29
+=================
+
+* Add robots.txt.
+* Fix a typo in the zh_Hant_TW locale.
+
 v1.1.6 2023-05-11
 =================
 
