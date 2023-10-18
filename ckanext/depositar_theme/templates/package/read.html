@@ -5,6 +5,10 @@
 
   {% snippet "ark/snippets/ark.html" %}
 
+  {% if not pkg.private %}
+    {% snippet "package/snippets/binder.html" %}
+  {% endif %}
+
   {% snippet "citation/package/snippets/citation.html" %}
 
   {% set dataset_extent = c.pkg_dict.get('spatial', '') %}
