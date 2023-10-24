@@ -2,6 +2,13 @@
 Changelog
 ---------
 
+v1.1.8 2023-10-26
+=================
+
+* Add a widget for BinderHub.
+* Homepage: fix typo.
+* Remove the beta badge for ARK identifier.
+
 v1.1.7 2023-06-29
 =================
 
