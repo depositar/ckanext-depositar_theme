@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.8b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.9b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-10-18 07:37+0000\n"
+"POT-Creation-Date: 2024-02-14 10:50+0000\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -736,6 +736,15 @@ msgstr "空間搜尋"
 #: ckanext/depositar_theme/templates/snippets/theme.html:4
 msgid "depositar"
 msgstr "研究資料寄存所 (depositar)"
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:5
+#: ckanext/spatial/public/js/spatial_query.js:89
+msgid "Please draw query extent in the map:"
+msgstr "請於地圖選取搜尋範圍："
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:6
+msgid "Dataset extent"
+msgstr "空間範圍"
 
 #: ckanext/depositar_theme/templates/user/snippets/tou_notice.html:2
 msgid ""
