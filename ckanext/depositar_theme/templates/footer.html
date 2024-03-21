@@ -4,11 +4,12 @@
 {% block footer_links %}
   <div class="footer-logo"></div>
   <li class="footer-contacts">
-    <a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About depositar') }}</a> |
-    <a href="https://lab.depositar.io/" class="external" target="_blank">{{_('Team') }}</a>
-    <a href="mailto:data.contact@depositar.io"><i class="fa fa-envelope"></i></a>
-    <a href="https://youtube.com/@depositar" target="_blank"><i class="fa fa-youtube-play"></i></a>
-    <a href="https://twitter.com/_depositar" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About') }}</a> |
+    <a href="https://lab.depositar.io/news/" class="external" target="_blank">{{_('Blog') }}</a> |
+    <a href="https://rdm.depositar.io" class="external" target="_blank">RDM HUB</a> |
+    <a href="mailto:data.contact@depositar.io"><i class="fa fa-envelope fa-lg"></i></a>
+    <a href="https://youtube.com/@depositar" target="_blank"><i class="fa fa-youtube-play fa-lg"></i></a>
+    <a href="https://twitter.com/_depositar" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
   </li>
 {% endblock %}
 
