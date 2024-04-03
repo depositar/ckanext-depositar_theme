@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-depositar_theme 1.1.10b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-21 09:20+0000\n"
+"POT-Creation-Date: 2024-04-03 07:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,8 +119,8 @@ msgstr ""
 #: ckanext/depositar_theme/templates/ark/snippets/ark.html:17
 #, python-format
 msgid ""
-"Not assigned. Please find the <a href=\"%(doc_url)suser-guide.html#ark-"
-"identifier\" target=\"_blank\">criteria</a> for assigning ARK."
+"Not assigned. Please find the <a href=\"%(doc_url)suser-guide/ark-"
+"identifier.html\" target=\"_blank\">criteria</a> for assigning ARK."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/emails/user_registration.txt:1
@@ -565,7 +565,7 @@ msgstr ""
 #: ckanext/depositar_theme/templates/package/read.html:34
 #, python-format
 msgid ""
-"<a href=\"%(doc_url)suser-guide.html#rdf-serializations\" "
+"<a href=\"%(doc_url)suser-guide/rdf-serializations.html\" "
 "target=\"_blank\">RDF serializations</a> based on DCAT 2:"
 msgstr ""
 
@@ -580,11 +580,11 @@ msgstr ""
 #: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:21
 #, python-format
 msgid ""
-"<p>Please refer to the <a href=\"%(doc_url)suser-guide.html#adding-a-new-"
-"dataset\" target=\"_blank\">guide</a> while filling out the form.</p> <p>A "
-"public dataset will acquire an <a href=\"%(doc_url)suser-guide.html#ark-"
-"identifier\" target=\"_blank\">ARK identifier</a> if it has a Title, a Start "
-"and/or End Time, and a Creator.</p>"
+"<p>Please refer to the <a href=\"%(doc_url)suser-guide/features-for-"
+"publishers.html#adding-a-new-dataset\" target=\"_blank\">guide</a> while "
+"filling out the form.</p> <p>A public dataset will acquire an <a "
+"href=\"%(doc_url)suser-guide/ark-identifier.html\" target=\"_blank\">ARK "
+"identifier</a> if it has a Title, a Start and/or End Time, and a Creator.</p>"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/scheming/package/snippets/package_form.html:35
@@ -618,11 +618,11 @@ msgstr ""
 #: ckanext/depositar_theme/templates/scheming/package/snippets/resource_form.html:6
 #, python-format
 msgid ""
-"Please refer to the <a href=\"%(doc_url)suser-guide.html#adding-a-new-"
-"dataset\" target=\"_blank\">guide</a>, the <a "
+"Please refer to the <a href=\"%(doc_url)suser-guide/features-for-"
+"publishers.html#adding-a-new-dataset\" target=\"_blank\">guide</a>, the <a "
 "href=\"%(doc_url)sappendix/fields/index.html#resource-fields\" "
 "target=\"_blank\">metadata schema</a>, and the <a href=\"%(doc_url)suser-"
-"guide.html#limitation\" target=\"_blank\">limitation</a> while filling the "
+"guide/limitation.html\" target=\"_blank\">limitation</a> while filling the "
 "form."
 msgstr ""
 
