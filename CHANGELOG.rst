@@ -2,6 +2,14 @@
 Changelog
 ---------
 
+v1.1.10 2024-04-10
+==================
+
+* Adjust footer links.
+* BinderHub → Binder.
+* Update links to reflect the changes to the user guide.
+* Add disallows to robots.txt.
+
 v1.1.9 2024-02-15
 =================
 
