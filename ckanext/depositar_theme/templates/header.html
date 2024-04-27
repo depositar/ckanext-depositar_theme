@@ -39,20 +39,25 @@
 {% endblock %}
 
 {% block header_site_navigation_tabs %}
+  {% set org_type = h.default_group_type('organization') %}
+  {% set group_type = h.default_group_type('group') %}
+
   {{ h.build_nav_main(
-    ('dataset.search', _('Datasets')),
-    ('group.index', _('Topics')),
-    ('organization.index', _('Projects')),
+    (dataset_type ~ '.search', h.humanize_entity_type('package', dataset_type, 'main nav') or _('Datasets'), ["dataset", "resource"]),
+    (group_type ~ '.index',
+      h.humanize_entity_type('group', group_type, 'main nav') or _('Topics'), ['group']),
+	(org_type ~ '.index',
+      h.humanize_entity_type('organization', org_type, 'main nav') or _('Projects'), ['organization']),
     ('home.about', _('About')),
     ('help.index', _('Help'))
   ) }}
 {% endblock %}
 
 {% block header_site_search %}
-  <form class="section site-search simple-input" action="{% url_for 'dataset.search' %}" method="get">
+  <form class="section site-search simple-input" action="{% url_for dataset_type ~ '.search' %}" method="get">
     <div class="field">
-      <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
-      <input id="field-sitewide-search" type="text" class="form-control" name="q" aria-label="{{ _('Search datasets') }}"/>
+      <label for="field-sitewide-search">{% block header_site_search_label %}{{ h.humanize_entity_type('package', dataset_type, 'search_placeholder') or _('Search Datasets...') }}{% endblock %}</label>
+      <input id="field-sitewide-search" type="text" class="form-control" name="q" aria-label="{{ h.humanize_entity_type('package', dataset_type, 'search_placeholder') or _('Search datasets...') }}"/>
       <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
     </div>
   </form>
