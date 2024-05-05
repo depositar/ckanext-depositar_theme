@@ -7383,14 +7383,14 @@ a.tag:hover {
   .nav-aside li.active a:before {
     content: ' ';
     position: absolute;
-    border: 20px solid transparent;
+    border: 24.8px solid transparent;
     border-right: none;
     border-left-color: #333333;
-    border-left-width: 6px;
+    border-left-width: 7.6px;
     top: 0;
     bottom: 0;
-    right: -6px;
-    width: 6px;
+    right: -7.6px;
+    width: 7.6px;
     height: 34px;
   }
 }
