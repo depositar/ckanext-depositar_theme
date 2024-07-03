@@ -11075,12 +11075,12 @@ a.tag:hover {
 .alert > a:not(.close) {
   border-bottom: 2px solid #00e09b;
 }
-.module-content p > a:not(.btn, .select2-choice, .label, .media-view, .highlight),
-.module-content small > a:not(.btn, .select2-choice, .label, .media-view, .highlight),
-.module-content td > a:not(.btn, .select2-choice, .label, .media-view, .highlight),
-.module-content ol > li > a:not(.btn, .select2-choice, .label, .media-view, .highlight),
-.module-content li.resource-item > a:not(.btn, .select2-choice, .label, .media-view, .highlight),
-.module-content div.dataset-content > div > a:not(.btn, .select2-choice, .label, .media-view, .highlight) {
+.module-content p > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module-content small > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module-content td > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module-content ol > li > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module-content ul:not(.nav, .dropdown-menu, .select2-choices) > li > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module-content div.dataset-content > div > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag) {
   border-bottom: 2px solid #00e09b;
 }
 @media (max-width: 768px) {

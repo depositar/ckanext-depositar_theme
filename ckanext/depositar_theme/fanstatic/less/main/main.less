@@ -107,9 +107,9 @@ a.tag:hover {
   small,
   td,
   ol > li,
-  li.resource-item,
+  ul:not(.nav, .dropdown-menu, .select2-choices) > li,
   div.dataset-content > div {
-    & > a:not(.btn, .select2-choice, .label, .media-view, .highlight) {
+    & > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag) {
       .link-decoration();
     }
   }
