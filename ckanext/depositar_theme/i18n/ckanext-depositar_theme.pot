@@ -7,16 +7,16 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.10b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.11b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-03 07:46+0000\n"
+"POT-Creation-Date: 2024-07-11 03:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ckanext/depositar_theme/fanstatic/scripts/modules/field-extra.js:22
 msgid "This field accepts multiple values"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ckanext/depositar_theme/routes/help.py:14
 #: ckanext/depositar_theme/templates/footer.html:18
-#: ckanext/depositar_theme/templates/header.html:47
+#: ckanext/depositar_theme/templates/header.html:52
 #: ckanext/depositar_theme/templates/help/index.html:3
 #: ckanext/depositar_theme/templates/help/index.html:6
 msgid "Help"
@@ -55,7 +55,7 @@ msgid "Privacy Policy (Archive)"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/footer.html:7
-#: ckanext/depositar_theme/templates/header.html:46
+#: ckanext/depositar_theme/templates/header.html:51
 msgid "About"
 msgstr ""
 
@@ -89,30 +89,30 @@ msgid ""
 "will be deleted occasionally."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:43
+#: ckanext/depositar_theme/templates/header.html:46
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:7
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:44
-#: ckanext/depositar_theme/templates/package/group_list.html:5
+#: ckanext/depositar_theme/templates/header.html:48
 msgid "Topics"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:45
+#: ckanext/depositar_theme/templates/header.html:50
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:14
 msgid "Projects"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:54
-msgid "Search Datasets"
+#: ckanext/depositar_theme/templates/header.html:59
+msgid "Search Datasets..."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:55
-msgid "Search datasets"
+#: ckanext/depositar_theme/templates/header.html:60
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:9
+msgid "Search datasets..."
 msgstr ""
 
-#: ckanext/depositar_theme/templates/header.html:56
+#: ckanext/depositar_theme/templates/header.html:61
 msgid "Submit"
 msgstr ""
 
@@ -121,6 +121,10 @@ msgstr ""
 msgid ""
 "Not assigned. Please find the <a href=\"%(doc_url)suser-guide/ark-"
 "identifier.html\" target=\"_blank\">criteria</a> for assigning ARK."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/ckanext/stats/index.html:4
+msgid "Statistics"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/emails/user_registration.txt:1
@@ -177,10 +181,6 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:5
 msgid "deposit・<wbr>discover・<wbr>reuse"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:9
-msgid "Search datasets..."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:14
@@ -540,18 +540,6 @@ msgstr ""
 msgid "Effective "
 msgstr ""
 
-#: ckanext/depositar_theme/templates/package/group_list.html:15
-msgid "Associate this topic with this dataset"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/group_list.html:15
-msgid "Add to topic"
-msgstr ""
-
-#: ckanext/depositar_theme/templates/package/group_list.html:25
-msgid "There are no topics associated with this dataset"
-msgstr ""
-
 #: ckanext/depositar_theme/templates/package/read.html:25
 msgid "Other Access"
 msgstr ""
@@ -659,6 +647,108 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/snippets/theme.html:6
 msgid "Dataset extent"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:10
+msgid "Total number of Datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:11
+msgid "Date"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:12
+msgid "Total datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:13
+msgid "Dataset Revisions per Week"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:14
+msgid "All dataset revisions"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:15
+msgid "New datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:16
+msgid "Most Edited Datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:17
+msgid "Number of edits"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:19
+msgid "Total Number of Datasets"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:20
+msgid "Username or Email"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:21
+msgid "How does this work?"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:22
+msgid ""
+"Enter your email address or username into the box and we will send you an "
+"email with a link to enter a new password."
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:23
+msgid "Reorder resource view"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:24
+msgid "There is no description for this dataset"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:25
+msgid "Current Sysadmins"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:26
+msgid "Revoke Sysadmin permission"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:27
+msgid "Promote user to Sysadmin"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:28
+msgid "Promote"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:29
+msgid "No activity found for this type"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:30
+msgid "No activity found"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:31
+msgid "All activity types"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:32
+msgid "Newer activities"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:33
+msgid "Older activities"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:34
+#, python-format
+msgid ""
+"You're currently viewing an old version of this dataset. Data files may not "
+"match the old version of the metadata. <a href=\"%(url)s\">View the current "
+"version</a>."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/user/snippets/tou_notice.html:2
