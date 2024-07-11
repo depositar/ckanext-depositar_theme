@@ -2,6 +2,11 @@
 Changelog
 ---------
 
+v1.1.11 2024-07-18
+==================
+
+* Support the latest depositar with CKAN 2.10.
+
 v1.1.10 2024-04-10
 ==================
 
