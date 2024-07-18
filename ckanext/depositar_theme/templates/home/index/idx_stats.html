@@ -22,20 +22,6 @@
           <div class="cnt">{{ h.get_total_views() }}</div>
         </div>
       </div>
-      <div class="sec-data">
-        {% with items = h.get_facet_items_dict('res_format')[:7] %}
-          {% if items %}
-            {% for item in items %}
-              <div class="sec-item">
-                <h5>{{ item.display_name }}</h5>
-                <a href="{{ h.url_for('dataset.search', res_format=item.name) }}" class="btn">
-                  <p class="cnt">{{ item.count }}</p>
-                </a>
-              </div>
-            {% endfor %}
-          {% endif %}
-        {% endwith %}
-      </div>
     </div>
   </div>
 </div>

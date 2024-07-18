@@ -40,40 +40,6 @@
           }
         }
       }
-
-      .sec-data {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .sec-item {
-          display: flex;
-          align-items: center;
-          width: 25%;
-          text-align: center;
-          flex-direction: column;
-          line-height: initial;
-
-          h5 {
-            padding: 0.25rem 0;
-            width: 5rem;
-            border: solid 2px $statSecDataTagBorderColor;
-            border-radius: 10px 10px 0 0;
-            font-weight: bold;
-          }
-
-          .btn {
-            &:hover {
-              color: $statLinkHoverTextColor;
-            }
-
-            .cnt {
-              font-size: 30pt;
-              font-weight: bolder;
-            }
-          }
-        }
-      }
     }
   }
 }

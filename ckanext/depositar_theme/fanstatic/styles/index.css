@@ -745,33 +745,6 @@
 .stats .container .stat-data .imp-data .imp-item .cnt:last-child {
   display: inline-block;
 }
-.stats .container .stat-data .sec-data {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.stats .container .stat-data .sec-data .sec-item {
-  display: flex;
-  align-items: center;
-  width: 25%;
-  text-align: center;
-  flex-direction: column;
-  line-height: initial;
-}
-.stats .container .stat-data .sec-data .sec-item h5 {
-  padding: 0.25rem 0;
-  width: 5rem;
-  border: solid 2px black;
-  border-radius: 10px 10px 0 0;
-  font-weight: bold;
-}
-.stats .container .stat-data .sec-data .sec-item .btn:hover {
-  color: #00e09b;
-}
-.stats .container .stat-data .sec-data .sec-item .btn .cnt {
-  font-size: 30pt;
-  font-weight: bolder;
-}
 
 @media (max-width: 1199.98px) {
   .stats .container {
