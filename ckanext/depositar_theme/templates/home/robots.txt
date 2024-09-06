@@ -23,3 +23,6 @@ Disallow: /
 
 User-Agent: GPTBot
 Disallow: /
+
+User-Agent: facebookexternalhit/1.1
+Disallow: /
