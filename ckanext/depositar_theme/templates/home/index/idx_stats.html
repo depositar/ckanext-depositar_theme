@@ -1,3 +1,5 @@
+{% set site_statistics = h.get_site_statistics() %}
+
 <div class="idx stats">
   <div class="container">
     <div class="stat-data">
@@ -6,14 +8,14 @@
           <i class="fa fa-file-text fa-5x mb-3" aria-hidden="true"></i>
           <h1>{{ _('Datasets') }}</h1>
           <a href="{{ h.url_for('dataset.search') }}" class="btn">
-            <div class="cnt">{{ h.get_site_statistics()['dataset_count'] }}</div>
+            <div class="cnt">{{ site_statistics['dataset_count'] }}</div>
           </a>
         </div>
         <div class="imp-item">
           <i class="fa fa-users fa-5x mb-3" aria-hidden="true"></i>
           <h1>{{ _('Projects') }}</h1>
           <a href="{{ h.url_for('organization.index') }}" class="btn">
-            <div class="cnt">{{ h.get_site_statistics()['organization_count'] }}</div>
+            <div class="cnt">{{ site_statistics['organization_count'] }}</div>
           </a>
         </div>
         <div class="imp-item" data-toggle="tooltip" data-placement="top" title="{{ _('Total views of all datasets since 2022-03-25.') }}">
