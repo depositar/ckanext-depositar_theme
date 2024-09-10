@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.11b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.12b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-11 03:19+0000\n"
+"POT-Creation-Date: 2024-09-10 13:03+0800\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -96,7 +96,7 @@ msgstr ""
 "target=\"_blank\">depositar</a>的展示用網站。您可於此註冊帳號與測試任何該平台提供之功能。請留意展示用網站之資料會定期清除。"
 
 #: ckanext/depositar_theme/templates/header.html:46
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:7
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:9
 msgid "Datasets"
 msgstr "資料集"
 
@@ -105,7 +105,7 @@ msgid "Topics"
 msgstr "主題"
 
 #: ckanext/depositar_theme/templates/header.html:50
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:14
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:16
 msgid "Projects"
 msgstr "專案"
 
@@ -413,11 +413,11 @@ msgstr "特色專案"
 msgid "more"
 msgstr "更多"
 
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:19
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:21
 msgid "Total views of all datasets since 2022-03-25."
 msgstr "自 2022-03-25 起全部資料集累計瀏覽總數"
 
-#: ckanext/depositar_theme/templates/home/index/idx_stats.html:21
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:23
 msgid "Total Views"
 msgstr "瀏覽總數"
 
@@ -731,108 +731,6 @@ msgstr "請於地圖選取搜尋範圍："
 #: ckanext/depositar_theme/templates/snippets/theme.html:6
 msgid "Dataset extent"
 msgstr "空間範圍"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:10
-msgid "Total number of Datasets"
-msgstr "資料集總數"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:11
-msgid "Date"
-msgstr "日期"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:12
-msgid "Total datasets"
-msgstr "所有資料集"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:13
-msgid "Dataset Revisions per Week"
-msgstr "資料集平均每週更新的次數"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:14
-msgid "All dataset revisions"
-msgstr "所有資料集的版本"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:15
-msgid "New datasets"
-msgstr "資料集"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:16
-msgid "Most Edited Datasets"
-msgstr "最多編輯次數的資料集"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:17
-msgid "Number of edits"
-msgstr "編輯次數"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:19
-msgid "Total Number of Datasets"
-msgstr "資料集總數"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:20
-msgid "Username or Email"
-msgstr "使用者名稱或電子郵件"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:21
-msgid "How does this work?"
-msgstr "這是如何運作的？"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:22
-msgid ""
-"Enter your email address or username into the box and we will send you an"
-" email with a link to enter a new password."
-msgstr "輸入您的電子郵件或使用者名稱，我們將會寄送密碼重設信件至您的電子信箱。"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:23
-msgid "Reorder resource view"
-msgstr "重新排序資源檢視"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:24
-msgid "There is no description for this dataset"
-msgstr "此資料集沒有說明"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:25
-msgid "Current Sysadmins"
-msgstr "目前的系統管理員"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:26
-msgid "Revoke Sysadmin permission"
-msgstr "撤銷系統管理員權限"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:27
-msgid "Promote user to Sysadmin"
-msgstr "提升使用者為系統管理員"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:28
-msgid "Promote"
-msgstr "提升權限"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:29
-msgid "No activity found for this type"
-msgstr "找不到此類型的動態"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:30
-msgid "No activity found"
-msgstr "找不到動態"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:31
-msgid "All activity types"
-msgstr "所有動態類型"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:32
-msgid "Newer activities"
-msgstr "較新的動態"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:33
-msgid "Older activities"
-msgstr "較早的動態"
-
-#: ckanext/depositar_theme/templates/snippets/theme.html:34
-#, python-format
-msgid ""
-"You're currently viewing an old version of this dataset. Data files may "
-"not match the old version of the metadata. <a href=\"%(url)s\">View the "
-"current version</a>."
-msgstr "您正在瀏覽資料集的過去版本。上傳的檔案可能與舊版的後設資料不相符。<a href=\"%(url)s\">瀏覽目前版本</a>。"
 
 #: ckanext/depositar_theme/templates/user/snippets/tou_notice.html:2
 msgid ""
