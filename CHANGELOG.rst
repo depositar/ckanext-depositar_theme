@@ -2,6 +2,15 @@
 Changelog
 ---------
 
+v1.1.12 2024-09-18
+==================
+
+* The Binder widget now supports activities of a dataset.
+* Add facebookexternalhit to robots.txt.
+* Move robots.txt back to the templates directory (ckan/ckan#6930).
+* Homepage: remove stats for formats.
+* Performance tweaks for the homepage.
+
 v1.1.11 2024-07-18
 ==================
 
