@@ -2,6 +2,13 @@
 Changelog
 ---------
 
+v1.1.13 2025-01-15
+==================
+
+* Remove the zh_Hant_TW locale for DataTables since it has been included in CKAN 2.10.6 (ckan/ckan#8424).
+* Extend the robots.txt by a list from ai.robots.txt (ckan/ckan#8536).
+* Add project members to the about page.
+
 v1.1.12 2024-09-18
 ==================
 
