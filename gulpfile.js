@@ -23,6 +23,13 @@ const buildScss = () =>
     .pipe(if_(with_sourcemaps(), sourcemaps.write()))
     .pipe(dest(__dirname + "/ckanext/depositar_theme/fanstatic/styles/"));
 
+const bootstrapScss = () =>
+  src(__dirname + "/ckanext/depositar_theme/fanstatic/scss/bootstrap-4.scss")
+    .pipe(if_(with_sourcemaps(), sourcemaps.init()))
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(if_(with_sourcemaps(), sourcemaps.write()))
+    .pipe(dest(__dirname + "/ckanext/depositar_theme/fanstatic/styles/"));
+
 const watchSource = () =>
   watch([
     __dirname + "/ckanext/depositar_theme/fanstatic/scss/**/*.scss",
@@ -39,3 +46,6 @@ exports.build = parallel(
   buildScss
 );
 exports.watch = watchSource;
+exports.updateVendorLibs = parallel(
+  bootstrapScss
+);
