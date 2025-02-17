@@ -5,8 +5,8 @@
   <div class="footer-logo"></div>
   <li class="footer-contacts">
     <a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About') }}</a> |
-    <a href="https://lab.depositar.io/news/" class="external" target="_blank">{{_('Blog') }}</a> |
-    <a href="https://rdm.depositar.io" class="external" target="_blank">RDM HUB</a> |
+    {% link_for _('Terms of Use'), named_route='legal.tou' %} |
+    {% link_for _('Privacy Policy'), named_route='legal.privacy' %} |
     <a href="mailto:data.contact@depositar.io"><i class="fa fa-envelope fa-lg"></i></a>
     <a href="https://youtube.com/@depositar" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
     <a href="https://social.coop/@depositar" target="_blank"><i class="fa-brands fa-mastodon fa-lg"></i></a>
@@ -14,9 +14,9 @@
 {% endblock %}
 
 {% block footer_links_ckan %}
+  <li><a href="https://stats.depositar.io/" class="external" target="_blank">{{ _('Stats') }}</a> | <a href="https://lab.depositar.io/news/" class="external" target="_blank">{{_('Blog') }}</a> | <a href="https://rdm.depositar.io" class="external" target="_blank">RDM HUB</a></li>
   {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-  <li><a href="{{ api_url }}" class="external" target="_blank">{{ _('CKAN API') }}</a> | <a href="/stats">{{_('Site Statistics') }}</a> | <a href="https://status.depositar.io/" class="external" target="_blank">{{ _('Site Status') }}</a> | <a href="{{ h.url_for(controller='help', action='index') }}">{{ _('Help') }}</a></li>
-  <li>{% link_for _('Terms of Use'), named_route='legal.tou' %} | {% link_for _('Privacy Policy'), named_route='legal.privacy' %}</li>
+  <li><a href="{{ api_url }}" class="external" target="_blank">{{ _('CKAN API') }}</a> | <a href="https://status.depositar.io/" class="external" target="_blank">{{ _('Site Status') }}</a> | <a href="/stats">{{_('Site Statistics (CKAN)') }}</a></li>
 {% endblock %}
 
 {% block footer_attribution %}

@@ -1,6 +1,9 @@
 .stats {
   .container {
-    display: flex;
+    .btn {
+      font-weight: bold;
+    }
+
     justify-content: space-between;
 
     .stat-data {

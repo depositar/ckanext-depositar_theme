@@ -711,8 +711,10 @@
   }
 }
 .stats .container {
-  display: flex;
   justify-content: space-between;
+}
+.stats .container .btn {
+  font-weight: bold;
 }
 .stats .container .stat-data {
   display: flex;
