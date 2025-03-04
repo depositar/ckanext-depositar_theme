@@ -2,6 +2,12 @@
 Changelog
 ---------
 
+v1.1.14 2025-03-06
+==================
+
+* Add a task to build vendor libs.
+* Add a link to the stats page.
+
 v1.1.13 2025-01-15
 ==================
 
