@@ -1,15 +1,15 @@
 # Translations template for ckanext-depositar_theme.
-# Copyright (C) 2024 ORGANIZATION
+# Copyright (C) 2025 ORGANIZATION
 # This file is distributed under the same license as the ckanext-depositar_theme
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.13b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.14b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-17 17:05+0800\n"
+"POT-Creation-Date: 2025-02-13 09:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "This field is required for assigning ARK"
 msgstr ""
 
 #: ckanext/depositar_theme/routes/help.py:14
-#: ckanext/depositar_theme/templates/footer.html:18
 #: ckanext/depositar_theme/templates/header.html:52
 #: ckanext/depositar_theme/templates/help/index.html:3
 #: ckanext/depositar_theme/templates/help/index.html:6
@@ -35,7 +34,7 @@ msgid "Help"
 msgstr ""
 
 #: ckanext/depositar_theme/routes/legal.py:22
-#: ckanext/depositar_theme/templates/footer.html:19
+#: ckanext/depositar_theme/templates/footer.html:8
 #: ckanext/depositar_theme/templates/legal/tou_archive.html:6
 msgid "Terms of Use"
 msgstr ""
@@ -45,7 +44,7 @@ msgid "Terms of Use (Archive)"
 msgstr ""
 
 #: ckanext/depositar_theme/routes/legal.py:35
-#: ckanext/depositar_theme/templates/footer.html:19
+#: ckanext/depositar_theme/templates/footer.html:9
 #: ckanext/depositar_theme/templates/legal/privacy_archive.html:6
 msgid "Privacy Policy"
 msgstr ""
@@ -59,20 +58,24 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/footer.html:8
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "Stats"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/footer.html:17
 msgid "Blog"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/footer.html:18
+#: ckanext/depositar_theme/templates/footer.html:19
 msgid "CKAN API"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/footer.html:18
-msgid "Site Statistics"
+#: ckanext/depositar_theme/templates/footer.html:19
+msgid "Site Status"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/footer.html:18
-msgid "Site Status"
+#: ckanext/depositar_theme/templates/footer.html:19
+msgid "Site Statistics (CKAN)"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/footer.html:24
@@ -388,6 +391,10 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:23
 msgid "Total Views"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:28
+msgid "Find more statistics"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_topics.html:3

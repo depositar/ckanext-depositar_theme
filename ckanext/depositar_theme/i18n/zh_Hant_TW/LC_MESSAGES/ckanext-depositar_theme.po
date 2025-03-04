@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.13b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.14b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-17 17:05+0800\n"
+"POT-Creation-Date: 2025-02-13 09:57+0800\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -29,7 +29,6 @@ msgid "This field is required for assigning ARK"
 msgstr "此欄位為 ARK 識別碼所需欄位"
 
 #: ckanext/depositar_theme/routes/help.py:14
-#: ckanext/depositar_theme/templates/footer.html:18
 #: ckanext/depositar_theme/templates/header.html:52
 #: ckanext/depositar_theme/templates/help/index.html:3
 #: ckanext/depositar_theme/templates/help/index.html:6
@@ -37,7 +36,7 @@ msgid "Help"
 msgstr "支援"
 
 #: ckanext/depositar_theme/routes/legal.py:22
-#: ckanext/depositar_theme/templates/footer.html:19
+#: ckanext/depositar_theme/templates/footer.html:8
 #: ckanext/depositar_theme/templates/legal/tou_archive.html:6
 msgid "Terms of Use"
 msgstr "使用條款"
@@ -47,7 +46,7 @@ msgid "Terms of Use (Archive)"
 msgstr "使用條款 (封存版本)"
 
 #: ckanext/depositar_theme/routes/legal.py:35
-#: ckanext/depositar_theme/templates/footer.html:19
+#: ckanext/depositar_theme/templates/footer.html:9
 #: ckanext/depositar_theme/templates/legal/privacy_archive.html:6
 msgid "Privacy Policy"
 msgstr "隱私政策"
@@ -61,21 +60,25 @@ msgstr "隱私政策 (封存版本)"
 msgid "About"
 msgstr "關於"
 
-#: ckanext/depositar_theme/templates/footer.html:8
+#: ckanext/depositar_theme/templates/footer.html:17
+msgid "Stats"
+msgstr "收錄統計"
+
+#: ckanext/depositar_theme/templates/footer.html:17
 msgid "Blog"
 msgstr "部落格"
 
-#: ckanext/depositar_theme/templates/footer.html:18
+#: ckanext/depositar_theme/templates/footer.html:19
 msgid "CKAN API"
 msgstr "CKAN API"
 
-#: ckanext/depositar_theme/templates/footer.html:18
-msgid "Site Statistics"
-msgstr "網站統計"
-
-#: ckanext/depositar_theme/templates/footer.html:18
+#: ckanext/depositar_theme/templates/footer.html:19
 msgid "Site Status"
 msgstr "網站狀態"
+
+#: ckanext/depositar_theme/templates/footer.html:19
+msgid "Site Statistics (CKAN)"
+msgstr "網站統計 (CKAN)"
 
 #: ckanext/depositar_theme/templates/footer.html:24
 msgid ""
@@ -420,6 +423,11 @@ msgstr "自 2022-03-25 起全部資料集累計瀏覽總數"
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:23
 msgid "Total Views"
 msgstr "瀏覽總數"
+
+# | msgid "Statistics"
+#: ckanext/depositar_theme/templates/home/index/idx_stats.html:28
+msgid "Find more statistics"
+msgstr "瀏覽更多收錄統計"
 
 #: ckanext/depositar_theme/templates/home/index/idx_topics.html:3
 msgid "Topic"
