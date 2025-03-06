@@ -1,0 +1,188 @@
+@use "sass:math";
+
+// Bootstrap default variable overrides
+$primary: #000;
+$link-hover-decoration: none;
+$badge-color: #000;
+$font-family-base: 'Noto Sans TC', arial, 'Microsoft JhengHei', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.875;
+$nav-tabs-border-color: #000;
+$pagination-color: #077a48;
+$pagination-active-color: #999;
+$pagination-active-bg: #f5f5f5;
+$pagination-active-border: #ddd;
+
+// Bootstrap
+@import "../../../../../../ckan/ckan/public/base/scss/bootstrap.scss";
+
+// Variables
+@import "variables.scss";
+
+// CKAN Core CSS
+@import "../../../../../../ckan/ckan/public/base/scss/custom.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/mixins.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/module.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/media.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/nav.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/forms.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/dataset.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/search.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/group.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/toolbar.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/prose.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/layout.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/homepage.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/masthead.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/footer.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/tables.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/profile.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/dashboard.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/resource-view.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/datapusher.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/alerts.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/input-groups.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/resource-icons.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/buttons.scss";
+
+// depositar Overrides
+
+// dataset.scss
+
+@import "dataset.scss";
+
+// masthead.scss
+
+@import "masthead.scss";
+
+// Other Overrides
+
+@import "others.scss";
+
+// footer.scss
+
+.site-footer {
+  background-color: color-contrast($mastheadBackgroundColor);
+
+  a:hover {
+    color: $depositarMain;
+  }
+
+  .footer-links .footer-contacts a:not(:last-child) {
+    padding-right: 0.25rem !important;
+  }
+}
+
+.footer-logo {
+  background: url("/images/logo_eng_horizontal_w.svg") no-repeat scroll;
+  height: 50px;
+  width: 30%;
+  padding-bottom: 10px;
+}
+
+@include media-breakpoint-down(sm) {
+  .footer-logo {
+    width: 50%;
+  }
+}
+
+// forms.scss
+
+.simple-input .field .btn-search {
+  margin-top: -16px;
+  height: 30px;
+  width: 15px;
+}
+
+// layout.scss
+
+.main {
+  padding-top: 0;
+  background: $mastheadBackgroundColor;
+}
+
+.wrapper {
+  border: none;
+  box-shadow: none;
+}
+
+.flash-messages {
+  .alert {
+    margin-bottom: 0;
+  }
+}
+
+// media.scss
+
+.media-grid {
+  border: none;
+}
+
+.media-view {
+  border-color: $genericBorderColor;
+}
+
+// mixins.scss
+
+a.tag:hover {
+  color: #000;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+// module.scss
+
+@mixin link-decoration(){
+  border-bottom: 2px solid $depositarMain;
+}
+
+.module-heading {
+  border-top: none;
+}
+
+.alert > a:not(.close) {
+  @include link-decoration();
+}
+
+.module-content {
+  p,
+  small,
+  td,
+  ol > li,
+  ul:not(.nav, .dropdown-menu, .select2-choices) > li,
+  div.dataset-content > div {
+    & > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag) {
+      @include link-decoration();
+    }
+  }
+}
+
+.module-narrow {
+  .module-heading {
+    @include media-breakpoint-down(sm) {
+      .action {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .ui-rangeSlider {
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+}
+
+// search.scss
+
+.search-form {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+// toolbar.scss
+
+.toolbar {
+  background-color: map-get($colors,"gray-dark");
+  padding: 10px 0;
+  margin-bottom: 0;
+}

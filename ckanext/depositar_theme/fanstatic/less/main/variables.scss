@@ -1,0 +1,120 @@
+// Base variables
+$imagePath: "../../../base/images";
+$bgPath: "";
+$depositarMain: #00e09b;
+
+// Layout Variables
+$layoutFontFamily: 'Noto Sans TC', arial, 'Microsoft JhengHei', sans-serif;
+$layoutTextColor: #444;
+$layoutBoldColor: #000;
+$layoutLinkColor: #077a48;
+$layoutBackgroundColor: #dbefe3;
+$layoutTrimBackgroundColor: #fff;
+$layoutTrimBorderColor: #ccc;
+$logoMaxHeight: 60px;
+
+$navLinkColor: #333;
+$navActiveBackgroundColor: #f6f6f6;
+
+// Module Variables
+$moduleBackgroundColor: #fff;
+$moduleHeadingBorderColor: #000;
+$moduleHeadingBackgroundColor: #edf7f1;
+$moduleHeadingActionTextColor: #888;
+$moduleExpandedBackgroundColor: rgba(255, 255, 255, 0.9);
+
+$tabTextColor: #111;
+$tagBackgroundColor: #f6f6f6;
+
+$gutterX: 25px;
+$gutterY: 20px;
+$gutterSmallX: 15px;
+$gutterSmallY: $gutterY;
+
+$emptyTextColor: #6e6e6e;
+$genericBorderColor: #ddd;
+
+$breadcrumbTextColor: #fff;
+
+$mastheadTextColor: #000;
+$mastheadLinkColor: $mastheadTextColor;
+$mastheadBackgroundColor: #fff;
+$mastheadBackgroundColorStart: #005d7a;
+$mastheadBackgroundColorEnd: #00536b;
+
+$navItemActiveTextColor: #FFF;
+$navItemActiveBackgroundColor: map-get($colors,"gray-dark");
+$navItemActiveArrowSize: 7.6px;
+
+$pillTextColor: $navItemActiveTextColor;
+$pillBackgroundColor: darken($navItemActiveBackgroundColor, 10%);
+
+$footerTextColor: #fff;
+$footerLinkColor: $footerTextColor;
+
+$inputColor: $black;
+$inputBackground: $body-bg;
+$inputBorder: #ccc;
+$inputBorderRadius: 3px;
+$disabledCustomInputTextColor: #aaa;
+$disabledCustomInputBackground: #f3f3f3;
+
+$highlightBackground: #fdf7e9;
+$highlightHoverBackground: #fdf3d9;
+
+// Forms
+$errorText: #720404;
+$errorBackground: lighten(#f46464, 30%);
+$errorBorder: #f46464;
+
+$formInfoText: #707070;
+
+$stagesTextColor: #aeaeae;
+$stagesBackground: #EDEDED;
+$stagesTransparentBackground: rgba(237, 237, 237, 0); // Used for arrows.
+$stagesActiveTextColor: #fff;
+$stagesActiveBackground: $depositarMain;
+$stagesActiveTransparentBackground: rgba(140, 198, 138, 0);
+$stagesCompleteTextColor: #eef6ed;
+$stagesCompleteBackground: #d0eddd;
+$stagesCompleteTransparentBackground: rgba(197, 226, 196, 0);
+$stagesCounterTextColor: #fff;
+$stagesCounterBackground: #aeaeae;
+$stagesCounterActiveTextColor: $depositarMain;
+$stagesCounterActiveBackground: #fff;
+$stagesCounterCompleteTextColor: #c5e2c4;
+$stagesCounterCompleteBackground: #eef6ed;
+
+$codeTextColor: #000;
+
+// Datasets
+$listingHeadingTextColor: #333;
+$resourceFormatBackground: #e5c22e;
+
+// Table
+$chunkyTableHeaderTextColor: #fff;
+$chunkyTableHeaderBackgroundColor: #aaa;
+$chunkyTableStripeBackgroundColor: #f2f2f2;
+
+// Twitter Bootstrap Overrides
+$bodyBackground: $layoutBackgroundColor;
+$btnBackground: #ffffff;
+$btnBackgroundHighlight: #eaeaea;
+$btnPrimaryBackground: $depositarMain; // only used by tag
+$btnPrimaryBackgroundHighlight: #085871;
+$baseFontFamily: $layoutFontFamily;
+$textColor: $layoutTextColor;
+$linkColor: $layoutLinkColor;
+$iconSpritePath: "../images/bootstrap-glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/bootstrap-glyphicons-halflings-white.png";
+
+// Navigation
+$zindex-navbar: 1;
+
+// Other variables
+$btn-primary-color: #000;
+$btn-primary-bg: #fff;
+$btn-primary-border: shade-color($btn-primary-bg, 20%);
+$btn-success-color: $btn-primary-color;
+$btn-success-bg: $btn-primary-bg;
+$btn-success-border: $btn-primary-border;
