@@ -16,12 +16,6 @@
         width: 90%;
 
         .carousel-item {
-          &.active,
-          &-next,
-          &-prev {
-            display: flex;
-          }
-
           &-right.active,
           &-next {
             transform: translateX(100%);
@@ -59,15 +53,13 @@
       .carousel-control {
         &-prev,
         &-next {
-          position: initial;
           width: 3%;
         }
       }
 
       .carousel-indicators {
         position: initial;
-
-        li {
+        button {
           background-color: $guideSlideIndicatorsBackgroundColor;
         }
       }

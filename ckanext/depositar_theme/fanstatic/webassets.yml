@@ -14,18 +14,15 @@ index-js:
     - scripts/tooltip.js
   extra:
     preload:
-      - depositar_theme/bootstrap-4-js
+      - vendor/vendor
+      - vendor/bootstrap
       - depositar_theme/p5-js
       - depositar_theme/hls-js
 
 index-css:
   output: depositar_theme/%(version)s_index.css
   contents:
-    - styles/bootstrap-4.css
     - styles/index.css
-  extra:
-    preload: 
-      - vendor/fontawesome
 
 field-extra-js:
   filters: rjsmin
@@ -40,20 +37,6 @@ p5-js:
   output: depositar_theme/%(version)s_p5.js
   contents: vendor/p5.js/p5.js
 
-bootstrap-4-js:
-  filters: rjsmin
-  output: depositar_theme/%(version)s_bootstrap-4.js
-  contents: 
-    - vendor/bootstrap-4.js/bootstrap.js
-  extra:
-    preload:
-      - vendor/jquery
-      - depositar_theme/popper-js
-
 hls-js:
   output: depositar_theme/%(version)s_hls.light.js
   contents: vendor/hls.js/hls.light.js
-
-popper-js:
-  output: depositar_theme/%(version)s_popper.min.js
-  contents: vendor/popper.js/popper.min.js

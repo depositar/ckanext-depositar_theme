@@ -1,5 +1,6 @@
 // base variables
 $imagePath: '../../images';
+$bgPath: "";
 
 $mainThemeColor: #00e09b;
 $secondThemeColor: #012819;
@@ -18,6 +19,8 @@ $selectionTextColor: white;
 $selectionBackgroundColor: $mainThemeColor;
 $idxBorderBottomColor: #ececec;
 
+$logoMaxHeight: 60px;
+
 // masthead
 $accountMastheadBackgroundColor: black;
 $accountMastheadListBorderLeftColor: #ccc;
@@ -30,6 +33,7 @@ $accountMastheadListLinkBadgeHoverBackgroundColor: #000f14;
 
 $mastheadDebugColor: rgba(white, 0.5);
 $mastheadTextColor: black;
+$mastheadLinkColor: $mastheadTextColor;
 $mastheadBackgroundColor: white;
 $mastheadBtnSearchTextColor: #999;
 $mastheadListLinkAfterBackgroundColor: $mainThemeColor;
