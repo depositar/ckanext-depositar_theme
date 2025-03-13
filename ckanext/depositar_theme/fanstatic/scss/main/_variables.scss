@@ -1,7 +1,9 @@
 // Base variables
 $imagePath: "../../../base/images";
 $bgPath: "";
-$depositarMain: #00e09b;
+
+$mainThemeColor: #00e09b;
+$secondThemeColor: #012819;
 
 // Layout Variables
 $layoutFontFamily: 'Noto Sans TC', arial, 'Microsoft JhengHei', sans-serif;
@@ -73,14 +75,14 @@ $stagesTextColor: #aeaeae;
 $stagesBackground: #EDEDED;
 $stagesTransparentBackground: rgba(237, 237, 237, 0); // Used for arrows.
 $stagesActiveTextColor: #fff;
-$stagesActiveBackground: $depositarMain;
+$stagesActiveBackground: $mainThemeColor;
 $stagesActiveTransparentBackground: rgba(140, 198, 138, 0);
 $stagesCompleteTextColor: #eef6ed;
 $stagesCompleteBackground: #d0eddd;
 $stagesCompleteTransparentBackground: rgba(197, 226, 196, 0);
 $stagesCounterTextColor: #fff;
 $stagesCounterBackground: #aeaeae;
-$stagesCounterActiveTextColor: $depositarMain;
+$stagesCounterActiveTextColor: $mainThemeColor;
 $stagesCounterActiveBackground: #fff;
 $stagesCounterCompleteTextColor: #c5e2c4;
 $stagesCounterCompleteBackground: #eef6ed;
@@ -100,7 +102,7 @@ $chunkyTableStripeBackgroundColor: #f2f2f2;
 $bodyBackground: $layoutBackgroundColor;
 $btnBackground: #ffffff;
 $btnBackgroundHighlight: #eaeaea;
-$btnPrimaryBackground: $depositarMain; // only used by tag
+$btnPrimaryBackground: $mainThemeColor; // only used by tag
 $btnPrimaryBackgroundHighlight: #085871;
 $baseFontFamily: $layoutFontFamily;
 $textColor: $layoutTextColor;

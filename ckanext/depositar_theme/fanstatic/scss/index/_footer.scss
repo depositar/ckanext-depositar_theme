@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width: $smallDeviceMaxWidth) {
+@include media-breakpoint-down(md) {
   .site-footer {
     .footer-links {
       .footer-logo {

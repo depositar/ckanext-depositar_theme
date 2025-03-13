@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: $largeDeviceMaxWidth) {
+@include media-breakpoint-down(xl) {
   .carousel-inner {
     .carousel-item {
       &-right.active,
@@ -110,7 +110,7 @@
   }
 }
 
-@media (max-width: $smallDeviceMaxWidth) {
+@include media-breakpoint-down(md) {
   .carousel-inner {
     .carousel-item {
       &-right.active,

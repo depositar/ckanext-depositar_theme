@@ -1,30 +1,22 @@
 const path = require("path");
 const { src, watch, dest, parallel } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-//const less = require("gulp-less");
 const if_ = require("gulp-if");
 const sourcemaps = require("gulp-sourcemaps");
 
 const with_sourcemaps = () => !!process.env.DEBUG;
 
-const buildLess = () =>
+const buildMain = () =>
   src([
-    __dirname + "/ckanext/depositar_theme/fanstatic/less/main/main.scss"
+    __dirname + "/ckanext/depositar_theme/fanstatic/scss/main/main.scss"
   ])
     .pipe(if_(with_sourcemaps(), sourcemaps.init()))
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(if_(with_sourcemaps(), sourcemaps.write()))
     .pipe(dest(__dirname + "/ckanext/depositar_theme/fanstatic/styles/"));
 
-const buildScss = () =>
-  src(__dirname + "/ckanext/depositar_theme/fanstatic/scss/index.scss")
-    .pipe(if_(with_sourcemaps(), sourcemaps.init()))
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
-    .pipe(if_(with_sourcemaps(), sourcemaps.write()))
-    .pipe(dest(__dirname + "/ckanext/depositar_theme/fanstatic/styles/"));
-
-const bootstrapScss = () =>
-  src(__dirname + "/ckanext/depositar_theme/fanstatic/scss/bootstrap-4.scss")
+const buildIndex = () =>
+  src(__dirname + "/ckanext/depositar_theme/fanstatic/scss/index/index.scss")
     .pipe(if_(with_sourcemaps(), sourcemaps.init()))
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(if_(with_sourcemaps(), sourcemaps.write()))
@@ -32,20 +24,16 @@ const bootstrapScss = () =>
 
 const watchSource = () =>
   watch([
-    __dirname + "/ckanext/depositar_theme/fanstatic/scss/**/*.scss",
-    __dirname + "/ckanext/depositar_theme/fanstatic/less/**/*.scss"],
+    __dirname + "/ckanext/depositar_theme/fanstatic/scss/**/*.scss"],
     { ignoreInitial: false },
     parallel(
-      buildLess,
-      buildScss
+      buildMain,
+      buildIndex
     )
   );
 
 exports.build = parallel(
-  buildLess,
-  buildScss
+  buildMain,
+  buildIndex
 );
 exports.watch = watchSource;
-exports.updateVendorLibs = parallel(
-  bootstrapScss
-);

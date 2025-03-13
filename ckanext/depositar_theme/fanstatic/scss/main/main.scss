@@ -1,27 +1,38 @@
-@import "../../../../../../ckan/ckan/public/base/less/main.less"; // CKAN Core CSS
-@import "variables.less"; // Color Overrides
+@use "sass:math";
+
+// Bootstrap default variable overrides
+@import "bootstrap-variables.scss";
+
+// Bootstrap
+@import "../../../../../../ckan/ckan/public/base/scss/bootstrap.scss";
+
+// Variables
+@import "variables.scss";
+
+// CKAN Core CSS
+@import "ckan.scss";
 
 // depositar Overrides
 
-// dataset.less
+// dataset.scss
 
-@import "dataset.less";
+@import "dataset.scss";
 
-// masthead.less
+// masthead.scss
 
-@import "masthead.less";
+@import "masthead.scss";
 
 // Other Overrides
 
-@import "others.less";
+@import "others.scss";
 
-// footer.less
+// footer.scss
 
 .site-footer {
-  background-color: contrast(@mastheadBackgroundColor);
+  background-color: color-contrast($mastheadBackgroundColor);
 
   a:hover {
-    color: @depositarMain;
+    color: $mainThemeColor;
   }
 
   .footer-links .footer-contacts a:not(:last-child) {
@@ -36,13 +47,13 @@
   padding-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(sm) {
   .footer-logo {
     width: 50%;
   }
 }
 
-// forms.less
+// forms.scss
 
 .simple-input .field .btn-search {
   margin-top: -16px;
@@ -50,13 +61,11 @@
   width: 15px;
 }
 
-// layout.less
+// layout.scss
 
-@media (min-width: @screen-sm-min) {
-  .main {
-    padding-top: 0;
-    background: @mastheadBackgroundColor;
-  }
+.main {
+  padding-top: 0;
+  background: $mastheadBackgroundColor;
 }
 
 .wrapper {
@@ -70,17 +79,17 @@
   }
 }
 
-// media.less
+// media.scss
 
 .media-grid {
   border: none;
 }
 
 .media-view {
-  border-color: @genericBorderColor;
+  border-color: $genericBorderColor;
 }
 
-// mixins.less
+// mixins.scss
 
 a.tag:hover {
   color: #000;
@@ -88,10 +97,10 @@ a.tag:hover {
   transition: 0.2s;
 }
 
-// module.less
+// module.scss
 
-.link-decoration() {
-  border-bottom: 2px solid @depositarMain;
+@mixin link-decoration(){
+  border-bottom: 2px solid $mainThemeColor;
 }
 
 .module-heading {
@@ -99,10 +108,10 @@ a.tag:hover {
 }
 
 .alert > a:not(.close) {
-  .link-decoration();
+  @include link-decoration();
 }
 
-.module-content {
+.module {
   p,
   small,
   td,
@@ -110,14 +119,14 @@ a.tag:hover {
   ul:not(.nav, .dropdown-menu, .select2-choices) > li,
   div.dataset-content > div {
     & > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag) {
-      .link-decoration();
+      @include link-decoration();
     }
   }
 }
 
 .module-narrow {
   .module-heading {
-    @media (max-width: 768px) {
+    @include media-breakpoint-down(sm) {
       .action {
         padding-right: 10px;
       }
@@ -130,17 +139,17 @@ a.tag:hover {
   }
 }
 
-// search.less
+// search.scss
 
 .search-form {
   padding-bottom: 0;
   border-bottom: none;
 }
 
-// toolbar.less
+// toolbar.scss
 
 .toolbar {
-  background-color: @gray-dark;
+  background-color: map-get($colors,"gray-dark");
   padding: 10px 0;
   margin-bottom: 0;
 }

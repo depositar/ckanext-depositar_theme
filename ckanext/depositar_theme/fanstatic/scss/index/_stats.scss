@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: $largeDeviceMaxWidth) {
+@include media-breakpoint-down(xl) {
   .stats {
     .container {
       flex-direction: column;
@@ -66,7 +66,7 @@
   }
 }
 
-@media (max-width: $smallDeviceMaxWidth) {
+@include media-breakpoint-down(md) {
   .stats {
     .container {
       .stat-data {
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: $extraSmallDeviceMaxWidth) {
+@include media-breakpoint-down(sm) {
   .stats {
     .container {
       .stat-data {

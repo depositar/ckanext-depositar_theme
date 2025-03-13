@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: $largeDeviceMaxWidth) {
+@include media-breakpoint-down(xl) {
   .banner {
     background-image: $mediaBannerBackgroundImage;
     background-position: 90%;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: $mediumDeviceMaxWidth) {
+@include media-breakpoint-down(lg) {
   .banner {
     background-blend-mode: overlay;
     background-size: contain;
@@ -141,7 +141,7 @@
   }
 }
 
-@media (max-width: $extraSmallDeviceMaxWidth) {
+@include media-breakpoint-down(sm) {
   .banner {
     .container {
       justify-content: center;

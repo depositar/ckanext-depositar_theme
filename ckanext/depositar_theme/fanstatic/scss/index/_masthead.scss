@@ -121,28 +121,6 @@
     }
   }
 
-  .nav > li > a,
-  .nav > li > a:focus,
-  .nav > li > a:hover,
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
-    font-size: 15px;
-    color: $mastheadTextColor;
-    border-bottom: none;
-  }
-
-  .btn-navbar,
-  .btn-navbar:hover,
-  .btn-navbar:focus {
-    margin-top: 0;
-    font-size: 25px;
-    color: $mastheadTextColor;
-    background-color: $mastheadBackgroundColor;
-    border: none !important;
-    outline: unset;
-  }
-
   .debug {
     position: absolute;
     top: 37px;
@@ -194,7 +172,7 @@
   }
 }
 
-@media (max-width: $smallDeviceMaxWidth) {
+@include media-breakpoint-down(md) {
   .masthead {
     &.navbar {
       .container {
@@ -284,13 +262,6 @@
   }
 
   .main-navbar {
-    /*&.section {
-      @include media-breakpoint-only(sm) {
-        float: left;
-        margin-left: 40px;
-      }
-    }*/
-
     ul {
       li {
         padding: ($spacer * .6)  ($spacer * .9);
@@ -302,6 +273,7 @@
         &:focus,
         &.active {
           a{
+            color: $mastheadTextColor;
             background-color: $mastheadBackgroundColor;
 
             &::after {
@@ -342,12 +314,12 @@
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
     }
     .field:hover {
-      width: 150px;
+      width: 200px;
     }
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(md) {
   .masthead {
     .site-search {
       display: inherit;

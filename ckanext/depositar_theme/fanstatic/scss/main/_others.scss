@@ -1,6 +1,6 @@
 ::selection {
-  background: @depositarMain;
-  color: contrast(@text-color);
+  background: $mainThemeColor;
+  color: color-contrast($body-color);
 }
 
 a {
@@ -19,9 +19,9 @@ a {
 }
 
 .dataset-search {
-  background-color: @moduleHeadingBackgroundColor;
+  background-color: $moduleHeadingBackgroundColor;
   padding-top: 20px;
-  border-bottom: 1px solid @genericBorderColor;
+  border-bottom: 1px solid $genericBorderColor;
 }
 
 // Spatial Coverage
@@ -42,12 +42,12 @@ a {
   }
 }
 
-.btn-hover() {
+@mixin btn-hover(){
   &:hover,
   &:focus {
-    background-color: @depositarMain;
+    background-color: $mainThemeColor !important;
     transition: 0.2s;
-    border: 1px solid @depositarMain;
+    border: 1px solid $mainThemeColor;
   }
 }
 
@@ -55,11 +55,19 @@ a {
 .btn-primary,
 .btn-success,
 .cancel {
-  .btn-hover();
+  @include btn-hover();
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-bg, $btn-primary-border, $btn-primary-color);
+}
+
+.btn-success {
+  @include button-variant($btn-success-bg, $btn-success-border, $btn-success-color);
 }
 
 .cancel {
-  border-color: @btn-primary-border;
+  border-color: $btn-primary-border;
 }
 
 // Form actions without border-top
@@ -89,21 +97,26 @@ a {
 }
 
 // Filter by location
-@media (min-width: @screen-sm-min) {
+@include media-breakpoint-up(md) {
   .dataset-map-expanded #dataset-map {
     height: 410px !important;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     transition: all 0.3s;
   }
-}
-
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-  .dataset-map-expanded #dataset-map {
-    width: @container-sm !important;
+  .dataset-search {
+    .form-group{
+      margin-bottom: 0px;
+    }
   }
 }
 
-@media (max-width: @screen-xs-max) {
+@include media-breakpoint-only(sm) {
+  .dataset-map-expanded #dataset-map {
+    width: map-get($container-max-widths, sm) !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
   .dataset-map-expanded #dataset-map {
     width: initial !important;
     height: initial !important;

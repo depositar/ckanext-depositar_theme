@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: $extraLargeDeviceMaxWidth) {
+@include media-breakpoint-down(xl) {
   .topics {
     .container {
       ul {
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: $mediumDeviceMaxWidth) {
+@include media-breakpoint-down(lg) {
   .topics {
     .container {
       ul {
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: $smallDeviceMaxWidth) {
+@include media-breakpoint-down(md) {
   .topics {
     .container {
       ul {
@@ -86,7 +86,7 @@
   }
 }
 
-@media (max-width: $extraSmallDeviceMaxWidth) {
+@include media-breakpoint-down(sm) {
   .topics {
     .container {
       ul {

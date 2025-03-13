@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: $largeDeviceMaxWidth) {
+@include media-breakpoint-down(xl) {
   .features {
     .container {
       height: 420px;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: $mediumDeviceMaxWidth) {
+@include media-breakpoint-down(lg) {
   .features {
     .container {
       height: auto;
@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: $extraSmallDeviceMaxWidth) {
+@include media-breakpoint-down(sm) {
   .features {
     .container {
       .block {

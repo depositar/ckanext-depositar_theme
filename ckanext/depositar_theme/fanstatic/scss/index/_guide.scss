@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: $largeDeviceMaxWidth) {
+@include media-breakpoint-down(xl) {
   .guide {
     .container {
       .carousel {
