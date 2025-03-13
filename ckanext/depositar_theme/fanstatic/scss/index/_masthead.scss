@@ -1,6 +1,9 @@
+@use "sass:color";
+
 .account-masthead {
   padding-top: 5px;
   min-height: 30px;
+  color: color-contrast($mastheadTextColor);
   background-color: $accountMastheadBackgroundColor;
   box-sizing: content-box;
 
@@ -57,6 +60,11 @@
 .masthead {
   background-color: $mastheadBackgroundColor;
   background-image: none;
+  padding: 0;
+
+  a {
+    color: $mastheadTextColor;
+  }
 
   &.navbar {
     padding: 5px 0;
@@ -70,55 +78,51 @@
   .logo img {
     padding-left: 5px;
     width: 185px;
+    margin: 10px 0;
+  }
+
+  .header-text-logo {
+    padding-top: 10px;
+  }
+
+  .main-navbar {
+    ul {
+      li {
+        padding: ($spacer * .6)  ($spacer * .9);
+
+        a {
+          padding: 0;
+          color: $mastheadTextColor;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+          a{
+            color: $mastheadTextColor;
+            background-color: $mastheadBackgroundColor;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        a::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 3px;
+          background-color: $mainThemeColor;
+          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
+          transition-property: width, color;
+        }
+      }
+    }
   }
 
   .navigation {
     margin-top: 5px;
-
-    .nav-pills {
-      li {
-        a {
-          display: block;
-          padding: 10px 15px;
-          text-decoration: none;
-          border-radius: 0;
-          line-height: 7px;
-
-          &::after {
-            display: block;
-            margin-top: 6px;
-            width: 0;
-            height: 3px;
-            background-color: $mastheadListLinkAfterBackgroundColor;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-            content: '';
-            transition-property: width, color;
-          }
-
-          &:hover {
-            background-color: $mastheadBackgroundColor;
-
-            &::after {
-              width: 100%;
-            }
-          }
-        }
-
-        &.active {
-          a {
-            background-color: $mastheadBackgroundColor;
-
-            &::after {
-              margin-top: 6px;
-              width: 100%;
-              height: 3px;
-              background-color: $mastheadListLinkAfterBackgroundColor;
-              border-radius: 0;
-            }
-          }
-        }
-      }
-    }
   }
 
   .debug {
@@ -129,6 +133,15 @@
   }
 
   .site-search {
+    input {
+      background: shade-color($mastheadBackgroundColor, 7%);
+      padding: 10px 15px;
+      margin-top: -7px;
+      border: 0;
+      border-radius: 50px;
+      box-shadow: none;
+    }
+
     .field {
       display: flex;
       justify-content: flex-end;
@@ -144,7 +157,7 @@
         margin-top: -7px;
         width: 60px;
         color: $mastheadTextColor;
-        background: darken($mastheadBackgroundColor, 7%);
+        background: color.adjust($mastheadBackgroundColor, $lightness: -7%);
         border: 0;
         border-radius: 50px;
         box-shadow: none;
@@ -174,153 +187,6 @@
 
 @include media-breakpoint-down(md) {
   .masthead {
-    &.navbar {
-      .container {
-        flex-direction: row-reverse;
-
-        .navbar-collapse {
-          padding: 10px inherit;
-
-          .navigation {
-            .nav-pills {
-              flex-direction: column;
-              width: 100%;
-
-              & > li {
-                margin-top: 20px;
-                font-size: 25px;
-              }
-            }
-          }
-
-          .site-search {
-            display: inherit;
-
-            .field {
-              position: relative;
-
-              input {
-                padding: 20px 10px;
-                margin: 20px 0;
-                width: 100%;
-                border-radius: 4px;
-
-                &:hover {
-                  width: 100%;
-                }
-              }
-
-              .btn-search {
-                top: 35px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
-.account-masthead {
-  color: color-contrast($mastheadTextColor);
-  background: color-contrast($mastheadBackgroundColor);
-  padding-top: 5px;
-
-  .account {
-    ul {
-      li {
-        a {
-          color: color-contrast($mastheadTextColor);
-          line-height: 21px;
-
-          &:hover {
-            color: color-contrast($mastheadTextColor);
-            background-color: map-get($colors,"gray-dark");
-          }
-        }
-      }
-    }
-  }
-}
-
-.masthead {
-  background: $mastheadBackgroundColor;
-  padding: 0;
-
-  a {
-    color: $mastheadTextColor;
-  }
-
-  .logo img {
-    width: 185px;
-    margin: 10px 0;
-  }
-
-  .header-text-logo {
-    padding-top: 10px;
-  }
-
-  .main-navbar {
-    ul {
-      li {
-        padding: ($spacer * .6)  ($spacer * .9);
-        a {
-          padding: 0;
-          color: $mastheadTextColor;
-        }
-        &:hover,
-        &:focus,
-        &.active {
-          a{
-            color: $mastheadTextColor;
-            background-color: $mastheadBackgroundColor;
-
-            &::after {
-              width: 100%;
-            }
-          }
-        }
-
-        a::after {
-          content: '';
-          display: block;
-          width: 0;
-          height: 3px;
-          background-color: $mainThemeColor;
-          -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-          -webkit-transition-property: width, color;
-          transition-property: width, color;
-        }
-      }
-    }
-  }
-
-  .site-search {
-    margin-top: 12px;
-
-    input {
-      background: shade-color($mastheadBackgroundColor, 7%);
-      padding: 10px 15px;
-      margin-top: -7px;
-      border: 0;
-      border-radius: 50px;
-      box-shadow: none;
-    }
-    .field {
-      width: 75px;
-      -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-    }
-    .field:hover {
-      width: 200px;
-    }
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .masthead {
     .site-search {
       display: inherit;
 
@@ -331,6 +197,7 @@
           width: 100%;
           border-radius: $border-radius;
         }
+
         &:hover {
           width: 100%;
         }

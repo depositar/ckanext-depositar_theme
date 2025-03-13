@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .account-masthead {
   color: color-contrast($mastheadTextColor);
   background: color-contrast($mastheadBackgroundColor);
@@ -12,7 +14,7 @@
 
           &:hover {
             color: color-contrast($mastheadTextColor);
-            background-color: map-get($colors,"gray-dark");
+            background-color: map.get($colors,"gray-dark");
           }
         }
       }
@@ -41,10 +43,12 @@
     ul {
       li {
         padding: ($spacer * .6)  ($spacer * .9);
+
         a {
           padding: 0;
           color: $mastheadTextColor;
         }
+
         &:hover,
         &:focus,
         &.active {
@@ -64,9 +68,7 @@
           width: 0;
           height: 3px;
           background-color: $mainThemeColor;
-          -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
           transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-          -webkit-transition-property: width, color;
           transition-property: width, color;
         }
       }
@@ -84,11 +86,12 @@
       border-radius: 50px;
       box-shadow: none;
     }
+
     .field {
       width: 75px;
-      -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
     }
+
     .field:hover {
       width: 200px;
     }
@@ -107,6 +110,7 @@
           width: 100%;
           border-radius: $border-radius;
         }
+
         &:hover {
           width: 100%;
         }

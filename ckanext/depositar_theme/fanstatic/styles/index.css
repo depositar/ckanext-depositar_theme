@@ -11115,6 +11115,7 @@ textarea.form-control-lg {
 .account-masthead {
   padding-top: 5px;
   min-height: 30px;
+  color: #fff;
   background-color: black;
   box-sizing: content-box;
 }
@@ -11162,6 +11163,10 @@ textarea.form-control-lg {
 .masthead {
   background-color: white;
   background-image: none;
+  padding: 0;
+}
+.masthead a {
+  color: black;
 }
 .masthead.navbar {
   padding: 5px 0;
@@ -11173,48 +11178,50 @@ textarea.form-control-lg {
 .masthead .logo img {
   padding-left: 5px;
   width: 185px;
+  margin: 10px 0;
 }
-.masthead .navigation {
-  margin-top: 5px;
+.masthead .header-text-logo {
+  padding-top: 10px;
 }
-.masthead .navigation .nav-pills li a {
+.masthead .main-navbar ul li {
+  padding: 0.6rem 0.9rem;
+}
+.masthead .main-navbar ul li a {
+  padding: 0;
+  color: black;
+}
+.masthead .main-navbar ul li:hover a, .masthead .main-navbar ul li:focus a, .masthead .main-navbar ul li.active a {
+  color: black;
+  background-color: white;
+}
+.masthead .main-navbar ul li:hover a::after, .masthead .main-navbar ul li:focus a::after, .masthead .main-navbar ul li.active a::after {
+  width: 100%;
+}
+.masthead .main-navbar ul li a::after {
+  content: "";
   display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 0;
-  line-height: 7px;
-}
-.masthead .navigation .nav-pills li a::after {
-  display: block;
-  margin-top: 6px;
   width: 0;
   height: 3px;
   background-color: #00e09b;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-  content: "";
   transition-property: width, color;
 }
-.masthead .navigation .nav-pills li a:hover {
-  background-color: white;
-}
-.masthead .navigation .nav-pills li a:hover::after {
-  width: 100%;
-}
-.masthead .navigation .nav-pills li.active a {
-  background-color: white;
-}
-.masthead .navigation .nav-pills li.active a::after {
-  margin-top: 6px;
-  width: 100%;
-  height: 3px;
-  background-color: #00e09b;
-  border-radius: 0;
+.masthead .navigation {
+  margin-top: 5px;
 }
 .masthead .debug {
   position: absolute;
   top: 37px;
   left: 10px;
   color: rgba(255, 255, 255, 0.5);
+}
+.masthead .site-search input {
+  background: #ededed;
+  padding: 10px 15px;
+  margin-top: -7px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: none;
 }
 .masthead .site-search .field {
   display: flex;
@@ -11250,113 +11257,6 @@ textarea.form-control-lg {
 }
 .masthead .site-search .field .btn-search:hover {
   color: black;
-}
-
-@media (max-width: 767.98px) {
-  .masthead.navbar .container {
-    flex-direction: row-reverse;
-  }
-  .masthead.navbar .container .navbar-collapse {
-    padding: 10px inherit;
-  }
-  .masthead.navbar .container .navbar-collapse .navigation .nav-pills {
-    flex-direction: column;
-    width: 100%;
-  }
-  .masthead.navbar .container .navbar-collapse .navigation .nav-pills > li {
-    margin-top: 20px;
-    font-size: 25px;
-  }
-  .masthead.navbar .container .navbar-collapse .site-search {
-    display: inherit;
-  }
-  .masthead.navbar .container .navbar-collapse .site-search .field {
-    position: relative;
-  }
-  .masthead.navbar .container .navbar-collapse .site-search .field input {
-    padding: 20px 10px;
-    margin: 20px 0;
-    width: 100%;
-    border-radius: 4px;
-  }
-  .masthead.navbar .container .navbar-collapse .site-search .field input:hover {
-    width: 100%;
-  }
-  .masthead.navbar .container .navbar-collapse .site-search .field .btn-search {
-    top: 35px;
-  }
-}
-.account-masthead {
-  color: #fff;
-  background: #000;
-  padding-top: 5px;
-}
-.account-masthead .account ul li a {
-  color: #fff;
-  line-height: 21px;
-}
-.account-masthead .account ul li a:hover {
-  color: #fff;
-  background-color: #343a40;
-}
-
-.masthead {
-  background: white;
-  padding: 0;
-}
-.masthead a {
-  color: black;
-}
-.masthead .logo img {
-  width: 185px;
-  margin: 10px 0;
-}
-.masthead .header-text-logo {
-  padding-top: 10px;
-}
-.masthead .main-navbar ul li {
-  padding: 0.6rem 0.9rem;
-}
-.masthead .main-navbar ul li a {
-  padding: 0;
-  color: black;
-}
-.masthead .main-navbar ul li:hover a, .masthead .main-navbar ul li:focus a, .masthead .main-navbar ul li.active a {
-  color: black;
-  background-color: white;
-}
-.masthead .main-navbar ul li:hover a::after, .masthead .main-navbar ul li:focus a::after, .masthead .main-navbar ul li.active a::after {
-  width: 100%;
-}
-.masthead .main-navbar ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: #00e09b;
-  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-  -webkit-transition-property: width, color;
-  transition-property: width, color;
-}
-.masthead .site-search {
-  margin-top: 12px;
-}
-.masthead .site-search input {
-  background: #ededed;
-  padding: 10px 15px;
-  margin-top: -7px;
-  border: 0;
-  border-radius: 50px;
-  box-shadow: none;
-}
-.masthead .site-search .field {
-  width: 75px;
-  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-}
-.masthead .site-search .field:hover {
-  width: 200px;
 }
 
 @media (max-width: 767.98px) {
@@ -11862,7 +11762,7 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .topics .container ul li a h5, .topics .container ul li a .h5 {
     width: 5rem;
     font-size: 1rem;

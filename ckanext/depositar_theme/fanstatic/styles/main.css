@@ -4822,7 +4822,7 @@ textarea.form-control-lg {
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1;
-  color: #000;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -11146,7 +11146,7 @@ a.tag:hover {
 
 .pill {
   display: inline-block;
-  background-color: #1d2124;
+  background-color: #4b545c;
   color: #FFF;
   padding: 2px 10px 1px 10px;
   margin-right: 5px;
@@ -14212,20 +14212,20 @@ td.diff_header {
 .badge[data-format*=nquad],
 .badge[data-format*=ntriples],
 .badge[data-format*=turtle] {
-  color: #fff;
+  color: #000;
   background-color: #024247;
 }
 
 .badge[data-format=mp4],
 .badge[data-format=wepm],
 .badge[data-format=ogg] {
-  color: #fff;
+  color: #000;
   background-color: #720404;
 }
 
 .badge[data-format=mp3],
 .badge[data-format=wav] {
-  color: #fff;
+  color: #000;
   background-color: #4f4f00;
 }
 
@@ -14277,9 +14277,7 @@ td.diff_header {
   width: 0;
   height: 3px;
   background-color: #00e09b;
-  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.02);
-  -webkit-transition-property: width, color;
   transition-property: width, color;
 }
 .masthead .site-search {
@@ -14295,7 +14293,6 @@ td.diff_header {
 }
 .masthead .site-search .field {
   width: 75px;
-  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.02);
 }
 .masthead .site-search .field:hover {
@@ -14463,7 +14460,7 @@ a.external::after {
   }
 
   .dataset-search .form-group {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -14510,6 +14507,10 @@ a.external::after {
   width: 15px;
 }
 
+.resource-upload-field .btn-remove-url {
+  margin-top: 18px;
+}
+
 .main {
   padding-top: 0;
   background: #fff;
@@ -14546,13 +14547,13 @@ a.tag:hover {
   border-bottom: 2px solid #00e09b;
 }
 
-.module p > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
-.module small > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
-.module .small > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
-.module td > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
-.module ol > li > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
-.module ul:not(.nav, .dropdown-menu, .select2-choices) > li > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag),
-.module div.dataset-content > div > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag) {
+.module p > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module small > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module .small > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module td > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module ol > li > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module ul:not(.nav, .dropdown-menu, .select2-choices) > li > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag),
+.module div.dataset-content > div > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag) {
   border-bottom: 2px solid #00e09b;
 }
 
@@ -14560,10 +14561,6 @@ a.tag:hover {
   .module-narrow .module-heading .action {
     padding-right: 10px;
   }
-}
-.module-narrow .ui-rangeSlider {
-  padding-top: 10px;
-  padding-bottom: 7px;
 }
 
 .search-form {

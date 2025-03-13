@@ -1,7 +1,6 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-standard-scss",
   "ignoreFiles": [
-    "ckanext/depositar_theme/fanstatic/scss/bootstrap-4.scss",
     "ckanext/depositar_theme/fanstatic/scss/vendor/**"
   ],
   "rules": {
@@ -11,6 +10,7 @@
         "ignoreFontFamilies": ["FontAwesome"]
       }
     ],
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "scss/dollar-variable-pattern": null
   }
 }

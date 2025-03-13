@@ -1,18 +1,17 @@
 // Bootstrap
-@import "../../../../../ckan/ckan/public/base/scss/bootstrap.scss";
-
-@import 'variables.scss';
-@import 'masthead.scss';
-@import 'flash.scss';
-@import 'banner.scss';
-@import 'intro.scss';
-@import 'features.scss';
-@import 'showcases.scss';
-@import 'guide.scss';
-@import 'topics.scss';
-@import 'stats.scss';
-@import 'faq.scss';
-@import 'footer.scss';
+@import "../../../../../../ckan/ckan/public/base/scss/bootstrap";
+@import 'variables';
+@import 'masthead';
+@import 'flash';
+@import 'banner';
+@import 'intro';
+@import 'features';
+@import 'showcases';
+@import 'guide';
+@import 'topics';
+@import 'stats';
+@import 'faq';
+@import 'footer';
 
 body {
   font-size: 16px;

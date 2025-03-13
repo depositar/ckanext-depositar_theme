@@ -1,3 +1,5 @@
+@use "sass:map";
+
 ::selection {
   background: $mainThemeColor;
   color: color-contrast($body-color);
@@ -55,7 +57,7 @@ a {
 .btn-primary,
 .btn-success,
 .cancel {
-  @include btn-hover();
+  @include btn-hover;
 }
 
 .btn-primary {
@@ -100,19 +102,20 @@ a {
 @include media-breakpoint-up(md) {
   .dataset-map-expanded #dataset-map {
     height: 410px !important;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
     transition: all 0.3s;
   }
+
   .dataset-search {
     .form-group{
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
 
 @include media-breakpoint-only(sm) {
   .dataset-map-expanded #dataset-map {
-    width: map-get($container-max-widths, sm) !important;
+    width: map.get($container-max-widths, sm) !important;
   }
 }
 

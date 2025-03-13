@@ -1,30 +1,31 @@
+@use "sass:map";
 @use "sass:math";
 
 // Bootstrap default variable overrides
-@import "bootstrap-variables.scss";
+@import "bootstrap-variables";
 
 // Bootstrap
-@import "../../../../../../ckan/ckan/public/base/scss/bootstrap.scss";
+@import "../../../../../../ckan/ckan/public/base/scss/bootstrap";
 
 // Variables
-@import "variables.scss";
+@import "variables";
 
 // CKAN Core CSS
-@import "ckan.scss";
+@import "ckan";
 
 // depositar Overrides
 
 // dataset.scss
 
-@import "dataset.scss";
+@import "dataset";
 
 // masthead.scss
 
-@import "masthead.scss";
+@import "masthead";
 
 // Other Overrides
 
-@import "others.scss";
+@import "others";
 
 // footer.scss
 
@@ -59,6 +60,12 @@
   margin-top: -16px;
   height: 30px;
   width: 15px;
+}
+
+.resource-upload-field {
+  .btn-remove-url {
+    margin-top: 18px
+  }
 }
 
 // layout.scss
@@ -108,7 +115,7 @@ a.tag:hover {
 }
 
 .alert > a:not(.close) {
-  @include link-decoration();
+  @include link-decoration;
 }
 
 .module {
@@ -118,8 +125,8 @@ a.tag:hover {
   ol > li,
   ul:not(.nav, .dropdown-menu, .select2-choices) > li,
   div.dataset-content > div {
-    & > a:not(.btn, .select2-choice, .label, .media-view, .highlight, .tag) {
-      @include link-decoration();
+    & > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag) {
+      @include link-decoration;
     }
   }
 }
@@ -131,11 +138,6 @@ a.tag:hover {
         padding-right: 10px;
       }
     }
-  }
-
-  .ui-rangeSlider {
-    padding-top: 10px;
-    padding-bottom: 7px;
   }
 }
 
@@ -149,7 +151,7 @@ a.tag:hover {
 // toolbar.scss
 
 .toolbar {
-  background-color: map-get($colors,"gray-dark");
+  background-color: map.get($colors,"gray-dark");
   padding: 10px 0;
   margin-bottom: 0;
 }

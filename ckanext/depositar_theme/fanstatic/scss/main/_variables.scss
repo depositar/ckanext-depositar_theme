@@ -1,7 +1,9 @@
+@use "sass:color";
+@use "sass:map";
+
 // Base variables
 $imagePath: "../../../base/images";
 $bgPath: "";
-
 $mainThemeColor: #00e09b;
 $secondThemeColor: #012819;
 
@@ -14,7 +16,6 @@ $layoutBackgroundColor: #dbefe3;
 $layoutTrimBackgroundColor: #fff;
 $layoutTrimBorderColor: #ccc;
 $logoMaxHeight: 60px;
-
 $navLinkColor: #333;
 $navActiveBackgroundColor: #f6f6f6;
 
@@ -23,70 +24,57 @@ $moduleBackgroundColor: #fff;
 $moduleHeadingBorderColor: #000;
 $moduleHeadingBackgroundColor: #edf7f1;
 $moduleHeadingActionTextColor: #888;
-$moduleExpandedBackgroundColor: rgba(255, 255, 255, 0.9);
-
+$moduleExpandedBackgroundColor: rgb(255 255 255 / 90%);
 $tabTextColor: #111;
 $tagBackgroundColor: #f6f6f6;
-
 $gutterX: 25px;
 $gutterY: 20px;
 $gutterSmallX: 15px;
 $gutterSmallY: $gutterY;
-
 $emptyTextColor: #6e6e6e;
 $genericBorderColor: #ddd;
-
 $breadcrumbTextColor: #fff;
-
 $mastheadTextColor: #000;
 $mastheadLinkColor: $mastheadTextColor;
 $mastheadBackgroundColor: #fff;
 $mastheadBackgroundColorStart: #005d7a;
 $mastheadBackgroundColorEnd: #00536b;
-
 $navItemActiveTextColor: #FFF;
-$navItemActiveBackgroundColor: map-get($colors,"gray-dark");
+$navItemActiveBackgroundColor: map.get($colors,"gray-dark");
 $navItemActiveArrowSize: 7.6px;
-
 $pillTextColor: $navItemActiveTextColor;
-$pillBackgroundColor: darken($navItemActiveBackgroundColor, 10%);
-
+$pillBackgroundColor: color.adjust($navItemActiveBackgroundColor, $lightness: 10%);
 $footerTextColor: #fff;
 $footerLinkColor: $footerTextColor;
-
 $inputColor: $black;
 $inputBackground: $body-bg;
 $inputBorder: #ccc;
 $inputBorderRadius: 3px;
 $disabledCustomInputTextColor: #aaa;
 $disabledCustomInputBackground: #f3f3f3;
-
 $highlightBackground: #fdf7e9;
 $highlightHoverBackground: #fdf3d9;
 
 // Forms
 $errorText: #720404;
-$errorBackground: lighten(#f46464, 30%);
+$errorBackground: color.adjust(#f46464, $lightness: 30%);
 $errorBorder: #f46464;
-
 $formInfoText: #707070;
-
 $stagesTextColor: #aeaeae;
 $stagesBackground: #EDEDED;
-$stagesTransparentBackground: rgba(237, 237, 237, 0); // Used for arrows.
+$stagesTransparentBackground: rgb(237 237 237 / 0%); // Used for arrows.
 $stagesActiveTextColor: #fff;
 $stagesActiveBackground: $mainThemeColor;
-$stagesActiveTransparentBackground: rgba(140, 198, 138, 0);
+$stagesActiveTransparentBackground: rgb(140 198 138 / 0%);
 $stagesCompleteTextColor: #eef6ed;
 $stagesCompleteBackground: #d0eddd;
-$stagesCompleteTransparentBackground: rgba(197, 226, 196, 0);
+$stagesCompleteTransparentBackground: rgb(197 226 196 / 0%);
 $stagesCounterTextColor: #fff;
 $stagesCounterBackground: #aeaeae;
 $stagesCounterActiveTextColor: $mainThemeColor;
 $stagesCounterActiveBackground: #fff;
 $stagesCounterCompleteTextColor: #c5e2c4;
 $stagesCounterCompleteBackground: #eef6ed;
-
 $codeTextColor: #000;
 
 // Datasets
@@ -100,7 +88,7 @@ $chunkyTableStripeBackgroundColor: #f2f2f2;
 
 // Twitter Bootstrap Overrides
 $bodyBackground: $layoutBackgroundColor;
-$btnBackground: #ffffff;
+$btnBackground: #fff;
 $btnBackgroundHighlight: #eaeaea;
 $btnPrimaryBackground: $mainThemeColor; // only used by tag
 $btnPrimaryBackgroundHighlight: #085871;
