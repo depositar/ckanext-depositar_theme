@@ -4,65 +4,43 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-  .container {
-    .carousel {
+  .carousel {
+    &.slide {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
+      margin-top: 2rem;
+    }
 
-      .carousel-inner {
-        margin-bottom: 1.5rem;
-        width: 90%;
+    &-inner {
+      margin-bottom: 1.5rem;
+      width: 90%;
 
-        .carousel-item {
-          &-right.active,
-          &-next {
-            transform: translateX(100%);
-          }
+      .carousel-item {
+        .content {
+          display: flex;
+          margin-right: 3rem;
+          width: 40%;
+          flex-direction: column;
+        }
 
-          &-left.active,
-          &-prev {
-            transform: translateX(-100%);
-          }
+        .guide-video {
+          display: flex;
+          justify-content: flex-end;
+          width: 80%;
 
-          &-right,
-          &-left {
-            transform: translateX(0);
-          }
-
-          .content {
-            display: flex;
-            margin-right: 3rem;
-            width: 40%;
-            flex-direction: column;
-          }
-
-          .guide-video {
-            display: flex;
-            justify-content: flex-end;
-            width: 80%;
-
-            .video {
-              width: 100%;
-            }
+          .video {
+            width: 100%;
           }
         }
       }
+    }
 
-      .carousel-control {
-        &-prev,
-        &-next {
-          width: 3%;
-        }
-      }
+    &-indicators {
+      margin-bottom: 0;
 
-      .carousel-indicators {
-        position: initial;
-
-        button {
-          background-color: $guideSlideIndicatorsBackgroundColor;
-        }
+      button {
+        background-color: $guideSlideIndicatorsBackgroundColor;
       }
     }
   }
@@ -72,7 +50,7 @@
   .guide {
     .container {
       .carousel {
-        .carousel-inner {
+        &-inner {
           .carousel-item {
             flex-direction: column;
 

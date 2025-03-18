@@ -64,6 +64,9 @@
 
   a {
     color: $mastheadTextColor;
+    &:hover{
+      text-decoration: none;
+    }
   }
 
   &.navbar {
@@ -196,10 +199,9 @@
         input {
           width: 100%;
           border-radius: $border-radius;
-        }
-
-        &:hover {
-          width: 100%;
+          &:hover {
+            width: 100%;
+          }
         }
       }
     }

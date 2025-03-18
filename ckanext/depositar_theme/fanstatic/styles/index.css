@@ -11168,6 +11168,9 @@ textarea.form-control-lg {
 .masthead a {
   color: black;
 }
+.masthead a:hover {
+  text-decoration: none;
+}
 .masthead.navbar {
   padding: 5px 0;
 }
@@ -11570,14 +11573,8 @@ textarea.form-control-lg {
 .carousel-inner {
   width: 90%;
 }
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev, .carousel-inner .carousel-item-start {
   display: flex;
-}
-.carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
-  transform: translateX(33.33%);
-}
-.carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
-  transform: translateX(-33.33%);
 }
 .carousel-inner .card .img-container {
   display: flex;
@@ -11622,45 +11619,55 @@ textarea.form-control-lg {
   color: black;
 }
 
+.showcases {
+  /*
+    stylelint-disable no-duplicate-selectors --
+    A workaround for the carousel containing less than 3 items.
+  */
+}
+.showcases .carousel-inner .carousel-item-right.active, .showcases .carousel-inner .carousel-item-next {
+  transform: translateX(33.33%);
+}
+.showcases .carousel-inner .carousel-item-start.active, .showcases .carousel-inner .carousel-item-left.active, .showcases .carousel-inner .carousel-item-prev {
+  transform: translateX(-33.33%);
+}
+.showcases .carousel-inner .carousel-item-next.carousel-item-start, .showcases .carousel-inner .carousel-item-end.active {
+  transform: translateX(0);
+}
 @media (max-width: 1199.98px) {
-  .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+  .showcases .carousel-inner .carousel-item-right.active, .showcases .carousel-inner .carousel-item-next {
     transform: translateX(50%);
   }
-  .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+  .showcases .carousel-inner .carousel-item-start.active, .showcases .carousel-inner .carousel-item-left.active, .showcases .carousel-inner .carousel-item-prev {
     transform: translateX(-50%);
   }
-  .carousel-inner .carousel-item .card-col {
+  .showcases .carousel-inner .carousel-item .card-col {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
 @media (max-width: 767.98px) {
-  .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+  .showcases .carousel-inner .carousel-item-right.active, .showcases .carousel-inner .carousel-item-next {
     transform: translateX(100%);
   }
-  .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+  .showcases .carousel-inner .carousel-item-start.active, .showcases .carousel-inner .carousel-item-left.active, .showcases .carousel-inner .carousel-item-prev {
     transform: translateX(-100%);
   }
-  .carousel-inner .carousel-item > div {
+  .showcases .carousel-inner .carousel-item > div {
     display: none;
   }
-  .carousel-inner .carousel-item > div:first-child {
+  .showcases .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
-  .carousel-inner .carousel-item .card-col {
+  .showcases .carousel-inner .carousel-item .card-col {
     flex: 1;
     max-width: initial;
   }
-
-  .carousel-control-prev i, .carousel-control-next i {
+  .showcases .carousel-control-prev i, .showcases .carousel-control-next i {
     font-size: 20pt;
   }
 }
-/*
-  stylelint-disable no-duplicate-selectors --
-  A workaround for the carousel containing less than 3 items.
-*/
-.carousel-inner .carousel-item-right, .carousel-inner .carousel-item-left {
+.showcases .carousel-inner .carousel-item-right, .showcases .carousel-inner .carousel-item-left {
   transform: translateX(0);
 }
 
@@ -11670,61 +11677,49 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-.guide .container .carousel {
+.guide .carousel.slide {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
-.guide .container .carousel .carousel-inner {
+.guide .carousel-inner {
   margin-bottom: 1.5rem;
   width: 90%;
 }
-.guide .container .carousel .carousel-inner .carousel-item-right.active, .guide .container .carousel .carousel-inner .carousel-item-next {
-  transform: translateX(100%);
-}
-.guide .container .carousel .carousel-inner .carousel-item-left.active, .guide .container .carousel .carousel-inner .carousel-item-prev {
-  transform: translateX(-100%);
-}
-.guide .container .carousel .carousel-inner .carousel-item-right, .guide .container .carousel .carousel-inner .carousel-item-left {
-  transform: translateX(0);
-}
-.guide .container .carousel .carousel-inner .carousel-item .content {
+.guide .carousel-inner .carousel-item .content {
   display: flex;
   margin-right: 3rem;
   width: 40%;
   flex-direction: column;
 }
-.guide .container .carousel .carousel-inner .carousel-item .guide-video {
+.guide .carousel-inner .carousel-item .guide-video {
   display: flex;
   justify-content: flex-end;
   width: 80%;
 }
-.guide .container .carousel .carousel-inner .carousel-item .guide-video .video {
+.guide .carousel-inner .carousel-item .guide-video .video {
   width: 100%;
 }
-.guide .container .carousel .carousel-control-prev, .guide .container .carousel .carousel-control-next {
-  width: 3%;
+.guide .carousel-indicators {
+  margin-bottom: 0;
 }
-.guide .container .carousel .carousel-indicators {
-  position: initial;
-}
-.guide .container .carousel .carousel-indicators button {
+.guide .carousel-indicators button {
   background-color: black;
 }
 
 @media (max-width: 1199.98px) {
-  .guide .container .carousel .carousel-inner .carousel-item {
+  .guide .container .carousel-inner .carousel-item {
     flex-direction: column;
   }
-  .guide .container .carousel .carousel-inner .carousel-item.active {
+  .guide .container .carousel-inner .carousel-item.active {
     display: flex;
   }
-  .guide .container .carousel .carousel-inner .carousel-item .content {
+  .guide .container .carousel-inner .carousel-item .content {
     margin: 0 0 1rem;
     width: 100%;
   }
-  .guide .container .carousel .carousel-inner .carousel-item .guide-video {
+  .guide .container .carousel-inner .carousel-item .guide-video {
     width: 100%;
   }
 }

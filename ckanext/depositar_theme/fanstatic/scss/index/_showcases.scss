@@ -12,18 +12,9 @@
     .carousel-item {
       &.active,
       &-next,
-      &-prev {
+      &-prev,
+      &-start {
         display: flex;
-      }
-
-      &-right.active,
-      &-next {
-        transform: translateX(33.33%);
-      }
-
-      &-left.active,
-      &-prev {
-        transform: translateX(-33.33%);
       }
     }
 
@@ -89,74 +80,100 @@
   }
 }
 
-@include media-breakpoint-down(xl) {
-  .carousel-inner {
-    .carousel-item {
-      &-right.active,
-      &-next {
-        transform: translateX(50%);
-      }
+.showcases {
+  .carousel {
+    &-inner {
+      .carousel-item {
+        &-right.active,
+        &-next {
+          transform: translateX(33.33%);
+        }
 
-      &-left.active,
-      &-prev {
-        transform: translateX(-50%);
-      }
+        &-start.active,
+        &-left.active,
+        &-prev {
+          transform: translateX(-33.33%);
+        }
 
-      .card-col {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .carousel-inner {
-    .carousel-item {
-      &-right.active,
-      &-next {
-        transform: translateX(100%);
-      }
-
-      &-left.active,
-      &-prev {
-        transform: translateX(-100%);
-      }
-
-      >div {
-        display: none;
-
-        &:first-child {
-          display: block;
+        &-next.carousel-item-start,
+        &-end.active {
+          transform: translateX(0);
         }
       }
-
-      .card-col {
-        flex: 1;
-        max-width: initial;
+    }
+  }
+  
+  @include media-breakpoint-down(xl) {
+    .carousel-inner {
+      .carousel-item {
+        &-right.active,
+        &-next {
+          transform: translateX(50%);
+        }
+  
+        &-start.active,
+        &-left.active,
+        &-prev {
+          transform: translateX(-50%);
+        }
+  
+        .card-col {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
       }
     }
   }
-
-  .carousel-control {
-    &-prev,
-    &-next {
-      i {
-        font-size: 20pt;
+  
+  @include media-breakpoint-down(md) {
+    .carousel-inner {
+      .carousel-item {
+        &-right.active,
+        &-next {
+          transform: translateX(100%);
+        }
+  
+        &-start.active,
+        &-left.active,
+        &-prev {
+          transform: translateX(-100%);
+        }
+  
+        >div {
+          display: none;
+  
+          &:first-child {
+            display: block;
+          }
+        }
+  
+        .card-col {
+          flex: 1;
+          max-width: initial;
+        }
+      }
+    }
+  
+    .carousel-control {
+      &-prev,
+      &-next {
+        i {
+          font-size: 20pt;
+        }
       }
     }
   }
-}
-
-/*
-  stylelint-disable no-duplicate-selectors --
-  A workaround for the carousel containing less than 3 items.
-*/
-.carousel-inner {
-  .carousel-item {
-    &-right,
-    &-left {
-      transform: translateX(0);
+  
+  /*
+    stylelint-disable no-duplicate-selectors --
+    A workaround for the carousel containing less than 3 items.
+  */
+  .carousel-inner {
+    .carousel-item {
+      &-right,
+      &-left {
+        transform: translateX(0);
+      }
     }
   }
 }

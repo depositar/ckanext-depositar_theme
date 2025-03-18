@@ -13,10 +13,10 @@
       <div class="function-btn">
         <span class="view-all">{% link_for _('List All Datasets'), named_route='dataset.search', class_='btn' %}</span>
         {% if not c.userobj %}
-          <span tabindex="0" data-toggle="tooltip" data-original-title="{{ _('Log in to upload a dataset') }}">
+          <span tabindex="0" data-bs-toggle="tooltip" data-bs-original-title="{{ _('Log in to upload a dataset') }}">
             <button type="button" class="btn" style="pointer-events: none;" disabled>{{ _('Upload Dataset') }}</button>
           </span>
-          <span tabindex="0" data-toggle="tooltip" data-original-title="{{ _('Log in to create a project') }}">
+          <span tabindex="0" data-bs-toggle="tooltip" data-bs-original-title="{{ _('Log in to create a project') }}">
             <button type="button" class="btn" style="pointer-events: none;" disabled>{{ _('Create Project') }}</button>
           </span>
         {% else %}
