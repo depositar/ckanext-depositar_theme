@@ -6,19 +6,15 @@ const sourcemaps = require("gulp-sourcemaps");
 
 const with_sourcemaps = () => !!process.env.DEBUG;
 
-const buildMain = () =>
+const buildScss = () =>
   src([
-    __dirname + "/ckanext/depositar_theme/fanstatic/scss/main/main.scss"
+    __dirname + "/ckanext/depositar_theme/fanstatic/scss/main.scss"
   ])
     .pipe(if_(with_sourcemaps(), sourcemaps.init()))
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
-    .pipe(if_(with_sourcemaps(), sourcemaps.write()))
-    .pipe(dest(__dirname + "/ckanext/depositar_theme/fanstatic/styles/"));
-
-const buildIndex = () =>
-  src(__dirname + "/ckanext/depositar_theme/fanstatic/scss/index/index.scss")
-    .pipe(if_(with_sourcemaps(), sourcemaps.init()))
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(sass({
+      outputStyle: 'expanded',
+      includePaths: ['../ckan/ckan/public/base/']
+    }).on('error', sass.logError))
     .pipe(if_(with_sourcemaps(), sourcemaps.write()))
     .pipe(dest(__dirname + "/ckanext/depositar_theme/fanstatic/styles/"));
 
@@ -27,13 +23,11 @@ const watchSource = () =>
     __dirname + "/ckanext/depositar_theme/fanstatic/scss/**/*.scss"],
     { ignoreInitial: false },
     parallel(
-      buildMain,
-      buildIndex
+      buildScss
     )
   );
 
 exports.build = parallel(
-  buildMain,
-  buildIndex
+  buildScss
 );
 exports.watch = watchSource;

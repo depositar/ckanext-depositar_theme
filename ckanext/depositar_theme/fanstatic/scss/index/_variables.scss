@@ -1,42 +1,5 @@
-// base variables
-$imagePath: "../../images";
-$bgPath: "";
-$mainThemeColor: #00e09b;
-$secondThemeColor: #012819;
-
 // index
-$bodyTextColor: black;
-$bodyBackgroundColor: white;
-$bodyFontFamily: 'Noto Sans TC', arial, 'Microsoft JhengHei', sans-serif;
-$selectionTextColor: white;
-$selectionBackgroundColor: $mainThemeColor;
 $idxBorderBottomColor: #ececec;
-$logoMaxHeight: 60px;
-
-// masthead
-$accountMastheadBackgroundColor: black;
-$accountMastheadListBorderLeftColor: #ccc;
-$accountMastheadListLinkTextColor: white;
-$accountMastheadListLinkBadgeTextColor: #404040;
-$accountMastheadListLinkBadgeBackgroundColor: #d9d9d9;
-$accountMastheadListLinkHoverBackgroundColor: #333;
-$accountMastheadListLinkBadgeHoverTextColor: white;
-$accountMastheadListLinkBadgeHoverBackgroundColor: #000f14;
-$mastheadDebugColor: rgba(white, 0.5);
-$mastheadTextColor: black;
-$mastheadLinkColor: $mastheadTextColor;
-$mastheadBackgroundColor: white;
-$mastheadBtnSearchTextColor: #999;
-$mastheadListLinkAfterBackgroundColor: $mainThemeColor;
-
-// flash
-$flashAlertTextColor: black;
-$flashAlertWarningTextColor: #8a6d3b;
-$flashAlertWarningBorderColor: #faebcc;
-$flashAlertWarningBackgroundColor: #fcf8e3;
-$flashAlertInfoTextColor: #31708f;
-$flashAlertInfoBorderColor: #bce8f1;
-$flashAlertInfoBackgroundColor: #d9edf7;
 
 // banner
 $bannerTextColor: white;
@@ -82,11 +45,3 @@ $featureBarBorderColor: #cdcdcd;
 
 // faq
 $faqBtnLinkTextColor: black;
-
-// footer
-$footerTextColor: white;
-$footerBackgroundColor: black;
-$footerLinkTextColor: white;
-$footerLinkHoverTextColor: $mainThemeColor;
-$footerLogoImage: url('#{$imagePath}/logo_eng_horizontal_w.svg');
-$footerCkanLogoImage: url('../../../base/images/ckan-logo-footer.png');

@@ -19,12 +19,6 @@ index-js:
       - depositar_theme/p5-js
       - depositar_theme/hls-js
 
-index-css:
-  filters: cssrewrite
-  output: depositar_theme/%(version)s_index.css
-  contents:
-    - styles/index.css
-
 field-extra-js:
   filters: rjsmin
   output: depositar_theme/%(version)s_field-extra.js

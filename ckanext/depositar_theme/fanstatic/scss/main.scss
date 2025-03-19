@@ -5,7 +5,7 @@
 @import "bootstrap-variables";
 
 // Bootstrap
-@import "../../../../../../ckan/ckan/public/base/scss/bootstrap";
+@import "scss/bootstrap";
 
 // Variables
 @import "variables";
@@ -15,44 +15,16 @@
 
 // depositar Overrides
 
-// dataset.scss
+$imagePath: "../../images";
 
+// dataset.scss
 @import "dataset";
 
 // masthead.scss
-
 @import "masthead";
 
-// Other Overrides
-
-@import "others";
-
 // footer.scss
-
-.site-footer {
-  background-color: color-contrast($mastheadBackgroundColor);
-
-  a:hover {
-    color: $mainThemeColor;
-  }
-
-  .footer-links .footer-contacts a:not(:last-child) {
-    padding-right: 0.25rem !important;
-  }
-}
-
-.footer-logo {
-  background: url("/images/logo_eng_horizontal_w.svg") no-repeat scroll;
-  height: 50px;
-  width: 30%;
-  padding-bottom: 10px;
-}
-
-@include media-breakpoint-down(sm) {
-  .footer-logo {
-    width: 50%;
-  }
-}
+@import "footer";
 
 // forms.scss
 
@@ -155,3 +127,14 @@ a.tag:hover {
   padding: 10px 0;
   margin-bottom: 0;
 }
+
+// buttons.scss
+
+.btn {
+  display: inline-block;
+}
+
+// Others
+@import "flash";
+@import "others";
+@import "index";
