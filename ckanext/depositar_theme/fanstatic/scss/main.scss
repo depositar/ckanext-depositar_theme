@@ -17,6 +17,11 @@
 
 $imagePath: "../../images";
 
+// Others
+@import "flash";
+@import "others";
+@import "index";
+
 // dataset.scss
 @import "dataset";
 
@@ -133,8 +138,3 @@ a.tag:hover {
 .btn {
   display: inline-block;
 }
-
-// Others
-@import "flash";
-@import "others";
-@import "index";
