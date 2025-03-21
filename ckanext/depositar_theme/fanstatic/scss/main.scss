@@ -48,7 +48,7 @@ $imagePath: "../../images";
 // layout.scss
 
 .main {
-  padding-top: 0;
+  padding: 0;
   background: $mastheadBackgroundColor;
 }
 
@@ -100,7 +100,7 @@ a.tag:hover {
   small,
   td,
   ol > li,
-  ul:not(.nav, .dropdown-menu, .select2-choices) > li,
+  ul:not(.pagination, .nav, .dropdown-menu, .select2-choices) > li,
   div.dataset-content > div {
     & > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag) {
       @include link-decoration;
@@ -113,6 +113,24 @@ a.tag:hover {
     @include media-breakpoint-down(sm) {
       .action {
         padding-right: 10px;
+      }
+    }
+  }
+}
+
+.pagination {
+  > li {
+    &:first-child {
+      > a, > span {
+        border-top-left-radius: $pagination-border-radius;
+        border-bottom-left-radius: $pagination-border-radius;
+      }
+    }
+
+    &:last-child {
+      > a, > span {
+        border-top-right-radius: $pagination-border-radius;
+        border-bottom-right-radius: $pagination-border-radius;
       }
     }
   }

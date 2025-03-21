@@ -76,6 +76,12 @@
         font-size: 35pt;
         color: $showcaseFunctionBtnColor;
       }
+
+      @include media-breakpoint-down(md) {
+        i {
+          font-size: 20pt;
+        }        
+      }
     }
   }
 }
