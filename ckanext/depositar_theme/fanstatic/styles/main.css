@@ -15217,6 +15217,14 @@ a.external::after {
   margin-bottom: 0;
 }
 
+@media (max-width: 767.98px) {
+  .main .secondary {
+    -webkit-box-ordinal-group: initial;
+    -moz-box-ordinal-group: initial;
+    -webkit-order: initial;
+    order: initial;
+  }
+}
 .media-grid, .module-grid {
   border: none;
 }
@@ -15225,6 +15233,11 @@ a.external::after {
   border-color: #ddd;
 }
 
+@media (max-width: 767.98px) {
+  .nav {
+    flex-direction: column;
+  }
+}
 a.tag:hover {
   color: #000;
   box-shadow: none;
@@ -15249,7 +15262,7 @@ a.tag:hover {
   border-bottom: 2px solid #00e09b;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .module-narrow .module-heading .action {
     padding-right: 10px;
   }
@@ -15273,6 +15286,10 @@ a.tag:hover {
   background-color: #343a40;
   padding: 10px 0;
   margin-bottom: 0;
+}
+
+.input-group .btn {
+  z-index: 0;
 }
 
 .btn {

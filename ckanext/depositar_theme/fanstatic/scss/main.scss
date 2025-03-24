@@ -63,6 +63,15 @@ $imagePath: "../../images";
   }
 }
 
+@include media-breakpoint-down(md) {
+  .main .secondary {
+    -webkit-box-ordinal-group: initial;
+    -moz-box-ordinal-group: initial;
+    -webkit-order: initial;
+    order: initial;
+  }
+}
+
 // media.scss
 
 .media-grid {
@@ -71,6 +80,14 @@ $imagePath: "../../images";
 
 .media-view {
   border-color: $genericBorderColor;
+}
+
+// nav.scss
+
+@include media-breakpoint-down(md) {
+  .nav {
+    flex-direction: column;
+  }
 }
 
 // mixins.scss
@@ -110,7 +127,7 @@ a.tag:hover {
 
 .module-narrow {
   .module-heading {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       .action {
         padding-right: 10px;
       }
@@ -149,6 +166,12 @@ a.tag:hover {
   background-color: map.get($colors,"gray-dark");
   padding: 10px 0;
   margin-bottom: 0;
+}
+
+// input-groups.scss
+
+.input-group .btn {
+  z-index: 0;
 }
 
 // buttons.scss
