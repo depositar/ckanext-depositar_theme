@@ -48,10 +48,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 51, 51, 51;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bs-font-sans-serif: "Noto Sans TC", "Arial", "Microsoft JhengHei", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, fMonaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Noto Sans TC, arial, Microsoft JhengHei, sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.875;
@@ -5686,7 +5686,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
+  font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
   line-height: 1.875;
@@ -5788,7 +5788,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: "Noto Sans TC", arial, "Microsoft JhengHei", sans-serif;
+  font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
   line-height: 1.875;
@@ -14866,6 +14866,65 @@ a.external::after {
     width: 100%;
   }
 }
+.topics .container ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.topics .container ul li {
+  padding: 2%;
+  width: 14.28%;
+}
+.topics .container ul li a {
+  display: flex;
+  text-align: center;
+  color: black;
+  flex-direction: column;
+}
+.topics .container ul li a:hover {
+  text-decoration: none;
+  color: #00e09b;
+  transition: 0.1s;
+  transform: scale(1.08);
+}
+.topics .container ul li a h5, .topics .container ul li a .h5 {
+  font-weight: bold;
+  margin: auto;
+  width: 6.5rem;
+}
+.topics .container ul li a .img-circle {
+  margin: 1rem auto;
+  width: 80%;
+  border-radius: 50%;
+}
+
+@media (max-width: 1199.98px) {
+  .topics .container ul li a h5, .topics .container ul li a .h5 {
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .topics .container ul li a .img-circle {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .topics .container ul li {
+    width: 20%;
+  }
+}
+@media (max-width: 767.98px) {
+  .topics .container ul li {
+    width: 25%;
+  }
+}
+@media (max-width: 575.98px) {
+  .topics .container ul li {
+    padding: 5%;
+    width: 50%;
+  }
+}
 .faq {
   margin-bottom: 0;
 }
@@ -15221,7 +15280,6 @@ a.external::after {
   .main .secondary {
     -webkit-box-ordinal-group: initial;
     -moz-box-ordinal-group: initial;
-    -webkit-order: initial;
     order: initial;
   }
 }

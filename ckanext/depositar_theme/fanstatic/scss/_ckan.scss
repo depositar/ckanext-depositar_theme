@@ -1,4 +1,6 @@
 // CKAN Core CSS
+@use "sass:math";
+@import "variables";
 @import "scss/custom";
 @import "scss/mixins";
 @import "scss/module";

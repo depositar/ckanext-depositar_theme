@@ -1,14 +1,10 @@
 @use "sass:map";
-@use "sass:math";
 
 // Bootstrap default variable overrides
 @import "bootstrap-variables";
 
 // Bootstrap
 @import "scss/bootstrap";
-
-// Variables
-@import "variables";
 
 // CKAN Core CSS
 @import "ckan";
@@ -67,7 +63,6 @@ $imagePath: "../../images";
   .main .secondary {
     -webkit-box-ordinal-group: initial;
     -moz-box-ordinal-group: initial;
-    -webkit-order: initial;
     order: initial;
   }
 }
