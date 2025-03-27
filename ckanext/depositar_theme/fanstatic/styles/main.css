@@ -14977,10 +14977,6 @@ a.external::after {
   width: 15%;
 }
 
-.badge-inverse {
-  background-color: #cdcdcd;
-}
-
 .badge[data-format=html],
 .badge[data-format*=html] {
   background-color: #f9bdbd;
@@ -15324,6 +15320,11 @@ a.tag:hover {
   .module-narrow .module-heading .action {
     padding-right: 10px;
   }
+}
+.module-narrow .ui-rangeSlider {
+  /* stylelint-disable-line selector-class-pattern */
+  padding-top: 10px;
+  padding-bottom: 7px;
 }
 
 .pagination > li:first-child > a, .pagination > li:first-child > span {
