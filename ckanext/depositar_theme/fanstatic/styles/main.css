@@ -14155,10 +14155,6 @@ td.diff_header {
   top: 1.25rem;
   height: 0;
 }
-.flash-messages .alert {
-  display: block;
-  padding: 15px;
-}
 .flash-messages .alert-warning {
   color: #8a6d3b;
   background-color: #fcf8e3;
@@ -14169,21 +14165,12 @@ td.diff_header {
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
-.flash-messages .alert-dismissible {
-  padding-right: 35px;
-}
 .flash-messages .alert-dismissible a:not(.close) {
   border-bottom: 2px solid #00e09b;
 }
 .flash-messages .alert-dismissible a:not(.close):hover {
   text-decoration: none;
   color: black;
-}
-.flash-messages .alert-dismissible .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  padding: 0;
 }
 .flash-messages .alert-dismissible .close span {
   color: black;
@@ -14192,30 +14179,12 @@ td.diff_header {
 .flash-messages .alert-dismissible .close span:hover {
   opacity: 0.5;
 }
-.flash .alert {
-  display: flex;
-  justify-content: space-between;
-}
-.flash .alert .msg-content {
-  width: 95%;
-}
 .flash .alert .msg-content a {
   border-bottom: 2px solid #00e09b;
 }
 .flash .alert .msg-content a:hover {
   text-decoration: none;
   color: black;
-}
-.flash .alert-dismissible {
-  padding-right: inherit;
-}
-.flash .alert-dismissible .close {
-  position: initial;
-  top: initial;
-  right: initial;
-  padding: 0;
-  width: 2%;
-  line-height: 30px;
 }
 
 .content a {
