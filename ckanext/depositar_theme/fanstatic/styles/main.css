@@ -14215,24 +14215,7 @@ td.diff_header {
   right: initial;
   padding: 0;
   width: 2%;
-  height: min-content;
   line-height: 30px;
-}
-
-body {
-  line-height: 30px;
-}
-
-:focus {
-  outline: 0;
-}
-
-p {
-  margin-top: revert;
-}
-
-h1, .h1 {
-  font-weight: bold;
 }
 
 .content a {
