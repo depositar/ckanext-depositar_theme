@@ -1,0 +1,74 @@
+.guide {
+  background-image: $guildBackgroundImage;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  .carousel {
+    &.slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    &-inner {
+      margin-bottom: 1.5rem;
+      width: 90%;
+
+      .carousel-item {
+        .content {
+          display: flex;
+          margin-right: 3rem;
+          width: 40%;
+          flex-direction: column;
+        }
+
+        .guide-video {
+          display: flex;
+          justify-content: flex-end;
+          width: 80%;
+
+          .video {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &-indicators {
+      margin-bottom: 0;
+
+      button {
+        background-color: $guideSlideIndicatorsBackgroundColor;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .guide {
+    .container {
+      .carousel {
+        &-inner {
+          .carousel-item {
+            flex-direction: column;
+
+            &.active {
+              display: flex;
+            }
+
+            .content {
+              margin: 0 0 1rem;
+              width: 100%;
+            }
+
+            .guide-video {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

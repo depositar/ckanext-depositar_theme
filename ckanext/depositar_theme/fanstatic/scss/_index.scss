@@ -1,0 +1,14 @@
+@import 'index/variables';
+@import 'index/banner';
+@import 'index/intro';
+@import 'index/features';
+@import 'index/showcases';
+@import 'index/stats';
+@import 'index/guide';
+@import 'index/topics';
+@import 'index/faq';
+
+.idx {
+  padding: 5rem 0;
+  border-bottom: solid 10px $idxBorderBottomColor;
+}

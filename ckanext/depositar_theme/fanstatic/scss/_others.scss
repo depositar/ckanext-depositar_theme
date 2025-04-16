@@ -1,0 +1,150 @@
+.content {
+  a {
+    border-bottom: 2px solid $mainThemeColor;
+
+    &:hover {
+      text-decoration: none;
+      color: $mainThemeColor;
+      transition: 0.1s;
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0;
+  min-height: 100vh;
+}
+
+::selection {
+  background: $mainThemeColor;
+  color: color-contrast($body-color);
+}
+
+a {
+  word-wrap: break-word;
+  text-decoration: none;
+  color: $body-color;
+
+  &.external::after {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-size: 10px;
+    line-height: 10px;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    margin-right: 5px;
+  }
+}
+
+.dataset-search {
+  background-color: $moduleHeadingBackgroundColor;
+  padding-top: 20px;
+  border-bottom: 1px solid $genericBorderColor;
+}
+
+// Spatial Coverage
+#map {
+  height: 400px;
+
+  input {
+    width: auto;
+    top: auto;
+  }
+
+  label::after {
+    content: none;
+  }
+
+  a {
+    color: unset;
+  }
+}
+
+@mixin btn-hover(){
+  &:hover,
+  &:focus {
+    background-color: $mainThemeColor !important;
+    transition: 0.2s;
+    border: 1px solid $mainThemeColor;
+  }
+}
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.cancel {
+  @include btn-hover;
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-bg, $btn-primary-border, $btn-primary-color);
+}
+
+.btn-success {
+  @include button-variant($btn-success-bg, $btn-success-border, $btn-success-color);
+}
+
+.cancel {
+  border-color: $btn-primary-border;
+}
+
+// Form actions without border-top
+.form-messages {
+  &::after {
+    clear: left;
+    display: table;
+    content: "";
+  }
+
+  .control-required-message {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 0;
+    line-height: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.about-img {
+  width: 400px;
+  max-width: 100%;
+  float: right;
+}
+
+// Filter by location
+@include media-breakpoint-up(md) {
+  .dataset-map-expanded #dataset-map {
+    height: 410px !important;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    transition: all 0.3s;
+  }
+
+  .dataset-search {
+    .form-group{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  .dataset-map-expanded #dataset-map {
+    width: map.get($container-max-widths, sm) !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .dataset-map-expanded #dataset-map {
+    width: initial !important;
+    height: initial !important;
+    position: initial !important;
+  }
+}
+
+// Workaround for draw toolbar on mobile
+.dataset-map .leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-rectangle {
+  background-position: center center;
+}

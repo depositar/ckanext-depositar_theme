@@ -20,10 +20,7 @@
 
 <div class="idx guide">
   <div class="container">
-    <div id="guideCarousel" class="guide carousel slide" data-ride="carousel">
-      <a class="carousel-control-prev" href="#guideCarousel" role="button" data-slide="prev">
-        <i class="fa fa-chevron-left"></i>
-      </a>
+    <div id="guideCarousel" class="guide carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
       <div class="carousel-inner">
         {% for guide in guide_list %}
           {% if guide == guide_list[0] %}
@@ -41,14 +38,19 @@
           </div>
         {% endfor %}
       </div>
-      <a class="carousel-control-next" href="#guideCarousel" role="button" data-slide="next">
-        <i class="fa fa-chevron-right"></i>
+      <a class="carousel-control-prev w-auto" role="button" data-bs-target="#guideCarousel" data-bs-slide="prev">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <i class="visually-hidden">Previous</i>
       </a>
-      <ol class="carousel-indicators">
-        <li data-target="#guideCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#guideCarousel" data-slide-to="1"></li>
-        <li data-target="#guideCarousel" data-slide-to="2"></li>
-      </ol>
+      <a class="carousel-control-next w-auto" role="button" data-bs-target="#guideCarousel" data-bs-slide="next">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        <i class="visually-hidden">Next</i>
+      </a>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#guideCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#guideCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#guideCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
     </div>
   </div>
 </div>

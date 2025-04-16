@@ -1,0 +1,181 @@
+@use "sass:map";
+
+// Bootstrap default variable overrides
+@import "bootstrap-variables";
+
+// Bootstrap
+@import "scss/bootstrap";
+
+// CKAN Core CSS
+@import "ckan";
+
+// depositar Overrides
+
+$imagePath: "../../images";
+
+// Others
+@import "flash";
+@import "others";
+@import "index";
+
+// dataset.scss
+@import "dataset";
+
+// masthead.scss
+@import "masthead";
+
+// footer.scss
+@import "footer";
+
+// forms.scss
+
+.simple-input .field .btn-search {
+  margin-top: -16px;
+  height: 30px;
+  width: 15px;
+}
+
+.resource-upload-field {
+  .btn-remove-url {
+    margin-top: 18px
+  }
+}
+
+// layout.scss
+
+.main {
+  padding: 0;
+  background: $mastheadBackgroundColor;
+}
+
+.wrapper {
+  border: none;
+  box-shadow: none;
+}
+
+.flash-messages {
+  .alert {
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .main .secondary {
+    -webkit-box-ordinal-group: initial;
+    -moz-box-ordinal-group: initial;
+    order: initial;
+  }
+}
+
+// media.scss
+
+.media-grid {
+  border: none;
+}
+
+.media-view {
+  border-color: $genericBorderColor;
+}
+
+// nav.scss
+
+@include media-breakpoint-down(md) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+// mixins.scss
+
+a.tag:hover {
+  color: #000;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+// module.scss
+
+@mixin link-decoration(){
+  border-bottom: 2px solid $mainThemeColor;
+}
+
+.module-heading {
+  border-top: none;
+}
+
+.alert > a:not(.close) {
+  @include link-decoration;
+}
+
+.module {
+  p,
+  small,
+  td,
+  ol > li,
+  ul:not(.pagination, .nav, .dropdown-menu, .select2-choices) > li,
+  div.dataset-content > div {
+    & > a:not(.badge, .btn, .select2-choice, .label, .media-view, .highlight, .tag) {
+      @include link-decoration;
+    }
+  }
+}
+
+.module-narrow {
+  .module-heading {
+    @include media-breakpoint-down(md) {
+      .action {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .ui-rangeSlider { /* stylelint-disable-line selector-class-pattern */
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+}
+
+.pagination {
+  > li {
+    &:first-child {
+      > a, > span {
+        border-top-left-radius: $pagination-border-radius;
+        border-bottom-left-radius: $pagination-border-radius;
+      }
+    }
+
+    &:last-child {
+      > a, > span {
+        border-top-right-radius: $pagination-border-radius;
+        border-bottom-right-radius: $pagination-border-radius;
+      }
+    }
+  }
+}
+
+// search.scss
+
+.search-form {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+// toolbar.scss
+
+.toolbar {
+  background-color: map.get($colors,"gray-dark");
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+// input-groups.scss
+
+.input-group .btn {
+  z-index: 0;
+}
+
+// buttons.scss
+
+.btn {
+  display: inline-block;
+}

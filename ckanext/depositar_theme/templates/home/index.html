@@ -3,31 +3,31 @@
 {% block title %}{{ _('depositar — Deposit, Discover, Reuse') }}{% endblock %}
 
 {%- block content %}
-  {% block header %}{% endblock %}
-  {% snippet "home/index/idx_header.html" %}
-  {% block maintag %}<div class="container-fluid">{% endblock %}
-    <div id="content" class="container flash">
+  {% block maintag %}<div class="main">{% endblock %}
+    <div id="content" class="container-fluid">
       {% block flash %}
-        {% block flash_inner %}
-          {% for category, message in h.get_flashed_messages(with_categories=true) %}
-            <div class="alert fade in {{ category }} alert-dismissible show">
-              <div class="msg-content">
-                {{ h.literal(message) }}
+        <div class="container flash flash-messages">
+          {% block flash_inner %}
+            {% for category, message in h.get_flashed_messages(with_categories=true) %}
+              <div class="alert fade in {{ category }} alert-dismissible show">
+                <div class="msg-content">
+                  {{ h.literal(message) }}
+                </div>
               </div>
-            </div>
-          {% endfor %}
-        {% endblock %}
+            {% endfor %}
+          {% endblock %}
+        </div>
       {% endblock %}
-    </div>
 
-    {% snippet "home/index/idx_banner.html" %}
-    {% snippet "home/index/idx_intro.html" %}
-    {% snippet "home/index/idx_features.html" %}
-    {% snippet "home/index/idx_showcases.html" %}
-    {% snippet "home/index/idx_stats.html" %}
-    {% snippet "home/index/idx_guide.html" %}
-    {#% snippet "home/index/idx_topics.html" %#}
-    {% snippet "home/index/idx_faq.html" %}
+      {% snippet "home/index/idx_banner.html" %}
+      {% snippet "home/index/idx_intro.html" %}
+      {% snippet "home/index/idx_features.html" %}
+      {% snippet "home/index/idx_showcases.html" %}
+      {% snippet "home/index/idx_stats.html" %}
+      {% snippet "home/index/idx_guide.html" %}
+      {#% snippet "home/index/idx_topics.html" %#}
+      {% snippet "home/index/idx_faq.html" %}
+    </div>
   </div>
 {% endblock %}
 
@@ -35,8 +35,4 @@
 
 {%- block scripts %}
   {% asset 'depositar_theme/index-js' %}
-{% endblock -%}
-
-{%- block styles %}
-  {% asset 'depositar_theme/index-css' %}
 {% endblock -%}

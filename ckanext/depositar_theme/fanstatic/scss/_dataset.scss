@@ -1,0 +1,75 @@
+.dataset-heading {
+  font-size: 21px;
+}
+
+.additional-info th {
+  width: 15%;
+}
+
+// FORMATS
+.badge[data-format="html"],
+.badge[data-format*="html"] {
+  background-color: #f9bdbd;
+}
+
+.badge[data-format="json"],
+.badge[data-format*="json"] {
+  background-color: #ffa255;
+}
+
+.badge[data-format="xml"],
+.badge[data-format*="xml"] {
+  background-color: #d7e82d;
+}
+
+.badge[data-format="text"],
+.badge[data-format*="text"] {
+  background-color: #6fd5d8;
+}
+
+.badge[data-format="csv"],
+.badge[data-format*="csv"] {
+  background-color: #a587dd;
+}
+
+.badge[data-format="xls"],
+.badge[data-format*="xls"] {
+  background-color: #93cc58;
+}
+
+.badge[data-format="zip"],
+.badge[data-format*="zip"] {
+  background-color: #cdcdcd;
+}
+
+.badge[data-format="api"],
+.badge[data-format*="api"] {
+  background-color: #ffe6e6;
+}
+
+.badge[data-format="pdf"],
+.badge[data-format*="pdf"] {
+  background-color: #f46464;
+}
+
+.badge[data-format="rdf"],
+.badge[data-format*="rdf"],
+.badge[data-format*="nquad"],
+.badge[data-format*="ntriples"],
+.badge[data-format*="turtle"] {
+  color: color-contrast($badge-color);
+  background-color: #024247;
+}
+
+.badge[data-format="mp4"],
+.badge[data-format="wepm"],
+.badge[data-format="ogg"] {
+  color: color-contrast($badge-color);
+  background-color: #720404;
+}
+
+.badge[data-format="mp3"],
+.badge[data-format="wav"] {
+  color: color-contrast($badge-color);
+  background-color: #4f4f00;
+}

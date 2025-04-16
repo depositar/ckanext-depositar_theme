@@ -1,0 +1,106 @@
+.stats {
+  .container {
+    .btn {
+      font-weight: bold;
+    }
+
+    justify-content: space-between;
+
+    .stat-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+
+      .imp-data {
+        display: flex;
+        justify-content: space-around;
+
+        .imp-item {
+          line-height: initial;
+          text-align: center;
+
+          &:not(:last-child) {
+            margin-right: 2.5rem;
+          }
+
+          .btn {
+            line-height: inherit;
+            padding: 0;
+
+            &:hover {
+              color: $statLinkHoverTextColor;
+            }
+          }
+
+          .cnt {
+            font-size: 60pt;
+            font-weight: bolder;
+
+            &:last-child {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .stats {
+    .container {
+      flex-direction: column;
+      height: auto;
+      min-height: 60vh;
+
+      .stat-data {
+        margin-bottom: 3rem;
+        width: auto;
+
+        .imp-data {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .stats {
+    .container {
+      .stat-data {
+        .imp-data {
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          .imp-item {
+            &:not(:last-child) {
+              margin: 0 auto 2.5rem;
+            }
+          }
+        }
+
+        .sec-data {
+          .sec-item {
+            width: 33.33%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .stats {
+    .container {
+      .stat-data {
+        .sec-data {
+          .sec-item {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
