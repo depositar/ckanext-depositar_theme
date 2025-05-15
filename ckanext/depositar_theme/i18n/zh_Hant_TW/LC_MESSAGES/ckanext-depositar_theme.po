@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.14b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.16b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-02-13 09:57+0800\n"
+"POT-Creation-Date: 2025-05-14 09:17+0800\n"
 "PO-Revision-Date: 2018-12-01 17:22+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -29,7 +29,7 @@ msgid "This field is required for assigning ARK"
 msgstr "此欄位為 ARK 識別碼所需欄位"
 
 #: ckanext/depositar_theme/routes/help.py:14
-#: ckanext/depositar_theme/templates/header.html:52
+#: ckanext/depositar_theme/templates/header.html:65
 #: ckanext/depositar_theme/templates/help/index.html:3
 #: ckanext/depositar_theme/templates/help/index.html:6
 msgid "Help"
@@ -56,7 +56,7 @@ msgid "Privacy Policy (Archive)"
 msgstr "隱私政策 (封存版本)"
 
 #: ckanext/depositar_theme/templates/footer.html:7
-#: ckanext/depositar_theme/templates/header.html:51
+#: ckanext/depositar_theme/templates/header.html:64
 msgid "About"
 msgstr "關於"
 
@@ -88,7 +88,7 @@ msgstr ""
 "<p>程式碼可於 <a href=\"https://github.com/depositar/\" class=\"external\" "
 "target=\"_blank\">GitHub</a> 取得。</p>"
 
-#: ckanext/depositar_theme/templates/header.html:22
+#: ckanext/depositar_theme/templates/header.html:33
 msgid ""
 "This is the demo site for <a href=\"http://data.depositar.io/\" "
 "target=\"_blank\">depositar</a>. You can create a new account and try any"
@@ -98,30 +98,34 @@ msgstr ""
 "此為<a href=\"http://data.depositar.io/\" "
 "target=\"_blank\">depositar</a>的展示用網站。您可於此註冊帳號與測試任何該平台提供之功能。請留意展示用網站之資料會定期清除。"
 
-#: ckanext/depositar_theme/templates/header.html:46
+#: ckanext/depositar_theme/templates/header.html:49
+msgid "Toggle navigation"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/header.html:59
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:9
 msgid "Datasets"
 msgstr "資料集"
 
-#: ckanext/depositar_theme/templates/header.html:48
+#: ckanext/depositar_theme/templates/header.html:61
 msgid "Topics"
 msgstr "主題"
 
-#: ckanext/depositar_theme/templates/header.html:50
+#: ckanext/depositar_theme/templates/header.html:63
 #: ckanext/depositar_theme/templates/home/index/idx_stats.html:16
 msgid "Projects"
 msgstr "專案"
 
-#: ckanext/depositar_theme/templates/header.html:59
+#: ckanext/depositar_theme/templates/header.html:72
 msgid "Search Datasets..."
 msgstr "搜尋資料集"
 
-#: ckanext/depositar_theme/templates/header.html:60
+#: ckanext/depositar_theme/templates/header.html:73
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:9
 msgid "Search datasets..."
 msgstr "搜尋資料集"
 
-#: ckanext/depositar_theme/templates/header.html:61
+#: ckanext/depositar_theme/templates/header.html:74
 msgid "Submit"
 msgstr "送出"
 
@@ -394,10 +398,6 @@ msgstr ""
 "資料集搜尋](https://datasetsearch.research.google.com/)中找到，提升資料能見度。具備結構資料 "
 "API，易於資料介接及分析。"
 
-#: ckanext/depositar_theme/templates/home/index/idx_header.html:10
-msgid "Toggle navigation"
-msgstr ""
-
 #: ckanext/depositar_theme/templates/home/index/idx_intro.html:4
 msgid ""
 "Well managed and preserved research data is the cornerstone of "
@@ -412,7 +412,7 @@ msgstr ""
 msgid "Featured Projects"
 msgstr "特色專案"
 
-#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:27
+#: ckanext/depositar_theme/templates/home/index/idx_showcases.html:22
 msgid "more"
 msgstr "更多"
 
@@ -583,11 +583,11 @@ msgid ""
 "Humanities and Social Sciences, Academia Sinica.</p> <p>Developing "
 "<em>depositar</em> has been a team work. The following people, in "
 "alphabetical order, have been or were once in the project team: Shao-"
-"Chuan Chang (office manager), Tyng-Ruey Chuang (project lead), Ming-Syuan"
-" Ho, Andrea Wei-Ching Huang, Cheng-Jen Lee (tech lead), Hsiung-Ming Liao,"
-" Yen-Tsen Liu, Monica Yu-Chia Mu, Hilary Szu Yin Shiue (data management "
-"specialist), Huang-Sin Syu, Ally Chia-Hsun Wang (project manager), Yu-"
-"Huang Wang, and Yao-Hsien Yeh.</p>"
+"Chuan Chang (office manager), Ting-Yu Chuang (assistant engineer), Tyng-"
+"Ruey Chuang (project lead), Ming-Syuan Ho, Andrea Wei-Ching Huang, Cheng-"
+"Jen Lee (tech lead), Hsiung-Ming Liao, Yen-Tsen Liu, Monica Yu-Chia Mu, "
+"Hilary Szu Yin Shiue (data management specialist), Huang-Sin Syu, Ally "
+"Chia-Hsun Wang (project manager), Yu-Huang Wang, and Yao-Hsien Yeh.</p>"
 msgstr ""
 "<h2>關於「研究資料寄存所」的更多資訊</h2> <p><b>研究資料寄存所</b>是進行中的工作。<a "
 "href=\"https://github.com/depositar/\" class=\"external\" "
@@ -601,7 +601,7 @@ msgstr ""
 "target=\"_blank\">資訊科技創新研究中心</a>的支持，另外也得到台灣國家科學及技術委員會的專題研究計畫的補助。這項計畫啟始於和同在中央研究院的<a"
 " href=\"http://gis.rchss.sinica.edu.tw/\" class=\"external\" "
 "target=\"_blank\">地理資訊科學研究專題中心</a>（隸屬於人文社會科學研究中心）的協力研究工作，並維持到現在。</p> "
-"<p><b>研究資料寄存所</b>的發展是一項團隊工作。目前或是曾經參與此計畫團隊的人員包括（按姓名英文字母序）：張少娟（行政管理）、莊庭瑞（計畫主持）、何明諠、黃韋菁、李承錱（技術經理）、廖泫銘、劉彥岑、穆昱佳、薛絲尹（資料管理專員）、許煌鑫、王家薰（專案經理）、王豫煌，以及葉耀鮮。</p>"
+"<p><b>研究資料寄存所</b>的發展是一項團隊工作。目前或是曾經參與此計畫團隊的人員包括（按姓名英文字母序）：張少娟（行政管理）、莊婷伃（助理工程師）、莊庭瑞（計畫主持）、何明諠、黃韋菁、李承錱（技術經理）、廖泫銘、劉彥岑、穆昱佳、薛絲尹（資料管理專員）、許煌鑫、王家薰（專案經理）、王豫煌，以及葉耀鮮。</p>"
 
 #: ckanext/depositar_theme/templates/legal/privacy.html:8
 #: ckanext/depositar_theme/templates/legal/privacy.html:19
