@@ -2,6 +2,12 @@
 Changelog
 ---------
 
+v1.1.16 2025-05-20
+==================
+
+* Remove the fix for ckan/ckan#8736 since it has been resolved in CKAN 2.10.8.
+* Add project members to the about page.
+
 v1.1.15 2025-04-17
 ==================
 
