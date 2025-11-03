@@ -2,6 +2,12 @@
 Changelog
 ---------
 
+v1.1.17 2025-11-05
+==================
+
+* Hide the custom fields when editing a topic or a project.
+* Homepage and edit dataset page: Create a project first to upload a dataset.
+
 v1.1.16 2025-05-20
 ==================
 
