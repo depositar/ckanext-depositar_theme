@@ -7,9 +7,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.17b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.18b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-10-21 11:08+0800\n"
+"POT-Creation-Date: 2025-12-03 14:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,20 +195,20 @@ msgid "List All Datasets"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:16
-msgid "Log in and create a project first to upload a dataset"
+msgid "Log in to upload a dataset"
 msgstr ""
 
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:17
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:20
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:23
 msgid "Upload Dataset"
 msgstr ""
 
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:23
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:19
 msgid "Log in to create a project"
 msgstr ""
 
+#: ckanext/depositar_theme/templates/home/index/idx_banner.html:20
 #: ckanext/depositar_theme/templates/home/index/idx_banner.html:24
-#: ckanext/depositar_theme/templates/home/index/idx_banner.html:27
 msgid "Create Project"
 msgstr ""
 
