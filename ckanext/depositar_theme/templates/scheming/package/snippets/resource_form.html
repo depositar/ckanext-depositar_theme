@@ -8,3 +8,12 @@
   </div>
   {{ super() }}
 {% endblock %}
+
+{% block metadata_fields %}
+  <div class="alert alert-info">
+    {% set doc_url = h.get_doc_url() %}
+    {%- trans -%}
+    A <a href="{{ doc_url }}user-guide/datapackage.html" target="_blank">Data Package</a> will be generated automatically for this dataset if the total size of the uploaded resources is ≤ 50 MB. <a href="{{ doc_url }}user-guide/datapackage.html#automatic-data-package-generation" target="_blank">More details</a>.
+    {%- endtrans -%}
+  </div>
+{% endblock %}
