@@ -2,6 +2,13 @@
 Changelog
 ---------
 
+v1.1.19 2026-05-20
+==================
+
+* Add a note about the Data Package function to the resource form.
+* Update project members on the about page.
+* Allow custom styles from other extensions.
+
 v1.1.18 2025-12-10
 ==================
 
