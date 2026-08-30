@@ -59,14 +59,6 @@ $imagePath: "../../images";
   }
 }
 
-@include media-breakpoint-down(md) {
-  .main .secondary {
-    -webkit-box-ordinal-group: initial;
-    -moz-box-ordinal-group: initial;
-    order: initial;
-  }
-}
-
 // media.scss
 
 .media-grid {

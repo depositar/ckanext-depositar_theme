@@ -13933,8 +13933,7 @@ td.diff_header {
 .input-group .form-control {
   z-index: 0;
 }
-
-.input-group-btn:last-child > .btn {
+.input-group > .btn:last-child {
   z-index: 0;
 }
 
@@ -15224,13 +15223,6 @@ a.external::after {
   margin-bottom: 0;
 }
 
-@media (max-width: 767.98px) {
-  .main .secondary {
-    -webkit-box-ordinal-group: initial;
-    -moz-box-ordinal-group: initial;
-    order: initial;
-  }
-}
 .media-grid, .module-grid {
   border: none;
 }
