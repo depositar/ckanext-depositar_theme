@@ -40,9 +40,11 @@ def parse_str(po):
 
     ignore_list = \
         ['ckanext/reclineview/theme/templates/recline_graph_form.html',
+        'ckanext/activity/templates/snippets/group_changes/description.html',
+        'ckanext/activity/templates/snippets/activities/follow_group.html',
         'ckan/templates/home/snippets/about_text.html',
         'ckan/templates/organization/snippets/organization_item.html',
-        'ckan/templates/snippets/activities/follow_group.html'
+        'ckan/templates/emails/invite_user.txt',
         ]
 
     out = polib.POFile()
