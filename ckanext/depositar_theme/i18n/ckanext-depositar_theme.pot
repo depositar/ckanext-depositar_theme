@@ -7,9 +7,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-depositar_theme 1.1.19b0\n"
+"Project-Id-Version: ckanext-depositar_theme 1.1.20b0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-17 17:25+0800\n"
+"POT-Creation-Date: 2026-09-03 10:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -527,7 +527,8 @@ msgid ""
 "target=\"_blank\">Center for GIS</a> at the Research Center for Humanities "
 "and Social Sciences, Academia Sinica.</p> <p>Developing <em>depositar</em> "
 "has been a team work. The following people, in alphabetical order, have been "
-"or were once in the project team: Shao-Chuan Chang (office manager), Ting-Yu "
+"or were once in the project team: Chun-Shih Chang (assistant engineer), Shao-"
+"Chuan Chang (office manager), Wei-Qin Chang (research assistant), Ting-Yu "
 "Chuang, Tyng-Ruey Chuang (project lead), Ming-Syuan Ho, Andrea Wei-Ching "
 "Huang, Cheng-Jen Lee (tech lead), Hsiung-Ming Liao, Yen-Tsen Liu, Monica Yu-"
 "Chia Mu, Hilary Szu Yin Shiue, Huang-Sin Syu, Ally Chia-Hsun Wang (project "
@@ -665,6 +666,10 @@ msgstr ""
 
 #: ckanext/depositar_theme/templates/snippets/theme.html:6
 msgid "Dataset extent"
+msgstr ""
+
+#: ckanext/depositar_theme/templates/snippets/theme.html:7
+msgid "Only letters, numbers, - and _ characters are accepted."
 msgstr ""
 
 #: ckanext/depositar_theme/templates/user/snippets/tou_notice.html:2
