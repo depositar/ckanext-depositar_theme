@@ -2,6 +2,14 @@
 Changelog
 ---------
 
+v1.1.20 2026-09-09
+==================
+
+* Display primary column first on mobile devices.
+* Add username requirements on he registration page.
+* Update project members on the about page.
+* Align with the latest locale for CKAN 2.10.
+
 v1.1.19 2026-05-20
 ==================
 
