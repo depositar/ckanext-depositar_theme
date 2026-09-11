@@ -2,6 +2,11 @@
 Changelog
 ---------
 
+v1.1.21 2026-09-11
+==================
+
+* BCP47 language code for the path to videos.
+
 v1.1.20 2026-09-09
 ==================
 
